@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "home": {
+      "title": "House of Digital Business - Digital Solutions for Global Business",
+      "description": "We connect businesses across borders with innovative digital strategies and multilingual solutions."
+    },
+    "about": {
+      "title": "About Us - House of Digital Business",
+      "description": "Learn about House of Digital Business, our mission, vision, values and international team."
+    },
+    "services": {
+      "title": "Our Services - House of Digital Business",
+      "description": "Explore our comprehensive digital solutions tailored to your global business needs across five languages."
+    },
+    "contact": {
+      "title": "Contact Us - House of Digital Business",
+      "description": "Get in touch with House of Digital Business in any of our supported languages for your digital needs."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "EN"
+  },
+  "hero": {
+    "title": "Digital Solutions for Global Business",
+    "subtitle": "We connect businesses across borders with innovative digital strategies and multilingual solutions.",
+    "primaryBtn": "Our Services",
+    "secondaryBtn": "Contact Us",
+    "trustedBy": "Trusted by global brands"
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "House of Digital Business helps companies navigate the digital landscape with multilingual expertise and innovative solutions.",
+    "vision": {
+      "title": "Our Vision",
+      "text": "To eliminate digital barriers and connect businesses globally through technology and language expertise."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Providing innovative digital solutions tailored to each client's unique needs and cultural context."
+    },
+    "values": {
+      "title": "Our Values",
+      "text": "Innovation, integrity, cultural understanding, and excellence in everything we do."
+    },
+    "teamTitle": "Our International Team"
+  },
+  "team": {
+    "member1": {
+      "name": "Sarah Johnson",
+      "role": "CEO & Founder",
+      "description": "Specialized in international business strategy and digital transformation."
+    },
+    "member2": {
+      "name": "Marco Bianchi",
+      "role": "Technical Director",
+      "description": "Expert in software development and multilingual digital platforms."
+    },
+    "member3": {
+      "name": "Luisa Schmidt",
+      "role": "Multilingual Content Lead",
+      "description": "Specializes in localization and cultural adaptation for digital content."
+    },
+    "member4": {
+      "name": "Pierre Dupont",
+      "role": "Business Development",
+      "description": "Focuses on international partnerships and market expansion strategies."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive digital solutions tailored to your global business needs across five languages.",
+    "learnMore": "Learn more",
+    "items": {
+      "multilingual": {
+        "title": "Multilingual Website Development",
+        "description": "Custom websites optimized for international audiences with full i18n support across 5 languages."
+      },
+      "strategy": {
+        "title": "Digital Strategy Consulting",
+        "description": "Strategic guidance for expanding your digital presence internationally with cultural sensitivity."
+      },
+      "localization": {
+        "title": "Content Localization",
+        "description": "Professional translation and cultural adaptation of your digital content for global markets."
+      },
+      "seo": {
+        "title": "SEO & Digital Marketing",
+        "description": "Multilingual SEO and marketing strategies tailored to reach international audiences effectively."
+      },
+      "ecommerce": {
+        "title": "E-commerce Solutions",
+        "description": "International e-commerce platforms with multi-currency, multi-language and localized payment options."
+      },
+      "app": {
+        "title": "App Localization",
+        "description": "Complete localization services for mobile and web applications in multiple languages and markets."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Success stories from businesses across the globe.",
+    "client1": {
+      "name": "Maria Rodriguez",
+      "company": "CEO, Global Ventures",
+      "content": "\"House of Digital Business transformed our online presence with their multilingual website. Our international sales increased by 45% in just six months.\""
+    },
+    "client2": {
+      "name": "Thomas Müller",
+      "company": "CTO, TechSolutions GmbH",
+      "content": "\"The localization of our app into five languages was seamless. Their team understood cultural nuances, not just translation. Highly recommended!\""
+    },
+    "client3": {
+      "name": "Sophie Leclerc",
+      "company": "Marketing Director, Mode Parisienne",
+      "content": "\"Their digital strategy consulting helped us expand into new European markets with confidence. The multilingual SEO approach delivered impressive results.\""
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to expand your business globally? Contact us in any of our supported languages.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "language": "Preferred Language",
+      "languages": {
+        "en": "English",
+        "pt": "Portuguese",
+        "de": "German",
+        "fr": "French",
+        "it": "Italian"
+      },
+      "service": "Service Interested In",
+      "services": {
+        "website": "Multilingual Website Development",
+        "consulting": "Digital Strategy Consulting",
+        "localization": "Content Localization",
+        "seo": "SEO & Digital Marketing",
+        "ecommerce": "E-commerce Solutions",
+        "applocalization": "App Localization"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": {
+        "title": "Message Sent!",
+        "message": "Thank you for contacting us. We'll get back to you shortly."
+      },
+      "error": {
+        "title": "Error",
+        "message": "There was an error sending your message. Please try again."
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "line1": "Musterstraße 123",
+        "line2": "10115 Berlin, Germany"
+      },
+      "email": {
+        "title": "Email",
+        "address": "info@houseofdigitalbusiness.de"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+49 30 1234567"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 9:00 - 18:00",
+        "weekend": "Saturday - Sunday: Closed"
+      },
+      "social": {
+        "title": "Follow Us"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Connecting businesses globally through innovative digital solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "links": {
+      "careers": "Careers",
+      "blog": "Blog"
+    },
+    "services": {
+      "website": "Multilingual Website Development",
+      "consulting": "Digital Strategy Consulting",
+      "localization": "Content Localization",
+      "seo": "SEO & Digital Marketing",
+      "ecommerce": "E-commerce Solutions",
+      "applocalization": "App Localization"
+    },
+    "languages": {
+      "en": "English",
+      "pt": "Portuguese",
+      "de": "German",
+      "fr": "French",
+      "it": "Italian"
+    },
+    "copyright": "© {{year}} House of Digital Business. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "emailInvalid": "Please enter a valid email address",
+    "messageMinLength": "Message must be at least 10 characters long"
+  }
+}

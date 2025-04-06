@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "home": {
+      "title": "House of Digital Business - Soluções Digitais para Negócios Globais",
+      "description": "Conectamos empresas além das fronteiras com estratégias digitais inovadoras e soluções multilíngues."
+    },
+    "about": {
+      "title": "Sobre Nós - House of Digital Business",
+      "description": "Conheça a House of Digital Business, nossa missão, visão, valores e equipe internacional."
+    },
+    "services": {
+      "title": "Nossos Serviços - House of Digital Business",
+      "description": "Explore nossas soluções digitais abrangentes adaptadas às necessidades do seu negócio global em cinco idiomas."
+    },
+    "contact": {
+      "title": "Contato - House of Digital Business",
+      "description": "Entre em contato com a House of Digital Business em qualquer um dos nossos idiomas suportados para suas necessidades digitais."
+    }
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Quem Somos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "language": "PT"
+  },
+  "hero": {
+    "title": "Soluções Digitais para Negócios Globais",
+    "subtitle": "Conectamos empresas além das fronteiras com estratégias digitais inovadoras e soluções multilíngues.",
+    "primaryBtn": "Nossos Serviços",
+    "secondaryBtn": "Contato",
+    "trustedBy": "Confiado por marcas globais"
+  },
+  "about": {
+    "title": "Quem Somos",
+    "subtitle": "A House of Digital Business ajuda empresas a navegar no cenário digital com expertise multilíngue e soluções inovadoras.",
+    "vision": {
+      "title": "Nossa Visão",
+      "text": "Eliminar barreiras digitais e conectar empresas globalmente através de tecnologia e expertise linguística."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "text": "Fornecer soluções digitais inovadoras adaptadas às necessidades únicas de cada cliente e contexto cultural."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "text": "Inovação, integridade, compreensão cultural e excelência em tudo o que fazemos."
+    },
+    "teamTitle": "Nossa Equipe Internacional"
+  },
+  "team": {
+    "member1": {
+      "name": "Sarah Johnson",
+      "role": "CEO e Fundadora",
+      "description": "Especializada em estratégia de negócios internacionais e transformação digital."
+    },
+    "member2": {
+      "name": "Marco Bianchi",
+      "role": "Diretor Técnico",
+      "description": "Especialista em desenvolvimento de software e plataformas digitais multilíngues."
+    },
+    "member3": {
+      "name": "Luisa Schmidt",
+      "role": "Líder de Conteúdo Multilíngue",
+      "description": "Especializada em localização e adaptação cultural para conteúdo digital."
+    },
+    "member4": {
+      "name": "Pierre Dupont",
+      "role": "Desenvolvimento de Negócios",
+      "description": "Foco em parcerias internacionais e estratégias de expansão de mercado."
+    }
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções digitais abrangentes adaptadas às necessidades do seu negócio global em cinco idiomas.",
+    "learnMore": "Saiba mais",
+    "items": {
+      "multilingual": {
+        "title": "Desenvolvimento de Sites Multilíngues",
+        "description": "Sites personalizados otimizados para audiências internacionais com suporte i18n completo em 5 idiomas."
+      },
+      "strategy": {
+        "title": "Consultoria em Estratégia Digital",
+        "description": "Orientação estratégica para expandir sua presença digital internacionalmente com sensibilidade cultural."
+      },
+      "localization": {
+        "title": "Localização de Conteúdo",
+        "description": "Tradução profissional e adaptação cultural do seu conteúdo digital para mercados globais."
+      },
+      "seo": {
+        "title": "SEO e Marketing Digital",
+        "description": "SEO multilíngue e estratégias de marketing adaptadas para alcançar audiências internacionais de forma eficaz."
+      },
+      "ecommerce": {
+        "title": "Soluções de E-commerce",
+        "description": "Plataformas de e-commerce internacionais com multi-moeda, multi-idioma e opções de pagamento localizadas."
+      },
+      "app": {
+        "title": "Localização de Aplicativos",
+        "description": "Serviços completos de localização para aplicativos móveis e web em múltiplos idiomas e mercados."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "O Que Nossos Clientes Dizem",
+    "subtitle": "Histórias de sucesso de empresas em todo o mundo.",
+    "client1": {
+      "name": "Maria Rodriguez",
+      "company": "CEO, Global Ventures",
+      "content": "\"A House of Digital Business transformou nossa presença online com seu site multilíngue. Nossas vendas internacionais aumentaram 45% em apenas seis meses.\""
+    },
+    "client2": {
+      "name": "Thomas Müller",
+      "company": "CTO, TechSolutions GmbH",
+      "content": "\"A localização do nosso aplicativo em cinco idiomas foi perfeita. A equipe entendeu as nuances culturais, não apenas a tradução. Altamente recomendado!\""
+    },
+    "client3": {
+      "name": "Sophie Leclerc",
+      "company": "Diretora de Marketing, Mode Parisienne",
+      "content": "\"A consultoria em estratégia digital deles nos ajudou a expandir para novos mercados europeus com confiança. A abordagem de SEO multilíngue entregou resultados impressionantes.\""
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Pronto para expandir seu negócio globalmente? Entre em contato conosco em qualquer um dos nossos idiomas suportados.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "João Silva",
+      "email": "Email",
+      "emailPlaceholder": "joao@exemplo.com",
+      "language": "Idioma Preferido",
+      "languages": {
+        "en": "Inglês",
+        "pt": "Português",
+        "de": "Alemão",
+        "fr": "Francês",
+        "it": "Italiano"
+      },
+      "service": "Serviço de Interesse",
+      "services": {
+        "website": "Desenvolvimento de Sites Multilíngues",
+        "consulting": "Consultoria em Estratégia Digital",
+        "localization": "Localização de Conteúdo",
+        "seo": "SEO e Marketing Digital",
+        "ecommerce": "Soluções de E-commerce",
+        "applocalization": "Localização de Aplicativos"
+      },
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos sobre seu projeto...",
+      "submit": "Enviar Mensagem",
+      "submitting": "Enviando...",
+      "success": {
+        "title": "Mensagem Enviada!",
+        "message": "Obrigado por entrar em contato conosco. Retornaremos em breve."
+      },
+      "error": {
+        "title": "Erro",
+        "message": "Houve um erro ao enviar sua mensagem. Por favor, tente novamente."
+      }
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "address": {
+        "title": "Endereço",
+        "line1": "Musterstraße 123",
+        "line2": "10115 Berlim, Alemanha"
+      },
+      "email": {
+        "title": "Email",
+        "address": "info@houseofdigitalbusiness.de"
+      },
+      "phone": {
+        "title": "Telefone",
+        "number": "+49 30 1234567"
+      },
+      "hours": {
+        "title": "Horário Comercial",
+        "weekdays": "Segunda - Sexta: 9:00 - 18:00",
+        "weekend": "Sábado - Domingo: Fechado"
+      },
+      "social": {
+        "title": "Siga-nos"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Conectando empresas globalmente através de soluções digitais inovadoras.",
+    "quickLinks": "Links Rápidos",
+    "services": "Serviços",
+    "links": {
+      "careers": "Carreiras",
+      "blog": "Blog"
+    },
+    "services": {
+      "website": "Desenvolvimento de Sites Multilíngues",
+      "consulting": "Consultoria em Estratégia Digital",
+      "localization": "Localização de Conteúdo",
+      "seo": "SEO e Marketing Digital",
+      "ecommerce": "Soluções de E-commerce",
+      "applocalization": "Localização de Aplicativos"
+    },
+    "languages": {
+      "en": "Inglês",
+      "pt": "Português",
+      "de": "Alemão",
+      "fr": "Francês",
+      "it": "Italiano"
+    },
+    "copyright": "© {{year}} House of Digital Business. Todos os direitos reservados.",
+    "legal": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço",
+      "cookies": "Política de Cookies"
+    }
+  },
+  "validation": {
+    "nameRequired": "Nome é obrigatório",
+    "emailInvalid": "Por favor, insira um endereço de email válido",
+    "messageMinLength": "A mensagem deve ter pelo menos 10 caracteres"
+  }
+}

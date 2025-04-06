@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "home": {
+      "title": "House of Digital Business - Digitale Lösungen für globale Unternehmen",
+      "description": "Wir verbinden Unternehmen über Grenzen hinweg mit innovativen digitalen Strategien und mehrsprachigen Lösungen."
+    },
+    "about": {
+      "title": "Über Uns - House of Digital Business",
+      "description": "Erfahren Sie mehr über House of Digital Business, unsere Mission, Vision, Werte und unser internationales Team."
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen - House of Digital Business",
+      "description": "Entdecken Sie unsere umfassenden digitalen Lösungen, die auf Ihre globalen Geschäftsbedürfnisse in fünf Sprachen zugeschnitten sind."
+    },
+    "contact": {
+      "title": "Kontakt - House of Digital Business",
+      "description": "Kontaktieren Sie House of Digital Business in einer unserer unterstützten Sprachen für Ihre digitalen Bedürfnisse."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "language": "DE"
+  },
+  "hero": {
+    "title": "Digitale Lösungen für globale Unternehmen",
+    "subtitle": "Wir verbinden Unternehmen über Grenzen hinweg mit innovativen digitalen Strategien und mehrsprachigen Lösungen.",
+    "primaryBtn": "Unsere Dienstleistungen",
+    "secondaryBtn": "Kontakt",
+    "trustedBy": "Vertraut von globalen Marken"
+  },
+  "about": {
+    "title": "Wer Wir Sind",
+    "subtitle": "House of Digital Business hilft Unternehmen, die digitale Landschaft mit mehrsprachiger Expertise und innovativen Lösungen zu navigieren.",
+    "vision": {
+      "title": "Unsere Vision",
+      "text": "Digitale Barrieren beseitigen und Unternehmen weltweit durch Technologie und Sprachkompetenz verbinden."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "text": "Bereitstellung innovativer digitaler Lösungen, die auf die einzigartigen Bedürfnisse und den kulturellen Kontext jedes Kunden zugeschnitten sind."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "text": "Innovation, Integrität, kulturelles Verständnis und Exzellenz in allem, was wir tun."
+    },
+    "teamTitle": "Unser internationales Team"
+  },
+  "team": {
+    "member1": {
+      "name": "Sarah Johnson",
+      "role": "CEO & Gründerin",
+      "description": "Spezialisiert auf internationale Geschäftsstrategie und digitale Transformation."
+    },
+    "member2": {
+      "name": "Marco Bianchi",
+      "role": "Technischer Direktor",
+      "description": "Experte für Softwareentwicklung und mehrsprachige digitale Plattformen."
+    },
+    "member3": {
+      "name": "Luisa Schmidt",
+      "role": "Mehrsprachige Content-Leiterin",
+      "description": "Spezialisiert auf Lokalisierung und kulturelle Anpassung für digitale Inhalte."
+    },
+    "member4": {
+      "name": "Pierre Dupont",
+      "role": "Geschäftsentwicklung",
+      "description": "Fokussiert auf internationale Partnerschaften und Marktexpansionsstrategien."
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende digitale Lösungen, die auf Ihre globalen Geschäftsbedürfnisse in fünf Sprachen zugeschnitten sind.",
+    "learnMore": "Mehr erfahren",
+    "items": {
+      "multilingual": {
+        "title": "Mehrsprachige Website-Entwicklung",
+        "description": "Maßgeschneiderte Websites, optimiert für internationales Publikum mit vollständiger i18n-Unterstützung in 5 Sprachen."
+      },
+      "strategy": {
+        "title": "Digitale Strategieberatung",
+        "description": "Strategische Beratung zur Erweiterung Ihrer digitalen Präsenz international mit kultureller Sensibilität."
+      },
+      "localization": {
+        "title": "Content-Lokalisierung",
+        "description": "Professionelle Übersetzung und kulturelle Anpassung Ihrer digitalen Inhalte für globale Märkte."
+      },
+      "seo": {
+        "title": "SEO & Digitales Marketing",
+        "description": "Mehrsprachige SEO- und Marketingstrategien, die darauf zugeschnitten sind, internationales Publikum effektiv zu erreichen."
+      },
+      "ecommerce": {
+        "title": "E-Commerce-Lösungen",
+        "description": "Internationale E-Commerce-Plattformen mit Multi-Währung, Multi-Sprache und lokalisierten Zahlungsoptionen."
+      },
+      "app": {
+        "title": "App-Lokalisierung",
+        "description": "Komplette Lokalisierungsdienste für mobile und Web-Anwendungen in mehreren Sprachen und Märkten."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Was Unsere Kunden Sagen",
+    "subtitle": "Erfolgsgeschichten von Unternehmen aus der ganzen Welt.",
+    "client1": {
+      "name": "Maria Rodriguez",
+      "company": "CEO, Global Ventures",
+      "content": "\"House of Digital Business hat unsere Online-Präsenz mit ihrer mehrsprachigen Website transformiert. Unsere internationalen Verkäufe sind in nur sechs Monaten um 45% gestiegen.\""
+    },
+    "client2": {
+      "name": "Thomas Müller",
+      "company": "CTO, TechSolutions GmbH",
+      "content": "\"Die Lokalisierung unserer App in fünf Sprachen verlief nahtlos. Ihr Team verstand kulturelle Nuancen, nicht nur Übersetzung. Sehr empfehlenswert!\""
+    },
+    "client3": {
+      "name": "Sophie Leclerc",
+      "company": "Marketing Direktorin, Mode Parisienne",
+      "content": "\"Ihre digitale Strategieberatung half uns, mit Zuversicht in neue europäische Märkte zu expandieren. Der mehrsprachige SEO-Ansatz lieferte beeindruckende Ergebnisse.\""
+    }
+  },
+  "contact": {
+    "title": "Kontakt Aufnehmen",
+    "subtitle": "Bereit, Ihr Unternehmen global zu erweitern? Kontaktieren Sie uns in einer unserer unterstützten Sprachen.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail",
+      "emailPlaceholder": "max@beispiel.de",
+      "language": "Bevorzugte Sprache",
+      "languages": {
+        "en": "Englisch",
+        "pt": "Portugiesisch",
+        "de": "Deutsch",
+        "fr": "Französisch",
+        "it": "Italienisch"
+      },
+      "service": "Interessierte Dienstleistung",
+      "services": {
+        "website": "Mehrsprachige Website-Entwicklung",
+        "consulting": "Digitale Strategieberatung",
+        "localization": "Content-Lokalisierung",
+        "seo": "SEO & Digitales Marketing",
+        "ecommerce": "E-Commerce-Lösungen",
+        "applocalization": "App-Lokalisierung"
+      },
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "submit": "Nachricht Senden",
+      "submitting": "Wird gesendet...",
+      "success": {
+        "title": "Nachricht Gesendet!",
+        "message": "Vielen Dank für Ihre Kontaktaufnahme. Wir werden uns in Kürze bei Ihnen melden."
+      },
+      "error": {
+        "title": "Fehler",
+        "message": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+      }
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "address": {
+        "title": "Adresse",
+        "line1": "Musterstraße 123",
+        "line2": "10115 Berlin, Deutschland"
+      },
+      "email": {
+        "title": "E-Mail",
+        "address": "info@houseofdigitalbusiness.de"
+      },
+      "phone": {
+        "title": "Telefon",
+        "number": "+49 30 1234567"
+      },
+      "hours": {
+        "title": "Geschäftszeiten",
+        "weekdays": "Montag - Freitag: 9:00 - 18:00",
+        "weekend": "Samstag - Sonntag: Geschlossen"
+      },
+      "social": {
+        "title": "Folgen Sie Uns"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Verbindung von Unternehmen weltweit durch innovative digitale Lösungen.",
+    "quickLinks": "Schnelllinks",
+    "services": "Dienstleistungen",
+    "links": {
+      "careers": "Karriere",
+      "blog": "Blog"
+    },
+    "services": {
+      "website": "Mehrsprachige Website-Entwicklung",
+      "consulting": "Digitale Strategieberatung",
+      "localization": "Content-Lokalisierung",
+      "seo": "SEO & Digitales Marketing",
+      "ecommerce": "E-Commerce-Lösungen",
+      "applocalization": "App-Lokalisierung"
+    },
+    "languages": {
+      "en": "Englisch",
+      "pt": "Portugiesisch",
+      "de": "Deutsch",
+      "fr": "Französisch",
+      "it": "Italienisch"
+    },
+    "copyright": "© {{year}} House of Digital Business. Alle Rechte vorbehalten.",
+    "legal": {
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Richtlinie"
+    }
+  },
+  "validation": {
+    "nameRequired": "Name ist erforderlich",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "messageMinLength": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  }
+}
