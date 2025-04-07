@@ -109,6 +109,17 @@
   "about": {
     "title": "Quem Somos",
     "subtitle": "A House of Digital Business ajuda empresas a navegar no cenário digital com expertise multilíngue e soluções inovadoras.",
+    "heroTitle": "Transformando Negócios, Conectando Culturas",
+    "heroSubtitle": "Descubra como a House of Digital Business tem impulsionado empresas globais através de soluções digitais inovadoras e expertise multilíngue.",
+    "heroButton": "Fale Conosco",
+    "stats": {
+      "years": "Anos de Experiência",
+      "clients": "Clientes Globais",
+      "countries": "Países Atendidos",
+      "satisfaction": "Satisfação dos Clientes"
+    },
+    "timelineTitle": "Nossa Jornada",
+    "timelineSubtitle": "Conheça a evolução da House of Digital Business e nossos marcos importantes desde a fundação.",
     "vision": {
       "title": "Nossa Visão",
       "text": "Eliminar barreiras digitais e conectar empresas globalmente através de tecnologia e expertise linguística."
