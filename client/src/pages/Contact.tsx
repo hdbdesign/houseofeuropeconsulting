@@ -142,32 +142,7 @@ const ContactPage = () => {
                 <ContactInfo />
               </motion.div>
               
-              {/* Map Section */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mt-10 mb-16"
-              >
-                {/* Map or Image */}
-                <motion.div 
-                  className="rounded-xl overflow-hidden shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.6902152382136!2d13.365696776992888!3d52.52377233527154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2zTXVzdGVyc3RyYcOfZSwgQmVybGluLCBHZXJtYW55!5e0!3m2!1sen!2sus!4v1617876400000!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="300" 
-                    style={{ border: 0 }} 
-                    allowFullScreen={false} 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="House of Digital Business Office - Berlin"
-                  ></iframe>
-                </motion.div>
-              </motion.div>
+              
             </div>
           </div>
         </section>
