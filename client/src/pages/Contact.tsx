@@ -148,14 +148,14 @@ const ContactPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.142361177107!2d-73.98731492439376!3d40.74881294268858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1679929193988!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.6902152382136!2d13.365696776992888!3d52.52377233527154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2zTXVzdGVyc3RyYcOfZSwgQmVybGluLCBHZXJtYW55!5e0!3m2!1sen!2sus!4v1617876400000!5m2!1sen!2sus" 
                     width="100%" 
                     height="300" 
                     style={{ border: 0 }} 
                     allowFullScreen={false} 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Office Location"
+                    title="House of Digital Business Office - Berlin"
                   ></iframe>
                 </motion.div>
               </motion.div>
