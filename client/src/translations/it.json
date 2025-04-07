@@ -257,6 +257,13 @@
       },
       "social": {
         "title": "Seguici"
+      },
+      "languages": {
+        "title": "Lingue Disponibili",
+        "list": "Supporto e servizi disponibili in inglese, portoghese, tedesco, francese e italiano"
+      },
+      "calendar": {
+        "title": "Panoramica Orari di Lavoro"
       }
     }
   },

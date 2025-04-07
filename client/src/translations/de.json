@@ -257,6 +257,13 @@
       },
       "social": {
         "title": "Folgen Sie Uns"
+      },
+      "languages": {
+        "title": "Verfügbare Sprachen",
+        "list": "Unterstützung und Dienstleistungen verfügbar in Englisch, Portugiesisch, Deutsch, Französisch und Italienisch"
+      },
+      "calendar": {
+        "title": "Arbeitszeiten Übersicht"
       }
     }
   },

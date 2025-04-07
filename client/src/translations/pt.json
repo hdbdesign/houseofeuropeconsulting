@@ -357,6 +357,13 @@
       },
       "social": {
         "title": "Siga-nos"
+      },
+      "languages": {
+        "title": "Idiomas Disponíveis",
+        "list": "Suporte e serviços disponíveis em Inglês, Português, Alemão, Francês e Italiano"
+      },
+      "calendar": {
+        "title": "Visão Geral do Horário"
       }
     }
   },

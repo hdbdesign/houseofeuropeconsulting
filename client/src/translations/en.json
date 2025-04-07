@@ -357,6 +357,13 @@
       },
       "social": {
         "title": "Follow Us"
+      },
+      "languages": {
+        "title": "Languages Available",
+        "list": "Support and services available in English, Portuguese, German, French, and Italian"
+      },
+      "calendar": {
+        "title": "Working Hours Overview"
       }
     }
   },
