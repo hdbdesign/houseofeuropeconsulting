@@ -99,12 +99,12 @@ const ServicesGrid = () => {
           {t('services.description')}
         </p>
       </motion.div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-foreground"> {/* Added text-foreground class */}
         {services.map((service) => (
           <motion.div
             key={service.id}
-            className="group relative backdrop-blur-lg bg-white/40 dark:bg-gray-800/40 rounded-xl overflow-hidden border border-white/20 dark:border-gray-700/30"
+            className="group relative backdrop-blur-lg bg-white/40 dark:bg-gray-800/40 rounded-xl overflow-hidden border border-white/20 dark:border-gray-700/30 bg-card text-card-foreground" {/* Added bg-card and text-card-foreground */}
             style={{ 
               backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.08) 100%)',
               boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.2)'
@@ -120,24 +120,24 @@ const ServicesGrid = () => {
             {/* Decorative gradient circles */}
             <div className={`absolute -top-12 -right-12 w-32 h-32 rounded-full bg-gradient-to-br ${service.color} opacity-20 blur-xl`}></div>
             <div className={`absolute -bottom-16 -left-10 w-40 h-40 rounded-full bg-gradient-to-tr ${service.color} opacity-10 blur-xl`}></div>
-            
+
             {/* Top Border Gradient */}
             <div className={`h-2 w-full bg-gradient-to-r ${service.color} z-10 relative`}></div>
-            
+
             <div className="p-8 relative z-10">
               {/* Icon with Gradient Background */}
               <div className={`mb-6 w-16 h-16 rounded-lg bg-gradient-to-br ${service.color} backdrop-blur-sm flex items-center justify-center text-white transform transition-transform duration-500 group-hover:rotate-6 shadow-lg`}>
                 {service.icon}
               </div>
-              
+
               <h3 className="font-heading font-bold text-xl md:text-2xl mb-4 text-gray-900 dark:text-white">
                 {t(service.titleKey)}
               </h3>
-              
+
               <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg leading-relaxed">
                 {t(service.descriptionKey)}
               </p>
-              
+
               {/* Features */}
               <div className="mb-8">
                 <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">
@@ -156,7 +156,7 @@ const ServicesGrid = () => {
                   ))}
                 </ul>
               </div>
-              
+
               {/* CTA with glass effect */}
               <div className="flex justify-between items-center p-3 rounded-lg bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm border border-white/30 dark:border-gray-700/30">
                 <div className="font-medium text-primary">
@@ -181,7 +181,7 @@ const ServicesGrid = () => {
           </motion.div>
         ))}
       </div>
-      
+
       {/* Additional Premium Services Banner */}
       <motion.div 
         className="mt-16 backdrop-blur-xl bg-primary/80 text-white rounded-3xl p-10 shadow-2xl relative overflow-hidden border border-white/20"
@@ -197,7 +197,7 @@ const ServicesGrid = () => {
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-white/40 rounded-full blur-xl"></div>
         <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-white/30 rounded-full blur-xl"></div>
-        
+
         {/* Content */}
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-6 md:mb-0 md:mr-8">
@@ -208,7 +208,7 @@ const ServicesGrid = () => {
               {t('services.premium.description')}
             </p>
           </div>
-          
+
           <Link href="/contact">
             <div className="whitespace-nowrap inline-flex items-center px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-medium rounded-lg border border-white/30 shadow-lg transition-colors duration-300">
               {t('services.premium.button')}
