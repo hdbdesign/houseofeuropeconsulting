@@ -140,10 +140,19 @@ const ContactPage = () => {
                 className="h-full"
               >
                 <ContactInfo />
-                
+              </motion.div>
+              
+              {/* Map Section */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-10 mb-16"
+              >
                 {/* Map or Image */}
                 <motion.div 
-                  className="mt-10 rounded-xl overflow-hidden shadow-lg"
+                  className="rounded-xl overflow-hidden shadow-lg"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
