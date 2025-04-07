@@ -42,7 +42,7 @@ const ContactPage = () => {
       
       <div className="pt-20 md:pt-24"> {/* Padding to account for fixed header */}
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary to-primary/80 overflow-hidden py-16 md:py-24">
+        <section className="relative bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden py-16 md:py-24">
           {/* Background patterns */}
           <div className="absolute inset-0 z-0 opacity-20">
             <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-20 -mt-20"></div>
@@ -246,7 +246,7 @@ const ContactPage = () => {
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
             <motion.div 
-              className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -35,7 +35,7 @@ const AboutPage = () => {
       
       <div className="pt-20 md:pt-24"> {/* Padding to account for fixed header */}
         {/* Hero Section for About Page */}
-        <section className="relative bg-gradient-to-br from-primary/90 to-primary overflow-hidden py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden py-20 md:py-32">
           <div className="absolute inset-0 z-0 opacity-10">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00eiIvPjwvZz48L2c+PC9zdmc+')] opacity-20"></div>
           </div>
@@ -185,7 +185,7 @@ const AboutPage = () => {
         <TeamSection />
         
         {/* Mission and Values Banner */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-primary/80 text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <motion.h2 

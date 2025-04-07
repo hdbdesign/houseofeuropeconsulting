@@ -53,7 +53,7 @@ const ServicesPage = () => {
       
       <div className="pt-20 md:pt-24"> {/* Padding to account for fixed header */}
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary to-primary/80 overflow-hidden py-20 md:py-32">
+        <section className="relative bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden py-20 md:py-32">
           {/* Background Elements */}
           <div className="absolute inset-0 z-0 overflow-hidden opacity-20">
             <div className="absolute w-96 h-96 rounded-full bg-white/20 -top-20 -left-20"></div>
@@ -288,7 +288,7 @@ const ServicesPage = () => {
         <TestimonialsSection />
         
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-primary">
+        <section className="py-16 md:py-24 bg-gradient-to-r from-blue-500 to-cyan-500">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

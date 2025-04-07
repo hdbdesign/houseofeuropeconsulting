@@ -39,15 +39,15 @@ const Hero = () => {
     }
   };
 
-  const gradientClasses = "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500";
+  const gradientClasses = "bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500";
 
   return (
     <section className="relative h-screen bg-background dark:bg-gray-900 overflow-hidden flex items-center justify-center">
       {/* Background animated elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 right-0 w-72 h-72 bg-purple-300 dark:bg-purple-700/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-cyan-300 dark:bg-cyan-700/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-10 left-10 w-64 h-64 bg-cyan-400/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-0 right-0 w-72 h-72 bg-blue-400/30 dark:bg-blue-600/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-cyan-300/40 dark:bg-cyan-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="container relative z-10 px-4 mx-auto">
@@ -92,13 +92,20 @@ const Hero = () => {
           >
             <TypeAnimation
               sequence={[
+                // Português
                 'Soluções digitais multilíngues para negócios globais',
                 2000,
-                'Conectando empresas além das fronteiras',
+                // Inglês
+                'Multilingual digital solutions for global businesses',
                 2000,
-                'Estratégias inovadoras para crescimento internacional',
+                // Alemão
+                'Mehrsprachige digitale Lösungen für globale Unternehmen',
                 2000,
-                'Transformação digital com sensibilidade cultural',
+                // Francês
+                'Solutions numériques multilingues pour entreprises mondiales',
+                2000,
+                // Italiano
+                'Soluzioni digitali multilingue per aziende globali',
                 2000
               ]}
               wrapper="span"
@@ -144,19 +151,19 @@ const Hero = () => {
               transition: { delay: 0.8, duration: 0.6 }
             }}
           >
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 font-medium">TRUSTED BY COMPANIES WORLDWIDE</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 font-medium">{t('hero.trusted')}</p>
             <div className="flex justify-center space-x-8">
               <div className="text-center">
                 <span className="block font-bold text-3xl text-primary">500+</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Projects</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.projects')}</span>
               </div>
               <div className="text-center">
                 <span className="block font-bold text-3xl text-primary">50+</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Countries</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.countries')}</span>
               </div>
               <div className="text-center">
                 <span className="block font-bold text-3xl text-primary">98%</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Satisfaction</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.satisfaction')}</span>
               </div>
             </div>
           </motion.div>
