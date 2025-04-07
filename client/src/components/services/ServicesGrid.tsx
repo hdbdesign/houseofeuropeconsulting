@@ -104,7 +104,7 @@ const ServicesGrid = () => {
         {services.map((service) => (
           <motion.div
             key={service.id}
-            className="group relative backdrop-blur-lg bg-white/40 dark:bg-gray-800/40 rounded-xl overflow-hidden border border-white/20 dark:border-gray-700/30 bg-card text-card-foreground" {/* Added bg-card and text-card-foreground */}
+            className="group relative backdrop-blur-lg bg-white/40 dark:bg-gray-800/40 rounded-xl overflow-hidden border border-white/20 dark:border-gray-700/30 bg-card text-card-foreground"
             style={{ 
               backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.08) 100%)',
               boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.2)'
