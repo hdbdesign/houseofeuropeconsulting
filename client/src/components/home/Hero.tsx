@@ -138,9 +138,9 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Stats section with clearer labels and better contrast */}
+          {/* Stats section simplified */}
           <motion.div 
-            className="mt-24 pt-10 border-t border-gray-300/30 dark:border-gray-700/30 w-full max-w-4xl mx-auto"
+            className="mt-24 pt-10 border-t border-gray-300/10 dark:border-gray-700/10 w-full max-w-4xl mx-auto"
             variants={itemVariants}
             initial={{ opacity: 0, y: 20 }}
             animate={{ 
@@ -149,26 +149,18 @@ const Hero = () => {
               transition: { delay: 0.8, duration: 0.6 }
             }}
           >
-            <div className="flex flex-col w-full items-center">
-              <div className="inline-flex items-center justify-center mb-10 px-5 py-2 bg-primary/5 dark:bg-primary/10 backdrop-blur-sm rounded-full">
-                <span className="text-sm font-semibold uppercase tracking-wider text-primary dark:text-primary-foreground">
-                  {t('hero.trusted')}
-                </span>
+            <div className="flex justify-around w-full px-4 md:px-10">
+              <div className="text-center">
+                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 mb-4">500+</span>
+                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.projects')}</span>
               </div>
-              
-              <div className="flex justify-around w-full px-4 md:px-10">
-                <div className="text-center">
-                  <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 mb-4">500+</span>
-                  <span className="block text-sm md:text-base font-medium text-gray-700 dark:text-gray-200">{t('hero.stats.projects')}</span>
-                </div>
-                <div className="text-center">
-                  <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">50+</span>
-                  <span className="block text-sm md:text-base font-medium text-gray-700 dark:text-gray-200">{t('hero.stats.countries')}</span>
-                </div>
-                <div className="text-center">
-                  <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500 mb-4">98%</span>
-                  <span className="block text-sm md:text-base font-medium text-gray-700 dark:text-gray-200">{t('hero.stats.satisfaction')}</span>
-                </div>
+              <div className="text-center">
+                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">50+</span>
+                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.countries')}</span>
+              </div>
+              <div className="text-center">
+                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500 mb-4">98%</span>
+                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.satisfaction')}</span>
               </div>
             </div>
           </motion.div>
