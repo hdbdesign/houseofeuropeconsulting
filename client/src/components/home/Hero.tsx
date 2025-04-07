@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { businessImages } from '@/config/imageUrls';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -30,10 +31,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="pt-0 pb-0 bg-background dark:bg-gray-900">
+      <div className="container mx-auto px-4 h-[85vh] flex items-center">
         <motion.div 
-          className="flex flex-col md:flex-row items-center"
+          className="flex flex-col md:flex-row items-center justify-between w-full"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -42,8 +43,23 @@ const Hero = () => {
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-4">
               {t('hero.title')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
-              {t('hero.subtitle')}
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+              <TypeAnimation
+                sequence={[
+                  'Multilingual digital solutions for global businesses',
+                  2000,
+                  'Connecting companies beyond borders',
+                  2000,
+                  'Innovative strategies for international growth',
+                  2000,
+                  'Digital transformation with cultural sensitivity',
+                  2000
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ display: 'inline-block' }}
+                repeat={Infinity}
+              />
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Link href="/services">

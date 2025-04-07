@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSelector from './LanguageSelector';
 import { navigationItems } from '@/config/navigation';
 import { motion } from 'framer-motion';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -27,14 +28,14 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 bg-white z-50 hidden md:block ${
+      className={`fixed top-0 left-0 right-0 bg-background z-50 hidden md:block ${
         scrolled ? 'shadow-md' : ''
-      } transition-shadow duration-300`}
+      } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <motion.a 
+          <motion.div 
             className="flex items-center cursor-pointer"
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
@@ -43,7 +44,7 @@ const Header = () => {
               <span className="text-white font-bold text-xl">H</span>
             </div>
             <span className="font-heading font-bold text-primary text-lg">House of Digital Business</span>
-          </motion.a>
+          </motion.div>
         </Link>
         
         {/* Desktop Navigation */}
@@ -52,7 +53,7 @@ const Header = () => {
             {navigationItems.map((item) => (
               <li key={item.path}>
                 <Link href={item.path}>
-                  <motion.a 
+                  <motion.div 
                     className={`${
                       location === item.path ? 'text-primary' : 'hover:text-primary'
                     } transition-colors duration-300 cursor-pointer`}
@@ -60,15 +61,18 @@ const Header = () => {
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
                     {t(item.labelKey)}
-                  </motion.a>
+                  </motion.div>
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
         
-        {/* Language Selector */}
-        <LanguageSelector />
+        {/* Theme Toggle and Language Selector */}
+        <div className="flex items-center space-x-3">
+          <ThemeToggle />
+          <LanguageSelector />
+        </div>
       </div>
     </header>
   );
