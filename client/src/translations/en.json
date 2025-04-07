@@ -104,7 +104,13 @@
     "subtitle": "We connect businesses across borders with innovative digital strategies and multilingual solutions.",
     "primaryBtn": "Our Services",
     "secondaryBtn": "Contact Us",
-    "trustedBy": "Trusted by global brands"
+    "trustedBy": "Trusted by global brands",
+    "trusted": "Trusted by global brands",
+    "stats": {
+      "projects": "Projects Completed",
+      "countries": "Countries Served",
+      "satisfaction": "Client Satisfaction"
+    }
   },
   "about": {
     "title": "Who We Are",

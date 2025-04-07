@@ -29,7 +29,13 @@
     "subtitle": "Nous connectons les entreprises au-delà des frontières avec des stratégies numériques innovantes et des solutions multilingues.",
     "primaryBtn": "Nos Services",
     "secondaryBtn": "Contactez-Nous",
-    "trustedBy": "Fait confiance par des marques mondiales"
+    "trustedBy": "Fait confiance par des marques mondiales",
+    "trusted": "Fait confiance par des marques mondiales",
+    "stats": {
+      "projects": "Projets Réalisés",
+      "countries": "Pays Desservis",
+      "satisfaction": "Satisfaction Client"
+    }
   },
   "about": {
     "title": "Qui Nous Sommes",

@@ -29,7 +29,13 @@
     "subtitle": "Connettiamo aziende attraverso i confini con strategie digitali innovative e soluzioni multilingue.",
     "primaryBtn": "I Nostri Servizi",
     "secondaryBtn": "Contattaci",
-    "trustedBy": "Scelto da marchi globali"
+    "trustedBy": "Scelto da marchi globali",
+    "trusted": "Scelto da marchi globali",
+    "stats": {
+      "projects": "Progetti Completati",
+      "countries": "Paesi Serviti",
+      "satisfaction": "Soddisfazione Clienti"
+    }
   },
   "about": {
     "title": "Chi Siamo",

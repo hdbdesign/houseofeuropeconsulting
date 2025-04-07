@@ -29,7 +29,13 @@
     "subtitle": "Wir verbinden Unternehmen über Grenzen hinweg mit innovativen digitalen Strategien und mehrsprachigen Lösungen.",
     "primaryBtn": "Unsere Dienstleistungen",
     "secondaryBtn": "Kontakt",
-    "trustedBy": "Vertraut von globalen Marken"
+    "trustedBy": "Vertraut von globalen Marken",
+    "trusted": "Vertraut von globalen Marken",
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "countries": "Betreute Länder",
+      "satisfaction": "Kundenzufriedenheit"
+    }
   },
   "about": {
     "title": "Wer Wir Sind",
