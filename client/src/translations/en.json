@@ -138,6 +138,7 @@
       "title": "Our Values",
       "text": "Innovation, integrity, cultural understanding, and excellence in everything we do.",
       "subtitle": "Our core principles guide everything we do",
+      "label": "Core Values",
       "coreValues": {
         "innovation": {
           "title": "Innovation",

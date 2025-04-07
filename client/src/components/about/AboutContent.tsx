@@ -116,42 +116,68 @@ const AboutContent = () => {
         </div>
       </div>
 
-      {/* Core Values Grid */}
       <motion.div 
-        className="mt-24 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl"
+        className="mt-24 backdrop-blur-xl bg-white/10 dark:bg-gray-800/20 rounded-3xl p-10 border border-white/30 dark:border-gray-700/30 relative overflow-hidden"
+        style={{ 
+          backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%)',
+          boxShadow: '0 20px 60px 0 rgba(31, 38, 135, 0.25)' 
+        }}
         variants={itemVariants}
       >
-        <div className="text-center mb-12">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-primary mb-4">
-            {t('about.values.title')}
-          </h2>
-          <p className="max-w-2xl mx-auto text-gray-600">
-            {t('about.values.subtitle')}
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Object.entries(valueIcons).map(([key, icon], index) => (
-            <motion.div
-              key={key}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-              whileHover={{ y: -5 }}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: 0.1 + (index * 0.1) }}
-            >
-              <div className="bg-white dark:bg-gray-700 w-12 h-12 rounded-lg shadow-md flex items-center justify-center mb-4">
-                {icon}
-              </div>
-              <h3 className="font-heading font-semibold text-lg mb-2">
-                {t(`about.values.coreValues.${key}.title`)}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                {t(`about.values.coreValues.${key}.text`)}
-              </p>
-            </motion.div>
-          ))}
+        <div className="absolute -top-20 -left-20 w-40 h-40 bg-gradient-to-br from-cyan-300/20 to-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-gradient-to-tr from-blue-500/20 to-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-10 h-10 bg-white/30 rounded-full blur-xl"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-80 pointer-events-none"></div>
+
+        <div className="relative z-10">
+          <div className="text-center mb-14">
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-60 h-60 opacity-10">
+              <div className="w-32 h-32 bg-cyan-400 rounded-full blur-3xl absolute"></div>
+              <div className="w-32 h-32 bg-blue-500 rounded-full blur-3xl absolute left-10"></div>
+            </div>
+            
+            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+              {t('about.values.label')}
+            </span>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-800 dark:text-white mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+              {t('about.values.title')}
+            </h2>
+            <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
+              {t('about.values.subtitle')}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {Object.entries(valueIcons).map(([key, icon], index) => (
+              <motion.div
+                key={key}
+                className="relative backdrop-blur-md bg-white/20 dark:bg-gray-900/30 p-6 rounded-xl border border-white/20 dark:border-gray-700/30 shadow-xl hover:shadow-2xl transition-all duration-300"
+                style={{ 
+                  backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+                  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)' 
+                }}
+                whileHover={{ y: -8, transition: { type: "spring", stiffness: 300 } }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.1 + (index * 0.1) }}
+              >
+                <div className="absolute -top-3 -right-3 w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full blur-xl"></div>
+                <div className="relative z-10">
+                  <div className="bg-white/80 dark:bg-gray-800/80 w-14 h-14 rounded-xl shadow-lg backdrop-blur-sm border border-white/40 dark:border-gray-700/40 flex items-center justify-center mb-6">
+                    {icon}
+                  </div>
+                  <h3 className="font-heading font-semibold text-lg mb-3 text-gray-800 dark:text-white">
+                    {t(`about.values.coreValues.${key}.title`)}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    {t(`about.values.coreValues.${key}.text`)}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </motion.div>
     </motion.div>
