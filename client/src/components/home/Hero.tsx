@@ -57,24 +57,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
         >
-          {/* Enhanced icon section with better spacing */}
-          <motion.div className="mb-8 flex space-x-6" variants={itemVariants}>
-            {[RocketIcon, GlobeIcon, CodeIcon, BrainCircuitIcon, ZapIcon].map((Icon, i) => (
-              <motion.div 
-                key={i}
-                variants={iconVariants}
-                className="p-4 bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-lg backdrop-blur-sm"
-                whileHover={{ 
-                  y: -15, 
-                  rotate: [0, 5, -5, 0],
-                  scale: 1.1,
-                  transition: { duration: 0.5 } 
-                }}
-              >
-                <Icon size={32} className="text-primary" />
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Removed the icon section as requested */}
 
           {/* Enhanced headline with badge */}
           <motion.div

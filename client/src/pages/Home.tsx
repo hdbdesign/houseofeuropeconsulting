@@ -42,12 +42,12 @@ const HomePage = () => {
         </section>
 
         {/* About Section Preview */}
-        <section id="about-preview" className="py-16 md:py-24 bg-neutralLight">
+        <section id="about-preview" className="py-16 md:py-24 bg-white dark:bg-gray-900">
           <AboutContent />
         </section>
 
         {/* Services Section Preview */}
-        <section id="services-preview" className="py-16 md:py-24 bg-white">
+        <section id="services-preview" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
           <ServicesGrid />
         </section>
 

@@ -5,13 +5,13 @@ import { FaGoogle, FaAmazon, FaMicrosoft, FaApple, FaSalesforce } from 'react-ic
 const Clients = () => {
   const { t } = useTranslation();
 
-  // Enhanced client logos with specific colors and sizes for consistency
+  // Client logos with consistent sizes and no labels (moved to the component rendering)
   const clientLogos = [
-    { id: 1, Icon: FaGoogle, size: 'w-32', color: 'hover:text-[#4285F4]', label: 'Google' },
-    { id: 2, Icon: FaAmazon, size: 'w-32', color: 'hover:text-[#FF9900]', label: 'Amazon' },
-    { id: 3, Icon: FaMicrosoft, size: 'w-32', color: 'hover:text-[#00A4EF]', label: 'Microsoft' },
-    { id: 4, Icon: FaApple, size: 'w-28', color: 'hover:text-[#A2AAAD]', label: 'Apple' },
-    { id: 5, Icon: FaSalesforce, size: 'w-32', color: 'hover:text-[#00A1E0]', label: 'Salesforce' }
+    { id: 1, Icon: FaGoogle, size: 'w-32', color: 'hover:text-[#4285F4]' },
+    { id: 2, Icon: FaAmazon, size: 'w-32', color: 'hover:text-[#FF9900]' },
+    { id: 3, Icon: FaMicrosoft, size: 'w-32', color: 'hover:text-[#00A4EF]' },
+    { id: 4, Icon: FaApple, size: 'w-28', color: 'hover:text-[#A2AAAD]' },
+    { id: 5, Icon: FaSalesforce, size: 'w-32', color: 'hover:text-[#00A1E0]' }
   ];
 
   // Enhanced animations for better flow
@@ -50,28 +50,40 @@ const Clients = () => {
       >
         {/* Client logos with better presentation and layout */}
         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
-          {clientLogos.map((client) => (
+          {clientLogos.map((client, index) => (
             <motion.div 
               key={client.id}
-              className="flex flex-col items-center"
+              className="filter grayscale hover:grayscale-0 text-gray-500 dark:text-gray-400 flex items-center justify-center"
               variants={itemVariants}
+              whileHover={{ 
+                scale: 1.15,
+                y: -5, 
+                transition: { duration: 0.3 } 
+              }}
+              whileTap={{ scale: 0.95 }}
             >
-              <motion.div
-                className={`h-12 w-auto filter grayscale hover:grayscale-0 text-gray-500 dark:text-gray-400 ${client.color} transition-all duration-300`}
-                whileHover={{ 
-                  scale: 1.15, 
-                  y: -5,
-                  transition: { duration: 0.3 } 
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <client.Icon className={`h-full ${client.size}`} />
-              </motion.div>
-              <span className="mt-3 text-xs text-gray-500 dark:text-gray-400 font-medium opacity-60">
-                {client.label}
-              </span>
+              <client.Icon className={`h-12 ${client.size} ${client.color} transition-all duration-300`} />
             </motion.div>
           ))}
+          
+          {/* Company names shown below in a separate row */}
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 mt-8 w-full">
+            <div className="text-center w-32">
+              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Google</span>
+            </div>
+            <div className="text-center w-32">
+              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Amazon</span>
+            </div>
+            <div className="text-center w-32">
+              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Microsoft</span>
+            </div>
+            <div className="text-center w-28">
+              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Apple</span>
+            </div>
+            <div className="text-center w-32">
+              <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Salesforce</span>
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>
