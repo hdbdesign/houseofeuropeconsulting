@@ -21,6 +21,7 @@
     "home": "Startseite",
     "about": "Über Uns",
     "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
     "contact": "Kontakt",
     "language": "DE"
   },
@@ -35,6 +36,53 @@
       "projects": "Abgeschlossene Projekte",
       "countries": "Betreute Länder",
       "satisfaction": "Kundenzufriedenheit"
+    },
+    "titleLine1": "Digitale Lösungen",
+    "titleLine2": "für globale Unternehmen",
+    "subtitle": "Wir verbinden Unternehmen über Grenzen hinweg mit innovativen digitalen Strategien und mehrsprachigen Lösungen.",
+    "primaryCTA": "Unsere Dienstleistungen",
+    "secondaryCTA": "Kontakt",
+    "satisfaction": "Zufriedenheit"
+  },
+  "home": {
+    "stats": {
+      "title": "Bewährte Ergebnisse",
+      "subtitle": "Zahlen, die unsere globale Wirkung demonstrieren",
+      "clients": "Betreute Kunden",
+      "countries": "Erreichte Länder",
+      "years": "Jahre Erfahrung",
+      "satisfaction": "Kundenzufriedenheit"
+    },
+    "about": {
+      "subtitle": "Wer Wir Sind",
+      "title": "House of Digital Innovation"
+    },
+    "process": {
+      "title": "Unser Prozess",
+      "subtitle": "Wie wir die digitale Präsenz Ihres Unternehmens für globale Reichweite transformieren",
+      "steps": {
+        "1": {
+          "title": "Entdeckung",
+          "description": "Wir verstehen die Bedürfnisse Ihres Unternehmens und die Ziele für Ihre mehrsprachige digitale Präsenz tiefgehend."
+        },
+        "2": {
+          "title": "Strategie",
+          "description": "Wir entwickeln einen maßgeschneiderten Plan, der kulturelle und technische Aspekte für jeden Zielmarkt berücksichtigt."
+        },
+        "3": {
+          "title": "Umsetzung",
+          "description": "Wir erstellen innovative und kulturell relevante digitale Lösungen mit den besten verfügbaren Technologien."
+        },
+        "4": {
+          "title": "Optimierung",
+          "description": "Wir überwachen und verbessern Ihre digitale Präsenz kontinuierlich, um konsistente Ergebnisse in allen Sprachen zu gewährleisten."
+        }
+      }
+    },
+    "cta": {
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "subtitle": "Bereit, Ihre globale digitale Präsenz zu transformieren?",
+      "button": "Projekt starten"
     }
   },
   "about": {
@@ -109,13 +157,18 @@
         }
       }
     },
-    "teamTitle": "Unser internationales Team"
+    "teamTitle": "Unser internationales Team",
+    "established": "Gegr. 2008",
+    "content": {
+      "title": "Innovative digitale Lösungen über Kulturen hinweg",
+      "subtitle": "Wir bringen globale Expertise, lokales Wissen und innovative Technologie zusammen, um Unternehmen dabei zu helfen, auf internationalen Märkten erfolgreich zu sein."
+    }
   },
   "team": {
     "member1": {
-      "name": "Sarah Johnson",
-      "role": "CEO & Gründerin",
-      "description": "Spezialisiert auf internationale Geschäftsstrategie und digitale Transformation."
+      "name": "João Paulo",
+      "role": "CEO & Gründer",
+      "description": "Experte für digitale Transformation und internationale Geschäftsstrategie."
     },
     "member2": {
       "name": "Marco Bianchi",
@@ -136,19 +189,49 @@
   "services": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Umfassende digitale Lösungen, die auf Ihre globalen Geschäftsbedürfnisse in fünf Sprachen zugeschnitten sind.",
+    "description": "Umfassende digitale Lösungen, die auf die Bedürfnisse Ihres globalen Unternehmens in fünf Sprachen zugeschnitten sind.",
     "learnMore": "Mehr erfahren",
     "startsAt": "Ab",
+    "viewPricing": "Preise anzeigen",
     "features": "Funktionen",
+    "popular": "Am beliebtesten",
+    "branding": {
+      "title": "Art Direction",
+      "brief": "Erstellung konsistenter und wirkungsvoller visueller Identitäten, die Markenwerte kommunizieren und mit globalem Publikum in Verbindung treten."
+    },
+    "graphic": {
+      "title": "Grafikdesign",
+      "brief": "Entwicklung hochwertiger visueller Materialien, die Ihre Botschaft in jeder Sprache mit Klarheit und Eleganz vermitteln."
+    },
+    "video": {
+      "title": "Videografie",
+      "brief": "Produktion von ansprechendem audiovisuellem Content, der sprachliche und kulturelle Barrieren mit kraftvollem visuellem Storytelling überwindet."
+    },
+    "ai": {
+      "title": "KI-Lösungen",
+      "brief": "Integration von Technologien der künstlichen Intelligenz zur Optimierung mehrsprachiger Kommunikation und Personalisierung digitaler Erlebnisse."
+    },
+    "webdev": {
+      "title": "Webentwicklung",
+      "brief": "Wir erstellen moderne, responsive und mehrsprachige Websites mit außergewöhnlicher Benutzererfahrung für globale Reichweite."
+    },
+    "software": {
+      "title": "Softwareentwicklung",
+      "brief": "Wir entwickeln maßgeschneiderte Anwendungen und Systeme, die den spezifischen Anforderungen Ihres internationalen Unternehmens entsprechen."
+    },
     "items": {
-      "price1": "€1499",
-      "price2": "€1999",
-      "price3": "€2499",
+      "price1": "€1.499",
+      "price2": "€1.999",
+      "price3": "€2.499",
+      "price4": "€1.899",
       "feature1_1": "Responsives Design für alle Geräte",
       "feature1_2": "Professionelle Übersetzung in 5 Sprachen",
       "feature1_3": "Mehrsprachige SEO-Unterstützung",
+      "feature1_4": "Laufender technischer Support in 5 Sprachen",
       "feature2_1": "Maßgeschneiderte strategische Planung",
       "feature2_2": "Internationale Marktanalyse",
       "feature2_3": "Beratung zur kulturellen Anpassung",
+      "feature2_4": "Regelmäßige Updates und Verbesserungen",
       "feature3_1": "Mehrsprachige Web- und Mobile-App",
       "feature3_2": "Integration mit bestehenden Systemen",
       "feature3_3": "Technischer Support in allen Sprachen",
@@ -176,6 +259,11 @@
         "title": "App-Lokalisierung",
         "description": "Komplette Lokalisierungsdienste für mobile und Web-Anwendungen in mehreren Sprachen und Märkten."
       }
+    },
+    "premium": {
+      "title": "Premium Digitale Lösungen",
+      "description": "Erleben Sie unsere höchste Stufe digitaler Dienstleistungen mit erweiterten Funktionen, Prioritäts-Support und umfassenden mehrsprachigen Lösungen.",
+      "button": "Premium-Zugang erhalten"
     }
   },
   "testimonials": {
@@ -301,5 +389,91 @@
     "nameRequired": "Name ist erforderlich",
     "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "messageMinLength": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "portfolio": {
+    "title": "Unser Portfolio",
+    "subtitle": "Projekte, die unsere Expertise in mehrsprachigen digitalen Lösungen zeigen",
+    "heroTitle": "Ideen in globale digitale Erlebnisse umwandeln",
+    "heroSubtitle": "Entdecken Sie unsere Sammlung innovativer Projekte, die Unternehmen und Zielgruppen über verschiedene Sprachen und Kulturen hinweg verbinden",
+    "heroButton": "Kontaktieren Sie uns",
+    "projectsTitle": "Ausgewählte Projekte", 
+    "searchPlaceholder": "Projekte suchen...",
+    "viewDetails": "Details ansehen",
+    "viewProject": "Projekt ansehen",
+    "viewAllButton": "Alle Projekte ansehen",
+    "loadMoreButton": "Mehr laden",
+    "noResults": {
+      "title": "Keine Projekte gefunden",
+      "description": "Wir konnten keine Projekte finden, die Ihren Suchkriterien entsprechen.",
+      "resetButton": "Filter Zurücksetzen"
+    },
+    "process": {
+      "title": "Unser Ansatz",
+      "subtitle": "Wie wir Ihre Vision in eine wirkungsvolle mehrsprachige digitale Präsenz umwandeln",
+      "steps": {
+        "1": {
+          "title": "Entdeckung",
+          "description": "Wir verstehen Ihre Bedürfnisse, Geschäftsziele und internationale Zielgruppe."
+        },
+        "2": {
+          "title": "Strategie",
+          "description": "Wir entwickeln einen Plan, der auf die kulturellen Besonderheiten jedes Marktes zugeschnitten ist."
+        },
+        "3": {
+          "title": "Gestaltung",
+          "description": "Wir bauen innovative digitale Lösungen mit Fokus auf mehrsprachige Benutzererfahrung."
+        },
+        "4": {
+          "title": "Optimierung",
+          "description": "Wir verbessern kontinuierlich, um Leistung und kulturelle Relevanz in allen Märkten zu gewährleisten."
+        }
+      }
+    },
+    "filters": {
+      "title": "Filter",
+      "all": "Alle",
+      "branding": "Markenbildung",
+      "design": "Design",
+      "video": "Video",
+      "ai": "KI"
+    },
+    "categories": {
+      "branding": "Markenbildung",
+      "design": "Design",
+      "video": "Video",
+      "ai": "KI"
+    },
+    "items": {
+      "1": {
+        "title": "Multinationale Visuelle Identität",
+        "category": "branding",
+        "description": "Entwicklung einer konsistenten visuellen Identität für ein Technologieunternehmen in 15 Ländern, unter Berücksichtigung kultureller Nuancen bei gleichzeitiger Wahrung der Markeneinheit."
+      },
+      "2": {
+        "title": "Mehrsprachige E-Commerce-Plattform",
+        "category": "design",
+        "description": "Design und Implementierung der Benutzererfahrung für eine E-Commerce-Plattform in 5 Sprachen mit spezifischen kulturellen Anpassungen für jeden Markt."
+      },
+      "3": {
+        "title": "Globale Audiovisuelle Kampagne",
+        "category": "video",
+        "description": "Produktion einer Reihe von Werbevideos für verschiedene internationale Märkte, mit professioneller Untertitelung und kultureller Anpassung der Inhalte."
+      },
+      "4": {
+        "title": "Mehrsprachiger Virtueller Assistent",
+        "category": "ai",
+        "description": "Entwicklung einer KI-basierten Servicelösung, die in 5 Sprachen natürlich interagieren kann, mit Verständnis für spezifische kulturelle Ausdrücke."
+      },
+      "5": {
+        "title": "Rebranding für Globale Expansion",
+        "category": "branding",
+        "description": "Neugestaltung der Markenidentität für ein international expandierendes Unternehmen, mit Anpassungen für verschiedene Märkte bei gleichzeitiger Wahrung visueller Kohärenz."
+      },
+      "6": {
+        "title": "Mehrsprachiges Design-System",
+        "category": "design",
+        "description": "Erstellung eines kompletten Design-Systems mit anpassbaren Komponenten für verschiedene Sprachen, einschließlich RTL und typografischer Besonderheiten jeder Sprache."
+      }
+    }
   }
 }

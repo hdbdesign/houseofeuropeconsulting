@@ -17,6 +17,89 @@
       "description": "Entre em contato com a House of Digital Business em qualquer um dos nossos idiomas suportados para suas necessidades digitais."
     }
   },
+  "home": {
+    "hero": {
+      "titleLine1": "Soluções Digitais",
+      "titleLine2": "para Empresas Globais",
+      "subtitle": "Conectamos empresas além das fronteiras com estratégias digitais inovadoras e soluções multilíngues.",
+      "primaryCTA": "Nossos Serviços",
+      "secondaryCTA": "Fale Conosco",
+      "satisfaction": "Satisfação"
+    },
+    "stats": {
+      "title": "Resultados Comprovados",
+      "subtitle": "Números que demonstram nosso impacto global",
+      "clients": "Clientes Atendidos",
+      "countries": "Países Alcançados",
+      "years": "Anos de Experiência",
+      "satisfaction": "Satisfação dos Clientes"
+    },
+    "about": {
+      "subtitle": "Quem Somos",
+      "title": "House of Digital Innovation"
+    },
+    "values": {
+      "subtitle": "Nossos Valores",
+      "title": "O Que Nos Impulsiona",
+      "description": "Nossos valores definem quem somos e orientam tudo o que fazemos. Eles moldam nossa cultura, impulsionam nossas decisões e garantem que entreguemos resultados excepcionais.",
+      "philosophy": "\"Acreditamos em criar experiências digitais que transcendem fronteiras, conectando empresas com audiências globais através de soluções multilíngues inovadoras.\"",
+      "ceo": "Washington - Fundador & CEO",
+      "innovation": {
+        "title": "Inovação",
+        "description": "Expandindo fronteiras com soluções inovadoras e pensamento criativo."
+      },
+      "global": {
+        "title": "Mentalidade Global",
+        "description": "Criando soluções multilíngues que conectam negócios além das fronteiras."
+      },
+      "excellence": {
+        "title": "Excelência",
+        "description": "Entregando qualidade excepcional em cada projeto que realizamos."
+      },
+      "collaboration": {
+        "title": "Colaboração",
+        "description": "Trabalhando em conjunto com clientes para alcançar objetivos e sucesso compartilhados."
+      }
+    },
+    "services": {
+      "subtitle": "O Que Fazemos",
+      "title": "Soluções Digitais Transformadoras",
+      "description": "Soluções digitais abrangentes que ajudam empresas a estabelecer uma presença poderosa em diferentes idiomas e mercados. Do branding à implementação de IA, entregamos excelência em cada etapa.",
+      "viewAllBtn": "Explorar Todos os Serviços"
+    },
+    "clients": {
+      "subtitle": "Marcas de Confiança",
+      "title": "Impulsionando Marcas Inovadoras",
+      "description": "Temos ajudado empresas de diversos setores a transformar sua presença digital."
+    },
+    "cta": {
+      "title": "Vamos trabalhar juntos",
+      "subtitle": "Pronto para transformar sua presença digital global?",
+      "button": "Iniciar projeto"
+    },
+    "process": {
+      "title": "Nosso Processo",
+      "subtitle": "Como transformamos a presença digital da sua empresa para um alcance global",
+      "steps": {
+        "1": {
+          "title": "Descoberta",
+          "description": "Entendemos profundamente as necessidades do seu negócio e os objetivos da sua presença digital multilíngue."
+        },
+        "2": {
+          "title": "Estratégia",
+          "description": "Desenvolvemos um plano personalizado que considera aspectos culturais e técnicos para cada mercado-alvo."
+        },
+        "3": {
+          "title": "Implementação",
+          "description": "Criamos soluções digitais inovadoras e culturalmente relevantes usando as melhores tecnologias disponíveis."
+        },
+        "4": {
+          "title": "Otimização",
+          "description": "Monitoramos continuamente e melhoramos sua presença digital para garantir resultados consistentes em todos os idiomas."
+        }
+      }
+    }
+  },
   "servicesPage": {
     "heroTitle": "Serviços de Negócios Digitais",
     "heroSubtitle": "Soluções digitais multilíngues completas para negócios globais",
@@ -96,14 +179,15 @@
     "home": "Início",
     "about": "Quem Somos",
     "services": "Serviços",
+    "portfolio": "Portfólio",
     "contact": "Contato",
     "language": "PT"
   },
   "hero": {
-    "title": "Soluções Digitais para Negócios Globais",
+    "title": "Soluções Digitais para Empresas Globais",
     "subtitle": "Conectamos empresas além das fronteiras com estratégias digitais inovadoras e soluções multilíngues.",
     "primaryBtn": "Nossos Serviços",
-    "secondaryBtn": "Contato",
+    "secondaryBtn": "Fale Conosco",
     "trustedBy": "Confiado por marcas globais",
     "trusted": "Confiado por marcas globais",
     "stats": {
@@ -196,13 +280,18 @@
       "title": "Nossa Missão é Seu Sucesso Global",
       "subtitle": "Ajudamos empresas a prosperar em mercados internacionais com soluções digitais inteligentes",
       "button": "Fale Conosco"
+    },
+    "established": "Fundada em 2008",
+    "content": {
+      "title": "Soluções Digitais Inovadoras Através das Culturas",
+      "subtitle": "Reunimos expertise global, conhecimento local e tecnologia inovadora para ajudar empresas a prosperarem em mercados internacionais."
     }
   },
   "team": {
     "member1": {
-      "name": "Sarah Johnson",
-      "role": "CEO e Fundadora",
-      "description": "Especializada em estratégia de negócios internacionais e transformação digital."
+      "name": "João Paulo",
+      "role": "CEO e Fundador",
+      "description": "Especialista em transformação digital e estratégia de negócios internacionais."
     },
     "member2": {
       "name": "Marco Bianchi",
@@ -222,26 +311,53 @@
   },
   "services": {
     "title": "Nossos Serviços",
-    "subtitle": "Soluções digitais abrangentes adaptadas às necessidades do seu negócio global em cinco idiomas.",
+    "subtitle": "Soluções digitais completas adaptadas às necessidades da sua empresa global em cinco idiomas.",
+    "description": "Soluções digitais completas adaptadas às necessidades da sua empresa global em cinco idiomas.",
     "learnMore": "Saiba mais",
     "startsAt": "A partir de",
-    "features": "Recursos",
+    "viewPricing": "Ver preços",
+    "features": "Características",
+    "popular": "Mais popular",
+    "branding": {
+      "title": "Art Direction",
+      "brief": "Criação de identidades visuais consistentes e impactantes que comunicam valores de marca e conectam-se com o público global."
+    },
+    "graphic": {
+      "title": "Design Gráfico",
+      "brief": "Desenvolvimento de materiais visuais de alta qualidade que transmitem sua mensagem com clareza e elegância em qualquer idioma."
+    },
+    "video": {
+      "title": "Videografia",
+      "brief": "Produção de conteúdo audiovisual envolvente que supera barreiras linguísticas e culturais com storytelling visual poderoso."
+    },
+    "ai": {
+      "title": "Soluções de IA",
+      "brief": "Integração de tecnologias de inteligência artificial para otimizar a comunicação multilíngue e personalizar experiências digitais."
+    },
+    "webdev": {
+      "title": "Desenvolvimento Web",
+      "brief": "Criamos sites modernos, responsivos e multilíngues com experiências de usuário excepcionais para alcance global."
+    },
+    "software": {
+      "title": "Desenvolvimento de Software",
+      "brief": "Desenvolvemos aplicativos e sistemas personalizados que atendem às necessidades específicas do seu negócio internacional."
+    },
     "items": {
-      "price1": "€1499",
-      "price2": "€1999",
-      "price3": "€2499",
+      "price1": "€1.499",
+      "price2": "€1.999",
+      "price3": "€2.499",
+      "price4": "€1.899",
       "feature1_1": "Design responsivo para todos os dispositivos",
       "feature1_2": "Tradução profissional em 5 idiomas",
       "feature1_3": "Suporte SEO multilíngue",
+      "feature1_4": "Suporte técnico contínuo em 5 idiomas",
       "feature2_1": "Planejamento estratégico personalizado",
       "feature2_2": "Análise de mercado internacional",
       "feature2_3": "Consultoria de adaptação cultural",
-      "feature3_1": "Aplicativo web e mobile multilíngue",
+      "feature2_4": "Atualizações e melhorias regulares",
+      "feature3_1": "Aplicativo web e móvel multilíngue",
       "feature3_2": "Integração com sistemas existentes",
       "feature3_3": "Suporte técnico em todos os idiomas",
-      "price4": "€1899",
-      "price5": "€2299",
-      "price6": "€2699",
       "feature4_1": "Otimização SEO para múltiplos idiomas",
       "feature4_2": "Análise de mercado internacional",
       "feature4_3": "Relatórios de desempenho multilíngue",
@@ -276,6 +392,11 @@
         "title": "Localização de Aplicativos",
         "description": "Serviços completos de localização para aplicativos móveis e web em múltiplos idiomas e mercados."
       }
+    },
+    "premium": {
+      "title": "Soluções Digitais Premium",
+      "description": "Experimente nosso nível mais alto de serviços digitais com recursos avançados, suporte prioritário e soluções multilíngues abrangentes.",
+      "button": "Obter Acesso Premium"
     }
   },
   "testimonials": {
@@ -442,6 +563,92 @@
       "description": "Transforme sua presença digital em escala global com nossa expertise multilíngue e soluções digitais inovadoras.",
       "primaryButton": "Conheça nossos serviços",
       "secondaryButton": "Fale conosco"
+    }
+  },
+  "portfolio": {
+    "title": "Nosso Portfólio",
+    "subtitle": "Projetos que demonstram nossa expertise em soluções digitais multilíngues",
+    "heroTitle": "Transformando ideias em experiências digitais globais",
+    "heroSubtitle": "Explore nossa coleção de projetos inovadores que conectam empresas e público através de diferentes idiomas e culturas",
+    "heroButton": "Entre em contato",
+    "projectsTitle": "Projetos em Destaque", 
+    "searchPlaceholder": "Buscar projetos...",
+    "viewDetails": "Ver Detalhes",
+    "viewProject": "Ver Projeto",
+    "viewAllButton": "Ver Todos os Projetos",
+    "loadMoreButton": "Carregar Mais",
+    "noResults": {
+      "title": "Nenhum projeto encontrado",
+      "description": "Não encontramos projetos que correspondam aos seus critérios de pesquisa.",
+      "resetButton": "Limpar Filtros"
+    },
+    "process": {
+      "title": "Nossa Abordagem",
+      "subtitle": "Como transformamos sua visão em uma presença digital multilíngue impactante",
+      "steps": {
+        "1": {
+          "title": "Descoberta",
+          "description": "Compreendemos suas necessidades, objetivos de negócio e público-alvo internacional."
+        },
+        "2": {
+          "title": "Estratégia",
+          "description": "Desenvolvemos um plano adaptado às especificidades culturais de cada mercado."
+        },
+        "3": {
+          "title": "Criação",
+          "description": "Construímos soluções digitais inovadoras com foco em experiência do usuário multilíngue."
+        },
+        "4": {
+          "title": "Otimização",
+          "description": "Refinamos continuamente para garantir performance e relevância cultural em todos os mercados."
+        }
+      }
+    },
+    "filters": {
+      "title": "Filtros",
+      "all": "Todos",
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Vídeo",
+      "ai": "IA"
+    },
+    "categories": {
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Vídeo",
+      "ai": "IA"
+    },
+    "items": {
+      "1": {
+        "title": "Identidade Visual Multinacional",
+        "category": "branding",
+        "description": "Desenvolvimento de identidade visual consistente para uma empresa de tecnologia presente em 15 países, respeitando nuances culturais e mantendo a unidade da marca."
+      },
+      "2": {
+        "title": "Plataforma E-commerce Multilíngue",
+        "category": "design",
+        "description": "Design e implementação de experiência de usuário para plataforma de e-commerce disponível em 5 idiomas com adaptações culturais específicas para cada mercado."
+      },
+      "3": {
+        "title": "Campanha Audiovisual Global",
+        "category": "video",
+        "description": "Produção de série de vídeos promocionais adaptados para diversos mercados internacionais, com legendagem profissional e adaptação cultural do conteúdo."
+      },
+      "4": {
+        "title": "Assistente Virtual Multilíngue",
+        "category": "ai",
+        "description": "Desenvolvimento de solução de atendimento baseada em IA capaz de interagir naturalmente em 5 idiomas, com compreensão de expressões culturais específicas."
+      },
+      "5": {
+        "title": "Rebranding para Expansão Global",
+        "category": "branding",
+        "description": "Reformulação da identidade de marca para empresa em expansão internacional, com adaptações para diferentes mercados enquanto mantém coesão visual."
+      },
+      "6": {
+        "title": "Sistema de Design Multilíngue",
+        "category": "design",
+        "description": "Criação de sistema de design completo com componentes adaptáveis para diferentes idiomas, incluindo RTL, e especificidades tipográficas de cada língua."
+      }
     }
   }
 }

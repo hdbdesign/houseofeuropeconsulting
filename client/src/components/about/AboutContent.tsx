@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { businessImages } from '@/config/imageUrls';
-import { Check, Target, Compass, Award, Users, Globe, TrendingUp } from 'lucide-react';
+import { Check, Target, Compass, Award, Users, Globe, TrendingUp, Zap, Shield } from 'lucide-react';
 
 const AboutContent = () => {
   const { t } = useTranslation();
@@ -45,10 +45,17 @@ const AboutContent = () => {
   ];
 
   const valueIcons = {
-    innovation: <TrendingUp className="h-5 w-5 text-indigo-500" />,
-    customer: <Users className="h-5 w-5 text-sky-500" />,
-    quality: <Check className="h-5 w-5 text-emerald-500" />,
-    global: <Globe className="h-5 w-5 text-purple-500" />
+    innovation: <Zap className="h-6 w-6 text-white" />,
+    customer: <Users className="h-6 w-6 text-white" />,
+    quality: <Shield className="h-6 w-6 text-white" />,
+    global: <Globe className="h-6 w-6 text-white" />
+  };
+
+  const valueColors: Record<string, string> = {
+    innovation: 'from-blue-500 to-cyan-400',
+    customer: 'from-[#3B82F6] to-blue-400',
+    quality: 'from-[#0F1A35] to-blue-800',
+    global: 'from-indigo-600 to-blue-500'
   };
 
   return (
@@ -67,13 +74,23 @@ const AboutContent = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-lg z-0"></div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-lg z-0"></div>
+            <div className="absolute inset-0 rounded-lg border-2 border-[#00FFFF]/50 shadow-[0_0_15px_rgba(0,255,255,0.5)] z-10"></div>
             <img 
               src={businessImages.about}
-              alt="Our team collaborating"
+              alt="CEO of House of Digital Business"
               className="rounded-lg shadow-xl w-full h-auto relative z-10"
             />
             <div className="absolute -top-2 -right-2 bg-primary text-white py-2 px-4 rounded-lg shadow-lg z-20 font-medium">
               {t('about.established')}
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent pt-16 pb-6 px-5 z-20">
+              <div className="flex items-center">
+                <div className="bg-[#3B82F6] text-white font-bold px-3 py-1.5 rounded-md shadow-[0_0_10px_rgba(59,130,246,0.7)] mr-3 text-sm tracking-wide border-2 border-white/30">CEO</div>
+                <div>
+                  <h3 className="text-white font-bold text-xl font-heading">Washington</h3>
+                  <p className="text-[#00FFFF] text-sm font-medium">Fundador & CEO</p>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -117,63 +134,98 @@ const AboutContent = () => {
       </div>
 
       <motion.div 
-        className="mt-24 backdrop-blur-xl bg-white/10 dark:bg-gray-800/20 rounded-3xl p-10 border border-white/30 dark:border-gray-700/30 relative overflow-hidden"
-        style={{ 
-          backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%)',
-          boxShadow: '0 20px 60px 0 rgba(31, 38, 135, 0.25)' 
-        }}
+        className="mt-24 relative"
         variants={itemVariants}
       >
-        <div className="absolute -top-20 -left-20 w-40 h-40 bg-gradient-to-br from-cyan-300/20 to-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-gradient-to-tr from-blue-500/20 to-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/4 right-1/4 w-10 h-10 bg-white/30 rounded-full blur-xl"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-80 pointer-events-none"></div>
-
-        <div className="relative z-10">
-          <div className="text-center mb-14">
-            <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-60 h-60 opacity-10">
-              <div className="w-32 h-32 bg-cyan-400 rounded-full blur-3xl absolute"></div>
-              <div className="w-32 h-32 bg-blue-500 rounded-full blur-3xl absolute left-10"></div>
-            </div>
+        <div className="absolute inset-0 bg-black/70 rounded-3xl backdrop-blur-sm z-0"></div>
+        
+        <div className="absolute -top-20 -left-20 w-60 h-60 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/3 w-40 h-40 bg-[#00FFFF]/10 rounded-full blur-2xl"></div>
+        
+        <div className="absolute inset-0 z-0 opacity-5">
+          <div className="h-full w-full" style={{
+            backgroundImage: `
+              linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+        
+        <div className="relative z-10 p-12">
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="inline-block mb-4"
+            >
+              <span className="inline-block px-4 py-1 bg-[#00FFFF]/10 text-[#00FFFF] rounded-full text-sm font-medium">
+                {t('about.values.label')}
+              </span>
+            </motion.div>
             
-            <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-              {t('about.values.label')}
-            </span>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-800 dark:text-white mb-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+            <motion.h2 
+              className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
               {t('about.values.title')}
-            </h2>
-            <p className="max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
+            </motion.h2>
+            
+            <motion.p 
+              className="max-w-2xl mx-auto text-gray-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               {t('about.values.subtitle')}
-            </p>
+            </motion.p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {Object.entries(valueIcons).map(([key, icon], index) => (
               <motion.div
                 key={key}
-                className="relative backdrop-blur-md bg-white/20 dark:bg-gray-900/30 p-6 rounded-xl border border-white/20 dark:border-gray-700/30 shadow-xl hover:shadow-2xl transition-all duration-300"
-                style={{ 
-                  backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
-                  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)' 
-                }}
-                whileHover={{ y: -8, transition: { type: "spring", stiffness: 300 } }}
-                initial={{ opacity: 0, y: 20 }}
+                className="group relative"
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: 0.1 + (index * 0.1) }}
+                transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
+                whileHover={{ y: -10 }}
               >
-                <div className="absolute -top-3 -right-3 w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full blur-xl"></div>
-                <div className="relative z-10">
-                  <div className="bg-white/80 dark:bg-gray-800/80 w-14 h-14 rounded-xl shadow-lg backdrop-blur-sm border border-white/40 dark:border-gray-700/40 flex items-center justify-center mb-6">
-                    {icon}
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 h-full">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${valueColors[key]} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
+                  
+                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" 
+                       style={{
+                         boxShadow: `0 0 20px 2px rgba(0, 255, 255, 0.5)`,
+                         border: '1px solid rgba(0, 255, 255, 0.3)'
+                       }}>
                   </div>
-                  <h3 className="font-heading font-semibold text-lg mb-3 text-gray-800 dark:text-white">
-                    {t(`about.values.coreValues.${key}.title`)}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm">
-                    {t(`about.values.coreValues.${key}.text`)}
-                  </p>
+                  
+                  <div className="relative p-8 z-10 h-full flex flex-col">
+                    <div className={`p-3 rounded-2xl bg-gradient-to-br ${valueColors[key]} flex items-center justify-center w-14 h-14 mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      {icon}
+                    </div>
+                    
+                    <h3 className="font-heading font-bold text-2xl mb-4 text-white">
+                      {t(`about.values.coreValues.${key}.title`)}
+                    </h3>
+                    
+                    <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
+                      {t(`about.values.coreValues.${key}.text`)}
+                    </p>
+                    
+                    <div className="mt-auto pt-4">
+                      <div className="h-0.5 w-8 bg-[#00FFFF] group-hover:w-full transition-all duration-500"></div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             ))}

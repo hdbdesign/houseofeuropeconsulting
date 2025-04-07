@@ -21,6 +21,7 @@
     "home": "Home",
     "about": "Chi Siamo",
     "services": "Servizi",
+    "portfolio": "Portfolio",
     "contact": "Contatti",
     "language": "IT"
   },
@@ -35,7 +36,13 @@
       "projects": "Progetti Completati",
       "countries": "Paesi Serviti",
       "satisfaction": "Soddisfazione Clienti"
-    }
+    },
+    "titleLine1": "Soluzioni Digitali",
+    "titleLine2": "per il Business Globale",
+    "subtitle": "Connettiamo aziende attraverso i confini con strategie digitali innovative e soluzioni multilingue.",
+    "primaryCTA": "I Nostri Servizi",
+    "secondaryCTA": "Contattaci",
+    "satisfaction": "Soddisfazione"
   },
   "about": {
     "title": "Chi Siamo",
@@ -109,13 +116,18 @@
         }
       }
     },
-    "teamTitle": "Il Nostro Team Internazionale"
+    "teamTitle": "Il Nostro Team Internazionale",
+    "established": "Fondata nel 2008",
+    "content": {
+      "title": "Soluzioni Digitali Innovative Attraverso le Culture",
+      "subtitle": "Uniamo competenza globale, conoscenza locale e tecnologia innovativa per aiutare le aziende a prosperare nei mercati internazionali."
+    }
   },
   "team": {
     "member1": {
-      "name": "Sarah Johnson",
-      "role": "CEO e Fondatrice",
-      "description": "Specializzata in strategia aziendale internazionale e trasformazione digitale."
+      "name": "João Paulo",
+      "role": "CEO e Fondatore",
+      "description": "Esperto in trasformazione digitale e strategia aziendale internazionale."
     },
     "member2": {
       "name": "Marco Bianchi",
@@ -136,19 +148,49 @@
   "services": {
     "title": "I Nostri Servizi",
     "subtitle": "Soluzioni digitali complete adattate alle esigenze del tuo business globale in cinque lingue.",
+    "description": "Soluzioni digitali complete adattate alle esigenze del tuo business globale in cinque lingue.",
     "learnMore": "Scopri di più",
     "startsAt": "A partire da",
+    "viewPricing": "Vedi prezzi",
     "features": "Caratteristiche",
+    "popular": "Più popolare",
+    "branding": {
+      "title": "Art Direction",
+      "brief": "Creazione di identità visive coerenti e d'impatto che comunicano i valori del brand e si connettono con il pubblico globale."
+    },
+    "graphic": {
+      "title": "Design Grafico",
+      "brief": "Sviluppo di materiali visivi di alta qualità che trasmettono il tuo messaggio con chiarezza ed eleganza in qualsiasi lingua."
+    },
+    "video": {
+      "title": "Videografia",
+      "brief": "Produzione di contenuti audiovisivi coinvolgenti che superano le barriere linguistiche e culturali con una potente narrazione visiva."
+    },
+    "ai": {
+      "title": "Soluzioni AI",
+      "brief": "Integrazione di tecnologie di intelligenza artificiale per ottimizzare la comunicazione multilingue e personalizzare le esperienze digitali."
+    },
+    "webdev": {
+      "title": "Sviluppo Web",
+      "brief": "Creiamo siti web moderni, responsive e multilingue con esperienze utente eccezionali per una portata globale."
+    },
+    "software": {
+      "title": "Sviluppo Software",
+      "brief": "Sviluppiamo applicazioni e sistemi personalizzati che soddisfano le esigenze specifiche della tua azienda internazionale."
+    },
     "items": {
-      "price1": "€1499",
-      "price2": "€1999",
-      "price3": "€2499",
+      "price1": "€1.499",
+      "price2": "€1.999",
+      "price3": "€2.499",
+      "price4": "€1.899",
       "feature1_1": "Design responsive per tutti i dispositivi",
       "feature1_2": "Traduzione professionale in 5 lingue",
       "feature1_3": "Supporto SEO multilingue",
+      "feature1_4": "Supporto tecnico continuo in 5 lingue",
       "feature2_1": "Pianificazione strategica personalizzata",
       "feature2_2": "Analisi del mercato internazionale",
       "feature2_3": "Consulenza per l'adattamento culturale",
+      "feature2_4": "Aggiornamenti e miglioramenti regolari",
       "feature3_1": "App web e mobile multilingue",
       "feature3_2": "Integrazione con sistemi esistenti",
       "feature3_3": "Supporto tecnico in tutte le lingue",
@@ -176,6 +218,11 @@
         "title": "Localizzazione di App",
         "description": "Servizi completi di localizzazione per applicazioni mobili e web in più lingue e mercati."
       }
+    },
+    "premium": {
+      "title": "Soluzioni Digitali Premium",
+      "description": "Sperimenta il nostro livello più alto di servizi digitali con funzionalità avanzate, supporto prioritario e soluzioni multilingua complete.",
+      "button": "Ottieni Accesso Premium"
     }
   },
   "testimonials": {
@@ -301,5 +348,132 @@
     "nameRequired": "Il nome è obbligatorio",
     "emailInvalid": "Inserisci un indirizzo email valido",
     "messageMinLength": "Il messaggio deve contenere almeno 10 caratteri"
+  },
+  "home": {
+    "stats": {
+      "title": "Risultati Comprovati",
+      "subtitle": "Numeri che dimostrano il nostro impatto globale",
+      "clients": "Clienti Serviti",
+      "countries": "Paesi Raggiunti",
+      "years": "Anni di Esperienza",
+      "satisfaction": "Soddisfazione Clienti"
+    },
+    "about": {
+      "subtitle": "Chi Siamo",
+      "title": "House of Digital Innovation"
+    },
+    "process": {
+      "title": "Il Nostro Processo",
+      "subtitle": "Come trasformiamo la presenza digitale della tua azienda per una portata globale",
+      "steps": {
+        "1": {
+          "title": "Scoperta",
+          "description": "Comprendiamo a fondo le esigenze della tua azienda e gli obiettivi della tua presenza digitale multilingue."
+        },
+        "2": {
+          "title": "Strategia",
+          "description": "Sviluppiamo un piano personalizzato che considera aspetti culturali e tecnici per ogni mercato di riferimento."
+        },
+        "3": {
+          "title": "Implementazione",
+          "description": "Creiamo soluzioni digitali innovative e culturalmente rilevanti utilizzando le migliori tecnologie disponibili."
+        },
+        "4": {
+          "title": "Ottimizzazione",
+          "description": "Monitoriamo e miglioriamo continuamente la tua presenza digitale per garantire risultati coerenti in tutte le lingue."
+        }
+      }
+    },
+    "cta": {
+      "title": "Lavoriamo insieme",
+      "subtitle": "Pronto a trasformare la tua presenza digitale globale?",
+      "button": "Inizia un progetto"
+    }
+  },
+  "portfolio": {
+    "title": "Il Nostro Portfolio",
+    "subtitle": "Progetti che mostrano la nostra competenza in soluzioni digitali multilingue",
+    "heroTitle": "Trasformare le idee in esperienze digitali globali",
+    "heroSubtitle": "Esplora la nostra collezione di progetti innovativi che connettono aziende e pubblico attraverso diverse lingue e culture",
+    "heroButton": "Contattaci",
+    "projectsTitle": "Progetti in Evidenza", 
+    "searchPlaceholder": "Cerca progetti...",
+    "viewDetails": "Vedi Dettagli",
+    "viewProject": "Vedi Progetto",
+    "viewAllButton": "Vedi Tutti i Progetti",
+    "loadMoreButton": "Carica Altri",
+    "noResults": {
+      "title": "Nessun progetto trovato",
+      "description": "Non abbiamo trovato progetti che corrispondano ai tuoi criteri di ricerca.",
+      "resetButton": "Cancella Filtri"
+    },
+    "process": {
+      "title": "Il Nostro Approccio",
+      "subtitle": "Come trasformiamo la tua visione in una presenza digitale multilingue di impatto",
+      "steps": {
+        "1": {
+          "title": "Scoperta",
+          "description": "Comprendiamo le tue esigenze, obiettivi aziendali e pubblico target internazionale."
+        },
+        "2": {
+          "title": "Strategia",
+          "description": "Sviluppiamo un piano su misura per le specificità culturali di ogni mercato."
+        },
+        "3": {
+          "title": "Creazione",
+          "description": "Costruiamo soluzioni digitali innovative incentrate sull'esperienza utente multilingue."
+        },
+        "4": {
+          "title": "Ottimizzazione",
+          "description": "Raffiniamo continuamente per garantire prestazioni e rilevanza culturale in tutti i mercati."
+        }
+      }
+    },
+    "filters": {
+      "title": "Filtri",
+      "all": "Tutti",
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Video",
+      "ai": "AI"
+    },
+    "categories": {
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Video",
+      "ai": "AI"
+    },
+    "items": {
+      "1": {
+        "title": "Identità Visiva Multinazionale",
+        "category": "branding",
+        "description": "Sviluppo di un'identità visiva coerente per un'azienda tecnologica presente in 15 paesi, rispettando le sfumature culturali mantenendo l'unità del brand."
+      },
+      "2": {
+        "title": "Piattaforma E-commerce Multilingue",
+        "category": "design",
+        "description": "Design e implementazione dell'esperienza utente per una piattaforma e-commerce disponibile in 5 lingue con adattamenti culturali specifici per ogni mercato."
+      },
+      "3": {
+        "title": "Campagna Audiovisiva Globale",
+        "category": "video",
+        "description": "Produzione di una serie di video promozionali adattati per vari mercati internazionali, con sottotitolazione professionale e adattamento culturale dei contenuti."
+      },
+      "4": {
+        "title": "Assistente Virtuale Multilingue",
+        "category": "ai",
+        "description": "Sviluppo di una soluzione di servizio basata su AI in grado di interagire naturalmente in 5 lingue, con comprensione di espressioni culturali specifiche."
+      },
+      "5": {
+        "title": "Rebranding per Espansione Globale",
+        "category": "branding",
+        "description": "Riformulazione dell'identità di marca per un'azienda in espansione internazionale, con adattamenti per diversi mercati mantenendo la coesione visiva."
+      },
+      "6": {
+        "title": "Sistema di Design Multilingue",
+        "category": "design",
+        "description": "Creazione di un sistema di design completo con componenti adattabili per diverse lingue, incluso RTL, e specificità tipografiche di ciascuna lingua."
+      }
+    }
   }
 }

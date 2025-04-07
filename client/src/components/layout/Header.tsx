@@ -5,11 +5,14 @@ import LanguageSelector from './LanguageSelector';
 import { navigationItems } from '@/config/navigation';
 import { motion } from 'framer-motion';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
+import { useTheme } from '@/hooks/useTheme';
+import LogoImg from '@/assets/images/logo/Logo-05.png';
 
 const Header = () => {
   const { t } = useTranslation();
   const [location] = useLocation();
   const [scrolled, setScrolled] = useState(false);
+  const { isDark } = useTheme();
 
   // Handle scroll effect
   useEffect(() => {
@@ -28,22 +31,25 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 bg-background z-50 hidden md:block ${
+      className={`fixed top-0 left-0 right-0 bg-black z-50 hidden md:block ${
         scrolled ? 'shadow-md' : ''
       } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
     >
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <motion.div 
             className="flex items-center cursor-pointer"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
-            <div className="bg-primary rounded-md p-1 mr-2">
-              <span className="text-white font-bold text-xl">H</span>
-            </div>
-            <span className="font-heading font-bold text-primary text-lg">House of Digital Business</span>
+            {/* Desktop logo */}
+            <img 
+              src={LogoImg} 
+              alt="House of Digital Business" 
+              style={{ height: "50px", width: "auto" }}
+              className="w-auto" 
+            />
           </motion.div>
         </Link>
         
@@ -54,7 +60,7 @@ const Header = () => {
               <li key={item.path}>
                 {location === item.path ? (
                   <motion.div 
-                    className="text-primary transition-colors duration-300 cursor-pointer"
+                    className="text-[#00FFFF] transition-colors duration-300 cursor-pointer"
                     whileHover={{ y: -2 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
@@ -63,7 +69,7 @@ const Header = () => {
                 ) : (
                   <Link href={item.path}>
                     <motion.div 
-                      className="hover:text-primary transition-colors duration-300 cursor-pointer"
+                      className="text-white hover:text-[#00FFFF] transition-colors duration-300 cursor-pointer"
                       whileHover={{ y: -2 }}
                       transition={{ type: 'spring', stiffness: 300 }}
                     >

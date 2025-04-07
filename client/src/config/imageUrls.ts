@@ -1,11 +1,18 @@
 // Business Images
 export const businessImages = {
   hero: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
-  about: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  about: "/src/assets/images/ceo.jpg",
   office1: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
   office2: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
   office3: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1200&q=80",
   office4: "https://images.unsplash.com/photo-1564069114553-7215e1ff1890?auto=format&fit=crop&w=1200&q=80",
+};
+
+// Brand Logos
+export const brandLogos = {
+  primary: "/logo-hdb.png",
+  small: "/logo-hdb.png",
+  withText: "/logo-hdb.png",
 };
 
 // Digital Business Concepts
@@ -26,7 +33,7 @@ export const internationalBusinessImages = {
 
 // Team Members
 export const teamImages = {
-  member1: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&h=300&q=80",
+  member1: "/src/assets/images/team/ceo.jpg",
   member2: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=300&q=80",
   member3: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=300&q=80",
   member4: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=300&q=80",

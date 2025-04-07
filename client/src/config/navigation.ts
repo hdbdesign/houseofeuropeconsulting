@@ -21,6 +21,11 @@ export const navigationItems: NavItem[] = [
     icon: 'services'
   },
   {
+    path: '/portfolio',
+    labelKey: 'nav.portfolio',
+    icon: 'portfolio'
+  },
+  {
     path: '/contact',
     labelKey: 'nav.contact',
     icon: 'contact'

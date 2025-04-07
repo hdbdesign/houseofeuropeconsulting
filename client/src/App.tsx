@@ -10,6 +10,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
+import Portfolio from "@/pages/Portfolio";
 import NotFound from "@/pages/not-found";
 
 // Layout Components
@@ -26,21 +27,22 @@ function App() {
       <LanguageProvider>
         <div className="flex flex-col min-h-screen">
           <Header />
+          <MobileNav />
           
-          <main className="flex-grow">
+          <main className="flex-grow pt-20 md:pt-24">
             <AnimatePresence mode="wait">
               <Switch location={location} key={location}>
                 <Route path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/services" component={Services} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/portfolio" component={Portfolio} />
                 <Route component={NotFound} />
               </Switch>
             </AnimatePresence>
           </main>
           
           <Footer />
-          <MobileNav />
           <ScrollToTop />
         </div>
         <Toaster />

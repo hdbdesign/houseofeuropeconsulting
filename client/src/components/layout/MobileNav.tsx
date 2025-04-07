@@ -1,125 +1,165 @@
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useTranslation } from 'react-i18next';
-import { useLanguage } from '@/context/LanguageContext';
-import { motion } from 'framer-motion';
-import { Home, Info, Briefcase, Mail, Globe, Moon, Sun } from 'lucide-react';
-import { navigationItems } from '@/config/navigation';
-import { languages } from '@/config/navigation';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, Sun, Moon, Home, Info, Briefcase, Image, Mail } from 'lucide-react';
+import { useTheme } from '@/hooks/useTheme';
+import LanguageSelector from './LanguageSelector';
+import LogoImg from '@/assets/images/logo/Logo-05.png';
 
 const MobileNav = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
-  const { language, changeLanguage } = useLanguage();
-  const [isDark, setIsDark] = useState(false);
-  
-  useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains('dark');
-    setIsDark(isDarkMode);
-    
-    // Set up a mutation observer to watch for changes to the classList
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === 'class') {
-          const isDarkMode = document.documentElement.classList.contains('dark');
-          setIsDark(isDarkMode);
-        }
-      });
-    });
-    
-    observer.observe(document.documentElement, { attributes: true });
-    
-    return () => observer.disconnect();
-  }, []);
+  const { theme, toggleTheme } = useTheme();
 
-  // Icons for the mobile navigation
-  const getIcon = (icon: string) => {
-    switch (icon) {
-      case 'home':
-        return <Home size={20} />;
-      case 'info':
-        return <Info size={20} />;
-      case 'services':
-        return <Briefcase size={20} />;
-      case 'contact':
-        return <Mail size={20} />;
-      default:
-        return <Home size={20} />;
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
+  const navigationItems = [
+    { path: '/', labelKey: 'nav.home', icon: <Home className="w-5 h-5" /> },
+    { path: '/about', labelKey: 'nav.about', icon: <Info className="w-5 h-5" /> },
+    { path: '/services', labelKey: 'nav.services', icon: <Briefcase className="w-5 h-5" /> },
+    { path: '/portfolio', labelKey: 'nav.portfolio', icon: <Image className="w-5 h-5" /> },
+    { path: '/contact', labelKey: 'nav.contact', icon: <Mail className="w-5 h-5" /> },
+  ];
+
+  const menuVariants = {
+    closed: {
+      opacity: 0,
+      x: '100%',
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut',
+        when: 'afterChildren',
+        staggerChildren: 0.05,
+        staggerDirection: -1
+      }
+    },
+    open: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut',
+        when: 'beforeChildren',
+        staggerChildren: 0.1,
+        delayChildren: 0.1
+      }
     }
   };
 
-  return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-background dark:bg-gray-900 shadow-lg rounded-t-xl z-50 md:hidden">
-      <div className="flex justify-around py-3 px-2">
-        <motion.button 
-          className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none"
-          whileTap={{ scale: 0.95 }}
-          onClick={() => {
-            const newTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
-            document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', newTheme);
-          }}
-        >
-          {isDark ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} />}
-          <span className="text-xs mt-1">{isDark ? 'Light' : 'Dark'}</span>
-        </motion.button>
+  const itemVariants = {
+    closed: { opacity: 0, x: 20 },
+    open: { opacity: 1, x: 0 }
+  };
 
-        {navigationItems.map((item) => (
-          <div key={item.path}>
-            {location === item.path ? (
-              <motion.div 
-                className="flex flex-col items-center text-primary"
-                whileTap={{ scale: 0.95 }}
-              >
-                {getIcon(item.icon || 'home')}
-                <span className="text-xs mt-1">{t(item.labelKey)}</span>
-              </motion.div>
-            ) : (
-              <Link href={item.path}>
-                <motion.div 
-                  className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-primary"
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {getIcon(item.icon || 'home')}
-                  <span className="text-xs mt-1">{t(item.labelKey)}</span>
-                </motion.div>
-              </Link>
-            )}
-          </div>
-        ))}
-        
-        <Popover>
-          <PopoverTrigger asChild>
-            <motion.button 
-              className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none"
-              whileTap={{ scale: 0.95 }}
-            >
-              <Globe size={20} />
-              <span className="text-xs mt-1">{language.toUpperCase()}</span>
-            </motion.button>
-          </PopoverTrigger>
-          <PopoverContent className="w-36 p-0">
-            <div className="py-1">
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className={`w-full text-left block px-4 py-2 text-sm ${
-                    language === lang.code 
-                      ? 'bg-primary text-white' 
-                      : 'text-gray-700 hover:bg-gray-100'
-                  }`}
-                >
-                  <span className="mr-2">{lang.flag}</span>
-                  <span>{lang.name}</span>
-                </button>
-              ))}
+  return (
+    <>
+      {/* Mobile Header */}
+      <header className="fixed top-0 left-0 w-full bg-black z-50 md:hidden py-3 px-4 border-b border-gray-800">
+        <div className="flex justify-between items-center">
+          <Link href="/">
+            <div className="flex items-center">
+              <img 
+                src={LogoImg} 
+                alt="Logo" 
+                style={{ height: "42px", width: "auto" }} 
+                className="w-auto" 
+              />
             </div>
-          </PopoverContent>
-        </Popover>
-      </div>
-    </nav>
+          </Link>
+          
+          <button 
+            onClick={() => setIsOpen(true)} 
+            className="p-2 text-[#00FFFF] focus:outline-none"
+            aria-label="Open menu"
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
+      </header>
+      
+      {/* Mobile Navigation Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            className="fixed inset-0 bg-black/95 z-50 md:hidden flex flex-col"
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={menuVariants}
+          >
+            <div className="flex justify-between items-center p-4 border-b border-gray-800">
+              <img 
+                src={LogoImg} 
+                alt="House of Digital Business" 
+                style={{ height: "42px", width: "auto" }} 
+                className="w-auto" 
+              />
+              <button 
+                onClick={() => setIsOpen(false)} 
+                className="p-2 text-[#00FFFF] focus:outline-none"
+                aria-label="Close menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            
+            <div className="flex-1 overflow-y-auto py-8 px-6">
+              <nav>
+                <ul className="space-y-6">
+                  {navigationItems.map((item) => (
+                    <motion.li 
+                      key={item.path}
+                      variants={itemVariants}
+                      className="border-b border-gray-800 pb-4"
+                    >
+                      <Link href={item.path}>
+                        <a 
+                          className={`flex items-center text-xl ${
+                            location === item.path ? 'text-[#00FFFF] font-medium' : 'text-gray-300'
+                          }`}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <span className="mr-3 text-[#00FFFF]">{item.icon}</span>
+                          {t(item.labelKey)}
+                        </a>
+                      </Link>
+                    </motion.li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+            
+            <div className="p-4 border-t border-gray-800 flex justify-between items-center">
+              <button
+                onClick={toggleTheme}
+                className="p-2 bg-gray-800 rounded-full focus:outline-none"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? (
+                  <Sun className="w-5 h-5 text-[#00FFFF]" />
+                ) : (
+                  <Moon className="w-5 h-5 text-gray-300" />
+                )}
+              </button>
+              
+              <LanguageSelector />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

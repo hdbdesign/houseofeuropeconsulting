@@ -1,11 +1,47 @@
 import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon } from 'lucide-react';
+import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon, MousePointerClick } from 'lucide-react';
+import { useRef, useState, useEffect } from 'react';
+import ButtonCTA from '@/components/ui/ButtonCTA';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
+  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '60%']);
+  const opacitySection = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+  // Mouse parallax effect for 3D feel (simplified)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      // Throttle the mouse movement calculation to improve performance
+      if (!window.requestAnimationFrame) return;
+      
+      window.requestAnimationFrame(() => {
+        const { clientX, clientY } = e;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        
+        // Calculate mouse position as percentage from center
+        const x = (clientX - windowWidth / 2) / windowWidth;
+        const y = (clientY - windowHeight / 2) / windowHeight;
+        
+        setMousePosition({ x, y });
+      });
+    };
+    
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -30,142 +66,75 @@ const Hero = () => {
     }
   };
 
-  const iconVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      transition: { duration: 0.6 }
-    }
+  // 3D rotation based on mouse position (reduced effect for performance)
+  const calculateTransform = () => {
+    const xTransform = mousePosition.x * 3; // Reduced from 5 to 3 degrees
+    const yTransform = mousePosition.y * -3; // Reduced from -5 to -3 degrees
+    return `perspective(1000px) rotateX(${yTransform}deg) rotateY(${xTransform}deg)`;
   };
 
-  const gradientClasses = "bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500";
-
   return (
-    <section className="relative min-h-screen bg-background dark:bg-gray-900 overflow-hidden flex items-center justify-center py-16">
-      {/* Background animated elements - enhanced blur effect */}
+    <section ref={containerRef} className="relative h-screen bg-black overflow-hidden flex items-center">
+      {/* Efeitos de fundo com neon */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-10 left-10 w-80 h-80 bg-cyan-400/30 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/30 dark:bg-blue-600/30 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-cyan-300/40 dark:bg-cyan-500/30 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#0C1E3C]/30 rounded-full blur-3xl"></div>
       </div>
-
-      <div className="container relative z-10 px-6 mx-auto">
-        <motion.div 
-          className="flex flex-col items-center text-center max-w-5xl mx-auto"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {/* Removed the icon section as requested */}
-
-          {/* Enhanced headline with badge */}
-          <motion.div
-            className="mb-3"
-            variants={itemVariants}
+      
+      {/* Conteúdo */}
+      <div className="container mx-auto px-4 z-10">
+        <div className="max-w-5xl mx-auto text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-6"
           >
-            <span className="inline-block px-4 py-1 bg-cyan-500/10 dark:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 rounded-full text-sm font-medium mb-4">
-              House of Digital Business
+            <span className="inline-block px-4 py-1 backdrop-blur-md bg-[#00FFFF]/10 border border-[#00FFFF]/20 rounded-full text-[#00FFFF] text-sm font-medium">
+              {t('hero.subtitle') || 'Transformação Digital'}
             </span>
           </motion.div>
-
-          {/* Main headline with improved typography */}
+          
           <motion.h1 
-            className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight leading-tight"
-            variants={itemVariants}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 text-white"
           >
-            <span className="block text-foreground dark:text-white">
-              {t('hero.title')}
-            </span>
-            <span className={`block ${gradientClasses} text-transparent bg-clip-text mt-2`}>
-              Digital Business
-            </span>
+            {t('hero.title') || 'Stärkung der Markenidentität und des Wachstums'}
           </motion.h1>
           
-          {/* Enhanced typewriter effect with better height management */}
-          <motion.div 
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 h-20 flex items-center justify-center"
-            variants={itemVariants}
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
           >
-            <TypeAnimation
-              sequence={[
-                // Português
-                'Soluções digitais multilíngues para negócios globais',
-                2000,
-                // Inglês
-                'Multilingual digital solutions for global businesses',
-                2000,
-                // Alemão
-                'Mehrsprachige digitale Lösungen für globale Unternehmen',
-                2000,
-                // Francês
-                'Solutions numériques multilingues pour entreprises mondiales',
-                2000,
-                // Italiano
-                'Soluzioni digitali multilingue per aziende globali',
-                2000
-              ]}
-              wrapper="span"
-              speed={50}
-              style={{ display: 'inline-block' }}
-              repeat={Infinity}
-            />
-          </motion.div>
+            {t('hero.description') || 'Transformamos negócios através de estratégias digitais inovadoras, design de marca e soluções de IA personalizadas que impulsionam o crescimento.'}
+          </motion.p>
           
-          {/* Enhanced call-to-action buttons */}
           <motion.div 
-            className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
-            variants={itemVariants}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Link href="/services">
-                <div 
-                  className="px-10 py-4 bg-primary hover:bg-primary/90 text-white font-ui font-medium rounded-xl transition-all duration-300 shadow-lg inline-block text-lg"
-                >
-                  {t('hero.primaryBtn')}
-                </div>
-              </Link>
-            </motion.div>
-            
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Link href="/contact">
-                <div
-                  className="px-10 py-4 border-2 border-primary text-primary hover:bg-primary/10 font-ui font-medium rounded-xl transition-all duration-300 inline-block text-lg"
-                >
-                  {t('hero.secondaryBtn')}
-                </div>
-              </Link>
-            </motion.div>
+            <Link href="/services">
+              <ButtonCTA>
+                {t('hero.primaryCTA') || 'Explorar Serviços'}
+              </ButtonCTA>
+            </Link>
+            <Link href="/contact">
+              <ButtonCTA secondary>
+                {t('hero.secondaryCTA') || 'Fale Conosco'}
+              </ButtonCTA>
+            </Link>
           </motion.div>
-
-          {/* Stats section simplified */}
-          <motion.div 
-            className="mt-24 pt-10 border-t border-gray-300/10 dark:border-gray-700/10 w-full max-w-4xl mx-auto"
-            variants={itemVariants}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ 
-              opacity: 1, 
-              y: 0,
-              transition: { delay: 0.8, duration: 0.6 }
-            }}
-          >
-            <div className="flex justify-around w-full px-4 md:px-10">
-              <div className="text-center">
-                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 mb-4">500+</span>
-                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.projects')}</span>
-              </div>
-              <div className="text-center">
-                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">50+</span>
-                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.countries')}</span>
-              </div>
-              <div className="text-center">
-                <span className="block font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500 mb-4">98%</span>
-                <span className="block text-sm md:text-base font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.satisfaction')}</span>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
+        </div>
       </div>
+      
+      {/* Decoração inferior */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black to-transparent"></div>
     </section>
   );
 };

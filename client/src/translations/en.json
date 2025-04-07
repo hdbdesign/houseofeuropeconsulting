@@ -1,19 +1,19 @@
 {
   "meta": {
     "home": {
-      "title": "House of Digital Business - Digital Solutions for Global Business",
-      "description": "We connect businesses across borders with innovative digital strategies and multilingual solutions."
+      "title": "House of Digital Business - Digital Solutions for Global Businesses",
+      "description": "Connecting businesses across borders with innovative digital strategies and multilingual solutions."
     },
     "about": {
       "title": "About Us - House of Digital Business",
-      "description": "Learn about House of Digital Business, our mission, vision, values and international team."
+      "description": "Meet House of Digital Business, our mission, vision, values and international team."
     },
     "services": {
       "title": "Our Services - House of Digital Business",
-      "description": "Explore our comprehensive digital solutions tailored to your global business needs across five languages."
+      "description": "Explore our comprehensive digital solutions tailored to your global business needs in five languages."
     },
     "contact": {
-      "title": "Contact Us - House of Digital Business",
+      "title": "Contact - House of Digital Business",
       "description": "Get in touch with House of Digital Business in any of our supported languages for your digital needs."
     }
   },
@@ -96,6 +96,7 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
+    "portfolio": "Portfolio",
     "contact": "Contact",
     "language": "EN"
   },
@@ -196,13 +197,18 @@
       "title": "Our Mission is Your Global Success",
       "subtitle": "We help businesses thrive in international markets with smart digital solutions",
       "button": "Contact Us"
+    },
+    "established": "Est. 2008",
+    "content": {
+      "title": "Innovative Digital Solutions Across Cultures",
+      "subtitle": "We bring global expertise, local knowledge, and innovative technology together to help businesses thrive in international markets."
     }
   },
   "team": {
     "member1": {
-      "name": "Sarah Johnson",
+      "name": "João Paulo",
       "role": "CEO & Founder",
-      "description": "Specialized in international business strategy and digital transformation."
+      "description": "Expert in digital transformation and international business strategy."
     },
     "member2": {
       "name": "Marco Bianchi",
@@ -222,26 +228,55 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive digital solutions tailored to your global business needs across five languages.",
+    "subtitle": "Comprehensive digital solutions tailored to your global business needs in five languages.",
+    "description": "Comprehensive digital solutions tailored to your global business needs in five languages.",
     "learnMore": "Learn more",
-    "startsAt": "Starting at",
+    "startsAt": "Starting from",
+    "viewPricing": "View pricing",
     "features": "Features",
+    "popular": "Most popular",
+    "branding": {
+      "title": "Art Direction",
+      "brief": "Creation of consistent and impactful visual identities that communicate brand values and connect with global audiences."
+    },
+    "graphic": {
+      "title": "Graphic Design",
+      "brief": "Development of high-quality visual materials that convey your message with clarity and elegance in any language."
+    },
+    "video": {
+      "title": "Videography",
+      "brief": "Production of engaging audiovisual content that overcomes linguistic and cultural barriers with powerful visual storytelling."
+    },
+    "ai": {
+      "title": "AI Solutions",
+      "brief": "Integration of artificial intelligence technologies to optimize multilingual communication and personalize digital experiences."
+    },
+    "webdev": {
+      "title": "Web Development",
+      "brief": "We create modern, responsive, and multilingual websites with exceptional user experiences for global reach."
+    },
+    "software": {
+      "title": "Software Development",
+      "brief": "We develop custom applications and systems that meet the specific needs of your international business."
+    },
     "items": {
-      "price1": "€1499",
-      "price2": "€1999",
-      "price3": "€2499",
+      "price1": "€1,499",
+      "price2": "€1,999",
+      "price3": "€2,499",
       "feature1_1": "Responsive design for all devices",
       "feature1_2": "Professional translation in 5 languages",
       "feature1_3": "Multilingual SEO support",
+      "feature1_4": "Ongoing technical support in 5 languages",
       "feature2_1": "Customized strategic planning",
       "feature2_2": "International market analysis",
       "feature2_3": "Cultural adaptation consulting",
+      "feature2_4": "Regular updates and improvements",
       "feature3_1": "Multilingual web and mobile app",
       "feature3_2": "Integration with existing systems",
       "feature3_3": "Technical support in all languages",
-      "price4": "€1899",
-      "price5": "€2299",
-      "price6": "€2699",
+      "price4": "€1,899",
+      "price5": "€2,299",
+      "price6": "€2,699",
       "feature4_1": "SEO optimization for multiple languages",
       "feature4_2": "International market analysis",
       "feature4_3": "Multilingual performance reporting",
@@ -276,6 +311,11 @@
         "title": "App Localization",
         "description": "Complete localization services for mobile and web applications in multiple languages and markets."
       }
+    },
+    "premium": {
+      "title": "Premium Digital Solutions",
+      "description": "Experience our highest tier of digital services with advanced features, priority support, and comprehensive multilingual solutions.",
+      "button": "Get Premium Access"
     }
   },
   "testimonials": {
@@ -298,14 +338,23 @@
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Ready to expand your business globally? Contact us in any of our supported languages.",
+    "metaTitle": "Contact Us",
+    "metaDescription": "Contact House of Digital Business for international brand design and digital solutions. Get in touch with our multilingual team today.",
+    "hero": {
+      "title": "Let's Work Together",
+      "subtitle": "Get in touch with our team for a free consultation on your global digital presence."
+    },
     "form": {
-      "name": "Name",
-      "namePlaceholder": "John Doe",
-      "email": "Email",
-      "emailPlaceholder": "john@example.com",
-      "language": "Preferred Language",
+      "title": "Send Us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "companyPlaceholder": "Company Name (optional)",
+      "phonePlaceholder": "Phone Number (optional)",
+      "messagePlaceholder": "How can we help you?",
+      "privacyNotice": "By submitting this form, you agree to our Privacy Policy and consent to the processing of your data.",
+      "submit": "Send Message",
+      "submitting": "Sending...",
       "languages": {
         "en": "English",
         "pt": "Portuguese",
@@ -313,58 +362,70 @@
         "fr": "French",
         "it": "Italian"
       },
-      "service": "Service Interested In",
       "services": {
-        "website": "Multilingual Website Development",
-        "consulting": "Digital Strategy Consulting",
+        "website": "Website Development",
+        "consulting": "Digital Consulting",
         "localization": "Content Localization",
-        "seo": "SEO & Digital Marketing",
+        "seo": "International SEO",
         "ecommerce": "E-commerce Solutions",
         "applocalization": "App Localization"
       },
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your project...",
-      "submit": "Send Message",
-      "submitting": "Sending...",
       "success": {
         "title": "Message Sent!",
         "message": "Thank you for contacting us. We'll get back to you shortly."
       },
       "error": {
-        "title": "Error",
-        "message": "There was an error sending your message. Please try again."
+        "title": "Something went wrong",
+        "message": "There was an error sending your message. Please try again later."
       }
     },
     "info": {
       "title": "Contact Information",
       "address": {
-        "title": "Address",
-        "line1": "Musterstraße 123",
-        "line2": "10115 Berlin, Germany"
+        "title": "Our Address",
+        "content": "Bergheimerstrasse 12, 69115 Heidelberg, Germany"
       },
       "email": {
-        "title": "Email",
-        "address": "info@houseofdigitalbusiness.de"
+        "title": "Email Us",
+        "content": "info@houseofdigitalbusiness.de"
       },
       "phone": {
-        "title": "Phone",
-        "number": "+49 30 1234567"
+        "title": "Call Us",
+        "content": "+49 (0) 6221 432 1928"
       },
       "hours": {
         "title": "Business Hours",
-        "weekdays": "Monday - Friday: 9:00 - 18:00",
-        "weekend": "Saturday - Sunday: Closed"
-      },
-      "social": {
-        "title": "Follow Us"
+        "content": "Monday to Friday, 9am to 6pm CET"
       },
       "languages": {
-        "title": "Languages Available",
-        "list": "Support and services available in English, Portuguese, German, French, and Italian"
+        "title": "Languages",
+        "content": "English, German, Portuguese, French, Italian"
       },
-      "calendar": {
-        "title": "Working Hours Overview"
+      "followUs": "Follow Us On Social Media",
+      "businessHours": {
+        "title": "Working Hours",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "weekends": "Weekends",
+        "closed": "Closed"
       }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about our services.",
+      "q1": "What languages do you offer services in?",
+      "a1": "We provide services in English, German, Portuguese, French, and Italian. Our international team ensures effective communication in all these languages.",
+      "q2": "How does your pricing work for international projects?",
+      "a2": "Our pricing depends on project scope, target markets, and language requirements. We provide detailed quotes after an initial consultation to understand your specific needs.",
+      "q3": "How do you handle different time zones for international projects?",
+      "a3": "We have team members across multiple time zones to ensure responsive communication regardless of location. We also establish clear communication schedules with clients to avoid any time-related issues.",
+      "q4": "Can you help with localization of existing content?",
+      "a4": "Yes, content localization is one of our core services. We adapt your existing content for different markets, ensuring cultural relevance and linguistic accuracy.",
+      "q5": "Do you offer ongoing support after project completion?",
+      "a5": "Absolutely. We offer various maintenance and support packages to ensure your digital presence continues to perform optimally in all markets."
     }
   },
   "footer": {
@@ -443,5 +504,179 @@
       "primaryButton": "Explore our services",
       "secondaryButton": "Talk to us"
     }
+  },
+  "home": {
+    "about": {
+      "subtitle": "Who We Are",
+      "title": "House of Digital Innovation"
+    },
+    "values": {
+      "subtitle": "Our Core Values",
+      "title": "What Drives Us Forward",
+      "description": "Our values define who we are and guide everything we do. They shape our culture, drive our decisions, and ensure we deliver exceptional results for our clients.",
+      "philosophy": "\"We believe in creating digital experiences that transcend boundaries, connecting businesses with global audiences through innovative, multilingual solutions.\"",
+      "ceo": "João Paulo - Founder & CEO",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Pushing boundaries with cutting-edge solutions and creative thinking."
+      },
+      "global": {
+        "title": "Global Mindset",
+        "description": "Creating multilingual solutions that connect businesses across borders."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Delivering exceptional quality in every project we undertake."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working closely with clients to achieve shared goals and success."
+      }
+    },
+    "services": {
+      "subtitle": "What We Do",
+      "title": "Digital Solutions That Transform",
+      "description": "Comprehensive digital solutions that help businesses establish a powerful presence across languages and markets. From branding to AI implementation, we deliver excellence at every step.",
+      "viewAllBtn": "Explore All Services"
+    },
+    "clients": {
+      "subtitle": "Trusted Globally",
+      "title": "Empowering Innovative Brands",
+      "description": "We've helped companies across industries transform their digital presence."
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "subtitle": "Ready to transform your global digital presence?",
+      "button": "Start Project"
+    },
+    "hero": {
+      "titleLine1": "Digital Solutions",
+      "titleLine2": "for Global Business",
+      "subtitle": "We connect businesses across borders with innovative digital strategies and multilingual solutions.",
+      "primaryCTA": "Our Services",
+      "secondaryCTA": "Contact Us",
+      "satisfaction": "Satisfaction"
+    },
+    "stats": {
+      "title": "Proven Results",
+      "subtitle": "Numbers that demonstrate our global impact",
+      "clients": "Clients Served",
+      "countries": "Countries Reached",
+      "years": "Years of Experience",
+      "satisfaction": "Client Satisfaction"
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "How we transform your company's digital presence for global reach",
+      "steps": {
+        "1": {
+          "title": "Discovery",
+          "description": "We deeply understand your business needs and the goals for your multilingual digital presence."
+        },
+        "2": {
+          "title": "Strategy",
+          "description": "We develop a customized plan that considers cultural and technical aspects for each target market."
+        },
+        "3": {
+          "title": "Implementation",
+          "description": "We create innovative and culturally relevant digital solutions using the best available technologies."
+        },
+        "4": {
+          "title": "Optimization",
+          "description": "We continuously monitor and improve your digital presence to ensure consistent results across all languages."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Projects that showcase our expertise in multilingual digital solutions",
+    "heroTitle": "Transforming ideas into global digital experiences",
+    "heroSubtitle": "Explore our collection of innovative projects that connect businesses and audiences across different languages and cultures",
+    "heroButton": "Contact Us",
+    "projectsTitle": "Featured Projects", 
+    "searchPlaceholder": "Search projects...",
+    "viewDetails": "View Details",
+    "viewProject": "View Project",
+    "viewAllButton": "View All Projects",
+    "loadMoreButton": "Load More",
+    "noResults": {
+      "title": "No projects found",
+      "description": "We couldn't find any projects that match your search criteria.",
+      "resetButton": "Clear Filters"
+    },
+    "process": {
+      "title": "Our Approach",
+      "subtitle": "How we transform your vision into an impactful multilingual digital presence",
+      "steps": {
+        "1": {
+          "title": "Discovery",
+          "description": "We understand your needs, business goals, and international target audience."
+        },
+        "2": {
+          "title": "Strategy",
+          "description": "We develop a plan tailored to the cultural specificities of each market."
+        },
+        "3": {
+          "title": "Creation",
+          "description": "We build innovative digital solutions focused on multilingual user experience."
+        },
+        "4": {
+          "title": "Optimization",
+          "description": "We continuously refine to ensure performance and cultural relevance across all markets."
+        }
+      }
+    },
+    "filters": {
+      "title": "Filters",
+      "all": "All",
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Video",
+      "ai": "AI"
+    },
+    "categories": {
+      "branding": "Branding",
+      "design": "Design",
+      "video": "Video",
+      "ai": "AI"
+    },
+    "items": {
+      "1": {
+        "title": "Multinational Visual Identity",
+        "category": "branding",
+        "description": "Development of consistent visual identity for a technology company present in 15 countries, respecting cultural nuances while maintaining brand unity."
+      },
+      "2": {
+        "title": "Multilingual E-commerce Platform",
+        "category": "design",
+        "description": "Design and implementation of user experience for an e-commerce platform available in 5 languages with specific cultural adaptations for each market."
+      },
+      "3": {
+        "title": "Global Audiovisual Campaign",
+        "category": "video",
+        "description": "Production of a series of promotional videos adapted for various international markets, with professional subtitling and cultural adaptation of content."
+      },
+      "4": {
+        "title": "Multilingual Virtual Assistant",
+        "category": "ai",
+        "description": "Development of an AI-based service solution capable of naturally interacting in 5 languages, with understanding of specific cultural expressions."
+      },
+      "5": {
+        "title": "Rebranding for Global Expansion",
+        "category": "branding",
+        "description": "Reformulation of brand identity for a company expanding internationally, with adaptations for different markets while maintaining visual cohesion."
+      },
+      "6": {
+        "title": "Multilingual Design System",
+        "category": "design",
+        "description": "Creation of a complete design system with adaptable components for different languages, including RTL, and typographic specificities of each language."
+      }
+    }
+  },
+  "cta": {
+    "title": "Let's Work Together",
+    "subtitle": "Ready to transform your global digital presence?",
+    "button": "Start Project"
   }
 }

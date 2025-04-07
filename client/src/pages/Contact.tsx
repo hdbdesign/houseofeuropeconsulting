@@ -3,22 +3,11 @@ import { useTranslation } from 'react-i18next';
 import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
 import { Helmet } from 'react-helmet';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Mail } from 'lucide-react';
 import { Link } from 'wouter';
+import ButtonCTA from '@/components/ui/ButtonCTA';
 
-const pageVariants = {
-  initial: { opacity: 0 },
-  animate: { 
-    opacity: 1,
-    transition: { duration: 0.5 }
-  },
-  exit: { 
-    opacity: 0,
-    transition: { duration: 0.3 }
-  }
-};
-
-const ContactPage = () => {
+const Contact = () => {
   const { t } = useTranslation();
   
   const contactBenefits = [
@@ -28,244 +17,230 @@ const ContactPage = () => {
     'contactPage.benefits.followup'
   ];
   
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 100,
+        damping: 15,
+      },
+    },
+  };
+
+  const faqs = [
+    {
+      question: 'contact.faq.q1',
+      answer: 'contact.faq.a1',
+    },
+    {
+      question: 'contact.faq.q2',
+      answer: 'contact.faq.a2',
+    },
+    {
+      question: 'contact.faq.q3',
+      answer: 'contact.faq.a3',
+    },
+    {
+      question: 'contact.faq.q4',
+      answer: 'contact.faq.a4',
+    },
+    {
+      question: 'contact.faq.q5',
+      answer: 'contact.faq.a5',
+    },
+  ];
+  
   return (
     <motion.div
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <Helmet>
-        <title>{t('meta.contact.title')}</title>
-        <meta name="description" content={t('meta.contact.description')} />
+        <title>{t('contact.metaTitle')} | House of Digital Business</title>
+        <meta name="description" content={t('contact.metaDescription')} />
       </Helmet>
       
-      <div className="pt-20 md:pt-24"> {/* Padding to account for fixed header */}
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden py-16 md:py-24">
-          {/* Background patterns */}
-          <div className="absolute inset-0 z-0 opacity-20">
-            <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-20 -mt-20"></div>
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full -ml-20 -mb-20"></div>
-            <div className="absolute inset-0" style={{ 
-              backgroundImage: 'linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px), linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px)',
-              backgroundSize: '40px 40px'
-            }}></div>
+      <div className="pt-16 md:pt-20"> 
+        <section className="relative bg-black pt-28 pb-16 md:pb-20 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-black opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#00FFFF]/10 to-transparent opacity-30"></div>
+            
+            {/* Background effect */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="h-full w-full" style={{
+                backgroundImage: `
+                  linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
+                  linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
+                `,
+                backgroundSize: '50px 50px'
+              }} />
+            </div>
+            
+            {/* Glow effect */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-1/2 bg-[#00FFFF]/20 blur-[120px] rounded-full"></div>
           </div>
           
-          <div className="container relative z-10 mx-auto px-4">
-            <motion.div 
-              className="max-w-3xl mx-auto text-center text-white"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6">
-                {t('contactPage.heroTitle')}
-              </h1>
-              <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                {t('contactPage.heroSubtitle')}
-              </p>
-              
-              <motion.div
-                className="inline-flex items-center justify-center space-x-1 text-white/80 text-sm mt-4"
-                initial={{ opacity: 0, y: 10 }}
+          <div className="container relative z-10">
+            <div className="max-w-3xl mx-auto text-center">
+              <motion.h1 
+                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.3 }}
+                transition={{ duration: 0.6 }}
               >
-                <span>{t('contactPage.heroScroll')}</span>
-                <motion.div
-                  animate={{ y: [0, 5, 0] }}
-                  transition={{ 
-                    repeat: Infinity, 
-                    duration: 1.5 
-                  }}
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                  </svg>
-                </motion.div>
-              </motion.div>
-            </motion.div>
+                {t('contact.hero.title')}
+              </motion.h1>
+              <motion.p 
+                className="text-lg md:text-xl text-white/80 mb-8 md:mb-10"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                {t('contact.hero.subtitle')}
+              </motion.p>
+            </div>
           </div>
         </section>
         
-        {/* Main Contact Section */}
-        <section id="contact" className="py-16 md:py-24 bg-white dark:bg-gray-800">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Contact Form Column */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+        <section className="bg-black py-12 md:py-16">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+              {/* Contact Form */}
+              <motion.div 
+                className="w-full bg-black/30 border border-[#00FFFF]/20 rounded-2xl p-6 md:p-8 shadow-lg backdrop-blur-sm"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8 md:p-10 border border-gray-100 dark:border-gray-700 relative">
-                  {/* Info Tag */}
-                  <div className="absolute -top-6 left-10 bg-primary text-white px-4 py-2 rounded-lg shadow-lg">
-                    <span className="text-sm font-medium">{t('contactPage.formTag')}</span>
-                  </div>
-                  
-                  <h2 className="font-heading font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mt-4 mb-6">
-                    {t('contact.title')}
-                  </h2>
-                  <p className="text-gray-600 dark:text-gray-300 mb-8">
-                    {t('contact.subtitle')}
-                  </p>
-                  
-                  <div className="mb-8">
-                    <div className="grid grid-cols-2 gap-4">
-                      {contactBenefits.map((benefit, index) => (
-                        <div key={index} className="flex items-start">
-                          <div className="mr-2 mt-1 text-primary">
-                            <Check className="h-4 w-4" />
-                          </div>
-                          <p className="text-sm text-gray-600 dark:text-gray-300">{t(benefit)}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <ContactForm />
+                <div className="mb-8">
+                  <h2 className="text-2xl font-bold text-white mb-3">{t('contact.form.title')}</h2>
+                  <p className="text-white/70">{t('contact.form.subtitle')}</p>
                 </div>
+                <ContactForm />
               </motion.div>
               
-              {/* Contact Info Column */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="h-full"
+              {/* Contact Info */}
+              <motion.div 
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <ContactInfo />
               </motion.div>
-              
-              
             </div>
           </div>
         </section>
         
-        {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
-          <div className="container mx-auto px-4">
+        <section className="bg-black py-16 md:py-20">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
             <motion.div 
-              className="max-w-3xl mx-auto text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+                className="text-center mb-12"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
             >
-              <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                {t('contactPage.faq.subtitle')}
-              </span>
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-900 dark:text-white mb-6">
-                {t('contactPage.faq.title')}
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                {t('contactPage.faq.description')}
-              </p>
+                <h2 className="text-3xl font-bold text-white mb-4">{t('contact.faq.title')}</h2>
+                <p className="text-white/70">{t('contact.faq.subtitle')}</p>
             </motion.div>
             
-            <div className="max-w-3xl mx-auto">
-              {[1, 2, 3, 4].map((faq) => (
                 <motion.div 
-                  key={faq}
-                  className="mb-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: faq * 0.1 }}
-                >
-                  <details className="group">
-                    <summary className="flex items-center justify-between gap-1.5 p-6 font-medium cursor-pointer list-none text-gray-900 dark:text-white">
-                      <h3 className="font-heading font-semibold text-lg">
-                        {t(`contactPage.faq.questions.${faq}.question`)}
-                      </h3>
-                      <span className="relative h-5 w-5 shrink-0">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0 transition-opacity duration-200"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                          />
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                className="space-y-4"
+              >
+                {faqs.map((faq, index) => (
+                  <motion.div 
+                    key={index} 
+                    variants={itemVariants}
+                    className="border border-[#00FFFF]/20 bg-black/30 rounded-lg overflow-hidden"
+                  >
+                    <div className="overflow-hidden">
+                      <button
+                        className="flex items-center justify-between w-full p-5 text-left focus:outline-none"
+                        onClick={() => {}}
+                        aria-expanded={false}
+                      >
+                        <div className="flex items-center">
+                          <span className="flex items-center justify-center w-8 h-8 mr-4 rounded-full bg-[#00FFFF]/10 text-[#00FFFF] font-medium">
+                            {index + 1}
+                          </span>
+                          <h3 className="text-lg font-medium text-white">{t(faq.question)}</h3>
+                        </div>
+                        
+                        <div className="flex-shrink-0 ml-4">
+                          <svg className="w-5 h-5 text-[#00FFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                         </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100 transition-opacity duration-200"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M18 12H6"
-                          />
-                        </svg>
-                      </span>
-                    </summary>
-                    <div className="px-6 pb-6 pt-1">
-                      <p className="text-gray-600 dark:text-gray-300">
-                        {t(`contactPage.faq.questions.${faq}.answer`)}
-                      </p>
+                        </div>
+                      </button>
+                      
+                      <div className="p-5 pt-0 pl-[4.5rem]">
+                        <p className="text-gray-300">{t(faq.answer)}</p>
+                      </div>
                     </div>
-                  </details>
                 </motion.div>
               ))}
+              </motion.div>
             </div>
           </div>
         </section>
         
-        {/* CTA Banner */}
-        <section className="py-16 md:py-24 bg-white dark:bg-gray-800">
+        <section className="py-16 md:py-24 bg-black">
           <div className="container mx-auto px-4">
             <motion.div 
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden"
+              className="backdrop-blur-sm bg-black/30 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden border border-[#00FFFF]/20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              {/* Background Elements */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute right-0 bottom-0 w-64 h-64 bg-white rounded-full -mr-20 -mb-20"></div>
-                <div className="absolute left-0 top-0 w-64 h-64 bg-white rounded-full -ml-20 -mt-20"></div>
+              {/* Background Effects */}
+              <div className="absolute inset-0 z-0 overflow-hidden">
+                <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
               </div>
               
               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-8 md:mb-0 md:mr-8 text-white text-center md:text-left">
-                  <span className="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-medium mb-4">
+                <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
+                  <span className="inline-block py-1 px-3 rounded-full bg-[#00FFFF]/10 text-[#00FFFF] text-sm font-medium mb-4">
                     {t('contactPage.cta.subtitle')}
                   </span>
-                  <h2 className="font-heading font-bold text-2xl md:text-4xl mb-4">
+                  <h2 className="font-heading font-bold text-2xl md:text-4xl mb-4 text-white">
                     {t('contactPage.cta.title')}
                   </h2>
-                  <p className="text-white/90 max-w-xl leading-relaxed">
+                  <p className="text-gray-300 max-w-lg">
                     {t('contactPage.cta.description')}
                   </p>
                 </div>
                 
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/services">
-                    <div className="inline-flex items-center whitespace-nowrap px-6 py-3 bg-white text-primary hover:bg-white/90 font-medium rounded-lg shadow-md transition-colors duration-300">
+                    <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black">
                       {t('contactPage.cta.primaryButton')}
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </div>
+                    </ButtonCTA>
                   </Link>
                   <Link href="#contact">
-                    <div className="inline-flex items-center justify-center whitespace-nowrap px-6 py-3 bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium rounded-lg transition-colors duration-300">
+                    <ButtonCTA secondary className="border border-[#00FFFF]/30 hover:border-[#00FFFF] text-[#00FFFF]">
                       {t('contactPage.cta.secondaryButton')}
-                    </div>
+                    </ButtonCTA>
                   </Link>
                 </div>
               </div>
@@ -277,4 +252,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

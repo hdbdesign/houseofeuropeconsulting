@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagonal outline for the logo -->
+  <path d="M60 10L102.8 35V85L60 110L17.2 85V35L60 10Z" stroke="#00E5E5" stroke-width="3" fill="none"/>
+  <!-- Inner hexagonal elements -->
+  <path d="M60 20L90.8 37.5V72.5L60 90L29.2 72.5V37.5L60 20Z" stroke="#00E5E5" stroke-width="2" fill="none"/>
+  <!-- "HD" letters in the center -->
+  <path d="M42 45V75M42 60H58M58 45V75M70 45V75M70 45H85M70 60H85M70 75H85" stroke="#00E5E5" stroke-width="4"/>
+  <!-- Bottom dot -->
+  <circle cx="60" cy="95" r="2" fill="#00E5E5"/>
+</svg> 

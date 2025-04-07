@@ -1,54 +1,27 @@
-import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
-import { Button } from "./button";
-
-type Theme = "dark" | "light" | "system";
+import { useState, useEffect } from 'react'
+import { Sun, Moon } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { useTheme } from '@/hooks/useTheme'
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("system");
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") as Theme | null;
-    if (storedTheme) {
-      setTheme(storedTheme);
-      applyTheme(storedTheme);
-    } else {
-      // Default to system
-      applyTheme("system");
-    }
-  }, []);
-
-  const applyTheme = (newTheme: Theme) => {
-    const root = window.document.documentElement;
-    const isDark = 
-      newTheme === "dark" || 
-      (newTheme === "system" && 
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-    root.classList.remove("light", "dark");
-    root.classList.add(isDark ? "dark" : "light");
-  };
-
-  const toggleTheme = () => {
-    const newTheme: Theme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    applyTheme(newTheme);
-  };
-
+  const { theme, toggleTheme } = useTheme()
+  
   return (
-    <Button
-      variant="ghost"
-      size="icon"
+    <button
       onClick={toggleTheme}
+      className="rounded-full p-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00E5E5] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
       aria-label="Toggle theme"
-      className="bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800"
+      title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {theme === "dark" ? (
-        <Sun className="h-5 w-5 text-yellow-400" />
-      ) : (
-        <Moon className="h-5 w-5 text-slate-700 dark:text-slate-400" />
-      )}
-    </Button>
-  );
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        key={theme}
+      >
+        {theme === 'dark' ? <Sun className="h-5 w-5 text-[#00FFFF]" /> : <Moon className="h-5 w-5" />}
+      </motion.div>
+    </button>
+  )
 }

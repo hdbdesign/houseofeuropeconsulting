@@ -31,7 +31,7 @@ const LanguageSelector = () => {
   return (
     <div className="relative language-selector" ref={dropdownRef}>
       <motion.button
-        className="flex items-center space-x-1 px-3 py-2 rounded-md bg-neutralLight hover:bg-gray-200 transition-colors"
+        className="flex items-center space-x-1 px-3 py-2 rounded-md bg-neutralLight dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -53,11 +53,11 @@ const LanguageSelector = () => {
               {languages.map((lang) => (
                 <motion.button
                   key={lang.code}
-                  className={`block w-full text-left px-4 py-2 text-sm ${
+                  className={`flex items-center space-x-2 px-4 py-2 text-sm w-full text-left transition-colors ${
                     language === lang.code 
                       ? 'bg-primary text-white' 
-                      : 'text-gray-700 hover:bg-neutralLight hover:text-primary'
-                  } transition-colors`}
+                      : 'text-gray-700 dark:text-gray-300 hover:bg-neutralLight dark:hover:bg-gray-700 hover:text-primary'
+                  }`}
                   onClick={() => {
                     changeLanguage(lang.code);
                     setIsOpen(false);
