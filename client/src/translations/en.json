@@ -17,6 +17,81 @@
       "description": "Get in touch with House of Digital Business in any of our supported languages for your digital needs."
     }
   },
+  "servicesPage": {
+    "heroTitle": "Digital Business Services",
+    "heroSubtitle": "Comprehensive multilingual digital solutions for global businesses",
+    "heroButton": "Contact us today",
+    "features": {
+      "quality": {
+        "title": "Premium Quality",
+        "description": "Professionally designed multilingual websites tested to ensure quality across all languages."
+      },
+      "fast": {
+        "title": "Fast Delivery",
+        "description": "Quick response times and on-time delivery for international projects."
+      },
+      "reliable": {
+        "title": "Reliable Service",
+        "description": "Ongoing support in 5 languages to ensure a seamless digital experience."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "How we work",
+      "description": "A systematic approach to creating high-quality multilingual digital solutions",
+      "steps": {
+        "1": {
+          "title": "Consultation & Planning",
+          "description": "Defining project requirements, budget, and timeline in your preferred language."
+        },
+        "2": {
+          "title": "Design & Development",
+          "description": "Creating customized solutions optimized for global and local markets."
+        },
+        "3": {
+          "title": "Translation & Localization",
+          "description": "Professional adaptation of content to all five languages with cultural sensitivity."
+        },
+        "4": {
+          "title": "Launch & Support",
+          "description": "Thorough implementation and ongoing support in all supported languages."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our multilingual digital services",
+      "moreQuestions": "Still have questions? Get in touch with our multilingual team.",
+      "contactButton": "Contact Us",
+      "questions": {
+        "1": {
+          "question": "What languages do you support for website development?",
+          "answer": "We support five main languages: English, Portuguese, German, French, and Italian. Each website is fully localized including content, images, and SEO."
+        },
+        "2": {
+          "question": "How long does it take to develop a multilingual website?",
+          "answer": "Timelines vary based on project complexity, but we typically complete multilingual websites within 4-8 weeks, including all translation and localization phases."
+        },
+        "3": {
+          "question": "How do you ensure translation quality?",
+          "answer": "We work with native translators specialized in digital content. Each translation goes through a dual verification process to ensure linguistic and cultural accuracy."
+        },
+        "4": {
+          "question": "Do you offer ongoing support after launch?",
+          "answer": "Yes, we offer ongoing support packages in all languages. Our multilingual team is available to help with updates, fixes, and optimizations."
+        },
+        "5": {
+          "question": "How do you optimize websites for international markets?",
+          "answer": "We implement multilingual SEO strategies, language-specific URL structures, hreflang tags, and ensure content is culturally relevant to each target market."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to expand your business globally?",
+      "description": "Our multilingual team is ready to help transform your digital presence and reach new markets worldwide.",
+      "button": "Start a Project"
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -217,5 +292,47 @@
     "nameRequired": "Name is required",
     "emailInvalid": "Please enter a valid email address",
     "messageMinLength": "Message must be at least 10 characters long"
+  },
+  "contactPage": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "We're ready to help your business expand globally with our multilingual digital solutions",
+    "heroScroll": "Scroll down",
+    "formTag": "Contact",
+    "benefits": {
+      "response": "Fast 24-hour response",
+      "expert": "Expert consultation",
+      "tailored": "Tailored solutions",
+      "followup": "Post-project follow-up"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Support",
+      "description": "Find answers to common questions about our multilingual contact and support services",
+      "questions": {
+        "1": {
+          "question": "How long does it take to get a response?",
+          "answer": "We respond to all inquiries within 24 business hours. For urgent matters, we have a rapid response team available during business hours."
+        },
+        "2": {
+          "question": "How does support in different languages work?",
+          "answer": "Our international team provides support in 5 languages: English, Portuguese, German, French, and Italian. You can select your preferred language in the contact form."
+        },
+        "3": {
+          "question": "Do you offer ongoing technical support after a project?",
+          "answer": "Yes, we offer various post-launch support packages. Our clients can choose between basic, standard, or premium support with different levels of assistance."
+        },
+        "4": {
+          "question": "How can I schedule a personalized consultation?",
+          "answer": "Simply fill out our contact form indicating you're interested in a consultation. One of our specialists will reach out to schedule a meeting in your preferred language."
+        }
+      }
+    },
+    "cta": {
+      "title": "Let's work together?",
+      "subtitle": "Partnership",
+      "description": "Transform your digital presence on a global scale with our multilingual expertise and innovative digital solutions.",
+      "primaryButton": "Explore our services",
+      "secondaryButton": "Talk to us"
+    }
   }
 }

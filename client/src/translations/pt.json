@@ -17,6 +17,81 @@
       "description": "Entre em contato com a House of Digital Business em qualquer um dos nossos idiomas suportados para suas necessidades digitais."
     }
   },
+  "servicesPage": {
+    "heroTitle": "Serviços de Negócios Digitais",
+    "heroSubtitle": "Soluções digitais multilíngues completas para negócios globais",
+    "heroButton": "Contate-nos hoje",
+    "features": {
+      "quality": {
+        "title": "Qualidade Premium",
+        "description": "Sites multilíngues com design profissional, testados para garantir qualidade em todos os idiomas."
+      },
+      "fast": {
+        "title": "Entrega Rápida",
+        "description": "Tempos de resposta rápidos e entregas dentro do prazo para projetos internacionais."
+      },
+      "reliable": {
+        "title": "Serviço Confiável",
+        "description": "Suporte contínuo em 5 idiomas para garantir uma experiência digital perfeita."
+      }
+    },
+    "process": {
+      "title": "Nosso Processo",
+      "subtitle": "Como trabalhamos",
+      "description": "Uma abordagem sistemática para criar soluções digitais multilíngues de alta qualidade",
+      "steps": {
+        "1": {
+          "title": "Consulta e Planejamento",
+          "description": "Definição de requisitos do projeto, orçamento e cronograma em seu idioma preferido."
+        },
+        "2": {
+          "title": "Design e Desenvolvimento",
+          "description": "Criação de soluções personalizadas, otimizadas para mercados globais e locais."
+        },
+        "3": {
+          "title": "Tradução e Localização",
+          "description": "Adaptação profissional de conteúdo para os cinco idiomas com sensibilidade cultural."
+        },
+        "4": {
+          "title": "Lançamento e Suporte",
+          "description": "Implementação detalhada e suporte contínuo em todos os idiomas suportados."
+        }
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossos serviços digitais multilíngues",
+      "moreQuestions": "Ainda tem perguntas? Entre em contato com nossa equipe multilíngue.",
+      "contactButton": "Entre em contato",
+      "questions": {
+        "1": {
+          "question": "Quais idiomas vocês suportam para desenvolvimento de sites?",
+          "answer": "Suportamos cinco idiomas principais: Inglês, Português, Alemão, Francês e Italiano. Cada site é totalmente localizado, incluindo conteúdo, imagens e SEO."
+        },
+        "2": {
+          "question": "Quanto tempo leva para desenvolver um site multilíngue?",
+          "answer": "Os prazos variam de acordo com a complexidade do projeto, mas geralmente completamos sites multilíngues em 4-8 semanas, incluindo todas as fases de tradução e localização."
+        },
+        "3": {
+          "question": "Como vocês garantem a qualidade das traduções?",
+          "answer": "Trabalhamos com tradutores nativos especializados em conteúdo digital. Cada tradução passa por um processo de verificação dupla para garantir precisão linguística e cultural."
+        },
+        "4": {
+          "question": "Vocês oferecem suporte contínuo após o lançamento?",
+          "answer": "Sim, oferecemos pacotes de suporte contínuo em todos os idiomas. Nossa equipe multilíngue está disponível para ajudar com atualizações, correções e otimizações."
+        },
+        "5": {
+          "question": "Como vocês otimizam sites para mercados internacionais?",
+          "answer": "Implementamos estratégias de SEO multilíngue, estruturas de URL específicas para cada idioma, hreflangs, e garantimos que o conteúdo seja culturalmente relevante para cada mercado alvo."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pronto para expandir seu negócio globalmente?",
+      "description": "Nossa equipe multilíngue está pronta para ajudar a transformar sua presença digital e alcançar novos mercados em todo o mundo.",
+      "button": "Iniciar Projeto"
+    }
+  },
   "nav": {
     "home": "Início",
     "about": "Quem Somos",
@@ -217,5 +292,47 @@
     "nameRequired": "Nome é obrigatório",
     "emailInvalid": "Por favor, insira um endereço de email válido",
     "messageMinLength": "A mensagem deve ter pelo menos 10 caracteres"
+  },
+  "contactPage": {
+    "heroTitle": "Entre em Contato Conosco",
+    "heroSubtitle": "Estamos prontos para ajudar seu negócio a expandir globalmente com nossas soluções digitais multilíngues",
+    "heroScroll": "Role para baixo",
+    "formTag": "Contato",
+    "benefits": {
+      "response": "Resposta rápida em 24 horas",
+      "expert": "Consultoria com especialistas",
+      "tailored": "Soluções personalizadas",
+      "followup": "Acompanhamento após projeto"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Suporte",
+      "description": "Encontre respostas para as perguntas mais comuns sobre nossos serviços de contato e suporte multilíngue",
+      "questions": {
+        "1": {
+          "question": "Quanto tempo leva para receber uma resposta?",
+          "answer": "Respondemos a todas as consultas em 24 horas úteis. Para questões urgentes, temos uma equipe de resposta rápida disponível durante o horário comercial."
+        },
+        "2": {
+          "question": "Como funciona o suporte em diferentes idiomas?",
+          "answer": "Nossa equipe internacional oferece suporte em 5 idiomas: Inglês, Português, Alemão, Francês e Italiano. Você pode selecionar seu idioma preferido no formulário de contato."
+        },
+        "3": {
+          "question": "Vocês oferecem suporte técnico contínuo após o projeto?",
+          "answer": "Sim, oferecemos vários pacotes de suporte pós-lançamento. Nossos clientes podem escolher entre suporte básico, padrão ou premium com diferentes níveis de assistência."
+        },
+        "4": {
+          "question": "Como posso agendar uma consultoria personalizada?",
+          "answer": "Basta preencher nosso formulário de contato indicando que você está interessado em uma consultoria. Um de nossos especialistas entrará em contato para agendar uma reunião no seu idioma preferido."
+        }
+      }
+    },
+    "cta": {
+      "title": "Vamos trabalhar juntos?",
+      "subtitle": "Parceria",
+      "description": "Transforme sua presença digital em escala global com nossa expertise multilíngue e soluções digitais inovadoras.",
+      "primaryButton": "Conheça nossos serviços",
+      "secondaryButton": "Fale conosco"
+    }
   }
 }

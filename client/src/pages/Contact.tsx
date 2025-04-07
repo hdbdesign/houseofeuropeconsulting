@@ -91,7 +91,7 @@ const ContactPage = () => {
         </section>
         
         {/* Main Contact Section */}
-        <section id="contact" className="py-16 md:py-24 bg-white">
+        <section id="contact" className="py-16 md:py-24 bg-white dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Contact Form Column */}
@@ -101,16 +101,16 @@ const ContactPage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="bg-white rounded-xl shadow-xl p-8 md:p-10 border border-gray-100 relative">
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8 md:p-10 border border-gray-100 dark:border-gray-700 relative">
                   {/* Info Tag */}
                   <div className="absolute -top-6 left-10 bg-primary text-white px-4 py-2 rounded-lg shadow-lg">
                     <span className="text-sm font-medium">{t('contactPage.formTag')}</span>
                   </div>
                   
-                  <h2 className="font-heading font-bold text-2xl md:text-3xl text-gray-900 mt-4 mb-6">
+                  <h2 className="font-heading font-bold text-2xl md:text-3xl text-gray-900 dark:text-white mt-4 mb-6">
                     {t('contact.title')}
                   </h2>
-                  <p className="text-gray-600 mb-8">
+                  <p className="text-gray-600 dark:text-gray-300 mb-8">
                     {t('contact.subtitle')}
                   </p>
                   
@@ -121,7 +121,7 @@ const ContactPage = () => {
                           <div className="mr-2 mt-1 text-primary">
                             <Check className="h-4 w-4" />
                           </div>
-                          <p className="text-sm text-gray-600">{t(benefit)}</p>
+                          <p className="text-sm text-gray-600 dark:text-gray-300">{t(benefit)}</p>
                         </div>
                       ))}
                     </div>
@@ -243,7 +243,7 @@ const ContactPage = () => {
         </section>
         
         {/* CTA Banner */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <motion.div 
               className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden"
