@@ -119,9 +119,58 @@
     },
     "values": {
       "title": "Nossos Valores",
-      "text": "Inovação, integridade, compreensão cultural e excelência em tudo o que fazemos."
+      "text": "Inovação, integridade, compreensão cultural e excelência em tudo o que fazemos.",
+      "subtitle": "Nossos princípios fundamentais guiam tudo o que fazemos",
+      "coreValues": {
+        "innovation": {
+          "title": "Inovação",
+          "text": "Buscamos constantemente novas maneiras de resolver problemas digitais globais."
+        },
+        "customer": {
+          "title": "Foco no Cliente",
+          "text": "Colocamos as necessidades específicas dos clientes no centro de cada projeto."
+        },
+        "quality": {
+          "title": "Qualidade Superior",
+          "text": "Nos esforçamos pela excelência em cada aspecto do nosso trabalho."
+        },
+        "global": {
+          "title": "Perspectiva Global",
+          "text": "Respeitamos e promovemos a diversidade cultural em todas as nossas soluções."
+        }
+      }
     },
-    "teamTitle": "Nossa Equipe Internacional"
+    "teamTitle": "Nossa Equipe Internacional",
+    "teamSubtitle": "Especialistas internacionais em soluções digitais multilíngues",
+    "teamDescription": "Nossa equipe diversificada traz experiência global e conhecimento cultural para cada projeto digital.",
+    "joinTeam": {
+      "title": "Junte-se à Nossa Equipe",
+      "description": "Procurando talentos multilíngues apaixonados por transformação digital global.",
+      "button": "Ver Oportunidades"
+    },
+    "timeline": {
+      "title": "Nossa Jornada",
+      "subtitle": "Marcos importantes da House of Digital Business",
+      "items": {
+        "2008": {
+          "title": "Fundação da Empresa",
+          "description": "A House of Digital Business foi fundada com foco em soluções web multilíngues."
+        },
+        "2012": {
+          "title": "Expansão Internacional",
+          "description": "Expandimos para cinco idiomas principais e abrimos nosso escritório em Berlim."
+        },
+        "2016": {
+          "title": "Inovação Digital",
+          "description": "Lançamento de nossa plataforma personalizada de localização digital para empresas globais."
+        }
+      }
+    },
+    "missionBanner": {
+      "title": "Nossa Missão é Seu Sucesso Global",
+      "subtitle": "Ajudamos empresas a prosperar em mercados internacionais com soluções digitais inteligentes",
+      "button": "Fale Conosco"
+    }
   },
   "team": {
     "member1": {

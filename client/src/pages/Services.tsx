@@ -169,11 +169,11 @@ const ServicesPage = () => {
                   </div>
                   
                   {/* Content */}
-                  <div className="bg-white rounded-xl p-6 shadow-md pt-10 h-full border-t-4 border-primary">
-                    <h3 className="font-heading font-semibold text-xl mb-3 text-primary">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md pt-10 h-full border-t-4 border-primary">
+                    <h3 className="font-heading font-semibold text-xl mb-3 text-primary dark:text-cyan-400">
                       {t(`servicesPage.process.steps.${step}.title`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {t(`servicesPage.process.steps.${step}.description`)}
                     </p>
                   </div>
@@ -192,7 +192,7 @@ const ServicesPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <motion.div 
               className="text-center mb-16"
@@ -201,10 +201,10 @@ const ServicesPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary dark:text-cyan-400 mb-4">
                 {t('servicesPage.faq.title')}
               </h2>
-              <p className="max-w-2xl mx-auto text-gray-600">
+              <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
                 {t('servicesPage.faq.subtitle')}
               </p>
             </motion.div>
@@ -213,14 +213,14 @@ const ServicesPage = () => {
               {[1, 2, 3, 4, 5].map((faq) => (
                 <motion.div 
                   key={faq}
-                  className="mb-4 bg-white rounded-lg shadow-md overflow-hidden"
+                  className="mb-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: faq * 0.05 }}
                 >
                   <details className="group">
-                    <summary className="flex items-center justify-between gap-1.5 p-6 font-medium cursor-pointer list-none text-gray-900">
+                    <summary className="flex items-center justify-between gap-1.5 p-6 font-medium cursor-pointer list-none text-gray-900 dark:text-white">
                       <h3 className="font-heading font-semibold text-lg">
                         {t(`servicesPage.faq.questions.${faq}.question`)}
                       </h3>
@@ -256,7 +256,7 @@ const ServicesPage = () => {
                       </span>
                     </summary>
                     <div className="px-6 pb-6 pt-1">
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         {t(`servicesPage.faq.questions.${faq}.answer`)}
                       </p>
                     </div>
@@ -272,7 +272,7 @@ const ServicesPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {t('servicesPage.faq.moreQuestions')}
               </p>
               <Link href="/contact">

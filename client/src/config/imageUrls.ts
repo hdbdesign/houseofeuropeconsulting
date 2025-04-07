@@ -37,4 +37,7 @@ export const testimonialImages = {
   client1: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=80&h=80&q=80",
   client2: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80",
   client3: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80",
+  logo1: "https://via.placeholder.com/120x30?text=Company+1",
+  logo2: "https://via.placeholder.com/120x30?text=Company+2",
+  logo3: "https://via.placeholder.com/120x30?text=Company+3",
 };

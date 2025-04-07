@@ -119,9 +119,58 @@
     },
     "values": {
       "title": "Our Values",
-      "text": "Innovation, integrity, cultural understanding, and excellence in everything we do."
+      "text": "Innovation, integrity, cultural understanding, and excellence in everything we do.",
+      "subtitle": "Our core principles guide everything we do",
+      "coreValues": {
+        "innovation": {
+          "title": "Innovation",
+          "text": "We constantly seek new ways to solve global digital challenges."
+        },
+        "customer": {
+          "title": "Customer Focus",
+          "text": "We place clients' specific needs at the center of every project."
+        },
+        "quality": {
+          "title": "Superior Quality",
+          "text": "We strive for excellence in every aspect of our work."
+        },
+        "global": {
+          "title": "Global Perspective",
+          "text": "We respect and promote cultural diversity in all our solutions."
+        }
+      }
     },
-    "teamTitle": "Our International Team"
+    "teamTitle": "Our International Team",
+    "teamSubtitle": "International experts in multilingual digital solutions",
+    "teamDescription": "Our diverse team brings global experience and cultural knowledge to every digital project.",
+    "joinTeam": {
+      "title": "Join Our Team",
+      "description": "Looking for multilingual talents passionate about global digital transformation.",
+      "button": "View Opportunities"
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "subtitle": "Key milestones of House of Digital Business",
+      "items": {
+        "2008": {
+          "title": "Company Foundation",
+          "description": "House of Digital Business was founded with a focus on multilingual web solutions."
+        },
+        "2012": {
+          "title": "International Expansion",
+          "description": "We expanded to five core languages and opened our Berlin office."
+        },
+        "2016": {
+          "title": "Digital Innovation",
+          "description": "Launch of our custom digital localization platform for global businesses."
+        }
+      }
+    },
+    "missionBanner": {
+      "title": "Our Mission is Your Global Success",
+      "subtitle": "We help businesses thrive in international markets with smart digital solutions",
+      "button": "Contact Us"
+    }
   },
   "team": {
     "member1": {
