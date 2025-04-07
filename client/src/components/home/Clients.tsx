@@ -6,11 +6,11 @@ const Clients = () => {
   const { t } = useTranslation();
 
   const clientLogos = [
-    { id: 1, Icon: FaGoogle, size: 'w-24' },
-    { id: 2, Icon: FaAmazon, size: 'w-24' },
-    { id: 3, Icon: FaMicrosoft, size: 'w-28' },
-    { id: 4, Icon: FaApple, size: 'w-20' },
-    { id: 5, Icon: FaSalesforce, size: 'w-24' }
+    { id: 1, Icon: FaGoogle, size: 'w-24', color: 'hover:text-[#4285F4]' },
+    { id: 2, Icon: FaAmazon, size: 'w-24', color: 'hover:text-[#FF9900]' },
+    { id: 3, Icon: FaMicrosoft, size: 'w-28', color: 'hover:text-[#00A4EF]' },
+    { id: 4, Icon: FaApple, size: 'w-20', color: 'hover:text-[#A2AAAD]' },
+    { id: 5, Icon: FaSalesforce, size: 'w-24', color: 'hover:text-[#00A1E0]' }
   ];
 
   const containerVariants = {
@@ -41,20 +41,15 @@ const Clients = () => {
         animate="visible"
         variants={containerVariants}
       >
-        <motion.p 
-          className="text-center text-sm uppercase tracking-wider text-gray-500 mb-6"
-          variants={itemVariants}
-        >
-          {t('hero.trustedBy')}
-        </motion.p>
+        {/* Removed the duplicated title as it's already in Hero */}
         
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {clientLogos.map((client) => (
             <motion.div 
               key={client.id}
-              className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              className={`h-10 w-auto filter grayscale hover:grayscale-0 text-gray-500 dark:text-gray-400 ${client.color} transition-all duration-300`}
               variants={itemVariants}
-              whileHover={{ scale: 1.1, grayscale: 0 }}
+              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
             >
               <client.Icon className={`h-full ${client.size}`} />
             </motion.div>

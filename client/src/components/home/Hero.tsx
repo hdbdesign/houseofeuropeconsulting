@@ -151,19 +151,21 @@ const Hero = () => {
               transition: { delay: 0.8, duration: 0.6 }
             }}
           >
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 font-medium">{t('hero.trusted')}</p>
-            <div className="flex justify-center space-x-8">
-              <div className="text-center">
-                <span className="block font-bold text-3xl text-primary">500+</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.projects')}</span>
-              </div>
-              <div className="text-center">
-                <span className="block font-bold text-3xl text-primary">50+</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.countries')}</span>
-              </div>
-              <div className="text-center">
-                <span className="block font-bold text-3xl text-primary">98%</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">{t('hero.stats.satisfaction')}</span>
+            <div className="flex flex-col w-full items-center">
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium uppercase tracking-wider">{t('hero.trusted')}</p>
+              <div className="flex justify-center space-x-16 md:space-x-24">
+                <div className="text-center">
+                  <span className="block font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600 mb-2">500+</span>
+                  <span className="text-xs md:text-sm uppercase tracking-wider font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.projects')}</span>
+                </div>
+                <div className="text-center">
+                  <span className="block font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">50+</span>
+                  <span className="text-xs md:text-sm uppercase tracking-wider font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.countries')}</span>
+                </div>
+                <div className="text-center">
+                  <span className="block font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500 mb-2">98%</span>
+                  <span className="text-xs md:text-sm uppercase tracking-wider font-medium text-gray-600 dark:text-gray-300">{t('hero.stats.satisfaction')}</span>
+                </div>
               </div>
             </div>
           </motion.div>
