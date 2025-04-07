@@ -224,7 +224,21 @@
     "title": "Our Services",
     "subtitle": "Comprehensive digital solutions tailored to your global business needs across five languages.",
     "learnMore": "Learn more",
+    "startsAt": "Starting at",
+    "features": "Features",
     "items": {
+      "price1": "€1499",
+      "price2": "€1999",
+      "price3": "€2499",
+      "feature1_1": "Responsive design for all devices",
+      "feature1_2": "Professional translation in 5 languages",
+      "feature1_3": "Multilingual SEO support",
+      "feature2_1": "Customized strategic planning",
+      "feature2_2": "International market analysis",
+      "feature2_3": "Cultural adaptation consulting",
+      "feature3_1": "Multilingual web and mobile app",
+      "feature3_2": "Integration with existing systems",
+      "feature3_3": "Technical support in all languages",
       "multilingual": {
         "title": "Multilingual Website Development",
         "description": "Custom websites optimized for international audiences with full i18n support across 5 languages."

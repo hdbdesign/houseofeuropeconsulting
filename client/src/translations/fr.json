@@ -137,7 +137,21 @@
     "title": "Nos Services",
     "subtitle": "Solutions numériques complètes adaptées aux besoins de votre entreprise mondiale dans cinq langues.",
     "learnMore": "En savoir plus",
+    "startsAt": "À partir de",
+    "features": "Fonctionnalités",
     "items": {
+      "price1": "€1499",
+      "price2": "€1999",
+      "price3": "€2499",
+      "feature1_1": "Design responsive pour tous les appareils",
+      "feature1_2": "Traduction professionnelle en 5 langues",
+      "feature1_3": "Support SEO multilingue",
+      "feature2_1": "Planification stratégique personnalisée",
+      "feature2_2": "Analyse du marché international",
+      "feature2_3": "Conseil en adaptation culturelle",
+      "feature3_1": "Application web et mobile multilingue",
+      "feature3_2": "Intégration avec les systèmes existants",
+      "feature3_3": "Support technique dans toutes les langues",
       "multilingual": {
         "title": "Développement de Sites Web Multilingues",
         "description": "Sites web personnalisés optimisés pour les audiences internationales avec support i18n complet dans 5 langues."
