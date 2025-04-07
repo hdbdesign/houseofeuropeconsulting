@@ -75,8 +75,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {navigationItems.map((item) => (
                 <li key={item.path}>
-                  <Link href={item.path}>
-                    <a className="text-blue-100 hover:text-white transition-colors">{t(item.labelKey)}</a>
+                  <Link href={item.path} className="text-blue-100 hover:text-white transition-colors">
+                    {t(item.labelKey)}
                   </Link>
                 </li>
               ))}

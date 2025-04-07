@@ -87,7 +87,26 @@
     },
     "values": {
       "title": "Nos Valeurs",
-      "text": "Innovation, intégrité, compréhension culturelle et excellence dans tout ce que nous faisons."
+      "text": "Innovation, intégrité, compréhension culturelle et excellence dans tout ce que nous faisons.",
+      "subtitle": "Nos principes fondamentaux guident tout ce que nous faisons",
+      "coreValues": {
+        "innovation": {
+          "title": "Innovation",
+          "text": "Nous recherchons constamment de nouvelles façons de résoudre les défis numériques mondiaux."
+        },
+        "customer": {
+          "title": "Orientation Client",
+          "text": "Nous plaçons les besoins spécifiques des clients au centre de chaque projet."
+        },
+        "quality": {
+          "title": "Qualité Supérieure",
+          "text": "Nous visons l'excellence dans tous les aspects de notre travail."
+        },
+        "global": {
+          "title": "Perspective Mondiale",
+          "text": "Nous respectons et promouvons la diversité culturelle dans toutes nos solutions."
+        }
+      }
     },
     "teamTitle": "Notre Équipe Internationale"
   },
