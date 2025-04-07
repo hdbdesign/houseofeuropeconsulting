@@ -175,7 +175,7 @@ const TeamSection = () => {
         
         {/* Join Our Team CTA */}
         <motion.div 
-          className="mt-16 bg-white rounded-2xl p-10 shadow-xl relative overflow-hidden"
+          className="mt-16 bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-xl relative overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

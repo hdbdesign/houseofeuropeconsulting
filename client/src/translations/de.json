@@ -51,6 +51,32 @@
     },
     "timelineTitle": "Unsere Reise",
     "timelineSubtitle": "Erfahren Sie mehr über die Entwicklung von House of Digital Business und unsere wichtigsten Meilensteine seit der Gründung.",
+    "timeline": {
+      "title": "Unsere Reise",
+      "subtitle": "Wichtige Meilensteine der House of Digital Business",
+      "items": {
+        "2008": {
+          "title": "Unternehmensgründung",
+          "description": "House of Digital Business wurde mit Fokus auf mehrsprachige Web-Lösungen gegründet."
+        },
+        "2012": {
+          "title": "Internationale Expansion",
+          "description": "Wir haben auf fünf Kernsprachen erweitert und unser Büro in Berlin eröffnet."
+        },
+        "2016": {
+          "title": "Digitale Innovation",
+          "description": "Einführung unserer maßgeschneiderten digitalen Lokalisierungsplattform für globale Unternehmen."
+        },
+        "2020": {
+          "title": "Globale Expansion",
+          "description": "Wir haben unsere Dienste auf über 50 Länder ausgeweitet und weltweit strategische Partnerschaften aufgebaut."
+        },
+        "2023": {
+          "title": "KI-Integration",
+          "description": "Implementierung von fortschrittlichen KI-Tools für erweiterte Übersetzung und kulturübergreifendes digitales Marketing."
+        }
+      }
+    },
     "vision": {
       "title": "Unsere Vision",
       "text": "Digitale Barrieren beseitigen und Unternehmen weltweit durch Technologie und Sprachkompetenz verbinden."

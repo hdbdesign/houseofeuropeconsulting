@@ -118,7 +118,7 @@ const AboutContent = () => {
 
       {/* Core Values Grid */}
       <motion.div 
-        className="mt-24 bg-white rounded-2xl p-8 shadow-xl"
+        className="mt-24 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl"
         variants={itemVariants}
       >
         <div className="text-center mb-12">

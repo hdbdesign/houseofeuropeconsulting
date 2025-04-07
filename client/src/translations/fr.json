@@ -51,6 +51,32 @@
     },
     "timelineTitle": "Notre Parcours",
     "timelineSubtitle": "Découvrez l'évolution de House of Digital Business et nos principales étapes depuis sa fondation.",
+    "timeline": {
+      "title": "Notre Parcours",
+      "subtitle": "Les étapes clés de House of Digital Business",
+      "items": {
+        "2008": {
+          "title": "Fondation de l'Entreprise",
+          "description": "House of Digital Business a été fondée avec un accent sur les solutions web multilingues."
+        },
+        "2012": {
+          "title": "Expansion Internationale",
+          "description": "Nous nous sommes étendus à cinq langues principales et avons ouvert notre bureau à Berlin."
+        },
+        "2016": {
+          "title": "Innovation Numérique",
+          "description": "Lancement de notre plateforme personnalisée de localisation numérique pour les entreprises mondiales."
+        },
+        "2020": {
+          "title": "Expansion Mondiale",
+          "description": "Nous avons étendu nos services à plus de 50 pays et établi des partenariats stratégiques dans le monde entier."
+        },
+        "2023": {
+          "title": "Intégration de l'IA",
+          "description": "Mise en œuvre d'outils d'IA de pointe pour la traduction avancée et le marketing numérique transculturel."
+        }
+      }
+    },
     "vision": {
       "title": "Notre Vision",
       "text": "Éliminer les barrières numériques et connecter les entreprises à l'échelle mondiale grâce à la technologie et à l'expertise linguistique."

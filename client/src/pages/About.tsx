@@ -130,7 +130,7 @@ const AboutPage = () => {
         </section>
         
         {/* Timeline Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <motion.div 
               className="text-center mb-16"
@@ -142,7 +142,7 @@ const AboutPage = () => {
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
                 {t('about.timelineTitle')}
               </h2>
-              <p className="max-w-2xl mx-auto text-gray-600">
+              <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
                 {t('about.timelineSubtitle')}
               </p>
             </motion.div>
@@ -167,11 +167,11 @@ const AboutPage = () => {
                     {year}
                   </div>
                   
-                  <div className={`bg-white shadow-lg rounded-lg p-6 ml-6 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:ml-6' : 'md:mr-6'}`}>
+                  <div className={`bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 ml-6 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:ml-6' : 'md:mr-6'}`}>
                     <h3 className="font-heading font-bold text-xl mb-2 text-primary">
                       {t(`about.timeline.${year}.title`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {t(`about.timeline.${year}.description`)}
                     </p>
                   </div>
