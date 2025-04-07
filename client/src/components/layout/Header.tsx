@@ -52,17 +52,25 @@ const Header = () => {
           <ul className="flex space-x-8 font-ui font-medium">
             {navigationItems.map((item) => (
               <li key={item.path}>
-                <Link href={item.path}>
+                {location === item.path ? (
                   <motion.div 
-                    className={`${
-                      location === item.path ? 'text-primary' : 'hover:text-primary'
-                    } transition-colors duration-300 cursor-pointer`}
+                    className="text-primary transition-colors duration-300 cursor-pointer"
                     whileHover={{ y: -2 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
                     {t(item.labelKey)}
                   </motion.div>
-                </Link>
+                ) : (
+                  <Link href={item.path}>
+                    <motion.div 
+                      className="hover:text-primary transition-colors duration-300 cursor-pointer"
+                      whileHover={{ y: -2 }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                    >
+                      {t(item.labelKey)}
+                    </motion.div>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

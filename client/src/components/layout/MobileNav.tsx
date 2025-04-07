@@ -66,17 +66,27 @@ const MobileNav = () => {
         </motion.button>
 
         {navigationItems.map((item) => (
-          <Link key={item.path} href={item.path}>
-            <motion.div 
-              className={`flex flex-col items-center ${
-                location === item.path ? 'text-primary' : 'text-gray-600 dark:text-gray-300 hover:text-primary'
-              }`}
-              whileTap={{ scale: 0.95 }}
-            >
-              {getIcon(item.icon || 'home')}
-              <span className="text-xs mt-1">{t(item.labelKey)}</span>
-            </motion.div>
-          </Link>
+          <div key={item.path}>
+            {location === item.path ? (
+              <motion.div 
+                className="flex flex-col items-center text-primary"
+                whileTap={{ scale: 0.95 }}
+              >
+                {getIcon(item.icon || 'home')}
+                <span className="text-xs mt-1">{t(item.labelKey)}</span>
+              </motion.div>
+            ) : (
+              <Link href={item.path}>
+                <motion.div 
+                  className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-primary"
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {getIcon(item.icon || 'home')}
+                  <span className="text-xs mt-1">{t(item.labelKey)}</span>
+                </motion.div>
+              </Link>
+            )}
+          </div>
         ))}
         
         <Popover>

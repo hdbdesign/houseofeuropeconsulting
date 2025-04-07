@@ -1,8 +1,8 @@
 import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { businessImages } from '@/config/imageUrls';
 import { TypeAnimation } from 'react-type-animation';
+import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon } from 'lucide-react';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -30,72 +30,135 @@ const Hero = () => {
     }
   };
 
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { 
+      opacity: 1, 
+      scale: 1,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  const gradientClasses = "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500";
+
   return (
-    <section className="pt-0 pb-0 bg-background dark:bg-gray-900">
-      <div className="container mx-auto px-4 h-[85vh] flex items-center">
+    <section className="relative h-screen bg-background dark:bg-gray-900 overflow-hidden flex items-center justify-center">
+      {/* Background animated elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-0 right-0 w-72 h-72 bg-purple-300 dark:bg-purple-700/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-cyan-300 dark:bg-cyan-700/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div className="container relative z-10 px-4 mx-auto">
         <motion.div 
-          className="flex flex-col md:flex-row items-center justify-between w-full"
+          className="flex flex-col items-center text-center max-w-4xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div className="w-full md:w-1/2 text-center md:text-left" variants={itemVariants}>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-4">
+          <motion.div className="mb-6 flex space-x-4" variants={itemVariants}>
+            {[RocketIcon, GlobeIcon, CodeIcon, BrainCircuitIcon, ZapIcon].map((Icon, i) => (
+              <motion.div 
+                key={i}
+                variants={iconVariants}
+                className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg"
+                whileHover={{ 
+                  y: -15, 
+                  rotate: [0, 5, -5, 0],
+                  transition: { duration: 0.5 } 
+                }}
+              >
+                <Icon size={28} className="text-primary" />
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.h1 
+            className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight"
+            variants={itemVariants}
+          >
+            <span className="block text-foreground dark:text-white">
               {t('hero.title')}
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
-              <TypeAnimation
-                sequence={[
-                  'Multilingual digital solutions for global businesses',
-                  2000,
-                  'Connecting companies beyond borders',
-                  2000,
-                  'Innovative strategies for international growth',
-                  2000,
-                  'Digital transformation with cultural sensitivity',
-                  2000
-                ]}
-                wrapper="span"
-                speed={50}
-                style={{ display: 'inline-block' }}
-                repeat={Infinity}
-              />
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href="/services">
-                <motion.a 
-                  className="px-8 py-3 bg-primary hover:bg-primaryDark text-white font-ui font-medium rounded-md transition-colors duration-300 shadow-md inline-block"
-                  whileHover={{ y: -4 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {t('hero.primaryBtn')}
-                </motion.a>
-              </Link>
-              <Link href="/contact">
-                <motion.a 
-                  className="px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-white font-ui font-medium rounded-md transition-colors duration-300 inline-block"
-                  whileHover={{ y: -4 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {t('hero.secondaryBtn')}
-                </motion.a>
-              </Link>
-            </div>
+            </span>
+            <span className={`block ${gradientClasses} text-transparent bg-clip-text mt-2`}>
+              Digital Business
+            </span>
+          </motion.h1>
+          
+          <motion.div 
+            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 h-16"
+            variants={itemVariants}
+          >
+            <TypeAnimation
+              sequence={[
+                'Soluções digitais multilíngues para negócios globais',
+                2000,
+                'Conectando empresas além das fronteiras',
+                2000,
+                'Estratégias inovadoras para crescimento internacional',
+                2000,
+                'Transformação digital com sensibilidade cultural',
+                2000
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ display: 'inline-block' }}
+              repeat={Infinity}
+            />
           </motion.div>
           
           <motion.div 
-            className="w-full md:w-1/2 mt-12 md:mt-0 flex justify-center"
+            className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
             variants={itemVariants}
           >
-            <motion.img 
-              src={businessImages.hero}
-              alt="International business team"
-              className="rounded-lg shadow-xl w-full max-w-lg object-cover"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              whileHover={{ scale: 1.03 }}
-            />
+            <motion.div>
+              <Link href="/services">
+                <div 
+                  className="px-8 py-4 bg-primary hover:bg-primary/90 text-white font-ui font-medium rounded-lg transition-colors duration-300 shadow-lg inline-block text-lg"
+                >
+                  {t('hero.primaryBtn')}
+                </div>
+              </Link>
+            </motion.div>
+            
+            <motion.div>
+              <Link href="/contact">
+                <div
+                  className="px-8 py-4 border-2 border-primary text-primary hover:bg-primary/10 font-ui font-medium rounded-lg transition-colors duration-300 inline-block text-lg"
+                >
+                  {t('hero.secondaryBtn')}
+                </div>
+              </Link>
+            </motion.div>
+          </motion.div>
+
+          {/* Clients Logos and Count */}
+          <motion.div 
+            className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 w-full max-w-xl mx-auto"
+            variants={itemVariants}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ 
+              opacity: 1, 
+              y: 0,
+              transition: { delay: 0.8, duration: 0.6 }
+            }}
+          >
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 font-medium">TRUSTED BY COMPANIES WORLDWIDE</p>
+            <div className="flex justify-center space-x-8">
+              <div className="text-center">
+                <span className="block font-bold text-3xl text-primary">500+</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Projects</span>
+              </div>
+              <div className="text-center">
+                <span className="block font-bold text-3xl text-primary">50+</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Countries</span>
+              </div>
+              <div className="text-center">
+                <span className="block font-bold text-3xl text-primary">98%</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Satisfaction</span>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
