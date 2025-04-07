@@ -145,10 +145,10 @@ const AboutContent = () => {
                 {icon}
               </div>
               <h3 className="font-heading font-semibold text-lg mb-2">
-                {t(`about.coreValues.${key}.title`)}
+                {t(`about.values.coreValues.${key}.title`)}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
-                {t(`about.coreValues.${key}.text`)}
+                {t(`about.values.coreValues.${key}.text`)}
               </p>
             </motion.div>
           ))}
