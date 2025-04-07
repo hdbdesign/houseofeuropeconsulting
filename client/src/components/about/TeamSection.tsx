@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { teamImages } from '@/config/imageUrls';
+import { Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react';
 
 const TeamSection = () => {
   const { t } = useTranslation();
@@ -13,6 +14,11 @@ const TeamSection = () => {
       roleKey: 'team.member1.role',
       descriptionKey: 'team.member1.description',
       delay: 0.1,
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        email: 'mail@example.com'
+      }
     },
     {
       id: 2,
@@ -21,6 +27,11 @@ const TeamSection = () => {
       roleKey: 'team.member2.role',
       descriptionKey: 'team.member2.description',
       delay: 0.2,
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        email: 'mail@example.com'
+      }
     },
     {
       id: 3,
@@ -29,6 +40,11 @@ const TeamSection = () => {
       roleKey: 'team.member3.role',
       descriptionKey: 'team.member3.description',
       delay: 0.3,
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        email: 'mail@example.com'
+      }
     },
     {
       id: 4,
@@ -37,6 +53,11 @@ const TeamSection = () => {
       roleKey: 'team.member4.role',
       descriptionKey: 'team.member4.description',
       delay: 0.4,
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        email: 'mail@example.com'
+      }
     },
   ];
 
@@ -64,44 +85,133 @@ const TeamSection = () => {
   };
 
   return (
-    <motion.div 
-      className="mt-24"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
-    >
-      <motion.h3 
-        className="font-heading font-bold text-2xl md:text-3xl text-center mb-12"
-        variants={itemVariants}
-        custom={0}
-      >
-        {t('about.teamTitle')}
-      </motion.h3>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {teamMembers.map((member) => (
-          <motion.div
-            key={member.id}
-            className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-            variants={itemVariants}
-            custom={member.delay}
-            whileHover={{ y: -8, transition: { duration: 0.3 } }}
-          >
-            <img 
-              src={member.image}
-              alt={t(member.nameKey)}
-              className="w-full h-56 object-cover object-center"
-            />
-            <div className="p-6">
-              <h4 className="font-heading font-semibold text-lg mb-1">{t(member.nameKey)}</h4>
-              <p className="text-primary text-sm mb-3">{t(member.roleKey)}</p>
-              <p className="text-gray-600 text-sm">{t(member.descriptionKey)}</p>
+    <section className="py-16 md:py-24 bg-neutralLight">
+      <div className="container mx-auto px-4">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            {t('about.teamSubtitle')}
+          </span>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
+            {t('about.teamTitle')}
+          </h2>
+          <p className="max-w-2xl mx-auto text-gray-600">
+            {t('about.teamDescription')}
+          </p>
+        </motion.div>
+        
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          {teamMembers.map((member, index) => (
+            <motion.div
+              key={member.id}
+              className="relative group"
+              variants={itemVariants}
+              custom={member.delay}
+            >
+              <div className="relative overflow-hidden rounded-xl shadow-lg bg-white dark:bg-gray-800">
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full z-0"></div>
+                
+                {/* Image with gradient overlay */}
+                <div className="relative overflow-hidden">
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-end p-6"
+                    whileHover={{ opacity: 1 }}
+                  >
+                    <div className="flex space-x-2 mb-4">
+                      <a href={member.social.linkedin} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors duration-300">
+                        <Linkedin className="h-4 w-4" />
+                      </a>
+                      <a href={member.social.twitter} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors duration-300">
+                        <Twitter className="h-4 w-4" />
+                      </a>
+                      <a href={`mailto:${member.social.email}`} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-primary transition-colors duration-300">
+                        <Mail className="h-4 w-4" />
+                      </a>
+                    </div>
+                    <p className="text-white/90 text-sm">
+                      {t(member.descriptionKey)}
+                    </p>
+                  </motion.div>
+                  
+                  <img 
+                    src={member.image}
+                    alt={t(member.nameKey)}
+                    className="w-full h-72 object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="font-heading font-bold text-lg text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">
+                    {t(member.nameKey)}
+                  </h3>
+                  <div className="flex items-center justify-between">
+                    <p className="text-primary font-medium">
+                      {t(member.roleKey)}
+                    </p>
+                    <motion.div 
+                      whileHover={{ scale: 1.2, rotate: 45 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    >
+                      <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-primary transition-colors duration-300" />
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+        
+        {/* Join Our Team CTA */}
+        <motion.div 
+          className="mt-16 bg-white rounded-2xl p-10 shadow-xl relative overflow-hidden"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute right-0 bottom-0 w-64 h-64 bg-primary rounded-full -mr-32 -mb-32"></div>
+            <div className="absolute left-0 top-0 w-64 h-64 bg-primary rounded-full -ml-32 -mt-32"></div>
+          </div>
+          
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-6 md:mb-0">
+              <h3 className="font-heading font-bold text-2xl mb-2">
+                {t('about.joinTeam.title')}
+              </h3>
+              <p className="text-gray-600 max-w-xl">
+                {t('about.joinTeam.description')}
+              </p>
             </div>
-          </motion.div>
-        ))}
+            
+            <div>
+              <motion.a
+                href="/contact"
+                className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg shadow-md hover:bg-primary/90 transition-colors duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {t('about.joinTeam.button')}
+                <ArrowUpRight className="ml-2 h-5 w-5" />
+              </motion.a>
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 
