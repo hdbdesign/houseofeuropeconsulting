@@ -46,7 +46,7 @@ const Footer = () => {
               <img 
                 src={brandLogos.withText} 
                 alt="House of Digital Business" 
-                className="h-16 w-auto brightness-0 invert" 
+                className="h-24 w-auto brightness-0 invert" 
               />
             </div>
             <p className="mb-6 text-gray-400">{t('footer.tagline')}</p>

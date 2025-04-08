@@ -73,7 +73,7 @@ const MobileNav = () => {
               <img 
                 src={brandLogos.primary} 
                 alt="Logo" 
-                style={{ height: "55px", width: "auto" }} 
+                style={{ height: "75px", width: "auto" }} 
                 className="w-auto brightness-0 invert" 
               />
             </div>
@@ -103,7 +103,7 @@ const MobileNav = () => {
               <img 
                 src={brandLogos.primary} 
                 alt="House of Digital Business" 
-                style={{ height: "55px", width: "auto" }} 
+                style={{ height: "75px", width: "auto" }} 
                 className="w-auto brightness-0 invert" 
               />
               <button 
