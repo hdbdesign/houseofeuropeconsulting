@@ -31,11 +31,11 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 bg-black z-50 hidden md:block ${
-        scrolled ? 'shadow-md' : ''
-      } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
+      className={`fixed top-0 left-0 right-0 bg-transparent z-50 hidden md:block ${
+        scrolled ? 'shadow-md bg-black/90 backdrop-blur-sm' : ''
+      } transition-all duration-300`}
     >
-      <div className="container mx-auto px-2 flex justify-between items-center">
+      <div className="container mx-auto px-2 flex justify-between items-center h-16">
         {/* Logo */}
         <Link href="/">
           <motion.div 
