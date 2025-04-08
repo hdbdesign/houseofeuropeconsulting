@@ -101,10 +101,10 @@ const MobileNav = () => {
           >
             <div className="flex justify-between items-center p-4 border-b border-gray-800">
               <img 
-                src={LogoImg} 
+                src={brandLogos.primary} 
                 alt="House of Digital Business" 
                 style={{ height: "42px", width: "auto" }} 
-                className="w-auto" 
+                className="w-auto brightness-0 invert" 
               />
               <button 
                 onClick={() => setIsOpen(false)} 

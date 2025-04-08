@@ -6,7 +6,7 @@ import LogoImg from '@/assets/images/logo/Logo-05.png';
 
 const Footer = () => {
   const { t } = useTranslation();
-  
+
   const containerAnimation = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -20,7 +20,7 @@ const Footer = () => {
       }
     }
   };
-  
+
   const itemAnimation = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -44,9 +44,9 @@ const Footer = () => {
           <motion.div variants={itemAnimation}>
             <div className="flex items-center mb-6">
               <img 
-                src={LogoImg} 
+                src={brandLogos.withText} 
                 alt="House of Digital Business" 
-                className="h-12" 
+                className="h-12 w-auto brightness-0 invert" 
               />
             </div>
             <p className="mb-6 text-gray-400">{t('footer.tagline')}</p>
@@ -73,7 +73,7 @@ const Footer = () => {
               </a>
             </div>
           </motion.div>
-          
+
           {/* Navigation */}
           <motion.div variants={itemAnimation}>
             <h3 className="font-heading font-bold text-[#00FFFF] text-lg mb-6">{t('footer.navigation')}</h3>
@@ -85,7 +85,7 @@ const Footer = () => {
               <li><Link href="/contact" className="text-gray-400 hover:text-[#00FFFF] transition-colors">{t('nav.contact')}</Link></li>
             </ul>
           </motion.div>
-          
+
           {/* Contact Info */}
           <motion.div variants={itemAnimation}>
             <h3 className="font-heading font-bold text-[#00FFFF] text-lg mb-6">{t('footer.contactUs')}</h3>
@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
             </ul>
           </motion.div>
-          
+
           {/* Subscribe */}
           <motion.div variants={itemAnimation}>
             <h3 className="font-heading font-bold text-[#00FFFF] text-lg mb-6">{t('footer.subscribe')}</h3>
@@ -124,7 +124,7 @@ const Footer = () => {
             </form>
           </motion.div>
         </div>
-        
+
         <motion.div 
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
           variants={itemAnimation}
