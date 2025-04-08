@@ -6,7 +6,7 @@ import { navigationItems } from '@/config/navigation';
 import { motion } from 'framer-motion';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { useTheme } from '@/hooks/useTheme';
-import LogoImg from '@/assets/images/logo/Logo-05.png';
+import LogoImg from '@/assets/images/logo/logo-with-text.svg';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -47,8 +47,8 @@ const Header = () => {
             <img 
               src={LogoImg} 
               alt="House of Digital Business" 
-              style={{ height: "50px", width: "auto", filter: "brightness(0) saturate(100%) invert(67%) sepia(74%) saturate(1217%) hue-rotate(140deg) brightness(106%) contrast(101%)" }}
-              className="w-auto" 
+              style={{ height: "50px", width: "auto" }}
+              className="w-auto brightness-0 invert" 
             />
           </motion.div>
         </Link>
