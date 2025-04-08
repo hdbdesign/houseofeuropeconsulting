@@ -6,7 +6,7 @@ import { navigationItems } from '@/config/navigation';
 import { motion } from 'framer-motion';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { useTheme } from '@/hooks/useTheme';
-import LogoImg from '@/assets/images/logo/logo-with-text.svg';
+import { brandLogos } from '@/config/imageUrls';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -45,7 +45,7 @@ const Header = () => {
           >
             {/* Desktop logo */}
             <img 
-              src={LogoImg} 
+              src={brandLogos.withText} 
               alt="House of Digital Business" 
               style={{ height: "50px", width: "auto" }}
               className="w-auto brightness-0 invert" 
