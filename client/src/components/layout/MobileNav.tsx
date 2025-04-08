@@ -73,7 +73,7 @@ const MobileNav = () => {
               <img 
                 src={brandLogos.primary} 
                 alt="Logo" 
-                style={{ height: "120px", width: "auto" }} 
+                style={{ height: "80px", width: "auto", transform: "scale(1.4)", marginTop: "-5px", marginBottom: "-5px" }} 
                 className="w-auto brightness-0 invert" 
               />
             </div>

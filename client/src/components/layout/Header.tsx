@@ -47,7 +47,7 @@ const Header = () => {
             <img 
               src={brandLogos.withText} 
               alt="House of Digital Business" 
-              style={{ height: "140px", width: "auto" }}
+              style={{ height: "120px", width: "auto", transform: "scale(1.4)", marginTop: "-10px", marginBottom: "-10px" }}
               className="w-auto brightness-0 invert" 
             />
           </motion.div>
