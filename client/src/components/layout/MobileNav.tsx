@@ -21,7 +21,7 @@ const MobileNav = () => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 z-50 md:hidden">
-      <div className="grid grid-cols-6 gap-1 py-3 px-1">
+      <div className="grid grid-cols-6 gap-1 py-1">
         {navigationItems.map((item) => {
           const isActive = location === item.path;
           let Icon;

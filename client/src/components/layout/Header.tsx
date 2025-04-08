@@ -35,7 +35,7 @@ const Header = () => {
         scrolled ? 'shadow-md' : ''
       } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
     >
-      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+      <div className="container mx-auto px-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <motion.div 
