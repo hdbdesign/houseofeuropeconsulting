@@ -14,7 +14,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const { isDark } = useTheme();
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -31,11 +30,11 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 bg-black z-50 hidden md:block ${
+      className={`fixed top-0 left-0 right-0 bg-black z-50 hidden md:block h-16 overflow-hidden ${
         scrolled ? 'shadow-md' : ''
-      } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
+      } transition-shadow duration-300 dark:border-b dark:border-gray-800 custom-header`}
     >
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <motion.div 
@@ -43,12 +42,11 @@ const Header = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
-            {/* Desktop logo */}
             <img 
               src={LogoImg} 
               alt="House of Digital Business" 
-              style={{ height: "50px", width: "auto" }}
-              className="w-auto" 
+              style={{ height: "48px", width: "auto", objectFit: "contain" }} 
+              className="w-auto m-0 p-0" 
             />
           </motion.div>
         </Link>
