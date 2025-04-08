@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon, Home, Info, Briefcase, Image, Mail } from 'lucide-react';
 import { useTheme } from '@/hooks/useTheme';
 import LanguageSelector from './LanguageSelector';
-import LogoImg from '@/assets/images/logo/Logo-05.png';
+import { brandLogos } from '@/config/imageUrls';
 
 const MobileNav = () => {
   const { t } = useTranslation();
@@ -71,10 +71,10 @@ const MobileNav = () => {
           <Link href="/">
             <div className="flex items-center">
               <img 
-                src={LogoImg} 
+                src={brandLogos.primary} 
                 alt="Logo" 
                 style={{ height: "42px", width: "auto" }} 
-                className="w-auto" 
+                className="w-auto brightness-0 invert" 
               />
             </div>
           </Link>
