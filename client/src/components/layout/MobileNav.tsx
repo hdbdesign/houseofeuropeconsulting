@@ -73,12 +73,12 @@ const MobileNav = () => {
               <img 
                 src={brandLogos.primary} 
                 alt="Logo" 
-                style={{ height: "42px", width: "auto" }} 
+                style={{ height: "55px", width: "auto" }} 
                 className="w-auto brightness-0 invert" 
               />
             </div>
           </Link>
-          
+
           <button 
             onClick={() => setIsOpen(true)} 
             className="p-2 text-[#00FFFF] focus:outline-none"
@@ -88,7 +88,7 @@ const MobileNav = () => {
           </button>
         </div>
       </header>
-      
+
       {/* Mobile Navigation Overlay */}
       <AnimatePresence>
         {isOpen && (
@@ -103,7 +103,7 @@ const MobileNav = () => {
               <img 
                 src={brandLogos.primary} 
                 alt="House of Digital Business" 
-                style={{ height: "42px", width: "auto" }} 
+                style={{ height: "55px", width: "auto" }} 
                 className="w-auto brightness-0 invert" 
               />
               <button 
@@ -114,7 +114,7 @@ const MobileNav = () => {
                 <X className="w-6 h-6" />
               </button>
             </div>
-            
+
             <div className="flex-1 overflow-y-auto py-8 px-6">
               <nav>
                 <ul className="space-y-6">
@@ -140,7 +140,7 @@ const MobileNav = () => {
                 </ul>
               </nav>
             </div>
-            
+
             <div className="p-4 border-t border-gray-800 flex justify-between items-center">
               <button
                 onClick={toggleTheme}
@@ -153,7 +153,7 @@ const MobileNav = () => {
                   <Moon className="w-5 h-5 text-gray-300" />
                 )}
               </button>
-              
+
               <LanguageSelector />
             </div>
           </motion.div>
