@@ -21,7 +21,7 @@ const MobileNav = () => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 z-50 md:hidden">
-      <div className="grid grid-cols-6 gap-2 py-3 px-6">
+      <div className="grid grid-cols-6 gap-4 py-4 px-2">
         {navigationItems.map((item) => {
           const isActive = location === item.path;
           let Icon;
@@ -53,8 +53,8 @@ const MobileNav = () => {
                   isActive ? 'text-[#00FFFF]' : 'text-gray-400'
                 }`}
               >
-                <Icon className="w-6 h-6 mb-2" />
-                <span className="text-xs font-medium">{t(item.labelKey)}</span>
+                <Icon className="w-5 h-5 mb-1.5" />
+                <span className="text-[10px] font-medium truncate">{t(item.labelKey)}</span>
               </motion.div>
             </Link>
           );
