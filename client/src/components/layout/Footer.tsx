@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import LogoImg from '@/assets/images/logo/Logo-05.png';
+import { brandLogos } from '@/config/imageUrls';
 
 const Footer = () => {
   const { t } = useTranslation();
