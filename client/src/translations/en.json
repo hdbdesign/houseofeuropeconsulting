@@ -431,6 +431,15 @@
   "footer": {
     "tagline": "Connecting businesses globally through innovative digital solutions.",
     "quickLinks": "Quick Links",
+    "navigation": "Navigation",
+    "contactUs": "Contact Us",
+    "address": "Bergheimerstrasse 12, 69115 Heidelberg, Germany",
+    "phone": "+49 (0) 6221 432 1928",
+    "email": "info@houseofdigitalbusiness.de",
+    "subscribe": "Subscribe to Our Newsletter",
+    "subscribeText": "Stay updated with our latest digital solutions and industry insights.",
+    "emailPlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe",
     "services": "Services",
     "links": {
       "careers": "Careers",

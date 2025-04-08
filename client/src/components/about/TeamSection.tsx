@@ -115,11 +115,11 @@ const TeamSection = () => {
           {teamMembers.map((member) => (
             <motion.div
               key={member.id}
-              className="relative group"
+              className="relative group h-full"
               variants={itemVariants}
               custom={member.delay}
             >
-              <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#0C1E3C] border border-[#00FFFF]/10 hover:border-[#00FFFF]/30 transition-colors duration-300">
+              <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#0C1E3C] border border-[#00FFFF]/10 hover:border-[#00FFFF]/30 transition-colors duration-300 h-full flex flex-col">
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#00FFFF]/10 rounded-full z-0"></div>
                 
@@ -157,20 +157,22 @@ const TeamSection = () => {
                   />
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="font-heading font-bold text-lg text-white group-hover:text-[#00FFFF] transition-colors duration-300">
-                    {t(member.nameKey)}
-                  </h3>
-                  <div className="flex items-center justify-between">
-                    <p className="text-[#00FFFF] font-medium">
-                      {t(member.roleKey)}
-                    </p>
-                    <motion.div 
-                      whileHover={{ scale: 1.2, rotate: 45 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    >
-                      <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-[#00FFFF] transition-colors duration-300" />
-                    </motion.div>
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-heading font-bold text-lg text-white group-hover:text-[#00FFFF] transition-colors duration-300">
+                      {t(member.nameKey)}
+                    </h3>
+                    <div className="flex items-center justify-between mt-2">
+                      <p className="text-[#00FFFF] font-medium">
+                        {t(member.roleKey)}
+                      </p>
+                      <motion.div 
+                        whileHover={{ scale: 1.2, rotate: 45 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      >
+                        <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-[#00FFFF] transition-colors duration-300" />
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>
