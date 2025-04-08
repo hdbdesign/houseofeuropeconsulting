@@ -35,7 +35,7 @@ const Header = () => {
         scrolled ? 'shadow-md' : ''
       } transition-shadow duration-300 dark:border-b dark:border-gray-800`}
     >
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
           <motion.div 
@@ -47,7 +47,7 @@ const Header = () => {
             <img 
               src={brandLogos.withText} 
               alt="House of Digital Business" 
-              style={{ height: "120px", width: "auto", transform: "scale(1.4)", marginTop: "-10px", marginBottom: "-10px" }}
+              style={{ height: "80px", width: "auto", transform: "scale(1.8)" }}
               className="w-auto brightness-0 invert" 
             />
           </motion.div>
