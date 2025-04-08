@@ -4,6 +4,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { queryClient } from "./lib/queryClient";
 import { LanguageProvider } from "./context/LanguageContext";
 import { AnimatePresence } from "framer-motion";
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS
+emailjs.init('YOUR_PUBLIC_KEY'); // You'll need to replace this with your actual public key
 
 // Pages
 import Home from "@/pages/Home";

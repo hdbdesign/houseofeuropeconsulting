@@ -42,9 +42,26 @@ const ContactForm = () => {
     mode: 'onChange'
   });
 
-  const contactMutation = useMutation({
-    mutationFn: (data: ContactFormValues) => {
-      return apiRequest('POST', '/api/contact', data);
+  import emailjs from '@emailjs/browser';
+
+const contactMutation = useMutation({
+    mutationFn: async (data: ContactFormValues) => {
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        company: data.company || 'Not provided',
+        phone: data.phone || 'Not provided',
+        language: data.language,
+        service: data.service,
+        message: data.message
+      };
+      
+      return emailjs.send(
+        'YOUR_SERVICE_ID', // You'll need to replace this
+        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        templateParams,
+        'YOUR_PUBLIC_KEY' // You'll need to replace this
+      );
     },
     onSuccess: () => {
       toast({
