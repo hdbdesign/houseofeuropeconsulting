@@ -166,12 +166,13 @@ const TeamSection = () => {
                       <p className="text-[#00FFFF] font-medium">
                         {t(member.roleKey)}
                       </p>
-                    <motion.div 
-                      whileHover={{ scale: 1.2, rotate: 45 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    >
-                      <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-[#00FFFF] transition-colors duration-300" />
-                    </motion.div>
+                      <motion.div 
+                        whileHover={{ scale: 1.2, rotate: 45 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      >
+                        <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-[#00FFFF] transition-colors duration-300" />
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>
