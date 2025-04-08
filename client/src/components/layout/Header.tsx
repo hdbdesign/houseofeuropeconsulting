@@ -47,7 +47,7 @@ const Header = () => {
             <img 
               src={LogoImg} 
               alt="House of Digital Business" 
-              style={{ height: "50px", width: "auto" }}
+              style={{ height: "50px", width: "auto", filter: "brightness(0) saturate(100%) invert(67%) sepia(74%) saturate(1217%) hue-rotate(140deg) brightness(106%) contrast(101%)" }}
               className="w-auto" 
             />
           </motion.div>
