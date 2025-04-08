@@ -54,7 +54,7 @@ const MobileNav = () => {
                 }`}
               >
                 <Icon className="w-4 h-4 mb-1" />
-                <span className="text-[8px] leading-tight font-medium break-words text-center max-w-[80px] mx-auto">{t(item.labelKey)}</span>
+                <span className="text-[8px] leading-tight font-medium truncate text-center max-w-[45px] mx-auto">{t(item.labelKey)}</span>
               </motion.div>
             </Link>
           );
