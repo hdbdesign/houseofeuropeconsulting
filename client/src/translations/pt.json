@@ -420,12 +420,16 @@
   },
   "contact": {
     "title": "Entre em Contato",
-    "subtitle": "Pronto para expandir seu negócio globalmente? Entre em contato conosco em qualquer um dos nossos idiomas suportados.",
+    "subtitle": "Pronto para expandir seu negócio globalmente? Entre em contato conosco em um dos nossos idiomas suportados.",
     "form": {
       "name": "Nome",
       "namePlaceholder": "João Silva",
+      "company": "Empresa",
+      "companyPlaceholder": "Sua empresa (opcional)",
       "email": "Email",
       "emailPlaceholder": "joao@exemplo.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "Seu telefone (opcional)",
       "language": "Idioma Preferido",
       "languages": {
         "en": "Inglês",
@@ -434,26 +438,31 @@
         "fr": "Francês",
         "it": "Italiano"
       },
+      "subject": "Assunto",
+      "subjectPlaceholder": "Assunto da sua mensagem",
       "service": "Serviço de Interesse",
       "services": {
         "website": "Desenvolvimento de Sites Multilíngues",
-        "consulting": "Consultoria em Estratégia Digital",
+        "consulting": "Consultoria de Estratégia Digital",
         "localization": "Localização de Conteúdo",
         "seo": "SEO e Marketing Digital",
         "ecommerce": "Soluções de E-commerce",
         "applocalization": "Localização de Aplicativos"
       },
+      "selectServices": "Quais serviços lhe interessam?",
+      "otherService": "Outro serviço",
+      "noServicesSelected": "Nenhum serviço selecionado",
       "message": "Mensagem",
-      "messagePlaceholder": "Conte-nos sobre seu projeto...",
+      "messagePlaceholder": "Fale-nos sobre seu projeto...",
       "submit": "Enviar Mensagem",
-      "submitting": "Enviando...",
+      "sending": "Enviando...",
       "success": {
         "title": "Mensagem Enviada!",
-        "message": "Obrigado por entrar em contato conosco. Retornaremos em breve."
+        "message": "Obrigado por entrar em contato. Responderemos em breve."
       },
       "error": {
         "title": "Erro",
-        "message": "Houve um erro ao enviar sua mensagem. Por favor, tente novamente."
+        "message": "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente."
       }
     },
     "info": {
@@ -659,5 +668,10 @@
         "description": "Criação de sistema de design completo com componentes adaptáveis para diferentes idiomas, incluindo RTL, e especificidades tipográficas de cada língua."
       }
     }
+  },
+  "cta": {
+    "title": "Pronto para transformar seu negócio digital?",
+    "description": "Nossa equipe multilíngue está pronta para ajudar a transformar sua presença digital e alcançar novos mercados em todo o mundo.",
+    "button": "Iniciar um Projeto"
   }
 }

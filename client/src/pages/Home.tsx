@@ -131,6 +131,7 @@ const HomePage = () => {
         
         <div className="container relative z-10 mx-auto px-4">
           <div className="flex flex-col items-center justify-center text-center">
+            
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -176,7 +177,7 @@ const HomePage = () => {
             >
               <Link href="/services">
                 <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black font-medium">
-                  {t('home.hero.primaryCTA')} <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                  {t('home.hero.primaryCTA')} <ArrowRight className="inline-block align-middle ml-2 h-5 w-5" />
                 </ButtonCTA>
               </Link>
               <Link href="/contact">

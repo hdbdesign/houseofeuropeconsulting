@@ -100,7 +100,7 @@ const ServicesPage = () => {
               >
                 <Link href="/contact">
                   <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black font-medium px-8 py-4">
-                    {t('servicesPage.heroButton')} <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                    {t('servicesPage.heroButton')} <ArrowRight className="inline-block align-middle ml-2 h-5 w-5" />
                   </ButtonCTA>
                 </Link>
               </motion.div>

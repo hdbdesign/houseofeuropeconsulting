@@ -250,8 +250,12 @@
     "form": {
       "name": "Nome",
       "namePlaceholder": "Mario Rossi",
+      "company": "Azienda",
+      "companyPlaceholder": "La tua azienda (opzionale)",
       "email": "Email",
       "emailPlaceholder": "mario@esempio.com",
+      "phone": "Telefono",
+      "phonePlaceholder": "Il tuo telefono (opzionale)",
       "language": "Lingua Preferita",
       "languages": {
         "en": "Inglese",
@@ -260,6 +264,8 @@
         "fr": "Francese",
         "it": "Italiano"
       },
+      "subject": "Oggetto",
+      "subjectPlaceholder": "Oggetto del tuo messaggio",
       "service": "Servizio di Interesse",
       "services": {
         "website": "Sviluppo di Siti Web Multilingue",
@@ -269,10 +275,13 @@
         "ecommerce": "Soluzioni E-commerce",
         "applocalization": "Localizzazione di App"
       },
+      "selectServices": "Quali servizi ti interessano?",
+      "otherService": "Altro servizio",
+      "noServicesSelected": "Nessun servizio selezionato",
       "message": "Messaggio",
       "messagePlaceholder": "Parlaci del tuo progetto...",
       "submit": "Invia Messaggio",
-      "submitting": "Invio in corso...",
+      "sending": "Invio in corso...",
       "success": {
         "title": "Messaggio Inviato!",
         "message": "Grazie per averci contattato. Ti risponderemo al più presto."
@@ -484,5 +493,10 @@
         "description": "Creazione di un sistema di design completo con componenti adattabili per diverse lingue, incluso RTL, e specificità tipografiche di ciascuna lingua."
       }
     }
+  },
+  "cta": {
+    "title": "Pronto a trasformare il tuo business digitale?",
+    "description": "Il nostro team multilingue è pronto ad aiutarti a trasformare la tua presenza digitale e raggiungere nuovi mercati in tutto il mondo.",
+    "button": "Inizia un Progetto"
   }
 }

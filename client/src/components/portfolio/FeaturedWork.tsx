@@ -116,7 +116,7 @@ const FeaturedWork = () => {
         >
           <Link href="/portfolio">
             <ButtonCTA secondary className="border border-[#00FFFF]/30 hover:border-[#00FFFF] text-[#00FFFF]">
-              {t('portfolio.viewAllButton')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+              {t('portfolio.viewAllButton')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
             </ButtonCTA>
           </Link>
         </motion.div>

@@ -250,8 +250,12 @@
     "form": {
       "name": "Nom",
       "namePlaceholder": "Jean Dupont",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre entreprise (optionnel)",
       "email": "Email",
       "emailPlaceholder": "jean@exemple.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "Votre téléphone (optionnel)",
       "language": "Langue Préférée",
       "languages": {
         "en": "Anglais",
@@ -260,6 +264,8 @@
         "fr": "Français",
         "it": "Italien"
       },
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
       "service": "Service d'Intérêt",
       "services": {
         "website": "Développement de Sites Web Multilingues",
@@ -269,10 +275,13 @@
         "ecommerce": "Solutions E-commerce",
         "applocalization": "Localisation d'Applications"
       },
+      "selectServices": "Quels services vous intéressent?",
+      "otherService": "Autre service",
+      "noServicesSelected": "Aucun service sélectionné",
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de votre projet...",
       "submit": "Envoyer le Message",
-      "submitting": "Envoi en cours...",
+      "sending": "Envoi en cours...",
       "success": {
         "title": "Message Envoyé!",
         "message": "Merci de nous avoir contactés. Nous vous répondrons sous peu."
@@ -486,8 +495,8 @@
     }
   },
   "cta": {
-    "title": "Travaillons ensemble",
-    "subtitle": "Prêt à transformer votre présence numérique mondiale?",
-    "button": "Démarrer un projet"
+    "title": "Prêt à transformer votre entreprise numérique?",
+    "description": "Notre équipe multilingue est prête à vous aider à transformer votre présence numérique et à atteindre de nouveaux marchés dans le monde entier.",
+    "button": "Démarrer un Projet"
   }
 }

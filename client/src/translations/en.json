@@ -347,14 +347,15 @@
     "form": {
       "title": "Send Us a Message",
       "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
-      "namePlaceholder": "Your Name",
-      "emailPlaceholder": "Your Email",
-      "companyPlaceholder": "Company Name (optional)",
-      "phonePlaceholder": "Phone Number (optional)",
-      "messagePlaceholder": "How can we help you?",
-      "privacyNotice": "By submitting this form, you agree to our Privacy Policy and consent to the processing of your data.",
-      "submit": "Send Message",
-      "submitting": "Sending...",
+      "name": "Name",
+      "namePlaceholder": "John Smith",
+      "company": "Company",
+      "companyPlaceholder": "Your company (optional)",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone (optional)",
+      "language": "Preferred Language",
       "languages": {
         "en": "English",
         "pt": "Portuguese",
@@ -362,21 +363,31 @@
         "fr": "French",
         "it": "Italian"
       },
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "service": "Service of Interest",
       "services": {
-        "website": "Website Development",
-        "consulting": "Digital Consulting",
+        "website": "Multilingual Website Development",
+        "consulting": "Digital Strategy Consulting",
         "localization": "Content Localization",
-        "seo": "International SEO",
+        "seo": "SEO & Digital Marketing",
         "ecommerce": "E-commerce Solutions",
         "applocalization": "App Localization"
       },
+      "selectServices": "Which services are you interested in?",
+      "otherService": "Other service",
+      "noServicesSelected": "No services selected",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "sending": "Sending...",
       "success": {
         "title": "Message Sent!",
-        "message": "Thank you for contacting us. We'll get back to you shortly."
+        "message": "Thank you for contacting us. We will respond shortly."
       },
       "error": {
-        "title": "Something went wrong",
-        "message": "There was an error sending your message. Please try again later."
+        "title": "Error",
+        "message": "An error occurred while sending your message. Please try again."
       }
     },
     "info": {
@@ -554,9 +565,9 @@
       "description": "We've helped companies across industries transform their digital presence."
     },
     "cta": {
-      "title": "Let's Work Together",
+      "title": "Let's work together",
       "subtitle": "Ready to transform your global digital presence?",
-      "button": "Start Project"
+      "button": "Start a project"
     },
     "hero": {
       "titleLine1": "Digital Solutions",
@@ -684,8 +695,8 @@
     }
   },
   "cta": {
-    "title": "Let's Work Together",
-    "subtitle": "Ready to transform your global digital presence?",
-    "button": "Start Project"
+    "title": "Ready to transform your digital business?",
+    "description": "Our multilingual team is ready to help transform your digital presence and reach new markets worldwide.",
+    "button": "Start a Project"
   }
 }

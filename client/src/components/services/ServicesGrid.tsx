@@ -122,7 +122,7 @@ const ServicesGrid = ({ showPricing = true, isHomePage = false }: ServicesGridPr
                   <div className="mt-auto">
                     <Link href={service.link}>
                       <ButtonCTA secondary className="w-full border border-[#00FFFF]/30 hover:border-[#00FFFF] text-[#00FFFF]">
-                        {t('services.learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
+                        {t('services.learnMore')} <ArrowRight className="ml-2 h-4 w-4 inline-block align-middle" />
                       </ButtonCTA>
                     </Link>
                   </div>
@@ -154,13 +154,13 @@ const ServicesGrid = ({ showPricing = true, isHomePage = false }: ServicesGridPr
           {isHomePage ? (
             <Link href="/services">
               <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black">
-                {t('home.services.viewAllBtn')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+                {t('home.services.viewAllBtn')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
               </ButtonCTA>
             </Link>
           ) : (
             <Link href="/contact">
               <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black">
-                {t('contact.form.submit')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+                {t('contact.form.submit')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
               </ButtonCTA>
             </Link>
           )}

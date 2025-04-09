@@ -68,7 +68,7 @@ const AboutPage = () => {
             >
               <Link href="/contact">
                 <ButtonCTA>
-                  {t('about.heroButton')} <ArrowRight className="inline-block ml-2 h-5 w-5" />
+                  {t('about.heroButton')} <ArrowRight className="inline-block align-middle ml-2 h-5 w-5" />
                 </ButtonCTA>
               </Link>
             </motion.div>

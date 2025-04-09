@@ -100,7 +100,7 @@ const ServicePricingCard: React.FC<ServicePricingCardProps> = ({
                 }
               `}
             >
-              {t('services.viewPricing')} <ArrowRight className="ml-2 h-4 w-4" />
+              {t('services.viewPricing')} <ArrowRight className="ml-2 h-4 w-4 inline-block align-middle" />
             </ButtonCTA>
           </Link>
         </div>

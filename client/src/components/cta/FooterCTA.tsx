@@ -55,8 +55,8 @@ const FooterCTA = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Link href="/contact">
-              <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black font-medium px-8 py-4">
-                {t('cta.button')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+              <ButtonCTA>
+                {t('cta.button')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
               </ButtonCTA>
             </Link>
           </motion.div>

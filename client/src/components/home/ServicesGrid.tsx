@@ -88,7 +88,7 @@ const ServicesGrid = () => {
                   <Link href={service.link}>
                     <a className="inline-flex items-center text-[#00FFFF] hover:text-white transition-colors text-sm font-medium">
                       {t('services.learnMore')} 
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <ArrowRight className="ml-2 h-4 w-4 inline-block align-middle" />
                     </a>
                   </Link>
                 </div>
@@ -106,7 +106,7 @@ const ServicesGrid = () => {
         >
           <Link href="/services">
             <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black">
-              {t('home.services.viewAllBtn')} <ArrowRight className="ml-2 h-5 w-5 inline" />
+              {t('home.services.viewAllBtn')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
             </ButtonCTA>
           </Link>
         </motion.div>

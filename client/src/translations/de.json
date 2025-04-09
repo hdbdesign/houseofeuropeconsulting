@@ -291,8 +291,12 @@
     "form": {
       "name": "Name",
       "namePlaceholder": "Max Mustermann",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen (optional)",
       "email": "E-Mail",
       "emailPlaceholder": "max@beispiel.de",
+      "phone": "Telefon",
+      "phonePlaceholder": "Ihre Telefonnummer (optional)",
       "language": "Bevorzugte Sprache",
       "languages": {
         "en": "Englisch",
@@ -301,7 +305,9 @@
         "fr": "Französisch",
         "it": "Italienisch"
       },
-      "service": "Interessierte Dienstleistung",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Betreff Ihrer Nachricht",
+      "service": "Dienstleistung von Interesse",
       "services": {
         "website": "Mehrsprachige Website-Entwicklung",
         "consulting": "Digitale Strategieberatung",
@@ -310,10 +316,13 @@
         "ecommerce": "E-Commerce-Lösungen",
         "applocalization": "App-Lokalisierung"
       },
+      "selectServices": "Welche Dienstleistungen interessieren Sie?",
+      "otherService": "Andere Dienstleistung",
+      "noServicesSelected": "Keine Dienstleistung ausgewählt",
       "message": "Nachricht",
       "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
-      "submit": "Nachricht Senden",
-      "submitting": "Wird gesendet...",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
       "success": {
         "title": "Nachricht Gesendet!",
         "message": "Vielen Dank für Ihre Kontaktaufnahme. Wir werden uns in Kürze bei Ihnen melden."
@@ -484,5 +493,10 @@
         "description": "Erstellung eines kompletten Design-Systems mit anpassbaren Komponenten für verschiedene Sprachen, einschließlich RTL und typografischer Besonderheiten jeder Sprache."
       }
     }
+  },
+  "cta": {
+    "title": "Bereit, Ihr digitales Geschäft zu transformieren?",
+    "description": "Unser mehrsprachiges Team ist bereit, Ihnen zu helfen, Ihre digitale Präsenz zu transformieren und neue Märkte weltweit zu erreichen.",
+    "button": "Projekt Starten"
   }
 }
