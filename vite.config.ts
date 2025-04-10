@@ -21,6 +21,12 @@ export default defineConfig({
         ]
       : []),
   ],
+  server: {
+    allowedHosts: [
+      '2ac65543-58a8-4650-9a1b-8e5846f86587-00-1i11yft607uh8.spock.replit.dev',
+      '.replit.dev'
+    ]
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
