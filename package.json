@@ -126,5 +126,11 @@
   "overrides": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "vercel": {
+    "framework": "vite",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "installCommand": "npm install"
   }
 }
