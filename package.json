@@ -2,18 +2,29 @@
   "name": "house-of-europe-consulting",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
   "scripts": {
-    "build:server": "tsc --project tsconfig.server.json",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:client && npm run build:server",
     "build:client": "cd client && npm run build",
-    "build": "npm run build:client",
-    "dev": "cd client && npm run dev",
+    "build:server": "cd server && npm run build",
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "cd client && npm run test",
+    "test:server": "cd server && npm run test",
     "start": "cd client && npm run preview"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.3"
+    "@types/node": "^22.15.3",
+    "concurrently": "^8.2.2"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
