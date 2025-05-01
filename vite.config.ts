@@ -26,9 +26,16 @@ export default defineConfig({
     }
   },
   root: "./client",
-  base: "./",
+  base: "",
   build: {
     outDir: "../dist/public",
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: "assets/[name][extname]",
+        chunkFileNames: "assets/[name].js",
+        entryFileNames: "assets/[name].js"
+      }
+    }
   },
 });
