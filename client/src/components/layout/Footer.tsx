@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { brandLogos } from '@/config/imageUrls';
-import InstagramIcon from '@/assets/images/logo/instagram.svg';
-import FacebookIcon from '@/assets/images/logo/facebook.svg';
-import XIcon from '@/assets/images/logo/x.svg';
-import LinkedInIcon from '@/assets/images/logo/linkedin.svg';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -61,7 +56,7 @@ const Footer: React.FC = () => {
                 <div className="flex gap-6">
                   <a href="https://www.facebook.com/people/House-of-Digital-Business/100076303023574/" target="_blank" rel="noopener noreferrer">
                     <motion.img 
-                      src={FacebookIcon} 
+                      src="/images/logo/facebook.svg" 
                       alt="Facebook" 
                       className="h-6 w-6 text-[#FB923C] [&>path]:fill-[#FB923C] hover:[&>path]:fill-[#FB923C]"
                       whileHover={{ scale: 1.1 }}
@@ -70,7 +65,7 @@ const Footer: React.FC = () => {
                   </a>
                   <a href="https://x.com/HouseDgBusiness" target="_blank" rel="noopener noreferrer">
                     <motion.img 
-                      src={XIcon} 
+                      src="/images/logo/x.svg" 
                       alt="X (Twitter)" 
                       className="h-6 w-6 text-[#FB923C] [&>path]:fill-[#FB923C] hover:[&>path]:fill-[#FB923C]"
                       whileHover={{ scale: 1.1 }}
@@ -83,7 +78,7 @@ const Footer: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     <motion.img 
-                      src={InstagramIcon}
+                      src="/images/logo/instagram.svg"
                       alt="Instagram"
                       className="h-6 w-6 text-[#FB923C] [&>path]:fill-[#FB923C] hover:[&>path]:fill-[#FB923C]"
                       whileHover={{ scale: 1.1 }}
@@ -92,7 +87,7 @@ const Footer: React.FC = () => {
                   </a>
                   <a href="https://www.linkedin.com/company/house-of-digital-business" target="_blank" rel="noopener noreferrer">
                     <motion.img 
-                      src={LinkedInIcon} 
+                      src="/images/logo/linkedin.svg" 
                       alt="LinkedIn" 
                       className="h-6 w-6 text-[#FB923C] [&>path]:fill-[#FB923C] hover:[&>path]:fill-[#FB923C]"
                       whileHover={{ scale: 1.1 }}

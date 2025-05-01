@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone, Clock, Calendar, Globe, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { MapPin, Mail, Phone, Clock, Calendar, Globe } from 'lucide-react';
 import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const ContactInfo = () => {
@@ -49,16 +48,22 @@ const ContactInfo = () => {
       icon: <FaInstagram className="h-6 w-6" />,
       text: 'Instagram',
       href: 'https://instagram.com/houseofeuropeconsulting',
+      color: 'bg-white',
+      label: 'Instagram'
     },
     {
       icon: <FaLinkedin className="h-6 w-6" />,
       text: 'LinkedIn',
       href: 'https://linkedin.com/company/houseofeuropeconsulting',
+      color: 'bg-white',
+      label: 'LinkedIn'
     },
     {
       icon: <FaFacebook className="h-6 w-6" />,
       text: 'Facebook',
       href: 'https://facebook.com/houseofeuropeconsulting',
+      color: 'bg-white',
+      label: 'Facebook'
     },
   ];
 

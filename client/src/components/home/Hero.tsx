@@ -1,8 +1,7 @@
 import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon, MousePointerClick, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 import ButtonCTA from '@/components/ui/ButtonCTA';
 
@@ -25,13 +24,11 @@ const Hero = () => {
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      // Usando requestAnimationFrame para melhor performance
       requestAnimationFrame(() => {
         const { clientX, clientY } = e;
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
         
-        // Reduzindo a sensibilidade do movimento
         const x = (clientX - windowWidth / 2) / (windowWidth * 2);
         const y = (clientY - windowHeight / 2) / (windowHeight * 2);
         

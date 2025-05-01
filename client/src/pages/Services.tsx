@@ -16,8 +16,10 @@ const ServicesPage = () => {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    const cards = cardsRef.current.filter(Boolean);
+    const cards = cardsRef.current.filter(Boolean) as HTMLDivElement[];
     
+    if (cards.length === 0) return;
+
     // Timeline para coordenar as animações
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -48,8 +50,8 @@ const ServicesPage = () => {
     );
 
     // Animação dos ícones
-    tl.fromTo(
-      cards.map(card => card?.querySelector('.icon-container')),
+    const iconContainers = cards.map(card => card.querySelector('.icon-container')) as HTMLElement[];
+    tl.fromTo(iconContainers,
       {
         opacity: 0,
         scale: 0.5,
@@ -67,8 +69,8 @@ const ServicesPage = () => {
     );
 
     // Animação das features
-    tl.fromTo(
-      cards.map(card => card?.querySelectorAll('.feature-item')),
+    const featureItems = cards.map(card => Array.from(card.querySelectorAll('.feature-item'))) as HTMLElement[][];
+    tl.fromTo(featureItems.flat(),
       {
         opacity: 0,
         x: -20,
@@ -229,7 +231,9 @@ const ServicesPage = () => {
             {services.map((service, index) => (
               <div
                 key={service.id}
-                ref={el => cardsRef.current[index] = el}
+                ref={(el) => {
+                  if (el) cardsRef.current[index] = el;
+                }}
                 className="opacity-0"
               >
                 <Link href={service.link}>
