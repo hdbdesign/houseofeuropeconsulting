@@ -19,7 +19,7 @@ const ServicesPage = () => {
     const cards = cardsRef.current.filter(Boolean) as HTMLDivElement[];
     
     if (cards.length === 0) return;
-
+    
     // Timeline para coordenar as animações
     const tl = gsap.timeline({
       scrollTrigger: {

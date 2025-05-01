@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
               className="flex items-center -ml-8"
             >
               <img
-                src="/images/logo/logo-primary.png"
+                src="/src/assets/images/logo/logo.png"
                 alt="House of Digital Business"
                 className={`transition-all duration-300 ${
                   isScrolled ? 'h-32' : 'h-44'
