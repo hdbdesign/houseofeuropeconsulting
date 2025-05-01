@@ -23,19 +23,11 @@ export default defineConfig({
       "@": path.resolve("./client/src"),
       "@shared": path.resolve("./shared"),
       "@assets": path.resolve("./attached_assets"),
-    },
+    }
   },
   root: path.resolve("./client"),
   build: {
     outDir: path.resolve("./dist/public"),
-    emptyOutDir: true,
-    rollupOptions: {
-      external: ['gsap'],
-      output: {
-        globals: {
-          gsap: 'gsap'
-        }
-      }
-    }
+    emptyOutDir: true
   },
 });
