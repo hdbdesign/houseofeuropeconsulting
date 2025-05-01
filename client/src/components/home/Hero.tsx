@@ -2,38 +2,38 @@ import { Link } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon, MousePointerClick } from 'lucide-react';
+import { CodeIcon, GlobeIcon, BrainCircuitIcon, RocketIcon, ZapIcon, MousePointerClick, ArrowRight } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 import ButtonCTA from '@/components/ui/ButtonCTA';
 
 const Hero = () => {
   const { t } = useTranslation();
   const containerRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
+    layoutEffect: false
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '60%']);
-  const opacitySection = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '10%']);
+  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
+  const opacitySection = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   // Mouse parallax effect for 3D feel (simplified)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      // Throttle the mouse movement calculation to improve performance
-      if (!window.requestAnimationFrame) return;
-      
-      window.requestAnimationFrame(() => {
+      // Usando requestAnimationFrame para melhor performance
+      requestAnimationFrame(() => {
         const { clientX, clientY } = e;
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
         
-        // Calculate mouse position as percentage from center
-        const x = (clientX - windowWidth / 2) / windowWidth;
-        const y = (clientY - windowHeight / 2) / windowHeight;
+        // Reduzindo a sensibilidade do movimento
+        const x = (clientX - windowWidth / 2) / (windowWidth * 2);
+        const y = (clientY - windowHeight / 2) / (windowHeight * 2);
         
         setMousePosition({ x, y });
       });
@@ -74,67 +74,109 @@ const Hero = () => {
   };
 
   return (
-    <section ref={containerRef} className="relative h-screen bg-black overflow-hidden flex items-center">
-      {/* Efeitos de fundo com neon */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#021C26]">
+      {/* Vídeo de Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#0C1E3C]/30 rounded-full blur-3xl"></div>
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover opacity-40"
+          style={{ 
+            filter: 'brightness(0.7) hue-rotate(-10deg)',
+            mixBlendMode: 'color-dodge'
+          }}
+        >
+          <source src="/videos/background-animation.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+
+      {/* Gradientes de fundo como overlay */}
+      <div className="absolute inset-0 z-1 bg-[#021C26]/80">
+        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#25C9BA]/20 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-[#25C9BA]/20 rounded-full blur-[120px]"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#25C9BA]/10 rounded-full blur-[150px]"></div>
       </div>
       
-      {/* Conteúdo */}
-      <div className="container mx-auto px-4 z-10">
-        <div className="max-w-5xl mx-auto text-center">
+      {/* Grid decorativo */}
+      <div 
+        className="absolute inset-0 z-2" 
+        style={{
+          backgroundImage: `radial-gradient(rgba(37,201,186,0.15) 1px, transparent 1px)`,
+          backgroundSize: '30px 30px'
+        }}
+      ></div>
+
+      <div className="container mx-auto px-4 relative z-10 pt-40 md:pt-48 lg:pt-52 pb-32">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-6"
+          className="text-center max-w-4xl mx-auto"
           >
-            <span className="inline-block px-4 py-1 backdrop-blur-md bg-[#00FFFF]/10 border border-[#00FFFF]/20 rounded-full text-[#00FFFF] text-sm font-medium">
-              {t('hero.subtitle') || 'Transformação Digital'}
-            </span>
-          </motion.div>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <div className="text-white">{t('hero.title')}</div>
+            <div className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF601A] to-[#FF601A]/90">
+              {t('hero.market')}
+            </div>
+          </h1>
           
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 text-white"
+            className="text-base md:text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            {t('hero.title') || 'Stärkung der Markenidentität und des Wachstums'}
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
-          >
-            {t('hero.description') || 'Transformamos negócios através de estratégias digitais inovadoras, design de marca e soluções de IA personalizadas que impulsionam o crescimento.'}
+            {t('hero.subtitle')}
           </motion.p>
           
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link href="/services">
-              <ButtonCTA>
-                {t('hero.primaryCTA') || 'Explorar Serviços'}
+              <ButtonCTA className="bg-[#FF601A] text-white hover:bg-[#FF601A]/90 text-lg px-8 py-4 min-w-[200px]">
+                {t('hero.primaryCTA')} <ArrowRight className="ml-2 h-5 w-5 inline-block" />
               </ButtonCTA>
             </Link>
             <Link href="/contact">
-              <ButtonCTA secondary>
-                {t('hero.secondaryCTA') || 'Fale Conosco'}
+              <ButtonCTA secondary className="border-transparent text-white hover:bg-white/10 text-lg px-8 py-4 min-w-[200px]">
+                {t('hero.secondaryCTA')} <ArrowRight className="ml-2 h-5 w-5 inline-block" />
               </ButtonCTA>
             </Link>
           </motion.div>
-        </div>
+        </motion.div>
+
+        {/* Estatísticas */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-24"
+        >
+          <div className="text-center">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#25C9BA] mb-2">{t('hero.stats.experience.number')}</h3>
+            <p className="text-gray-400">{t('hero.stats.experience.text')}</p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#25C9BA] mb-2">{t('hero.stats.deals.number')}</h3>
+            <p className="text-gray-400">{t('hero.stats.deals.text')}</p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#25C9BA] mb-2">{t('hero.stats.countries.number')}</h3>
+            <p className="text-gray-400">{t('hero.stats.countries.text')}</p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#25C9BA] mb-2">{t('hero.stats.satisfaction.number')}</h3>
+            <p className="text-gray-400">{t('hero.stats.satisfaction.text')}</p>
+          </div>
+        </motion.div>
       </div>
-      
-      {/* Decoração inferior */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black to-transparent"></div>
     </section>
   );
 };

@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { HTMLMotionProps, motion } from 'framer-motion';
 
-interface ButtonCTAProps {
+interface ButtonCTAProps extends HTMLMotionProps<"button"> {
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
@@ -9,9 +8,10 @@ interface ButtonCTAProps {
   disabled?: boolean;
   fullWidth?: boolean;
   secondary?: boolean;
+  style?: React.CSSProperties;
 }
 
-const ButtonCTA: React.FC<ButtonCTAProps> = ({
+const ButtonCTA = ({
   children,
   onClick,
   className = '',
@@ -19,7 +19,9 @@ const ButtonCTA: React.FC<ButtonCTAProps> = ({
   disabled = false,
   fullWidth = false,
   secondary = false,
-}) => {
+  style,
+  ...props
+}: ButtonCTAProps) => {
   return (
     <motion.button
       type={type}
@@ -27,17 +29,19 @@ const ButtonCTA: React.FC<ButtonCTAProps> = ({
       disabled={disabled}
       className={`
         ${secondary 
-          ? 'bg-black border border-[#00FFFF]/50 hover:border-[#00FFFF] text-[#00FFFF]' 
-          : 'bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black'}
+          ? 'bg-white/10 border border-transparent text-white hover:bg-transparent hover:border-[#25C9BA]' 
+          : 'bg-[#FF601A] hover:bg-[#FF601A]/90 text-white'}
         font-medium py-3 px-6 rounded-md 
         transition-all duration-300 ease-in-out
-        outline-none focus:ring-2 focus:ring-[#00FFFF]/50
+        outline-none focus:ring-2 focus:ring-[#25C9BA]/50
         ${fullWidth ? 'w-full' : ''}
         ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
         ${className}
       `}
+      style={style}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
+      {...props}
     >
       {children}
     </motion.button>

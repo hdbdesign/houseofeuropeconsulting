@@ -1,183 +1,104 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { teamImages } from '@/config/imageUrls';
-import { Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const TeamSection = () => {
   const { t } = useTranslation();
 
-  const teamMembers = [
-    {
-      id: 1,
-      image: teamImages.member1,
-      nameKey: 'team.member1.name',
-      roleKey: 'team.member1.role',
-      descriptionKey: 'team.member1.description',
-      delay: 0.1,
-      social: {
-        linkedin: 'https://linkedin.com',
-        twitter: 'https://twitter.com',
-        email: 'ceo@houseofdigitalbusiness.de'
-      }
-    },
-    {
-      id: 2,
-      image: teamImages.member2,
-      nameKey: 'team.member2.name',
-      roleKey: 'team.member2.role',
-      descriptionKey: 'team.member2.description',
-      delay: 0.2,
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'mail@example.com'
-      }
-    },
-    {
-      id: 3,
-      image: teamImages.member3,
-      nameKey: 'team.member3.name',
-      roleKey: 'team.member3.role',
-      descriptionKey: 'team.member3.description',
-      delay: 0.3,
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'mail@example.com'
-      }
-    },
-    {
-      id: 4,
-      image: teamImages.member4,
-      nameKey: 'team.member4.name',
-      roleKey: 'team.member4.role',
-      descriptionKey: 'team.member4.description',
-      delay: 0.4,
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'mail@example.com'
-      }
-    },
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (custom: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: custom,
-        duration: 0.5
-      }
-    })
+  const socialLinks = {
+    linkedin: 'https://www.linkedin.com/in/washington-de-sousa/',
+    instagram: 'https://www.instagram.com/washington.desousa/',
+    facebook: 'https://www.facebook.com/washington.desousa'
   };
 
   return (
-    <section className="py-16 md:py-24 bg-black">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-24 bg-black relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#00FFFF]/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container relative z-10 mx-auto px-4">
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-[#00FFFF]/10 text-[#00FFFF] text-sm font-medium mb-4">
-            {t('about.teamSubtitle')}
-          </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-4">
-            {t('about.teamTitle')}
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#00FFFF] mb-4">
+            {t('about.team.title')}
           </h2>
-          <p className="max-w-2xl mx-auto text-gray-300">
-            {t('about.teamDescription')}
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            {t('about.team.subtitle')}
           </p>
         </motion.div>
-        
-        <motion.div 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-4xl mx-auto"
         >
-          {teamMembers.map((member) => (
-            <motion.div
-              key={member.id}
-              className="relative group h-full"
-              variants={itemVariants}
-              custom={member.delay}
-            >
-              <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#0C1E3C] border border-[#00FFFF]/10 hover:border-[#00FFFF]/30 transition-colors duration-300 h-full flex flex-col">
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#00FFFF]/10 rounded-full z-0"></div>
-                
-                {/* Image with gradient overlay */}
-                <div className="relative overflow-hidden">
-                  <motion.div 
-                    className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-end p-6"
-                    whileHover={{ opacity: 1 }}
+          <div className="relative group">
+            {/* Card Background with Glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#00FFFF] to-[#00FFFF]/50 rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-1000 group-hover:duration-200"></div>
+            
+            <div className="relative bg-gray-900/80 backdrop-blur-xl rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 border border-[#00FFFF]/20">
+              {/* Image Container */}
+              <div className="w-48 h-48 relative">
+                <div className="absolute inset-0 bg-[#00FFFF] rounded-full blur-2xl opacity-20 scale-110"></div>
+                <img 
+                  src="/images/portrait_ceo.jpg"
+                  alt="Washington de Sousa"
+                  className="w-full h-full object-cover rounded-full border-2 border-[#00FFFF]/30 relative z-10"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="font-heading font-bold text-2xl text-white mb-2">
+                  {t('about.team.member.1.name')}
+                </h3>
+                <p className="text-[#00FFFF] font-medium mb-4">
+                  {t('about.team.member.1.role')}
+                </p>
+                <p className="text-gray-300 mb-6">
+                  {t('about.team.member.1.description')}
+                </p>
+
+                {/* Social Links */}
+                <div className="flex justify-center md:justify-start gap-4">
+                  <a 
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#00FFFF] transition-colors duration-300"
                   >
-                    <div className="flex space-x-2 mb-4">
-                      <a href={member.social.linkedin} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-[#00FFFF] transition-colors duration-300">
-                        <Linkedin className="h-4 w-4" />
-                      </a>
-                      <a href={member.social.twitter} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-[#00FFFF] transition-colors duration-300">
-                        <Twitter className="h-4 w-4" />
-                      </a>
-                      <a href={`mailto:${member.social.email}`} className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white hover:text-[#00FFFF] transition-colors duration-300">
-                        <Mail className="h-4 w-4" />
-                      </a>
-                    </div>
-                    <p className="text-white/90 text-sm">
-                      {t(member.descriptionKey)}
-                    </p>
-                  </motion.div>
-                  
-                  <img 
-                    src={member.image}
-                    alt={t(member.nameKey)}
-                    className="w-full h-72 object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
-                    onError={(e) => {
-                      // Fallback to a placeholder if image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.src = "https://via.placeholder.com/400x300?text=Team+Member";
-                    }}
-                  />
-                </div>
-                
-                <div className="p-6 flex-1 flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-heading font-bold text-lg text-white group-hover:text-[#00FFFF] transition-colors duration-300">
-                      {t(member.nameKey)}
-                    </h3>
-                    <div className="flex items-center justify-between mt-2">
-                      <p className="text-[#00FFFF] font-medium">
-                        {t(member.roleKey)}
-                      </p>
-                      <motion.div 
-                        whileHover={{ scale: 1.2, rotate: 45 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                      >
-                        <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:text-[#00FFFF] transition-colors duration-300" />
-                      </motion.div>
-                    </div>
-                  </div>
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a 
+                    href={socialLinks.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#00FFFF] transition-colors duration-300"
+                  >
+                    <Instagram className="w-6 h-6" />
+                  </a>
+                  <a 
+                    href={socialLinks.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#00FFFF] transition-colors duration-300"
+                  >
+                    <Facebook className="w-6 h-6" />
+                  </a>
                 </div>
               </div>
-            </motion.div>
-          ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

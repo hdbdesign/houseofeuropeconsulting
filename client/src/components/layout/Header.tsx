@@ -1,12 +1,12 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ThemeToggle } from '../theme/ThemeToggle';
-import { LanguageSelector } from '../i18n/LanguageSelector';
+import LanguageSelector from './LanguageSelector';
 import { MobileMenu } from './MobileMenu';
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const { t } = useTranslation();
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,106 +23,90 @@ export const Header = () => {
 
   const navLinks = [
     { path: '/', label: 'nav.home' },
-    { path: '/services', label: 'nav.services' },
-    { path: '/portfolio', label: 'nav.portfolio' },
     { path: '/about', label: 'nav.about' },
+    { path: '/services', label: 'nav.services' },
     { path: '/contact', label: 'nav.contact' }
   ];
 
   return (
     <motion.header
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="fixed w-full z-50 transition-all duration-300 bg-black"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-[#021C26] shadow-lg' : 'bg-transparent'
+      }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 md:h-24">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+      <div className="container mx-auto">
+        <div className={`flex items-center justify-between transition-all duration-300 ${
+          isScrolled ? 'py-0.5' : 'py-1'
+        }`}>
+          <Link href="/">
             <motion.div
               whileHover={{ 
                 scale: 1.05,
-                filter: "brightness(1.2)",
-                textShadow: "0 0 8px rgb(0,255,255)"
+                filter: "brightness(1.2)"
               }}
-              whileTap={{ scale: 0.98 }}
               transition={{
                 type: "spring",
                 stiffness: 260,
                 damping: 20
               }}
+              className="flex items-center -ml-8"
             >
-              {/* Desktop Logo */}
               <img
-                src="/logo-hdb.png"
+                src="/images/logo/logo-primary.png"
                 alt="House of Digital Business"
-                className="hidden md:block h-24 md:h-32"
+                className={`transition-all duration-300 ${
+                  isScrolled ? 'h-32' : 'h-44'
+                }`}
                 style={{ 
-                  maxHeight: "none", 
-                  transform: "scale(2.2)",
-                  marginLeft: "20px"
-                }}
-              />
-              
-              {/* Mobile Logo (Symbol only) */}
-              <img
-                src="/Logo-13.png"
-                alt="House of Digital Business"
-                className="md:hidden h-14"
-                style={{ 
-                  maxHeight: "none",
-                  marginLeft: "5px"
+                  maxHeight: "none"
                 }}
               />
             </motion.div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium transition-colors px-4 ${
                   location === link.path
-                    ? 'text-cyan-400'
-                    : 'text-white hover:text-cyan-400'
+                    ? 'text-[#25C9BA]'
+                    : 'text-white hover:text-[#25C9BA]'
                 }`}
               >
                 {t(link.label)}
               </Link>
             ))}
+            <div className="flex items-center pl-4">
+              <LanguageSelector />
+            </div>
           </nav>
 
-          {/* Right side controls */}
-          <div className="flex items-center space-x-4">
-            <ThemeToggle />
-            <LanguageSelector />
-            
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(true)}
-              className="md:hidden p-2 rounded-md text-white hover:bg-gray-900"
+          <button
+            onClick={() => setIsMobileMenuOpen(true)}
+            className="md:hidden p-2 rounded-md text-white hover:bg-gray-900"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <MobileMenu
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}

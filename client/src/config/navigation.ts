@@ -1,67 +1,43 @@
 export type NavItem = {
   path: string;
   labelKey: string;
-  icon?: string;
 };
 
 export const navigationItems: NavItem[] = [
   {
     path: '/',
-    labelKey: 'nav.home',
-    icon: 'home'
+    labelKey: 'nav.home'
   },
   {
     path: '/about',
-    labelKey: 'nav.about',
-    icon: 'info'
+    labelKey: 'nav.about'
   },
   {
     path: '/services',
-    labelKey: 'nav.services',
-    icon: 'services'
-  },
-  {
-    path: '/portfolio',
-    labelKey: 'nav.portfolio',
-    icon: 'portfolio'
+    labelKey: 'nav.services'
   },
   {
     path: '/contact',
-    labelKey: 'nav.contact',
-    icon: 'contact'
+    labelKey: 'nav.contact'
   }
 ];
 
 export type Language = {
   code: string;
   name: string;
-  flag: string;
 };
 
 export const languages: Language[] = [
   {
-    code: 'en',
-    name: 'English',
-    flag: '🇬🇧'
-  },
-  {
     code: 'pt',
-    name: 'Português',
-    flag: '🇵🇹'
+    name: 'Português'
   },
   {
     code: 'de',
-    name: 'Deutsch',
-    flag: '🇩🇪'
+    name: 'Deutsch'
   },
   {
-    code: 'fr',
-    name: 'Français',
-    flag: '🇫🇷'
-  },
-  {
-    code: 'it',
-    name: 'Italiano',
-    flag: '🇮🇹'
+    code: 'en',
+    name: 'English'
   }
 ];

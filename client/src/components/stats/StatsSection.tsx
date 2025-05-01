@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Users, Globe, Award, TrendingUp } from 'lucide-react';
+import { Users, Globe, Award, ThumbsUp } from 'lucide-react';
 
 const StatsSection = () => {
   const { t } = useTranslation();
@@ -8,92 +8,61 @@ const StatsSection = () => {
   const stats = [
     {
       id: 1,
-      value: '500+',
-      label: 'home.stats.clients',
-      icon: <Users className="h-8 w-8 text-[#00FFFF]" />,
+      value: "11+",
+      label: "anos de experiência",
+      icon: <Award className="w-8 h-8 text-[#25C9BA]" />,
       delay: 0.1
     },
     {
       id: 2,
-      value: '50+',
-      label: 'home.stats.countries',
-      icon: <Globe className="h-8 w-8 text-[#00FFFF]" />,
+      value: "15+",
+      label: "negociações bem-sucedidas na Europa",
+      icon: <Users className="w-8 h-8 text-[#25C9BA]" />,
       delay: 0.2
     },
     {
       id: 3,
-      value: '15+',
-      label: 'home.stats.years',
-      icon: <Award className="h-8 w-8 text-[#00FFFF]" />,
+      value: "50+",
+      label: "países alcançados",
+      icon: <Globe className="w-8 h-8 text-[#25C9BA]" />,
       delay: 0.3
     },
     {
       id: 4,
-      value: '95%',
-      label: 'home.stats.satisfaction',
-      icon: <TrendingUp className="h-8 w-8 text-[#00FFFF]" />,
+      value: "100%",
+      label: "satisfação dos clientes",
+      icon: <ThumbsUp className="w-8 h-8 text-[#25C9BA]" />,
       delay: 0.4
     }
   ];
   
   return (
-    <section className="py-16 md:py-24 bg-black overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-black relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-      </div>
-      
-      {/* Grid background */}
-      <div className="absolute inset-0 z-0 opacity-5">
-        <div className="h-full w-full" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }} />
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00FFFF]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#00FFFF]/5 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container relative z-10 mx-auto px-4">
-        <motion.div 
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-4">
-            {t('home.stats.title')}
-          </h2>
-          <p className="max-w-2xl mx-auto text-gray-300">
-            {t('home.stats.subtitle')}
-          </p>
-        </motion.div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
             <motion.div
               key={stat.id}
-              className="relative group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: stat.delay }}
+              className="text-center"
             >
-              <div className="absolute -inset-0.5 bg-[#00FFFF]/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative h-full bg-gray-900/70 backdrop-blur-sm border border-[#00FFFF]/20 group-hover:border-[#00FFFF]/50 rounded-lg p-8 transition-all text-center">
-                <div className="flex justify-center mb-6">
-                  {stat.icon}
-                </div>
-                
-                <h3 className="font-heading font-bold text-4xl md:text-5xl mb-2 text-[#00FFFF]">
-                  {stat.value}
-                </h3>
-                
-                <p className="text-gray-300">
-                  {t(stat.label)}
-                </p>
+              <div className="flex justify-center mb-4">
+                {stat.icon}
+              </div>
+              <div className="text-4xl md:text-5xl font-bold text-[#00FFFF] mb-2">
+                {stat.value}
+              </div>
+              <div className="text-gray-400">
+                {stat.label}
               </div>
             </motion.div>
           ))}

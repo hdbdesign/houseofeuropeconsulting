@@ -1,10 +1,10 @@
 // Brand color palette based on client's brand identity
 export const brandColors = {
-  // Primary brand color - Cyan
+  // Primary brand color
   primary: {
-    main: '#00E5E5', // cyan
-    light: '#33EAEA',
-    dark: '#00B3B3',
+    main: '#25C9BA',
+    light: '#4DD4C8',
+    dark: '#1E9E8F',
   },
   
   // Secondary brand colors
@@ -41,7 +41,7 @@ export const brandColors = {
   
   // For all hex values, also included as RGB
   rgb: {
-    primary: '0, 229, 229',
+    primary: '37, 201, 186',
     secondary: '0, 0, 0',
     navy: '15, 46, 91',
     red: '255, 33, 75',

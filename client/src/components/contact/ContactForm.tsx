@@ -119,7 +119,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+            className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
             placeholder={t('contact.form.namePlaceholder') || "Your name"}
           />
         </div>
@@ -133,7 +133,7 @@ const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+            className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
             placeholder={t('contact.form.companyPlaceholder') || "Your company (optional)"}
           />
         </div>
@@ -151,7 +151,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+            className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
             placeholder={t('contact.form.emailPlaceholder') || "Your email"}
           />
         </div>
@@ -165,7 +165,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+            className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
             placeholder={t('contact.form.phonePlaceholder') || "Your phone (optional)"}
           />
         </div>
@@ -182,7 +182,7 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+          className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
           placeholder={t('contact.form.subjectPlaceholder') || "Subject"}
         />
       </div>
@@ -202,8 +202,8 @@ const ContactForm = () => {
               onClick={() => toggleService(service.id)}
               className={`flex items-center h-full p-3 rounded-lg border ${
                 formData.services.includes(service.id)
-                  ? 'bg-[#00FFFF]/20 border-[#00FFFF]/70 text-[#00FFFF]'
-                  : 'bg-gray-900/50 border-[#00FFFF]/10 text-gray-300 hover:bg-gray-900/70 hover:border-[#00FFFF]/30'
+                  ? 'bg-[#25C9BA]/20 border-[#25C9BA]/70 text-[#25C9BA]'
+                  : 'bg-gray-900/50 border-[#25C9BA]/10 text-gray-300 hover:bg-gray-900/70 hover:border-[#25C9BA]/30'
               } transition-colors`}
             >
               <div className="flex-shrink-0 mr-3">
@@ -230,7 +230,7 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           rows={6}
-          className="w-full px-4 py-3 bg-gray-900/70 border border-[#00FFFF]/20 focus:border-[#00FFFF]/60 rounded-lg focus:ring-1 focus:ring-[#00FFFF]/30 text-white"
+          className="w-full px-4 py-3 bg-gray-900/70 border border-[#25C9BA]/20 focus:border-[#25C9BA]/60 rounded-lg focus:ring-1 focus:ring-[#25C9BA]/30 text-white"
           placeholder={t('contact.form.messagePlaceholder') || "Your message"}
         />
       </div>
@@ -240,7 +240,7 @@ const ContactForm = () => {
         whileTap={{ scale: 0.98 }}
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-6 py-4 bg-[#00FFFF] text-black font-medium rounded-lg hover:bg-[#00FFFF]/90 focus:outline-none focus:ring-2 focus:ring-[#00FFFF]/50 focus:ring-offset-2 focus:ring-offset-gray-900 shadow-[0_0_15px_rgba(0,255,255,0.3)] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+        className="w-full px-6 py-4 bg-[#25C9BA] text-black font-medium rounded-lg hover:bg-[#25C9BA]/90 focus:outline-none focus:ring-2 focus:ring-[#25C9BA]/50 focus:ring-offset-2 focus:ring-offset-gray-900 shadow-[0_0_15px_rgba(37,201,186,0.3)] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
       >
         {isSubmitting ? (
           <span className="flex items-center justify-center">

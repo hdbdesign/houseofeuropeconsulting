@@ -5,11 +5,11 @@ const MobileHeader = () => {
     <header className="fixed top-0 left-0 right-0 bg-black z-50 md:hidden">
       <div className="flex justify-center items-center px-4 py-2">
         <Link href="/">
-          <div className="flex items-center scale-75">
+          <div className="flex items-center">
             <img
-              src="/Logo-13.png"
-              alt="House of Digital Business"
-              className="h-12 w-auto"
+              src="/house-of-europe-logo.png"
+              alt="House of Europe Consulting"
+              className="h-28 w-auto"
             />
           </div>
         </Link>

@@ -13,7 +13,7 @@ export default {
         ui: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: '#00FFFF',
+        primary: '#25C9BA',
         secondary: '#0C1E3C',
         navy: {
           DEFAULT: '#0F2E5B',

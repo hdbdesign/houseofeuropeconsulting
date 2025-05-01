@@ -7,44 +7,43 @@ type LanguageContextType = {
   languageName: string;
 };
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
-};
-
 type LanguageProviderProps = {
   children: ReactNode;
 };
 
+const LanguageContext = createContext<LanguageContextType>({
+  language: 'de',
+  changeLanguage: () => {},
+  languageName: 'Deutsch'
+});
+
+export const useLanguage = () => useContext(LanguageContext);
+
 const languageNameMap: Record<string, string> = {
-  en: 'English',
   pt: 'Português',
   de: 'Deutsch',
-  fr: 'Français',
-  it: 'Italiano',
+  en: 'English'
 };
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language || 'en');
-  const [languageName, setLanguageName] = useState(languageNameMap[i18n.language] || 'English');
+  const [language, setLanguage] = useState(i18n.language || 'pt');
+  const [languageName, setLanguageName] = useState(languageNameMap[i18n.language] || 'Português');
 
   useEffect(() => {
     // Sync with i18next language
-    const currentLang = i18n.language.split('-')[0]; // Handle language codes like 'en-US'
-    setLanguage(currentLang);
-    setLanguageName(languageNameMap[currentLang] || languageNameMap.en);
+    const currentLang = i18n.language.split('-')[0]; // Handle language codes like 'pt-BR'
+    const validLang = languageNameMap[currentLang] ? currentLang : 'pt';
+    setLanguage(validLang);
+    setLanguageName(languageNameMap[validLang]);
   }, [i18n.language]);
 
   const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    setLanguage(lang);
-    setLanguageName(languageNameMap[lang] || languageNameMap.en);
+    if (languageNameMap[lang]) {
+      i18n.changeLanguage(lang);
+      setLanguage(lang);
+      setLanguageName(languageNameMap[lang]);
+    }
   };
 
   return (
@@ -53,3 +52,5 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     </LanguageContext.Provider>
   );
 };
+
+export default LanguageContext;

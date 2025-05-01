@@ -1,21 +1,20 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { forceLanguageUpdate } from '@/lib/i18n';
 
 const languages = [
   { code: 'pt', name: 'Português' },
-  { code: 'en', name: 'English' },
   { code: 'de', name: 'Deutsch' },
-  { code: 'fr', name: 'Français' },
-  { code: 'it', name: 'Italiano' }
+  { code: 'en', name: 'English' }
 ];
 
 export const LanguageSelector = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+  const handleLanguageChange = (lng: string) => {
+    forceLanguageUpdate(lng);
     setIsOpen(false);
   };
 
@@ -25,9 +24,10 @@ export const LanguageSelector = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+        className="p-2 rounded-full text-[#25C9BA] hover:bg-gray-800/50"
         aria-label="Select language"
       >
+        <span className="sr-only">Current language: {languages.find(lang => lang.code === i18n.language)?.name || 'Português'}</span>
         <svg
           className="w-5 h-5"
           fill="none"
@@ -48,13 +48,13 @@ export const LanguageSelector = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5"
+          className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-50"
         >
           <div className="py-1">
             {languages.map((lang) => (
               <button
                 key={lang.code}
-                onClick={() => changeLanguage(lang.code)}
+                onClick={() => handleLanguageChange(lang.code)}
                 className={`block w-full text-left px-4 py-2 text-sm ${
                   i18n.language === lang.code
                     ? 'bg-blue-100 text-blue-900 dark:bg-blue-900 dark:text-blue-100'

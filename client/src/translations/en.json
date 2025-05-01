@@ -1,457 +1,351 @@
 {
   "meta": {
     "home": {
-      "title": "House of Digital Business - Digital Solutions for Global Businesses",
-      "description": "Connecting businesses across borders with innovative digital strategies and multilingual solutions."
+      "title": "House of Europe Consulting - Your Gateway to the European Market",
+      "description": "Professional consulting for companies looking to expand into Europe. Expertise in market entry, digital transformation, and business development.",
+      "cta": {
+        "title": "Ready to expand in Europe?",
+        "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
+        "button": "Start your expansion now"
+      }
     },
     "about": {
-      "title": "About Us - House of Digital Business",
-      "description": "Meet House of Digital Business, our mission, vision, values and international team."
+      "title": "Who is Washington de Sousa? - House of Europe Consulting",
+      "description": "Meet our founder and his experienced team. Expertise in international business development and digital transformation."
     },
     "services": {
-      "title": "Our Services - House of Digital Business",
-      "description": "Explore our comprehensive digital solutions tailored to your global business needs in five languages."
+      "title": "Services - House of Europe Consulting",
+      "description": "Comprehensive consulting services for your successful expansion in Europe. From market analysis to complete business implementation."
     },
     "contact": {
-      "title": "Contact - House of Digital Business",
-      "description": "Get in touch with House of Digital Business in any of our supported languages for your digital needs."
-    }
-  },
-  "servicesPage": {
-    "heroTitle": "Digital Business Services",
-    "heroSubtitle": "Comprehensive multilingual digital solutions for global businesses",
-    "heroButton": "Contact us today",
-    "features": {
-      "quality": {
-        "title": "Premium Quality",
-        "description": "Professionally designed multilingual websites tested to ensure quality across all languages."
+      "title": "Shall we start together? - House of Europe Consulting",
+      "description": "Contact us for a free initial consultation. We help you achieve your expansion goals in Europe."
+    },
+    "terms": {
+      "title": "Terms of Use - House of Europe Consulting",
+      "description": "Terms and conditions for using House of Europe Consulting services"
+    },
+    "cookies": {
+      "title": "Cookie Policy - House of Europe Consulting",
+      "description": "How we use cookies and other tracking technologies"
+    },
+    "privacy": {
+      "intro": {
+        "title": "Privacy",
+        "content": "Data privacy is of particular importance to the management of House of Europe Consulting. The use of the House of Europe Consulting website is generally possible without providing personal data. However, if a user wishes to use special services through our website, processing of personal data may be necessary. If the processing of personal data is required and there is no legal basis for such processing, we generally obtain the consent of the user."
       },
-      "fast": {
-        "title": "Fast Delivery",
-        "description": "Quick response times and on-time delivery for international projects."
-      },
-      "reliable": {
-        "title": "Reliable Service",
-        "description": "Ongoing support in 5 languages to ensure a seamless digital experience."
+      "responsible": {
+        "title": "Data Processing Controller",
+        "content": "The controller responsible for data processing on this website is:\n\nHouse of Europe Consulting\nOwner: Washington L. De-Sousa\nCologne - Germany\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
       }
-    },
-    "process": {
-      "title": "Our Process",
-      "subtitle": "How we work",
-      "description": "A systematic approach to creating high-quality multilingual digital solutions",
-      "steps": {
-        "1": {
-          "title": "Consultation & Planning",
-          "description": "Defining project requirements, budget, and timeline in your preferred language."
-        },
-        "2": {
-          "title": "Design & Development",
-          "description": "Creating customized solutions optimized for global and local markets."
-        },
-        "3": {
-          "title": "Translation & Localization",
-          "description": "Professional adaptation of content to all five languages with cultural sensitivity."
-        },
-        "4": {
-          "title": "Launch & Support",
-          "description": "Thorough implementation and ongoing support in all supported languages."
-        }
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our multilingual digital services",
-      "moreQuestions": "Still have questions? Get in touch with our multilingual team.",
-      "contactButton": "Contact Us",
-      "questions": {
-        "1": {
-          "question": "What languages do you support for website development?",
-          "answer": "We support five main languages: English, Portuguese, German, French, and Italian. Each website is fully localized including content, images, and SEO."
-        },
-        "2": {
-          "question": "How long does it take to develop a multilingual website?",
-          "answer": "Timelines vary based on project complexity, but we typically complete multilingual websites within 4-8 weeks, including all translation and localization phases."
-        },
-        "3": {
-          "question": "How do you ensure translation quality?",
-          "answer": "We work with native translators specialized in digital content. Each translation goes through a dual verification process to ensure linguistic and cultural accuracy."
-        },
-        "4": {
-          "question": "Do you offer ongoing support after launch?",
-          "answer": "Yes, we offer ongoing support packages in all languages. Our multilingual team is available to help with updates, fixes, and optimizations."
-        },
-        "5": {
-          "question": "How do you optimize websites for international markets?",
-          "answer": "We implement multilingual SEO strategies, language-specific URL structures, hreflang tags, and ensure content is culturally relevant to each target market."
-        }
-      }
-    },
-    "cta": {
-      "title": "Ready to expand your business globally?",
-      "description": "Our multilingual team is ready to help transform your digital presence and reach new markets worldwide.",
-      "button": "Start a Project"
     }
   },
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "services": "Services",
-    "portfolio": "Portfolio",
-    "contact": "Contact",
-    "language": "EN"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Digital Solutions for Global Business",
-    "subtitle": "We connect businesses across borders with innovative digital strategies and multilingual solutions.",
-    "primaryBtn": "Our Services",
-    "secondaryBtn": "Contact Us",
-    "trustedBy": "Trusted by global brands",
-    "trusted": "Trusted by global brands",
+    "title": "Your Gateway to the",
+    "market": "European Market",
+    "subtitle": "Specialized consulting in international expansion and digital transformation for companies seeking strategic growth in Europe, with local expertise in the German market",
+    "primaryCTA": "Our Services",
+    "secondaryCTA": "Request Free Consultation",
     "stats": {
-      "projects": "Projects Completed",
-      "countries": "Countries Served",
-      "satisfaction": "Client Satisfaction"
+      "experience": {
+        "number": "11+",
+        "text": "years of experience"
+      },
+      "deals": {
+        "number": "15+",
+        "text": "international projects"
+      },
+      "countries": {
+        "number": "50+",
+        "text": "countries reached"
+      },
+      "satisfaction": {
+        "number": "100%",
+        "text": "client satisfaction"
+      }
     }
   },
   "about": {
-    "title": "Who We Are",
-    "subtitle": "House of Digital Business helps companies navigate the digital landscape with multilingual expertise and innovative solutions.",
-    "heroTitle": "Transforming Businesses, Connecting Cultures",
-    "heroSubtitle": "Discover how House of Digital Business has been empowering global companies through innovative digital solutions and multilingual expertise.",
-    "heroButton": "Contact Us",
-    "stats": {
-      "years": "Years of Experience",
-      "clients": "Global Clients",
-      "countries": "Countries Served",
-      "satisfaction": "Client Satisfaction"
+    "title": "Who is Washington de Sousa?",
+    "description": "Brazilian, entrepreneur, consultant, and professional mentor who has been living in Germany for over 11 years. My professional background includes extensive experience in international business, specialized recruitment, digital marketing, and strategic business development.",
+    "experience": "I started my professional career at EMBRAER and have gained expertise in various technical and commercial areas over the years. In Europe, I deepened my academic knowledge at IU – International University of Applied Sciences in Digital Business, developed successful businesses, and closed strategic contracts that underscore my solid experience and performance capabilities.",
+    "approach": "My approach is personal, pragmatic, and human. I take pride in accompanying Brazilian companies and professionals on their path to success in Europe, offering a unique combination of experience, technical knowledge, strategic network, and deep understanding of local cultures and market dynamics.",
+    "social": "Beyond consulting, I dedicate myself to social and educational projects as founder and president of Metanoia Ministry e.V., reflecting my commitment to personal development, education, and community support.",
+    "values": {
+      "title": "My Values",
+      "items": [
+        "Transparency",
+        "Ethics",
+        "Partnership",
+        "Excellence",
+        "Social Commitment"
+      ]
     },
-    "timelineTitle": "Our Journey",
-    "timelineSubtitle": "Learn about the evolution of House of Digital Business and our key milestones since founding.",
+    "info": {
+      "title": "Contact Information",
+      "name": "Washington de Sousa",
+      "company": "House of Digital Business",
+      "hours": "Monday to Friday: 09:00 to 17:00 (CET)",
+      "social": {
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "facebook": "Facebook"
+      }
+    },
+    "hero": {
+      "title": "Transforming Visions",
+      "subtitle": "into Digital Reality",
+      "description": "More than a consultancy, we are architects of the digital future. With expertise in international expansion and digital transformation, we build bridges between Brazil and Europe, turning challenges into opportunities.",
+      "primaryCTA": "Our Services",
+      "secondaryCTA": "Contact Us"
+    },
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "text": "Years of Experience"
+      },
+      "deals": {
+        "number": "100+",
+        "text": "Deals Closed"
+      },
+      "countries": {
+        "number": "5+",
+        "text": "Countries Served"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "text": "Customer Satisfaction"
+      }
+    },
     "vision": {
-      "title": "Our Vision",
-      "text": "To eliminate digital barriers and connect businesses globally through technology and language expertise."
+      "title": "Vision",
+      "description": "To be a reference in consulting for Brazilian companies and professionals seeking expansion and success in the European market."
     },
     "mission": {
-      "title": "Our Mission",
-      "text": "Providing innovative digital solutions tailored to each client's unique needs and cultural context."
-    },
-    "values": {
-      "title": "Our Values",
-      "text": "Innovation, integrity, cultural understanding, and excellence in everything we do.",
-      "subtitle": "Our core principles guide everything we do",
-      "label": "Core Values",
-      "coreValues": {
-        "innovation": {
-          "title": "Innovation",
-          "text": "We constantly seek new ways to solve global digital challenges."
-        },
-        "customer": {
-          "title": "Customer Focus",
-          "text": "We place clients' specific needs at the center of every project."
-        },
-        "quality": {
-          "title": "Superior Quality",
-          "text": "We strive for excellence in every aspect of our work."
-        },
-        "global": {
-          "title": "Global Perspective",
-          "text": "We respect and promote cultural diversity in all our solutions."
-        }
-      }
-    },
-    "teamTitle": "Our International Team",
-    "teamSubtitle": "International experts in multilingual digital solutions",
-    "teamDescription": "Our diverse team brings global experience and cultural knowledge to every digital project.",
-    "joinTeam": {
-      "title": "Join Our Team",
-      "description": "Looking for multilingual talents passionate about global digital transformation.",
-      "button": "View Opportunities"
+      "title": "Mission",
+      "description": "To create customized solutions and provide specialized support so that each client achieves their goals in the European market with security and efficiency."
     },
     "timeline": {
-      "title": "Our Journey",
-      "subtitle": "Key milestones of House of Digital Business",
+      "title": "My Professional Journey",
       "items": {
-        "2008": {
-          "title": "Company Foundation",
-          "description": "House of Digital Business was founded with a focus on multilingual web solutions."
-        },
-        "2012": {
-          "title": "International Expansion",
-          "description": "We expanded to five core languages and opened our Berlin office."
-        },
-        "2016": {
-          "title": "Digital Innovation",
-          "description": "Launch of our custom digital localization platform for global businesses."
-        },
-        "2020": {
-          "title": "Global Expansion",
-          "description": "Expanded our services to over 50 countries and established strategic partnerships worldwide."
-        },
-        "2023": {
-          "title": "AI Integration",
-          "description": "Implemented cutting-edge AI tools for advanced translation and cross-cultural digital marketing."
+        "houseOfDigitalBusiness": {
+          "title": "House of Digital Business / House of Europe Consulting",
+          "subtitle": "CEO-Founder",
+          "description": "Strategic leadership and management of the consulting firm specialized in international expansion and digital transformation for Brazilian companies in the European market."
         }
       }
-    },
-    "missionBanner": {
-      "title": "Our Mission is Your Global Success",
-      "subtitle": "We help businesses thrive in international markets with smart digital solutions",
-      "button": "Contact Us"
-    },
-    "established": "Est. 2008",
-    "content": {
-      "title": "Innovative Digital Solutions Across Cultures",
-      "subtitle": "We bring global expertise, local knowledge, and innovative technology together to help businesses thrive in international markets."
-    }
-  },
-  "team": {
-    "member1": {
-      "name": "João Paulo",
-      "role": "CEO & Founder",
-      "description": "Expert in digital transformation and international business strategy."
-    },
-    "member2": {
-      "name": "Marco Bianchi",
-      "role": "Technical Director",
-      "description": "Expert in software development and multilingual digital platforms."
-    },
-    "member3": {
-      "name": "Luisa Schmidt",
-      "role": "Multilingual Content Lead",
-      "description": "Specializes in localization and cultural adaptation for digital content."
-    },
-    "member4": {
-      "name": "Pierre Dupont",
-      "role": "Business Development",
-      "description": "Focuses on international partnerships and market expansion strategies."
     }
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive digital solutions tailored to your global business needs in five languages.",
-    "description": "Comprehensive digital solutions tailored to your global business needs in five languages.",
+    "description": "Complete solutions for your expansion in Europe",
     "learnMore": "Learn more",
-    "startsAt": "Starting from",
-    "viewPricing": "View pricing",
-    "features": "Features",
-    "popular": "Most popular",
-    "branding": {
-      "title": "Art Direction",
-      "brief": "Creation of consistent and impactful visual identities that communicate brand values and connect with global audiences."
-    },
-    "graphic": {
-      "title": "Graphic Design",
-      "brief": "Development of high-quality visual materials that convey your message with clarity and elegance in any language."
-    },
-    "video": {
-      "title": "Videography",
-      "brief": "Production of engaging audiovisual content that overcomes linguistic and cultural barriers with powerful visual storytelling."
-    },
-    "ai": {
-      "title": "AI Solutions",
-      "brief": "Integration of artificial intelligence technologies to optimize multilingual communication and personalize digital experiences."
-    },
-    "webdev": {
-      "title": "Web Development",
-      "brief": "We create modern, responsive, and multilingual websites with exceptional user experiences for global reach."
-    },
-    "software": {
-      "title": "Software Development",
-      "brief": "We develop custom applications and systems that meet the specific needs of your international business."
+    "viewAll": "View all services",
+    "successCases": {
+      "title": "Success Stories",
+      "subtitle": "See how we help companies expand their business in Europe",
+      "cases": [
+        {
+          "title": "Business Expansion and Family Migration",
+          "description": "Complete support in company formation and migration process to Germany",
+          "results": [
+            "Business Plan preparation in German",
+            "Complete company formation",
+            "Visa process for the entire family",
+            "Ongoing business consulting"
+          ],
+          "testimonial": {
+            "quote": "Obtaining my residence permit in Germany and opening my company was a huge step in my life - and none of it would have been possible without you, Washington. You were with me in every detail, from preparing the Business Plan in German, through the company formation, to the visa process for my entire family. You transformed a complex process into something light and achievable. In addition to providing impeccable service, you convey security and confidence, which makes all the difference. Infinite gratitude! May more people be able to count on your talent!",
+            "author": "Eliseu Rocha",
+            "role": "Danque Reifen GmbH"
+          }
+        },
+        {
+          "title": "Translation and Digital Marketing",
+          "description": "Business owner in the international trade fairs sector in Germany",
+          "results": [
+            "Professional translation services",
+            "Digital marketing strategies",
+            "Satisfied clients",
+            "Measurable results"
+          ],
+          "testimonial": {
+            "quote": "I am a business owner in the international trade fairs sector in Germany and have already hired Washington's services as a translator. He is a competent professional, and the clients were very satisfied with his work. Additionally, I used his services in the digital marketing area for my company and was also very satisfied with the results.",
+            "author": "Ludmila Buchetmann",
+            "role": "Business Owner"
+          }
+        },
+        {
+          "title": "Successful Expansion to Germany",
+          "description": "A Brazilian technology company seeking to establish presence in the German market.",
+          "results": [
+            "Berlin office setup in 4 months",
+            "Acquisition of first 5 local clients",
+            "Positive ROI in first year"
+          ],
+          "testimonial": {
+            "quote": "House of Europe Consulting was instrumental in our expansion. Their local expertise and strategic support enabled us to enter the German market with confidence and success.",
+            "author": "Carlos Silva",
+            "role": "CEO, TechBR Solutions"
+          }
+        },
+        {
+          "title": "International Digital Transformation",
+          "description": "Traditional industrial company that needed to modernize its operations for the European market.",
+          "results": [
+            "Implementation of B2B digital platform",
+            "150% increase in international sales",
+            "Presence established in 3 European countries"
+          ],
+          "testimonial": {
+            "quote": "Our company's digital transformation was a success thanks to House of Europe Consulting's expertise. They perfectly understood our needs and the local market.",
+            "author": "Rebecca",
+            "role": "Brazilian student living in Portugal"
+          }
+        },
+        {
+          "title": "E-commerce Expansion",
+          "description": "Brazilian sustainable fashion brand that expanded its e-commerce across Europe.",
+          "results": [
+            "Launch in 5 European countries",
+            "200% growth in international sales",
+            "Local distribution center establishment"
+          ],
+          "testimonial": {
+            "quote": "Their deep understanding of the European market and comprehensive support in our digital strategy were decisive for our international success.",
+            "author": "Marina Santos",
+            "role": "Founder, EcoFashion Brasil"
+          }
+        }
+      ]
     },
     "items": {
-      "price1": "€1,499",
-      "price2": "€1,999",
-      "price3": "€2,499",
-      "feature1_1": "Responsive design for all devices",
-      "feature1_2": "Professional translation in 5 languages",
-      "feature1_3": "Multilingual SEO support",
-      "feature1_4": "Ongoing technical support in 5 languages",
-      "feature2_1": "Customized strategic planning",
-      "feature2_2": "International market analysis",
-      "feature2_3": "Cultural adaptation consulting",
-      "feature2_4": "Regular updates and improvements",
-      "feature3_1": "Multilingual web and mobile app",
-      "feature3_2": "Integration with existing systems",
-      "feature3_3": "Technical support in all languages",
-      "price4": "€1,899",
-      "price5": "€2,299",
-      "price6": "€2,699",
-      "feature4_1": "SEO optimization for multiple languages",
-      "feature4_2": "International market analysis",
-      "feature4_3": "Multilingual performance reporting",
-      "feature5_1": "Complete e-commerce platform",
-      "feature5_2": "International payment integration",
-      "feature5_3": "Multilingual product catalog",
-      "feature5_4": "Multi-currency support",
-      "feature6_1": "App translation and adaptation",
-      "feature6_2": "Testing across multiple regions",
-      "feature6_3": "Optimization for global app stores",
-      "multilingual": {
-        "title": "Multilingual Website Development",
-        "description": "Custom websites optimized for international audiences with full i18n support across 5 languages."
+      "expansion": {
+        "title": "International Expansion (GlobalAccess)",
+        "description": "Complete support to bring your business to Europe, especially Germany",
+        "features": [
+          "Strategic initial assessment and business feasibility analysis",
+          "Support in choosing the ideal legal form and official registration",
+          "Initial tax and financial guidance",
+          "Assistance with compliance, international contracts, and legal matters",
+          "Establishment of local representation (virtual office, physical space, or business partnership)"
+        ]
       },
-      "strategy": {
-        "title": "Digital Strategy Consulting",
-        "description": "Strategic guidance for expanding your digital presence internationally with cultural sensitivity."
+      "market": {
+        "title": "Strategic Market Research (DataPulse)",
+        "description": "Detailed research and exclusive analyses to support your decisions",
+        "features": [
+          "Detailed market and competitor analysis",
+          "Comprehensive study of European consumer behavior",
+          "Identification of strategic opportunities in the local market",
+          "Customized reports with directly applicable insights"
+        ]
       },
-      "localization": {
-        "title": "Content Localization",
-        "description": "Professional translation and cultural adaptation of your digital content for global markets."
+      "migration": {
+        "title": "Migration Consulting (SecureLink)",
+        "description": "Complete support to facilitate your personal and professional transition to Europe",
+        "features": [
+          "Individual assessment of the best visa or residence permit",
+          "Preparation and review of necessary documentation for immigration",
+          "Personalized support during the immigration process (translations, lawyers, protocols)",
+          "Guidance on housing, local registration, health, cultural and social integration"
+        ]
       },
-      "seo": {
-        "title": "SEO & Digital Marketing",
-        "description": "Multilingual SEO and marketing strategies tailored to reach international audiences effectively."
+      "career": {
+        "title": "Professional and Career Mentoring (TalentForge)",
+        "description": "Personal and professional support for establishing a solid career in Europe",
+        "features": [
+          "Individualized coaching and personalized career plans",
+          "Strategic preparation for the European job market (resume, interviews, networking)",
+          "Continuous mentoring for professional development and sustainable growth",
+          "Support in market entry and intercultural skills development"
+        ]
       },
-      "ecommerce": {
-        "title": "E-commerce Solutions",
-        "description": "International e-commerce platforms with multi-currency, multi-language and localized payment options."
+      "digital": {
+        "title": "Digital Transformation and Marketing (DigitalBoost & BrandWave)",
+        "description": "Complete and customized services to highlight your brand in Europe",
+        "features": [
+          "Development and implementation of effective digital and marketing strategies",
+          "Business process automation and digitization for European markets",
+          "Strategic support in recruiting local digital talent",
+          "Specialized technical consulting and support in CRM, SEO, SEM, and Social Media Marketing"
+        ]
       },
-      "app": {
-        "title": "App Localization",
-        "description": "Complete localization services for mobile and web applications in multiple languages and markets."
+      "translation": {
+        "title": "Business Translation (BusinessTalk)",
+        "description": "Specialized translation and interpretation service for business meetings and negotiations",
+        "features": [
+          "Professional simultaneous translation in business meetings",
+          "Mastery of technical and business vocabulary specific to your sector",
+          "Experience in international negotiations and commercial terms",
+          "Support in German, English, Portuguese, and Spanish",
+          "Guarantee of accurate and efficient communication in your negotiations"
+        ],
+        "shortFeatures": [
+          "Simultaneous translation in meetings",
+          "Expertise in technical terms",
+          "Support in 4 main languages"
+        ]
+      },
+      "fairs": {
+        "title": "Trade Fair Representation (FairConnect)",
+        "description": "Professional representation of your brand at fairs and events throughout Europe",
+        "features": [
+          "Professional multilingual representation (German, English, Portuguese, Spanish)",
+          "Extensive experience in trade fairs in Germany and other European countries",
+          "Specialized presentation of your products in the local language",
+          "Network with international partners for other languages",
+          "Detailed feedback reports and identified opportunities"
+        ],
+        "shortFeatures": [
+          "Multilingual representation in Europe",
+          "Expert in German trade fairs",
+          "Local product presentation"
+        ]
       }
-    },
-    "premium": {
-      "title": "Premium Digital Solutions",
-      "description": "Experience our highest tier of digital services with advanced features, priority support, and comprehensive multilingual solutions.",
-      "button": "Get Premium Access"
-    }
-  },
-  "testimonials": {
-    "title": "What Our Clients Say",
-    "subtitle": "Success stories from businesses across the globe.",
-    "client1": {
-      "name": "Maria Rodriguez",
-      "company": "CEO, Global Ventures",
-      "content": "\"House of Digital Business transformed our online presence with their multilingual website. Our international sales increased by 45% in just six months.\""
-    },
-    "client2": {
-      "name": "Thomas Müller",
-      "company": "CTO, TechSolutions GmbH",
-      "content": "\"The localization of our app into five languages was seamless. Their team understood cultural nuances, not just translation. Highly recommended!\""
-    },
-    "client3": {
-      "name": "Sophie Leclerc",
-      "company": "Marketing Director, Mode Parisienne",
-      "content": "\"Their digital strategy consulting helped us expand into new European markets with confidence. The multilingual SEO approach delivered impressive results.\""
     }
   },
   "contact": {
-    "metaTitle": "Contact Us",
-    "metaDescription": "Contact House of Digital Business for international brand design and digital solutions. Get in touch with our multilingual team today.",
-    "hero": {
-      "title": "Let's Work Together",
-      "subtitle": "Get in touch with our team for a free consultation on your global digital presence."
-    },
+    "title": "Shall we start together?",
+    "subtitle": "Contact us and schedule a free initial consultation",
     "form": {
-      "title": "Send Us a Message",
-      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
-      "name": "Name",
-      "namePlaceholder": "John Smith",
-      "company": "Company",
-      "companyPlaceholder": "Your company (optional)",
+      "name": "Full Name",
       "email": "Email",
-      "emailPlaceholder": "john@example.com",
-      "phone": "Phone",
-      "phonePlaceholder": "Your phone (optional)",
-      "language": "Preferred Language",
-      "languages": {
-        "en": "English",
-        "pt": "Portuguese",
-        "de": "German",
-        "fr": "French",
-        "it": "Italian"
-      },
-      "subject": "Subject",
-      "subjectPlaceholder": "Subject of your message",
+      "phone": "Phone (optional)",
       "service": "Service of Interest",
-      "services": {
-        "website": "Multilingual Website Development",
-        "consulting": "Digital Strategy Consulting",
-        "localization": "Content Localization",
-        "seo": "SEO & Digital Marketing",
-        "ecommerce": "E-commerce Solutions",
-        "applocalization": "App Localization"
-      },
-      "selectServices": "Which services are you interested in?",
-      "otherService": "Other service",
-      "noServicesSelected": "No services selected",
       "message": "Message",
-      "messagePlaceholder": "Tell us about your project...",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": {
-        "title": "Message Sent!",
-        "message": "Thank you for contacting us. We will respond shortly."
-      },
-      "error": {
-        "title": "Error",
-        "message": "An error occurred while sending your message. Please try again."
-      }
+      "submit": "Send Message"
     },
     "info": {
       "title": "Contact Information",
-      "address": {
-        "title": "Our Address",
-        "content": "Bergheimerstrasse 12, 69115 Heidelberg, Germany"
-      },
-      "email": {
-        "title": "Email Us",
-        "content": "info@houseofdigitalbusiness.de"
-      },
-      "phone": {
-        "title": "Call Us",
-        "content": "+49 (0) 6221 432 1928"
-      },
-      "hours": {
-        "title": "Business Hours",
-        "content": "Monday to Friday, 9am to 6pm CET"
-      },
-      "languages": {
-        "title": "Languages",
-        "content": "English, German, Portuguese, French, Italian"
-      },
-      "followUs": "Follow Us On Social Media",
-      "businessHours": {
-        "title": "Working Hours",
-        "monday": "Monday",
-        "tuesday": "Tuesday",
-        "wednesday": "Wednesday",
-        "thursday": "Thursday",
-        "friday": "Friday",
-        "weekends": "Weekends",
-        "closed": "Closed"
+      "name": "Washington de Sousa",
+      "company": "House of Digital Business",
+      "hours": "Monday to Friday: 09:00 to 17:00 (CET)",
+      "social": {
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "facebook": "Facebook"
       }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Get answers to common questions about our services.",
-      "q1": "What languages do you offer services in?",
-      "a1": "We provide services in English, German, Portuguese, French, and Italian. Our international team ensures effective communication in all these languages.",
-      "q2": "How does your pricing work for international projects?",
-      "a2": "Our pricing depends on project scope, target markets, and language requirements. We provide detailed quotes after an initial consultation to understand your specific needs.",
-      "q3": "How do you handle different time zones for international projects?",
-      "a3": "We have team members across multiple time zones to ensure responsive communication regardless of location. We also establish clear communication schedules with clients to avoid any time-related issues.",
-      "q4": "Can you help with localization of existing content?",
-      "a4": "Yes, content localization is one of our core services. We adapt your existing content for different markets, ensuring cultural relevance and linguistic accuracy.",
-      "q5": "Do you offer ongoing support after project completion?",
-      "a5": "Absolutely. We offer various maintenance and support packages to ensure your digital presence continues to perform optimally in all markets."
     }
   },
   "footer": {
-    "tagline": "Connecting businesses globally through innovative digital solutions.",
+    "tagline": "Connect businesses globally through innovative digital solutions.",
     "quickLinks": "Quick Links",
     "navigation": "Navigation",
     "contactUs": "Contact Us",
     "address": "Bergheimerstrasse 12, 69115 Heidelberg, Germany",
     "phone": "+49 (0) 6221 432 1928",
-    "email": "info@houseofdigitalbusiness.de",
-    "subscribe": "Subscribe to Our Newsletter",
+    "email": "info@houseofeuropeconsulting.de",
+    "subscribe": "Subscribe to our newsletter",
     "subscribeText": "Stay updated with our latest digital solutions and industry insights.",
-    "emailPlaceholder": "Enter your email",
+    "emailPlaceholder": "Enter your email address",
     "subscribeButton": "Subscribe",
-    "services": "Services",
     "links": {
       "careers": "Careers",
       "blog": "Blog"
@@ -460,21 +354,18 @@
       "website": "Multilingual Website Development",
       "consulting": "Digital Strategy Consulting",
       "localization": "Content Localization",
-      "seo": "SEO & Digital Marketing",
-      "ecommerce": "E-commerce Solutions",
+      "seo": "SEO and Digital Marketing",
+      "ecommerce": "E-Commerce Solutions",
       "applocalization": "App Localization"
     },
     "languages": {
-      "en": "English",
       "pt": "Portuguese",
-      "de": "German",
-      "fr": "French",
-      "it": "Italian"
+      "de": "German"
     },
-    "copyright": "© {{year}} House of Digital Business. All rights reserved.",
+    "copyright": "© {{year}} House of Europe Consulting. All rights reserved.",
     "legal": {
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
+      "terms": "Terms of Use",
       "cookies": "Cookie Policy"
     }
   },
@@ -483,220 +374,229 @@
     "emailInvalid": "Please enter a valid email address",
     "messageMinLength": "Message must be at least 10 characters long"
   },
-  "contactPage": {
-    "heroTitle": "Contact Us",
-    "heroSubtitle": "We're ready to help your business expand globally with our multilingual digital solutions",
-    "heroScroll": "Scroll down",
-    "formTag": "Contact",
-    "benefits": {
-      "response": "Fast 24-hour response",
-      "expert": "Expert consultation",
-      "tailored": "Tailored solutions",
-      "followup": "Post-project follow-up"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Support",
-      "description": "Find answers to common questions about our multilingual contact and support services",
-      "questions": {
-        "1": {
-          "question": "How long does it take to get a response?",
-          "answer": "We respond to all inquiries within 24 business hours. For urgent matters, we have a rapid response team available during business hours."
-        },
-        "2": {
-          "question": "How does support in different languages work?",
-          "answer": "Our international team provides support in 5 languages: English, Portuguese, German, French, and Italian. You can select your preferred language in the contact form."
-        },
-        "3": {
-          "question": "Do you offer ongoing technical support after a project?",
-          "answer": "Yes, we offer various post-launch support packages. Our clients can choose between basic, standard, or premium support with different levels of assistance."
-        },
-        "4": {
-          "question": "How can I schedule a personalized consultation?",
-          "answer": "Simply fill out our contact form indicating you're interested in a consultation. One of our specialists will reach out to schedule a meeting in your preferred language."
-        }
-      }
-    },
-    "cta": {
-      "title": "Let's work together?",
-      "subtitle": "Partnership",
-      "description": "Transform your digital presence on a global scale with our multilingual expertise and innovative digital solutions.",
-      "primaryButton": "Explore our services",
-      "secondaryButton": "Talk to us"
-    }
-  },
-  "home": {
-    "about": {
-      "subtitle": "Who We Are",
-      "title": "House of Digital Innovation"
-    },
-    "values": {
-      "subtitle": "Our Core Values",
-      "title": "What Drives Us Forward",
-      "description": "Our values define who we are and guide everything we do. They shape our culture, drive our decisions, and ensure we deliver exceptional results for our clients.",
-      "philosophy": "\"We believe in creating digital experiences that transcend boundaries, connecting businesses with global audiences through innovative, multilingual solutions.\"",
-      "ceo": "João Paulo - Founder & CEO",
-      "innovation": {
-        "title": "Innovation",
-        "description": "Pushing boundaries with cutting-edge solutions and creative thinking."
-      },
-      "global": {
-        "title": "Global Mindset",
-        "description": "Creating multilingual solutions that connect businesses across borders."
-      },
-      "excellence": {
-        "title": "Excellence",
-        "description": "Delivering exceptional quality in every project we undertake."
-      },
-      "collaboration": {
-        "title": "Collaboration",
-        "description": "Working closely with clients to achieve shared goals and success."
-      }
-    },
-    "services": {
-      "subtitle": "What We Do",
-      "title": "Digital Solutions That Transform",
-      "description": "Comprehensive digital solutions that help businesses establish a powerful presence across languages and markets. From branding to AI implementation, we deliver excellence at every step.",
-      "viewAllBtn": "Explore All Services"
-    },
-    "clients": {
-      "subtitle": "Trusted Globally",
-      "title": "Empowering Innovative Brands",
-      "description": "We've helped companies across industries transform their digital presence."
-    },
-    "cta": {
-      "title": "Let's work together",
-      "subtitle": "Ready to transform your global digital presence?",
-      "button": "Start a project"
-    },
+  "privacyPage": {
     "hero": {
-      "titleLine1": "Digital Solutions",
-      "titleLine2": "for Global Business",
-      "subtitle": "We connect businesses across borders with innovative digital strategies and multilingual solutions.",
-      "primaryCTA": "Our Services",
-      "secondaryCTA": "Contact Us",
-      "satisfaction": "Satisfaction"
+      "title": "Privacy Policy",
+      "subtitle": "How we protect your data",
+      "description": "Understand how we collect, use and protect your personal information"
     },
-    "stats": {
-      "title": "Proven Results",
-      "subtitle": "Numbers that demonstrate our global impact",
-      "clients": "Clients Served",
-      "countries": "Countries Reached",
-      "years": "Years of Experience",
-      "satisfaction": "Client Satisfaction"
-    },
-    "process": {
-      "title": "Our Process",
-      "subtitle": "How we transform your company's digital presence for global reach",
-      "steps": {
-        "1": {
-          "title": "Discovery",
-          "description": "We deeply understand your business needs and the goals for your multilingual digital presence."
-        },
-        "2": {
-          "title": "Strategy",
-          "description": "We develop a customized plan that considers cultural and technical aspects for each target market."
-        },
-        "3": {
-          "title": "Implementation",
-          "description": "We create innovative and culturally relevant digital solutions using the best available technologies."
-        },
-        "4": {
-          "title": "Optimization",
-          "description": "We continuously monitor and improve your digital presence to ensure consistent results across all languages."
-        }
+    "sections": [
+      {
+        "id": "intro",
+        "title": "Privacy",
+        "content": "Data privacy has a particularly high priority for the management of House of Europe Consulting. The use of the House of Europe Consulting website is generally possible without providing personal data. However, if a user wishes to use special services through our website, processing of personal data may be necessary. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the user's consent."
+      },
+      {
+        "id": "definitions",
+        "title": "1. Definitions",
+        "content": "The privacy policy of House of Europe Consulting is based on the terms used by the European legislator when adopting the General Data Protection Regulation (GDPR). Our privacy policy should be easy to read and understand for the general public as well as for our customers and business partners."
+      },
+      {
+        "id": "responsible",
+        "title": "2. Name and Address of the Controller",
+        "content": "Controller for the purposes of the General Data Protection Regulation (GDPR) is:\n\nHouse of Europe Consulting\nOwner: Washington L. De-Sousa\nCologne - Germany\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
+      },
+      {
+        "id": "data-collection",
+        "title": "3. Collection of General Data and Information",
+        "content": "The House of Europe Consulting website collects a series of general data and information when a user or automated system accesses the website. This general data and information are stored in the server log files. Collected may be: (1) browser types and versions used, (2) operating system used by the accessing system, (3) website from which an accessing system reaches our website (so-called referrers), (4) sub-sites, (5) date and time of access to the website, (6) Internet protocol address (IP address), (7) Internet service provider of the accessing system, and (8) other similar data and information that serve to protect against attacks on our information technology systems."
+      },
+      {
+        "id": "contact",
+        "title": "4. Contact Possibility via the Website",
+        "content": "The House of Europe Consulting website contains information that enables quick electronic contact with our company, which also includes a general email address (info@houseofeuropeconsulting.de). If a user contacts the data controller by email or through a contact form, the personal data transmitted are automatically stored. Such personal data transmitted voluntarily by a user to the controller are stored for the purpose of processing or contacting the user. There is no disclosure of this personal data to third parties."
+      },
+      {
+        "id": "deletion",
+        "title": "5. Routine Erasure and Blocking of Personal Data",
+        "content": "The controller processes and stores personal data of the user only for the period necessary to achieve the purpose of storage or as provided for by European legislative and regulatory requirements. If the storage purpose ceases to apply or if a storage period prescribed by European legislation expires, the personal data are routinely blocked or erased in accordance with legal requirements."
+      },
+      {
+        "id": "rights",
+        "title": "6. Rights of the Data Subject",
+        "content": "Each data subject has the following rights:\n\na) Right of confirmation\nb) Right of access\nc) Right to rectification\nd) Right to erasure (Right to be forgotten)\ne) Right to restriction of processing\nf) Right to data portability\ng) Right to object\nh) Right to withdraw data protection consent"
+      },
+      {
+        "id": "cookies",
+        "title": "7. Cookies and Tracking",
+        "content": "Our website uses cookies and similar tracking technologies to improve user experience and provide certain features. Cookies are text files stored on your computer that allow an analysis of your use of the website.\n\na) Types of Cookies\nWe use the following types of cookies:\n- Technically necessary cookies: These are required for the operation of the website\n- Analytics cookies: These help us understand and improve the use of our website\n- Marketing cookies: These allow us to show relevant advertising\n\nb) Cookie Control\nYou can configure your browser to:\n- Be informed about the setting of cookies\n- Allow cookies only in individual cases\n- Exclude the acceptance of cookies for certain cases or in general\n- Enable the automatic deletion of cookies when closing the browser"
+      },
+      {
+        "id": "analytics",
+        "title": "8. Provisions on the Use of Google Analytics",
+        "content": "This website uses Google Analytics, a web analytics service provided by Google Inc. Google Analytics uses cookies to help the website analyze how users use the site. The information generated by the cookie about your use of the website is usually transmitted to and stored by Google on servers in the United States. We use Google Analytics with IP anonymization enabled, which means your IP address will be truncated by Google within member states of the European Union or in other contracting states of the Agreement on the European Economic Area before transmission to the USA."
+      },
+      {
+        "id": "youtube",
+        "title": "9. Provisions on the Use of YouTube",
+        "content": "Our website incorporates videos from YouTube, a video-sharing service by YouTube LLC. When you visit a page with embedded YouTube content, a connection is established with YouTube's servers, and the content is transmitted to your browser and displayed. As a result, usage data is transmitted to YouTube. We have no control over how YouTube uses this data."
+      },
+      {
+        "id": "paypal",
+        "title": "10. Provisions on the Use of PayPal",
+        "content": "Our website integrates PayPal services as a payment option. PayPal is an online payment service provider. When you choose to pay via PayPal, your payment data is processed by PayPal. This includes information such as your name, address, email address, credit card details or bank information, and other data necessary to process the transaction."
+      },
+      {
+        "id": "legal-basis",
+        "title": "11. Legal Basis for Processing",
+        "content": "Art. 6(1)(a) GDPR serves as the legal basis for processing operations where we obtain consent for a specific processing purpose. If the processing of personal data is necessary for the performance of a contract to which the data subject is party, the processing is based on Art. 6(1)(b) GDPR. The same applies to processing operations necessary for the implementation of pre-contractual measures."
+      },
+      {
+        "id": "legitimate-interests",
+        "title": "12. Legitimate Interests in Processing",
+        "content": "Where the processing of personal data is based on Article 6(1)(f) GDPR, our legitimate interest is to conduct our business in favor of the well-being of all our employees and shareholders."
+      },
+      {
+        "id": "storage-duration",
+        "title": "13. Storage Duration",
+        "content": "The criterion for determining the storage period of personal data is the respective statutory retention period. After the expiration of that period, the corresponding data is routinely deleted, as long as it is no longer necessary for the fulfillment or initiation of a contract."
+      },
+      {
+        "id": "legal-requirements",
+        "title": "14. Legal or Contractual Requirements",
+        "content": "We clarify that the provision of personal data is partly required by law (e.g., tax regulations) or can also result from contractual provisions (e.g., information on the contractual partner). Sometimes it may be necessary to conclude a contract that the data subject provides us with personal data, which must subsequently be processed by us."
+      },
+      {
+        "id": "automated-decision",
+        "title": "15. Automated Decision-Making",
+        "content": "As a responsible company, we do not use automatic decision-making or profiling."
+      },
+      {
+        "id": "changes",
+        "title": "16. Changes to this Privacy Policy",
+        "content": "We reserve the right to modify this privacy policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the website. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it."
       }
+    ],
+    "contact_info": {
+      "company": "House of Digital Business",
+      "location": "Cologne, Germany",
+      "email": "info@houseofdigitalbusiness.de",
+      "request_meeting": "Schedule Consultation"
     }
   },
-  "portfolio": {
-    "title": "Our Portfolio",
-    "subtitle": "Projects that showcase our expertise in multilingual digital solutions",
-    "heroTitle": "Transforming ideas into global digital experiences",
-    "heroSubtitle": "Explore our collection of innovative projects that connect businesses and audiences across different languages and cultures",
-    "heroButton": "Contact Us",
-    "projectsTitle": "Featured Projects", 
-    "searchPlaceholder": "Search projects...",
-    "viewDetails": "View Details",
-    "viewProject": "View Project",
-    "viewAllButton": "View All Projects",
-    "loadMoreButton": "Load More",
-    "noResults": {
-      "title": "No projects found",
-      "description": "We couldn't find any projects that match your search criteria.",
-      "resetButton": "Clear Filters"
-    },
-    "process": {
-      "title": "Our Approach",
-      "subtitle": "How we transform your vision into an impactful multilingual digital presence",
-      "steps": {
-        "1": {
-          "title": "Discovery",
-          "description": "We understand your needs, business goals, and international target audience."
-        },
-        "2": {
-          "title": "Strategy",
-          "description": "We develop a plan tailored to the cultural specificities of each market."
-        },
-        "3": {
-          "title": "Creation",
-          "description": "We build innovative digital solutions focused on multilingual user experience."
-        },
-        "4": {
-          "title": "Optimization",
-          "description": "We continuously refine to ensure performance and cultural relevance across all markets."
-        }
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers about our services",
+    "items": [
+      {
+        "question": "How does the expansion process to Germany work?",
+        "answer": "The process begins with a detailed analysis of your business, followed by personalized strategic planning. We assist in all stages, from legal company formation to business operationalization."
+      },
+      {
+        "question": "How long does it take to establish a company in Germany?",
+        "answer": "The average timeframe is 2 to 3 months, considering all legal and bureaucratic procedures. This period may vary depending on the business complexity and required documentation."
+      },
+      {
+        "question": "What are the costs involved in expansion?",
+        "answer": "Costs vary according to the type of company and project scope. We offer a free initial diagnosis to assess your needs and present a detailed budget."
+      },
+      {
+        "question": "Do you offer support after company formation?",
+        "answer": "Yes, we offer continuous support in various areas such as accounting, HR, digital marketing, and business development to ensure the success of your operation."
+      },
+      {
+        "question": "How is market research conducted for my specific sector?",
+        "answer": "Our market research is customized and includes detailed analysis of your sector, identification of direct and indirect competitors, study of local consumer behavior, and mapping of specific opportunities for your business."
+      },
+      {
+        "question": "How long does it take to get results from a complete market research?",
+        "answer": "A complete market research usually takes 4 to 6 weeks, depending on the sector complexity and desired analysis depth. We also offer preliminary reports for more urgent decisions."
+      },
+      {
+        "question": "What types of visas can you help obtain?",
+        "answer": "We assist with various types of visas, including visas for entrepreneurs, qualified professionals, researchers, students, and family reunion. Each case is evaluated individually to identify the best option."
+      },
+      {
+        "question": "What is the average timeframe for obtaining a work visa in Germany?",
+        "answer": "The work visa process usually takes 2 to 4 months, including documentation preparation and embassy processing time. Specific cases may vary depending on complexity and visa type."
+      },
+      {
+        "question": "How does the professional mentoring program work?",
+        "answer": "The mentoring program is personalized and includes regular individual sessions, career plan development, preparation for the German market, soft skills enhancement, and networking. The monitoring is continuous and adapted to your goals."
+      },
+      {
+        "question": "How soon can I expect results from professional mentoring?",
+        "answer": "Initial results are usually noticed in 2-3 months, with significant improvements in professional positioning, networking, and local market understanding. The complete program can last from 6 months to 1 year."
+      },
+      {
+        "question": "How is the digital transformation strategy developed?",
+        "answer": "We develop a personalized plan that begins with an assessment of your company's current digital maturity, identification of improvement opportunities, and gradual implementation of digital solutions, always aligned with your business objectives."
+      },
+      {
+        "question": "What tools and technologies do you use for digital transformation?",
+        "answer": "We work with leading market technologies, including CRM systems, marketing automation tools, e-commerce platforms, data analysis solutions, and collaboration tools. The choice is based on each client's specific needs."
       }
-    },
-    "filters": {
-      "title": "Filters",
-      "all": "All",
-      "branding": "Branding",
-      "design": "Design",
-      "video": "Video",
-      "ai": "AI"
-    },
-    "categories": {
-      "branding": "Branding",
-      "design": "Design",
-      "video": "Video",
-      "ai": "AI"
-    },
-    "items": {
-      "1": {
-        "title": "Multinational Visual Identity",
-        "category": "branding",
-        "description": "Development of consistent visual identity for a technology company present in 15 countries, respecting cultural nuances while maintaining brand unity."
-      },
-      "2": {
-        "title": "Multilingual E-commerce Platform",
-        "category": "design",
-        "description": "Design and implementation of user experience for an e-commerce platform available in 5 languages with specific cultural adaptations for each market."
-      },
-      "3": {
-        "title": "Global Audiovisual Campaign",
-        "category": "video",
-        "description": "Production of a series of promotional videos adapted for various international markets, with professional subtitling and cultural adaptation of content."
-      },
-      "4": {
-        "title": "Multilingual Virtual Assistant",
-        "category": "ai",
-        "description": "Development of an AI-based service solution capable of naturally interacting in 5 languages, with understanding of specific cultural expressions."
-      },
-      "5": {
-        "title": "Rebranding for Global Expansion",
-        "category": "branding",
-        "description": "Reformulation of brand identity for a company expanding internationally, with adaptations for different markets while maintaining visual cohesion."
-      },
-      "6": {
-        "title": "Multilingual Design System",
-        "category": "design",
-        "description": "Creation of a complete design system with adaptable components for different languages, including RTL, and typographic specificities of each language."
-      }
-    }
+    ]
   },
   "cta": {
-    "title": "Ready to transform your digital business?",
-    "description": "Our multilingual team is ready to help transform your digital presence and reach new markets worldwide.",
-    "button": "Start a Project"
+    "final": {
+      "title": "Ready to expand in Europe?",
+      "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
+      "button": "Start your expansion now"
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "intro": "Welcome to House of Europe Consulting's Terms of Use. Please read these terms carefully before using our services.",
+    "sections": [
+      {
+        "id": "acceptance",
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using our website, you accept and agree to comply with these terms and conditions of use. If you disagree with any aspect of these terms, please do not use our website."
+      },
+      {
+        "id": "services",
+        "title": "2. Services",
+        "content": "House of Europe Consulting offers consulting services for international expansion, digital transformation, and business development in Europe. Our services are customized according to each client's specific needs."
+      },
+      {
+        "id": "intellectual",
+        "title": "3. Intellectual Property",
+        "content": "All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of House of Europe Consulting and is protected by copyright laws."
+      },
+      {
+        "id": "liability",
+        "title": "4. Limitation of Liability",
+        "content": "House of Europe Consulting shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our services."
+      }
+    ],
+    "contact_info": {
+      "company": "House of Europe Consulting",
+      "location": "Cologne, Germany",
+      "email": "info@houseofeuropeconsulting.de",
+      "request_meeting": "Schedule Consultation"
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "intro": "This policy explains how we use cookies and similar technologies on our website.",
+    "sections": [
+      {
+        "id": "what",
+        "title": "1. What are Cookies",
+        "content": "Cookies are small text files that are stored on your device when you visit our website. They help us provide a better user experience."
+      },
+      {
+        "id": "types",
+        "title": "2. Types of Cookies We Use",
+        "content": "We use essential cookies for website functionality, analytical cookies to improve our services, and marketing cookies to personalize content."
+      },
+      {
+        "id": "control",
+        "title": "3. How to Control Cookies",
+        "content": "You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and set most browsers to prevent them from being placed."
+      },
+      {
+        "id": "changes",
+        "title": "4. Changes to this Policy",
+        "content": "We may update our cookie policy periodically. We recommend that you check this page regularly to stay informed about any changes."
+      }
+    ],
+    "contact_info": {
+      "company": "House of Europe Consulting",
+      "location": "Cologne, Germany",
+      "email": "info@houseofeuropeconsulting.de",
+      "request_meeting": "Schedule Consultation"
+    }
   }
-}
+} 

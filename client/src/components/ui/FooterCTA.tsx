@@ -9,22 +9,23 @@ const FooterCTA = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-br from-[#F50057] to-[#0C1E3C] overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-[#F50057]/30 rounded-full blur-3xl"></div>
-      </div>
-
-      {/* Grid background */}
-      <div className="absolute inset-0 z-0 opacity-5">
-        <div className="h-full w-full" style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }} />
+    <section className="relative py-24 overflow-hidden bg-black">
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0">
+        {/* Decorative circles */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF601A]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FF601A]/5 rounded-full blur-3xl"></div>
+        
+        {/* Grid background */}
+        <div className="absolute inset-0 opacity-20">
+          <div 
+            className="h-full w-full"
+            style={{
+              backgroundImage: `linear-gradient(rgba(255,96,26,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,96,26,0.1) 1px, transparent 1px)`,
+              backgroundSize: '20px 20px'
+            }}
+          ></div>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -49,7 +50,7 @@ const FooterCTA = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Link href="/contact">
-                <ButtonCTA>
+                <ButtonCTA className="bg-[#FF601A] text-white hover:bg-[#FF601A]/90">
                   {t('cta.button') || 'Iniciar Projeto'} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
                 </ButtonCTA>
               </Link>
@@ -59,7 +60,7 @@ const FooterCTA = () => {
       </div>
 
       {/* Neon line at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00FFFF]/30"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#FF601A]/30"></div>
     </section>
   );
 };

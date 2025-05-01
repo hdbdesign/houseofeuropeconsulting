@@ -1,281 +1,285 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import ServicesGrid from '@/components/services/ServicesGrid';
-import TestimonialsSlider from '@/components/testimonials/TestimonialsSlider';
-import FooterCTA from '@/components/cta/FooterCTA';
-import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
-import { ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
-import ButtonCTA from '@/components/ui/ButtonCTA';
+import { Building2, Search, Plane, GraduationCap, Globe, Languages, Store, Microscope } from 'lucide-react';
+import { Helmet } from 'react-helmet';
+import FooterCTA from '@/components/cta/FooterCTA';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PageHero from '@/components/ui/PageHero';
 
-const pageVariants = {
-  initial: { opacity: 0 },
-  animate: { 
-    opacity: 1,
-    transition: { duration: 0.5 }
-  },
-  exit: { 
-    opacity: 0,
-    transition: { duration: 0.3 }
-  }
-};
-
-const features = [
-  {
-    icon: <CheckCircle2 className="h-6 w-6 text-[#00FFFF]" />,
-    title: 'servicesPage.features.quality.title',
-    description: 'servicesPage.features.quality.description'
-  },
-  {
-    icon: <Zap className="h-6 w-6 text-[#00FFFF]" />,
-    title: 'servicesPage.features.fast.title',
-    description: 'servicesPage.features.fast.description'
-  },
-  {
-    icon: <Shield className="h-6 w-6 text-[#00FFFF]" />,
-    title: 'servicesPage.features.reliable.title',
-    description: 'servicesPage.features.reliable.description'
-  }
-];
+gsap.registerPlugin(ScrollTrigger);
 
 const ServicesPage = () => {
   const { t } = useTranslation();
-  
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const cards = cardsRef.current.filter(Boolean);
+    
+    // Timeline para coordenar as animações
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: cards[0],
+        start: 'top 80%',
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset',
+      }
+    });
+
+    // Animação dos cards
+    tl.fromTo(cards,
+      {
+        opacity: 0,
+        y: 100,
+        scale: 0.9,
+        filter: 'blur(10px)',
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        filter: 'blur(0px)',
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+      }
+    );
+
+    // Animação dos ícones
+    tl.fromTo(
+      cards.map(card => card?.querySelector('.icon-container')),
+      {
+        opacity: 0,
+        scale: 0.5,
+        rotation: -30,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        rotation: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'back.out(1.7)',
+      },
+      '-=0.4'
+    );
+
+    // Animação das features
+    tl.fromTo(
+      cards.map(card => card?.querySelectorAll('.feature-item')),
+      {
+        opacity: 0,
+        x: -20,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.4,
+        stagger: 0.05,
+        ease: 'power2.out',
+      },
+      '-=0.2'
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
+  const services = [
+    {
+      id: 1,
+      title: "Expansão Internacional",
+      subtitle: "GlobalAccess",
+      description: "Apoio completo para trazer seu negócio à Europa, especialmente Alemanha",
+      icon: <Building2 className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/expansion',
+      features: [
+        "Avaliação estratégica inicial",
+        "Registro e documentação",
+        "Suporte jurídico completo"
+      ]
+    },
+    {
+      id: 2,
+      title: "Transformação Digital",
+      subtitle: "DigitalBoost",
+      description: "Modernização e otimização dos processos do seu negócio",
+      icon: <Globe className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/digital',
+      features: [
+        "Automação de processos",
+        "Estratégia digital",
+        "Marketing internacional"
+      ]
+    },
+    {
+      id: 3,
+      title: "Consultoria Migratória",
+      subtitle: "SecureLink",
+      description: "Suporte completo para sua mudança à Europa",
+      icon: <Plane className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/migration',
+      features: [
+        "Vistos e documentação",
+        "Orientação legal",
+        "Suporte na adaptação"
+      ]
+    },
+    {
+      id: 4,
+      title: "Pesquisa de Mercado",
+      subtitle: "DataPulse",
+      description: "Análises detalhadas do mercado europeu",
+      icon: <Search className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/market',
+      features: [
+        "Estudos de mercado",
+        "Análise competitiva",
+        "Insights estratégicos"
+      ]
+    },
+    {
+      id: 5,
+      title: "Mentoria Profissional",
+      subtitle: "TalentForge",
+      description: "Desenvolvimento de carreira na Europa",
+      icon: <GraduationCap className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/career',
+      features: [
+        "Coaching individual",
+        "Plano de carreira",
+        "Networking europeu"
+      ]
+    },
+    {
+      id: 6,
+      title: "P&D e Inovação",
+      subtitle: "ResearchBoost",
+      description: "Incentivos e suporte para pesquisa na Alemanha",
+      icon: <Microscope className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/research',
+      features: [
+        "Incentivos fiscais",
+        "Parcerias acadêmicas",
+        "Gestão de projetos"
+      ]
+    },
+    {
+      id: 7,
+      title: "Tradução Empresarial",
+      subtitle: "BusinessTalk",
+      description: "Serviços especializados de tradução e interpretação",
+      icon: <Languages className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/business-translation',
+      features: [
+        "Tradução simultânea",
+        "Documentos técnicos",
+        "Suporte multilíngue"
+      ]
+    },
+    {
+      id: 8,
+      title: "Representação em Feiras",
+      subtitle: "FairConnect",
+      description: "Sua marca presente nos principais eventos europeus",
+      icon: <Store className="w-12 h-12" />,
+      color: "#25C9BA",
+      link: '/services/fair-representation',
+      features: [
+        "Representação local",
+        "Gestão de estande",
+        "Networking eventos"
+      ]
+    }
+  ];
+
   return (
     <motion.div
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
     >
       <Helmet>
         <title>{t('meta.services.title')}</title>
         <meta name="description" content={t('meta.services.description')} />
       </Helmet>
       
-      <div className="pt-20 md:pt-24"> {/* Padding to account for fixed header */}
-        {/* Hero Section */}
-        <section className="relative bg-black overflow-hidden py-20 md:py-32">
-          {/* Background Effects */}
-          <div className="absolute inset-0 z-0 overflow-hidden">
-            <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-          </div>
-          
-          {/* Grid background */}
-          <div className="absolute inset-0 z-0 opacity-5">
-            <div className="h-full w-full" style={{
-              backgroundImage: `
-                linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px'
-            }} />
-          </div>
-          
-          <div className="container relative z-10 mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <motion.h1 
-                className="font-heading font-bold text-4xl md:text-6xl text-white mb-6"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+      <PageHero
+        title={t('services.hero.title')}
+        subtitle={t('services.hero.subtitle')}
+        description={t('services.hero.description')}
+        subtitleColor="#FF601A"
+      />
+      
+      {/* Grid de Serviços Interativo com GSAP */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={service.id}
+                ref={el => cardsRef.current[index] = el}
+                className="opacity-0"
               >
-                {t('servicesPage.heroTitle')}
-              </motion.h1>
-              
-              <motion.p 
-                className="text-gray-300 text-lg md:text-xl mb-8"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                {t('servicesPage.heroSubtitle')}
-              </motion.p>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <Link href="/contact">
-                  <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black font-medium px-8 py-4">
-                    {t('servicesPage.heroButton')} <ArrowRight className="inline-block align-middle ml-2 h-5 w-5" />
-                  </ButtonCTA>
+                <Link href={service.link}>
+                  <div className="group relative bg-[#021C26]/80 backdrop-blur-lg rounded-2xl p-8 h-full cursor-pointer overflow-hidden border border-[#25C9BA]/10 hover:border-[#25C9BA]/30 transition-all duration-300">
+                    {/* Efeito de hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#25C9BA]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Ícone */}
+                    <div className="relative z-10 mb-6 icon-container">
+                      <div className="w-16 h-16 text-[#25C9BA]">
+                        {service.icon}
+                      </div>
+                    </div>
+                    
+                    {/* Conteúdo */}
+                    <div className="relative z-10">
+                      <h3 className="text-2xl font-heading text-white mb-2">{service.title}</h3>
+                      <p className="text-[#25C9BA] text-sm mb-2">{service.subtitle}</p>
+                      <p className="text-gray-400 mb-6 text-sm">{service.description}</p>
+                      
+                      {/* Features */}
+                      <ul className="space-y-3 mb-6">
+                        {service.features.map((feature, i) => (
+                          <li
+                            key={i}
+                            className="feature-item flex items-center text-sm text-gray-300"
+                          >
+                            <div className="w-1.5 h-1.5 rounded-full bg-[#25C9BA] mr-3"></div>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* Call to action */}
+                      <div className="flex items-center text-[#25C9BA] text-sm font-medium group-hover:translate-x-2 transition-transform duration-300">
+                        Saiba mais
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </Link>
-              </motion.div>
-            </div>
-          </div>
-          
-          {/* Bottom line effect */}
-          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00FFFF]/30"></div>
-        </section>
-
-        {/* Features Section */}
-        <section className="py-16 bg-black">
-          <div className="container mx-auto px-4">
-            <div className="bg-gray-900/70 backdrop-blur-lg border border-[#00FFFF]/20 rounded-xl shadow-xl -mt-20 relative z-20 p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-              {features.map((feature, index) => (
-                <motion.div 
-                  key={index}
-                  className="flex flex-col items-center text-center p-6"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <div className="mb-4 bg-black p-3 rounded-full border border-[#00FFFF]/30">
-                    {feature.icon}
-                  </div>
-                  <h3 className="font-heading font-semibold text-xl mb-2 text-[#00FFFF]">
-                    {t(feature.title)}
-                  </h3>
-                  <p className="text-gray-300 text-sm">
-                    {t(feature.description)}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-        
-        {/* Main Services Section */}
-        <section id="services" className="py-16 md:py-24 bg-black">
-          <ServicesGrid />
-        </section>
-
-        {/* Process Section */}
-        <section className="py-16 md:py-24 bg-black overflow-hidden relative">
-          {/* Background decoration */}
-          <div className="absolute inset-0 z-0 overflow-hidden">
-            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-          </div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div 
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-4">
-                {t('servicesPage.process.title')}
-              </h2>
-              <p className="max-w-2xl mx-auto text-gray-300">
-                {t('servicesPage.process.description')}
-              </p>
-            </motion.div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {[
-                { step: 1, color: "bg-cyan-400", border: "border-cyan-400", connector: "bg-cyan-400/40", text: "text-cyan-400" },
-                { step: 2, color: "bg-purple-400", border: "border-purple-400", connector: "bg-purple-400/40", text: "text-purple-400" },
-                { step: 3, color: "bg-emerald-400", border: "border-emerald-400", connector: "bg-emerald-400/40", text: "text-emerald-400" },
-                { step: 4, color: "bg-amber-400", border: "border-amber-400", connector: "bg-amber-400/40", text: "text-amber-400" }
-              ].map(({ step, color, border, connector, text }) => (
-                <motion.div 
-                  key={step}
-                  className="relative"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: step * 0.1 }}
-                >
-                  {/* Step number */}
-                  <div className={`absolute -top-4 -left-4 w-12 h-12 rounded-full ${color} text-black flex items-center justify-center font-bold text-xl shadow-lg z-10`}>
-                    {step}
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="backdrop-blur-sm bg-black/30 rounded-lg p-6 shadow-lg pt-10 h-full border border-[#00FFFF]/20 group-hover:border-[#00FFFF]/50 transition-all">
-                    <h3 className={`font-heading font-semibold text-xl mb-3 ${text}`}>
-                      {t(`servicesPage.process.steps.${step}.title`)}
-                    </h3>
-                    <p className="text-gray-300">
-                      {t(`servicesPage.process.steps.${step}.description`)}
-                    </p>
-                  </div>
-                  
-                  {/* Connector (not for the last item on mobile) */}
-                  {step < 4 && (
-                    <>
-                      <div className={`block md:hidden h-8 w-1 ${connector} absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full`}></div>
-                      <div className={`hidden md:block h-1 w-8 ${connector} absolute top-1/2 right-0 transform translate-x-full`}></div>
-                    </>
-                  )}
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-        
-        {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-black">
-          <div className="container mx-auto px-4">
-            <motion.div 
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-4">
-                {t('servicesPage.faq.title')}
-              </h2>
-              <p className="max-w-2xl mx-auto text-gray-300">
-                {t('servicesPage.faq.subtitle')}
-              </p>
-            </motion.div>
-            
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
-                {[1, 2, 3, 4, 5].map((n) => (
-                  <motion.div 
-                    key={n}
-                    className="bg-gray-900/70 backdrop-blur-sm border border-[#00FFFF]/10 hover:border-[#00FFFF]/30 p-6 rounded-lg shadow-sm transition-all"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: n * 0.1 }}
-                  >
-                    <h3 className="font-heading font-semibold text-xl mb-3 text-[#00FFFF]">
-                      {t(`servicesPage.faq.questions.${n}.question`)}
-                    </h3>
-                    <p className="text-gray-300">
-                      {t(`servicesPage.faq.questions.${n}.answer`)}
-                    </p>
-                  </motion.div>
-                ))}
               </div>
-              
-              <motion.div 
-                className="text-center mt-10"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                <p className="text-gray-300 mb-4">
-                  {t('servicesPage.faq.moreQuestions')}
-                </p>
-                <Link href="/contact">
-                  <ButtonCTA secondary className="border border-[#00FFFF]/30 hover:border-[#00FFFF] text-[#00FFFF]">
-                    {t('servicesPage.faq.contactButton')}
-                  </ButtonCTA>
-                </Link>
-              </motion.div>
-            </div>
+            ))}
           </div>
-        </section>
-        
-        {/* Testimonials Section */}
-        <TestimonialsSlider />
-        
-        {/* Footer CTA */}
-        <FooterCTA />
-      </div>
+        </div>
+      </section>
+
+      <FooterCTA />
     </motion.div>
   );
 };

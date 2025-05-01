@@ -57,9 +57,9 @@ export const MobileMenu = ({ isOpen, onClose, navLinks }: MobileMenuProps) => {
                     }}
                   >
                     <img
-                      src="/Logo-13.png"
-                      alt="House of Digital Business"
-                      className="h-14"
+                      src="/house-of-europe-logo.png"
+                      alt="House of Europe Consulting"
+                      className="h-32"
                       style={{ 
                         maxHeight: "none"
                       }}
@@ -68,7 +68,7 @@ export const MobileMenu = ({ isOpen, onClose, navLinks }: MobileMenuProps) => {
                 </Link>
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-md text-white hover:text-cyan-400"
+                  className="p-2 rounded-md text-white hover:text-[#25C9BA]"
                 >
                   <svg
                     className="w-6 h-6"
@@ -95,8 +95,8 @@ export const MobileMenu = ({ isOpen, onClose, navLinks }: MobileMenuProps) => {
                     onClick={onClose}
                     className={`block px-4 py-2 rounded-md text-sm font-medium ${
                       location === link.path
-                        ? 'bg-gray-900 text-cyan-400'
-                        : 'text-white hover:text-cyan-400'
+                        ? 'bg-gray-900 text-[#25C9BA]'
+                        : 'text-white hover:text-[#25C9BA]'
                     }`}
                   >
                     {t(link.label)}

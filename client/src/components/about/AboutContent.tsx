@@ -1,238 +1,402 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { businessImages } from '@/config/imageUrls';
-import { Check, Target, Compass, Award, Users, Globe, TrendingUp, Zap, Shield } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { GraduationCap, Briefcase, Globe, Users, MessageSquare, Target, Rocket, Brain, Building2, Award } from 'lucide-react';
 
 const AboutContent = () => {
   const { t } = useTranslation();
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2
-      }
-    }
+  const languages = [
+    { name: "Português", level: "Nativo", flag: "🇧🇷" },
+    { name: "Alemão", level: "Fluente", flag: "🇩🇪" },
+    { name: "Inglês", level: "Fluente", flag: "🇬🇧" },
+    { name: "Espanhol", level: "Fluente", flag: "🇪🇸" }
+  ];
+
+  const socialLinks = {
+    linkedin: "https://www.linkedin.com/in/washington-luiz-de-sousa/",
+    instagram: "https://www.instagram.com/washington.desousa/",
+    facebook: "https://www.facebook.com/washington.desousa"
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 }
-    }
-  };
-
-  const aboutItems = [
+  const experiences = [
     {
-      key: 'vision',
-      icon: <Target className="h-6 w-6 text-white" />,
-      bgColor: 'bg-sky-500',
+      icon: <Briefcase className="w-6 h-6" />,
+      title: "Experiência Profissional",
+      text: "Iniciei minha carreira técnica na EMBRAER, migrei para a área comercial e tecnológica, e após estabelecer uma sólida base profissional no Brasil, escolhi a Alemanha como novo lar."
     },
     {
-      key: 'mission',
-      icon: <Compass className="h-6 w-6 text-white" />,
-      bgColor: 'bg-indigo-500',
+      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Formação Acadêmica",
+      text: "Formação especializada em Digital Business pela IU – Internationale Hochschule, combinando conhecimento acadêmico com experiência prática no mercado europeu."
     },
     {
-      key: 'values',
-      icon: <Award className="h-6 w-6 text-white" />,
-      bgColor: 'bg-emerald-500',
+      icon: <Target className="w-6 h-6" />,
+      title: "Consultoria Empresarial",
+      text: "Atuação nas áreas de vendas, recrutamento especializado, marketing digital, desenvolvimento de negócios e transformação digital, com histórico comprovado no fechamento de negócios estratégicos."
+    },
+    {
+      icon: <Brain className="w-6 h-6" />,
+      title: "Liderança Multicultural",
+      text: "Experiência em liderar equipes multiculturais e implementar soluções inovadoras que proporcionam crescimento real e sustentável às empresas."
+    },
+    {
+      icon: <Rocket className="w-6 h-6" />,
+      title: "Expansão Internacional",
+      text: "Expertise em apoiar empresas brasileiras no planejamento estratégico, abertura de negócios, registro, questões jurídicas, tributárias e de compliance na Europa."
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "Impacto Social",
+      text: "Fundador e presidente do Metanoia Ministry e.V., associação alemã voltada para educação, desenvolvimento pessoal e mentoria, demonstrando forte compromisso social."
     }
   ];
 
-  const valueIcons = {
-    innovation: <Zap className="h-6 w-6 text-white" />,
-    customer: <Users className="h-6 w-6 text-white" />,
-    quality: <Shield className="h-6 w-6 text-white" />,
-    global: <Globe className="h-6 w-6 text-white" />
-  };
-
-  const valueColors: Record<string, string> = {
-    innovation: 'from-blue-500 to-cyan-400',
-    customer: 'from-[#3B82F6] to-blue-400',
-    quality: 'from-[#0F1A35] to-blue-800',
-    global: 'from-indigo-600 to-blue-500'
-  };
+  const timeline = [
+    {
+      year: "Dezembro 2021 - Presente",
+      title: t('about.timeline.items.houseOfDigitalBusiness.title'),
+      subtitle: t('about.timeline.items.houseOfDigitalBusiness.subtitle'),
+      description: t('about.timeline.items.houseOfDigitalBusiness.description'),
+      icon: <Building2 className="w-6 h-6" />
+    },
+    {
+      year: "Dezembro 2021 - Presente",
+      title: "Metanoia Mentoring",
+      subtitle: "Metanoia-Mentor | Identität – Klarheit – Wandel",
+      description: "Mentoria especializada em desenvolvimento pessoal, transição de carreira e adaptação cultural.",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      year: "Outubro 2020 - Presente",
+      title: "IU Internationale Hochschule",
+      subtitle: "Digital Business BA",
+      description: "Formação em negócios digitais, IA, análise de dados e transformação digital.",
+      icon: <GraduationCap className="w-6 h-6" />
+    },
+    {
+      year: "Janeiro 2024 - Fevereiro 2024",
+      title: "Cavendish Professionals",
+      subtitle: "Recruitment Consultant - Partner",
+      description: "Consultoria especializada em recrutamento SAP para mercado europeu.",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      year: "Janeiro 2021 - Maio 2021",
+      title: "Spencer Ogden",
+      subtitle: "Recruitment Consultant",
+      description: "Executive Search no setor de energias renováveis, com foco em energia solar.",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      year: "Novembro 2020 - Janeiro 2021",
+      title: "SAPPLIER GmbH",
+      subtitle: "Delivery Consultant",
+      description: "Consultoria B2B e recrutamento de especialistas SAP para projetos.",
+      icon: <Briefcase className="w-6 h-6" />
+    },
+    {
+      year: "Março 2020 - Agosto 2020",
+      title: "WIRECLOUD",
+      subtitle: "Head Of Sales B2B",
+      description: "Liderança de equipe de vendas e desenvolvimento de estratégias comerciais.",
+      icon: <Target className="w-6 h-6" />
+    },
+    {
+      year: "Outubro 2018 - Dezembro 2019",
+      title: "Frank Recruitment Group",
+      subtitle: "Permanent Recruitment Consultant",
+      description: "Recrutamento especializado em TI e desenvolvimento de software.",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      year: "Agosto 2016 - Junho 2018",
+      title: "TH Köln",
+      subtitle: "Estudante",
+      description: "Preparação acadêmica e aperfeiçoamento do alemão (B1 até C1).",
+      icon: <GraduationCap className="w-6 h-6" />
+    },
+    {
+      year: "Março 2015 - Março 2016",
+      title: "WIZARD IDIOMAS",
+      subtitle: "Professor de Alemão",
+      description: "Ensino da língua alemã.",
+      icon: <MessageSquare className="w-6 h-6" />
+    },
+    {
+      year: "Dezembro 2013 - Novembro 2014",
+      title: "Skrivanek",
+      subtitle: "Administrator e Sales Executive",
+      description: "Gestão administrativa e comercial na fase de implantação da filial brasileira.",
+      icon: <Briefcase className="w-6 h-6" />
+    },
+    {
+      year: "Maio 2011 - Maio 2012",
+      title: "Au Pair Exchange",
+      subtitle: "Au Pair",
+      description: "Intercâmbio cultural na Alemanha.",
+      icon: <Globe className="w-6 h-6" />
+    },
+    {
+      year: "Maio 2007 - Janeiro 2011",
+      title: "Diferentes Empresas",
+      subtitle: "Vendedor B2C e Garçom",
+      description: "Experiências em vendas e atendimento ao cliente.",
+      icon: <Briefcase className="w-6 h-6" />
+    },
+    {
+      year: "Janeiro 2005 - Abril 2007",
+      title: "Embraer",
+      subtitle: "Aprendiz de Mecânica",
+      description: "Fabricação e montagem de peças para aeronaves, controle de qualidade.",
+      icon: <Briefcase className="w-6 h-6" />
+    }
+  ];
 
   return (
-    <motion.div
-      className="container mx-auto px-4"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <div className="flex flex-col md:flex-row items-stretch gap-8 md:gap-16">
-        <motion.div 
-          className="w-full md:w-1/2" 
-          variants={itemVariants}
-        >
-          <div className="relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-lg z-0"></div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-lg z-0"></div>
-            <div className="absolute inset-0 rounded-lg border-2 border-[#00FFFF]/50 shadow-[0_0_15px_rgba(0,255,255,0.5)] z-10"></div>
-            <img 
-              src={businessImages.about}
-              alt="CEO of House of Digital Business"
-              className="rounded-lg shadow-xl w-full h-auto relative z-10"
-            />
-            <div className="absolute -top-2 -right-2 bg-primary text-white py-2 px-4 rounded-lg shadow-lg z-20 font-medium">
-              {t('about.established')}
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent pt-16 pb-6 px-5 z-20">
-              <div className="flex items-center">
-                <div className="bg-[#3B82F6] text-white font-bold px-3 py-1.5 rounded-md shadow-[0_0_10px_rgba(59,130,246,0.7)] mr-3 text-sm tracking-wide border-2 border-white/30">CEO</div>
-                <div>
-                  <h3 className="text-white font-bold text-xl font-heading">Washington</h3>
-                  <p className="text-[#00FFFF] text-sm font-medium">Fundador & CEO</p>
+    <div className="container mx-auto px-4">
+      {/* Sobre Mim Section */}
+      <div className="mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Foto */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="sticky top-24"
+          >
+            <div className="relative">
+              {/* Glow Effect */}
+              <div className="absolute -inset-4 bg-[#25C9BA]/20 rounded-2xl blur-2xl"></div>
+              
+              {/* Image Container */}
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#25C9BA]/30 shadow-2xl shadow-[#25C9BA]/10">
+                <img 
+                  src="/images/portrait_ceo.jpg" 
+                  alt="Washington de Sousa" 
+                  className="w-full h-auto"
+                />
+                
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              </div>
+
+              {/* Experience Badge */}
+              <div className="absolute -top-4 -right-4 bg-[#25C9BA] text-black px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                11+ anos na Europa
+              </div>
+
+              {/* Languages Section */}
+              <div className="mt-8 bg-gray-900/50 rounded-xl p-6 border border-[#25C9BA]/20 backdrop-blur-sm">
+                <h3 className="font-heading font-bold text-xl text-[#25C9BA] mb-4 flex items-center gap-2">
+                  <MessageSquare className="w-5 h-5" />
+                  Idiomas
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  {languages.map((lang) => (
+                    <div key={lang.name} className="flex items-center gap-3 text-gray-300 group">
+                      <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{lang.flag}</span>
+                      <div>
+                        <p className="font-medium text-white group-hover:text-[#25C9BA] transition-colors duration-300">{lang.name}</p>
+                        <p className="text-sm text-[#25C9BA]/80">{lang.level}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-        </motion.div>
-        
-        <div className="w-full md:w-1/2">
-          <motion.div 
-            className="space-y-8 h-full flex flex-col justify-center" 
-            variants={containerVariants}
+          </motion.div>
+
+          {/* Texto e Experiências */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-8"
           >
-            <motion.div variants={itemVariants}>
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
-                {t('about.content.title')}
+            <div className="space-y-4">
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#25C9BA]">
+                Quem é Washington de Sousa?
               </h2>
-              <p className="text-gray-600 mb-6">
-                {t('about.content.subtitle')}
+              <p className="text-gray-300 leading-relaxed text-lg">
+                {t('about.description', {
+                  defaultValue:
+                    'Empresário brasileiro, consultor e mentor profissional, vivendo há mais de 11 anos na Alemanha. Minha trajetória profissional inclui vasta experiência em negócios internacionais, recrutamento especializado, marketing digital e desenvolvimento estratégico de empresas. Como fundador e CEO da House of Europe Consulting, ofereço consultoria especializada para empresas e profissionais que desejam expandir para a Europa, combinando expertise técnica com profundo conhecimento do mercado local.'
+                })}
               </p>
-            </motion.div>
-            
-            {aboutItems.map((item) => (
-              <motion.div 
-                key={item.key} 
-                className="flex items-start"
-                variants={itemVariants}
-                whileHover={{ x: 5 }}
-              >
-                <div className={`${item.bgColor} rounded-lg p-3 mr-4 shadow-lg transform transition-all duration-300 hover:scale-110`}>
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 className="font-heading font-semibold text-xl mb-2">
-                    {t(`about.${item.key}.title`)}
-                  </h3>
-                  <p className="text-gray-600">
-                    {t(`about.${item.key}.text`)}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+            </div>
+
+            <div className="grid gap-6">
+              {experiences.map((exp, index) => (
+                <motion.div
+                  key={exp.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="flex gap-4 group"
+                >
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#25C9BA]/10 flex items-center justify-center border border-[#25C9BA]/20 group-hover:bg-[#25C9BA]/20 transition-colors duration-300">
+                    <div className="text-[#25C9BA]">
+                      {exp.icon}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#25C9BA] transition-colors duration-300">
+                      {exp.title}
+                    </h3>
+                    <p className="text-gray-300">
+                      {exp.text}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
 
-      <motion.div 
-        className="mt-24 relative"
-        variants={itemVariants}
+      {/* Visão e Missão */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="p-6 bg-gray-900/50 rounded-lg border border-[#25C9BA]/20 backdrop-blur-sm"
+        >
+          <h3 className="font-heading font-bold text-2xl text-[#25C9BA] mb-4">
+            {t('about.vision.title')}
+          </h3>
+          <p className="text-gray-300">
+            {t('about.vision.description')}
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="p-6 bg-gray-900/50 rounded-lg border border-[#25C9BA]/20 backdrop-blur-sm"
+        >
+          <h3 className="font-heading font-bold text-2xl text-[#25C9BA] mb-4">
+            {t('about.mission.title')}
+          </h3>
+          <p className="text-gray-300">
+            {t('about.mission.description')}
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Valores */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
       >
-        <div className="absolute inset-0 bg-black/70 rounded-3xl backdrop-blur-sm z-0"></div>
+        <h2 className="font-heading font-bold text-3xl text-[#25C9BA] mb-12">
+          {t('about.values.title')}
+        </h2>
         
-        <div className="absolute -top-20 -left-20 w-60 h-60 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-[#00FFFF]/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/4 right-1/3 w-40 h-40 bg-[#00FFFF]/10 rounded-full blur-2xl"></div>
-        
-        <div className="absolute inset-0 z-0 opacity-5">
-          <div className="h-full w-full" style={{
-            backgroundImage: `
-              linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
-        
-        <div className="relative z-10 p-12">
-          <div className="text-center mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {Object.entries(t('about.values.items', { returnObjects: true })).map(([key, value], index) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              key={key}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="inline-block mb-4"
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="p-6 bg-gray-900/50 rounded-lg border border-[#25C9BA]/20 backdrop-blur-sm group hover:border-[#25C9BA]/40 transition-all duration-300"
             >
-              <span className="inline-block px-4 py-1 bg-[#00FFFF]/10 text-[#00FFFF] rounded-full text-sm font-medium">
-                {t('about.values.label')}
-              </span>
+              <h3 className="font-heading font-bold text-xl text-[#25C9BA] mb-3 group-hover:scale-105 transition-transform duration-300">
+                {value}
+              </h3>
             </motion.div>
-            
-            <motion.h2 
-              className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              {t('about.values.title')}
-            </motion.h2>
-            
-            <motion.p 
-              className="max-w-2xl mx-auto text-gray-300"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              {t('about.values.subtitle')}
-            </motion.p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {Object.entries(valueIcons).map(([key, icon], index) => (
-              <motion.div
-                key={key}
-                className="group relative"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
-                whileHover={{ y: -10 }}
-              >
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 h-full">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${valueColors[key]} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
-                  
-                  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" 
-                       style={{
-                         boxShadow: `0 0 20px 2px rgba(0, 255, 255, 0.5)`,
-                         border: '1px solid rgba(0, 255, 255, 0.3)'
-                       }}>
-                  </div>
-                  
-                  <div className="relative p-8 z-10 h-full flex flex-col">
-                    <div className={`p-3 rounded-2xl bg-gradient-to-br ${valueColors[key]} flex items-center justify-center w-14 h-14 mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                      {icon}
-                    </div>
-                    
-                    <h3 className="font-heading font-bold text-2xl mb-4 text-white">
-                      {t(`about.values.coreValues.${key}.title`)}
-                    </h3>
-                    
-                    <p className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {t(`about.values.coreValues.${key}.text`)}
-                    </p>
-                    
-                    <div className="mt-auto pt-4">
-                      <div className="h-0.5 w-8 bg-[#00FFFF] group-hover:w-full transition-all duration-500"></div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          ))}
         </div>
       </motion.div>
-    </motion.div>
+
+      {/* Timeline Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="mb-24"
+      >
+        <h2 className="font-heading font-bold text-3xl text-[#25C9BA] mb-12 text-center">
+          {t('about.timeline.title')}
+        </h2>
+
+        <div className="relative">
+          {/* Timeline Line */}
+          <div className="absolute left-[50%] top-0 bottom-0 w-px bg-[#25C9BA]/20"></div>
+
+          {/* Timeline Items */}
+          {timeline.map((item, index) => (
+            <motion.div
+              key={item.year}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 ${
+                index % 2 === 0 ? 'md:pr-16' : 'md:pl-16 md:translate-y-24'
+              }`}
+            >
+              <div className={`relative ${index % 2 === 0 ? 'md:text-right md:order-1' : 'md:order-2'}`}>
+                {/* Year Badge */}
+                <div className="inline-block bg-[#25C9BA] text-black px-4 py-1 rounded-full font-bold mb-4">
+                  {item.year}
+                </div>
+                
+                <h3 className="font-heading font-bold text-xl text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#25C9BA] font-medium mb-2">
+                  {item.subtitle}
+                </p>
+                <p className="text-gray-300">
+                  {item.description}
+                </p>
+              </div>
+
+              {/* Icon */}
+              <div className="absolute left-[50%] -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 border-2 border-[#25C9BA] text-[#25C9BA]">
+                {item.icon}
+              </div>
+
+              <div className={`${index % 2 === 0 ? 'md:order-2' : 'md:order-1 md:text-right'}`}></div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* LinkedIn CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mt-16"
+        >
+          <a 
+            href={socialLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#25C9BA] hover:bg-[#20b5a7] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            Ver perfil completo no LinkedIn
+          </a>
+        </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

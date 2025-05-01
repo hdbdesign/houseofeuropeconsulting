@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "home": {
+      "title": "House of Europe Consulting - Su Puerta de Entrada al Mercado Europeo",
+      "description": "Consultoría especializada para empresas que desean expandirse a Europa. Experiencia en entrada al mercado, transformación digital y desarrollo de negocios.",
+      "cta": {
+        "title": "¿Listo para expandirse en Europa?",
+        "subtitle": "Agende una consulta gratuita y descubra cómo podemos transformar su visión en realidad",
+        "button": "Comience su expansión ahora"
+      }
+    },
+    "about": {
+      "title": "¿Quién es Washington de Sousa? - House of Europe Consulting",
+      "description": "Conozca a nuestro fundador y su equipo experimentado. Experiencia en desarrollo de negocios internacionales y transformación digital."
+    },
+    "services": {
+      "title": "Servicios - House of Europe Consulting",
+      "description": "Servicios completos de consultoría para su expansión exitosa en Europa. Desde el análisis de mercado hasta la implementación completa del negocio."
+    },
+    "contact": {
+      "title": "¿Empecemos juntos? - House of Europe Consulting",
+      "description": "Contáctenos para una consulta gratuita. Le ayudamos a alcanzar sus objetivos de expansión en Europa."
+    },
+    "terms": {
+      "title": "Términos de Uso - House of Europe Consulting",
+      "description": "Términos y condiciones para el uso de los servicios de House of Europe Consulting"
+    },
+    "cookies": {
+      "title": "Política de Cookies - House of Europe Consulting",
+      "description": "Cómo utilizamos cookies y otras tecnologías de seguimiento"
+    },
+    "privacy": {
+      "intro": {
+        "title": "Privacidad",
+        "content": "La privacidad de los datos tiene una prioridad particularmente alta para la gestión de House of Europe Consulting. El uso del sitio web de House of Europe Consulting es generalmente posible sin proporcionar datos personales. Sin embargo, si un usuario desea utilizar servicios especiales a través de nuestro sitio web, puede ser necesario el procesamiento de datos personales. Si el procesamiento de datos personales es necesario y no existe una base legal para dicho procesamiento, generalmente obtenemos el consentimiento del usuario."
+      },
+      "responsible": {
+        "title": "Responsable del Procesamiento de Datos",
+        "content": "Responsable a los efectos del Reglamento General de Protección de Datos (GDPR) es:\n\nHouse of Europe Consulting\nPropietario: Washington L. De-Sousa\nColonia - Alemania\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
+      }
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Su Puerta de Entrada al",
+    "market": "Mercado Europeo",
+    "subtitle": "Consultoría especializada en expansión internacional y transformación digital para empresas que buscan crecimiento estratégico en Europa, con experiencia local en el mercado alemán",
+    "primaryCTA": "Nuestros Servicios",
+    "secondaryCTA": "Solicite una Consultoría Gratuita",
+    "stats": {
+      "experience": {
+        "number": "11+",
+        "text": "años de experiencia"
+      },
+      "deals": {
+        "number": "15+",
+        "text": "proyectos internacionales"
+      },
+      "countries": {
+        "number": "50+",
+        "text": "países alcanzados"
+      },
+      "satisfaction": {
+        "number": "100%",
+        "text": "satisfacción de los clientes"
+      }
+    }
+  },
+  "about": {
+    "title": "¿Quién es Washington de Sousa?",
+    "description": "Brasileño, emprendedor, consultor y mentor profesional que vive en Alemania desde hace más de 11 años. Mi experiencia profesional incluye amplia experiencia en negocios internacionales, reclutamiento especializado, marketing digital y desarrollo estratégico de negocios.",
+    "experience": "Inicié mi carrera profesional en EMBRAER y adquirí experiencia en diversas áreas técnicas y comerciales a lo largo de los años. En Europa, profundicé mis conocimientos académicos en la IU – International University of Applied Sciences en Digital Business, desarrollé negocios exitosos y cerré contratos estratégicos que demuestran mi sólida experiencia y capacidad de desempeño.",
+    "approach": "Mi enfoque es personal, pragmático y humano. Me enorgullece acompañar a empresas y profesionales brasileños en su camino hacia el éxito en Europa, ofreciendo una combinación única de experiencia, conocimiento técnico, red estratégica y profundo entendimiento de las culturas locales y dinámicas de mercado.",
+    "social": "Además de la consultoría, me dedico a proyectos sociales y educativos como fundador y presidente de Metanoia Ministry e.V., reflejando mi compromiso con el desarrollo personal, la educación y el apoyo a la comunidad.",
+    "values": {
+      "title": "Mis Valores",
+      "items": [
+        "Transparencia",
+        "Ética",
+        "Asociación",
+        "Excelencia",
+        "Compromiso Social"
+      ]
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "name": "Washington de Sousa",
+      "company": "House of Europe Consulting",
+      "hours": "Lunes a Viernes: 09:00 a 17:00 (CET)",
+      "social": {
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "facebook": "Facebook"
+      }
+    },
+    "hero": {
+      "title": "Transformando Visiones",
+      "subtitle": "en Realidad Digital",
+      "description": "Más que una consultoría, somos arquitectos del futuro digital. Con experiencia en expansión internacional y transformación digital, construimos puentes entre Brasil y Europa, transformando desafíos en oportunidades.",
+      "primaryCTA": "Nuestros Servicios",
+      "secondaryCTA": "Contáctenos"
+    },
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "text": "Años de Experiencia"
+      },
+      "deals": {
+        "number": "100+",
+        "text": "Negocios Cerrados"
+      },
+      "countries": {
+        "number": "5+",
+        "text": "Países Atendidos"
+      },
+      "satisfaction": {
+        "number": "98%",
+        "text": "Satisfacción de Clientes"
+      }
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "Ser referencia en consultoría para empresas y profesionales brasileños que buscan expansión y éxito en el mercado europeo."
+    },
+    "mission": {
+      "title": "Misión",
+      "description": "Crear soluciones a medida y proporcionar apoyo especializado para que cada cliente alcance sus objetivos en el mercado europeo con seguridad y eficiencia."
+    },
+    "timeline": {
+      "title": "Mi Trayectoria Profesional",
+      "items": {
+        "houseOfDigitalBusiness": {
+          "title": "House of Digital Business / House of Europe Consulting",
+          "subtitle": "CEO-Fundador",
+          "description": "Liderazgo y gestión estratégica de la consultora especializada en expansión internacional y transformación digital para empresas brasileñas en el mercado europeo."
+        }
+      }
+    }
+  }
+} 

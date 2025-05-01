@@ -6,6 +6,9 @@ import { LanguageProvider } from "./context/LanguageContext";
 import { AnimatePresence } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { Header } from "./components/layout/Header";
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/Terms';
+import CookiesPage from './pages/Cookies';
 
 // Initialize EmailJS
 emailjs.init({
@@ -21,10 +24,17 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 // Pages
 import HomePage from "./pages/Home";
 import ServicesPage from "./pages/Services";
-import PortfolioPage from "./pages/Portfolio";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import NotFoundPage from "./pages/not-found";
+import ExpansionService from "./pages/services/expansion";
+import MarketService from "./pages/services/market";
+import MigrationService from "./pages/services/migration";
+import CareerService from "./pages/services/career";
+import DigitalService from "./pages/services/digital";
+import ResearchService from "./pages/services/research";
+import BusinessTranslationService from "./pages/services/business-translation";
+import FairRepresentationService from "./pages/services/fair-representation";
 
 // Styles
 import "./styles/globals.css";
@@ -43,9 +53,19 @@ export default function App() {
                 <Switch location={location} key={location}>
                   <Route path="/" component={HomePage} />
                   <Route path="/services" component={ServicesPage} />
-                  <Route path="/portfolio" component={PortfolioPage} />
+                  <Route path="/services/expansion" component={ExpansionService} />
+                  <Route path="/services/market" component={MarketService} />
+                  <Route path="/services/migration" component={MigrationService} />
+                  <Route path="/services/career" component={CareerService} />
+                  <Route path="/services/digital" component={DigitalService} />
+                  <Route path="/services/research" component={ResearchService} />
+                  <Route path="/services/business-translation" component={BusinessTranslationService} />
+                  <Route path="/services/fair-representation" component={FairRepresentationService} />
                   <Route path="/about" component={AboutPage} />
                   <Route path="/contact" component={ContactPage} />
+                  <Route path="/privacy" component={PrivacyPage} />
+                  <Route path="/terms" component={TermsPage} />
+                  <Route path="/cookies" component={CookiesPage} />
                   <Route path="*" component={NotFoundPage} />
                 </Switch>
               </AnimatePresence>

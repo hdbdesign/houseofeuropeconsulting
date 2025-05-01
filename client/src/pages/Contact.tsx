@@ -1,66 +1,75 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import ContactForm from '@/components/contact/ContactForm';
-import ContactInfo from '@/components/contact/ContactInfo';
-import { Helmet } from 'react-helmet';
-import { Check, ArrowRight, Mail } from 'lucide-react';
-import { Link } from 'wouter';
+import { useForm } from 'react-hook-form';
 import ButtonCTA from '@/components/ui/ButtonCTA';
+import { Helmet } from 'react-helmet';
+import { Mail, MapPin, Calendar, ArrowRight, MessageSquare, Building, Users2, Rocket } from 'lucide-react';
+import { useLocation } from 'wouter';
+import { useState, useEffect } from 'react';
+import PageHero from '@/components/ui/PageHero';
 
-const Contact = () => {
+const ContactPage = () => {
   const { t } = useTranslation();
-  
-  const contactBenefits = [
-    'contactPage.benefits.response',
-    'contactPage.benefits.expert',
-    'contactPage.benefits.tailored',
-    'contactPage.benefits.followup'
-  ];
-  
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const [location] = useLocation();
+  const [selectedService, setSelectedService] = useState('');
+  const [activeSection, setActiveSection] = useState('form');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    service: '',
+    message: '',
+    preferredDate: '',
+    preferredTime: '',
+    howFound: '',
+    budget: '',
+    timeline: '',
+    specificNeeds: ''
+  });
+
+  // Extrair o serviço da URL quando a página carregar
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get('service');
+    if (service) {
+      setSelectedService(service);
+      setFormData(prev => ({ ...prev, service }));
+    }
+  }, [location]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 100,
-        damping: 15,
-      },
-    },
+  const onSubmit = (data: any) => {
+    console.log(data);
+    // Aqui você pode adicionar a lógica de envio do formulário
   };
 
-  const faqs = [
+  const features = [
     {
-      question: 'contact.faq.q1',
-      answer: 'contact.faq.a1',
+      icon: <MessageSquare className="w-12 h-12 text-[#25C9BA]" />,
+      title: "Atendimento Personalizado",
+      description: "Nossa equipe está pronta para entender suas necessidades específicas e oferecer soluções sob medida."
     },
     {
-      question: 'contact.faq.q2',
-      answer: 'contact.faq.a2',
+      icon: <Building className="w-12 h-12 text-[#25C9BA]" />,
+      title: "Expertise Local",
+      description: "Conhecimento profundo do mercado alemão e europeu para guiar sua expansão com segurança."
     },
     {
-      question: 'contact.faq.q3',
-      answer: 'contact.faq.a3',
+      icon: <Users2 className="w-12 h-12 text-[#25C9BA]" />,
+      title: "Time Multicultural",
+      description: "Profissionais bilíngues com experiência em negócios internacionais."
     },
     {
-      question: 'contact.faq.q4',
-      answer: 'contact.faq.a4',
-    },
-    {
-      question: 'contact.faq.q5',
-      answer: 'contact.faq.a5',
-    },
+      icon: <Rocket className="w-12 h-12 text-[#25C9BA]" />,
+      title: "Soluções Inovadoras",
+      description: "Abordagem moderna e tecnológica para impulsionar seu sucesso na Europa."
+    }
   ];
   
   return (
@@ -71,179 +80,274 @@ const Contact = () => {
       transition={{ duration: 0.5 }}
     >
       <Helmet>
-        <title>{t('contact.metaTitle')} | House of Digital Business</title>
-        <meta name="description" content={t('contact.metaDescription')} />
+        <title>{t('meta.contact.title')}</title>
+        <meta name="description" content={t('meta.contact.description')} />
       </Helmet>
       
-      <div className="pt-16 md:pt-20"> 
-        <section className="relative bg-black pt-28 pb-16 md:pb-20 overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-black opacity-90"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#00FFFF]/10 to-transparent opacity-30"></div>
-            
-            {/* Background effect */}
-            <div className="absolute inset-0 opacity-5">
-              <div className="h-full w-full" style={{
-                backgroundImage: `
-                  linear-gradient(to right, rgba(0,255,255,0.1) 1px, transparent 1px),
-                  linear-gradient(to bottom, rgba(0,255,255,0.1) 1px, transparent 1px)
-                `,
-                backgroundSize: '50px 50px'
-              }} />
-            </div>
-            
-            {/* Glow effect */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-1/2 bg-[#00FFFF]/20 blur-[120px] rounded-full"></div>
-          </div>
-          
-          <div className="container relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <motion.h1 
-                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                {t('contact.hero.title')}
-              </motion.h1>
-              <motion.p 
-                className="text-lg md:text-xl text-white/80 mb-8 md:mb-10"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                {t('contact.hero.subtitle')}
-              </motion.p>
-            </div>
-          </div>
-        </section>
-        
-        <section className="bg-black py-12 md:py-16">
-          <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              {/* Contact Form */}
+      <PageHero
+        title={t('contact.hero.title')}
+        subtitle={t('contact.hero.subtitle')}
+        description={t('contact.hero.description')}
+        subtitleColor="#FF601A"
+      />
+      
+      <div className="min-h-screen bg-black">
+        {/* Seção de Features */}
+        <section className="py-16 relative">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {features.map((feature, index) => (
               <motion.div 
-                className="w-full bg-black/30 border border-[#00FFFF]/20 rounded-2xl p-6 md:p-8 shadow-lg backdrop-blur-sm"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-white mb-3">{t('contact.form.title')}</h2>
-                  <p className="text-white/70">{t('contact.form.subtitle')}</p>
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-black/40 backdrop-blur-xl border border-[#25C9BA]/20 rounded-lg p-6 hover:border-[#25C9BA]/40 transition-all"
+                >
+                  <div className="mb-4">
+                    {feature.icon}
                 </div>
-                <ContactForm />
+                  <h3 className="text-xl font-semibold text-white mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-300">
+                    {feature.description}
+                  </p>
               </motion.div>
-              
-              {/* Contact Info */}
-              <motion.div 
-                initial={{ opacity: 0, x: 40 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <ContactInfo />
-              </motion.div>
+              ))}
             </div>
           </div>
         </section>
         
-        <section className="bg-black py-16 md:py-20">
-          <div className="container">
-            <div className="max-w-3xl mx-auto">
+        {/* Seção de Contato Principal */}
+        <section className="py-16 relative" id="contact-form">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Formulário */}
             <motion.div 
-                className="text-center mb-12"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="bg-black/40 backdrop-blur-xl border border-[#25C9BA]/20 rounded-lg p-8"
             >
-                <h2 className="text-3xl font-bold text-white mb-4">{t('contact.faq.title')}</h2>
-                <p className="text-white/70">{t('contact.faq.subtitle')}</p>
-            </motion.div>
-            
-                <motion.div 
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                className="space-y-4"
-              >
-                {faqs.map((faq, index) => (
-                  <motion.div 
-                    key={index} 
-                    variants={itemVariants}
-                    className="border border-[#00FFFF]/20 bg-black/30 rounded-lg overflow-hidden"
-                  >
-                    <div className="overflow-hidden">
-                      <button
-                        className="flex items-center justify-between w-full p-5 text-left focus:outline-none"
-                        onClick={() => {}}
-                        aria-expanded={false}
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                  {/* Informações Básicas */}
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-white mb-4">Informações Básicas</h3>
+                    
+                    <div>
+                      <label htmlFor="name" className="block text-gray-300 mb-2">Nome Completo</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="email" className="block text-gray-300 mb-2">E-mail</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="company" className="block text-gray-300 mb-2">Empresa (se aplicável)</label>
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Serviço e Agendamento */}
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-white mb-4">Serviço e Agendamento</h3>
+
+                    <div>
+                      <label htmlFor="service" className="block text-gray-300 mb-2">Serviço de Interesse</label>
+                      <select
+                        id="service"
+                        name="service"
+                        value={formData.service}
+                        onChange={handleChange}
+                        className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                        required
                       >
-                        <div className="flex items-center">
-                          <span className="flex items-center justify-center w-8 h-8 mr-4 rounded-full bg-[#00FFFF]/10 text-[#00FFFF] font-medium">
-                            {index + 1}
-                          </span>
-                          <h3 className="text-lg font-medium text-white">{t(faq.question)}</h3>
-                        </div>
+                        <option value="">Selecione um serviço</option>
+                        <option value="expansao-internacional">Expansão Internacional (GlobalAccess)</option>
+                        <option value="pesquisa-mercado">Pesquisa de Mercado Estratégica (DataPulse)</option>
+                        <option value="consultoria-migratoria">Consultoria Migratória (SecureLink)</option>
+                        <option value="mentoria-carreira">Mentoria Profissional e Carreira (TalentForge)</option>
+                        <option value="transformacao-digital">Transformação Digital e Marketing</option>
+                        <option value="incentivos-pd">Incentivos para P&D e Inovação</option>
+                      </select>
+                    </div>
                         
-                        <div className="flex-shrink-0 ml-4">
-                          <svg className="w-5 h-5 text-[#00FFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                        </svg>
-                        </div>
-                      </button>
-                      
-                      <div className="p-5 pt-0 pl-[4.5rem]">
-                        <p className="text-gray-300">{t(faq.answer)}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label htmlFor="preferredDate" className="block text-gray-300 mb-2">Data Preferida</label>
+                        <input
+                          type="date"
+                          id="preferredDate"
+                          name="preferredDate"
+                          value={formData.preferredDate}
+                          onChange={handleChange}
+                          className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="preferredTime" className="block text-gray-300 mb-2">Horário Preferido</label>
+                        <select
+                          id="preferredTime"
+                          name="preferredTime"
+                          value={formData.preferredTime}
+                          onChange={handleChange}
+                          className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                        >
+                          <option value="">Selecione um horário</option>
+                          <option value="morning">Manhã (9h - 12h)</option>
+                          <option value="afternoon">Tarde (13h - 17h)</option>
+                          <option value="evening">Noite (18h - 20h)</option>
+                        </select>
                       </div>
                     </div>
-                </motion.div>
-              ))}
+                  </div>
+
+                  {/* Mensagem */}
+                  <div>
+                    <label htmlFor="message" className="block text-gray-300 mb-2">Sua Mensagem</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={4}
+                      className="w-full bg-black/50 border border-[#25C9BA]/20 rounded-md px-4 py-2 text-white focus:border-[#25C9BA] focus:outline-none"
+                      required
+                    ></textarea>
+                  </div>
+
+                  {/* Botão de Envio */}
+                  <ButtonCTA
+                    type="submit"
+                    className="w-full bg-[#FF601A] text-white hover:bg-[#FF601A]/90"
+                  >
+                    Enviar Mensagem <ArrowRight className="ml-2 h-5 w-5 inline-block" />
+                  </ButtonCTA>
+                </form>
+              </motion.div>
+
+              {/* Informações de Contato e Cards */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-8"
+              >
+                {/* Card de Informações de Contato */}
+                <div className="bg-black/40 backdrop-blur-xl border border-[#25C9BA]/20 rounded-lg p-8">
+                  <h3 className="text-2xl font-semibold text-white mb-6">Informações de Contato</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <Mail className="w-6 h-6 text-[#25C9BA] mt-1" />
+                      <div>
+                        <h4 className="text-white font-medium">E-mail</h4>
+                        <p className="text-gray-300">info@houseofeuropeconsulting.de</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <MapPin className="w-6 h-6 text-[#25C9BA] mt-1" />
+                      <div>
+                        <h4 className="text-white font-medium">Endereço</h4>
+                        <p className="text-gray-300">Köln, NRW - Alemanha</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <Calendar className="w-6 h-6 text-[#25C9BA] mt-1" />
+                      <div>
+                        <h4 className="text-white font-medium">Horário de Atendimento</h4>
+                        <p className="text-gray-300">Segunda a Sexta: 9h - 18h (CET)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card de Destaque */}
+                <div className="bg-gradient-to-br from-[#25C9BA]/10 to-[#FD1647]/10 backdrop-blur-xl border border-[#25C9BA]/20 rounded-lg p-8">
+                  <h3 className="text-xl font-semibold text-white mb-4">
+                    Por que Escolher a House of Europe Consulting?
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-[#25C9BA] mr-3">•</span>
+                      Expertise no mercado alemão e europeu
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-[#25C9BA] mr-3">•</span>
+                      Suporte personalizado em português
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-[#25C9BA] mr-3">•</span>
+                      Soluções completas para sua expansão
+                    </li>
+                    <li className="flex items-start text-gray-300">
+                      <span className="text-[#25C9BA] mr-3">•</span>
+                      Acompanhamento em todas as etapas
+                    </li>
+                  </ul>
+                </div>
               </motion.div>
             </div>
           </div>
         </section>
         
-        <section className="py-16 md:py-24 bg-black">
-          <div className="container mx-auto px-4">
+        {/* Seção Final CTA */}
+        <section className="py-16 relative">
+          <div className="container mx-auto px-4 text-center">
             <motion.div 
-              className="backdrop-blur-sm bg-black/30 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden border border-[#00FFFF]/20"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto"
             >
-              {/* Background Effects */}
-              <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-[#00FFFF]/10 rounded-full blur-3xl"></div>
-              </div>
-              
-              <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
-                  <span className="inline-block py-1 px-3 rounded-full bg-[#00FFFF]/10 text-[#00FFFF] text-sm font-medium mb-4">
-                    {t('contactPage.cta.subtitle')}
-                  </span>
-                  <h2 className="font-heading font-bold text-2xl md:text-4xl mb-4 text-white">
-                    {t('contactPage.cta.title')}
-                  </h2>
-                  <p className="text-gray-300 max-w-lg">
-                    {t('contactPage.cta.description')}
-                  </p>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/services">
-                    <ButtonCTA className="bg-[#00FFFF] hover:bg-[#00FFFF]/90 text-black">
-                      {t('contactPage.cta.primaryButton')}
-                    </ButtonCTA>
-                  </Link>
-                  <Link href="#contact">
-                    <ButtonCTA secondary className="border border-[#00FFFF]/30 hover:border-[#00FFFF] text-[#00FFFF]">
-                      {t('contactPage.cta.secondaryButton')}
-                    </ButtonCTA>
-                  </Link>
-                </div>
-              </div>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-6">
+                Pronto para Começar sua Jornada na Europa?
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Nossa equipe está pronta para ajudar você a alcançar seus objetivos
+              </p>
+              <ButtonCTA
+                onClick={() => {
+                  const element = document.getElementById('contact-form');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-[#FF601A] text-white hover:bg-[#FF601A]/90"
+              >
+                Fale Conosco Agora <ArrowRight className="ml-2 h-5 w-5 inline-block" />
+              </ButtonCTA>
             </motion.div>
           </div>
         </section>
@@ -252,4 +356,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

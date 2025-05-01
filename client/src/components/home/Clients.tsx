@@ -61,7 +61,7 @@ const Clients = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-block px-4 py-1 bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 text-sm font-medium mb-3 rounded-full"
+            className="inline-block px-4 py-1 bg-[#25C9BA]/10 text-[#25C9BA] dark:text-[#25C9BA] text-sm font-medium mb-3 rounded-full"
           >
             {t('home.clients.subtitle') || 'Trusted Globally'}
           </motion.span>

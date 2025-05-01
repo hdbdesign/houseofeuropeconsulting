@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MapPin, Mail, Phone, Clock, Calendar, Globe, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const ContactInfo = () => {
   const { t } = useTranslation();
@@ -18,7 +20,7 @@ const ContactInfo = () => {
       icon: <Mail className="h-6 w-6 text-[#00FFFF]" />,
       title: t('contact.info.email.title'),
       contentKey: 'contact.info.email.content',
-      link: 'mailto:info@houseofdigitalbusiness.de',
+      link: 'mailto:info@houseofeuropeconsulting.de',
       isLink: true,
     },
     {
@@ -44,28 +46,19 @@ const ContactInfo = () => {
 
   const socialLinks = [
     {
-      icon: <Instagram size={20} />,
-      href: 'https://instagram.com/houseofdigitalbusiness',
-      color: 'bg-gradient-to-r from-[#00FFFF]/70 to-[#00FFFF]',
-      label: 'Instagram',
+      icon: <FaInstagram className="h-6 w-6" />,
+      text: 'Instagram',
+      href: 'https://instagram.com/houseofeuropeconsulting',
     },
     {
-      icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/company/houseofdigitalbusiness',
-      color: 'bg-[#00FFFF]',
-      label: 'LinkedIn',
+      icon: <FaLinkedin className="h-6 w-6" />,
+      text: 'LinkedIn',
+      href: 'https://linkedin.com/company/houseofeuropeconsulting',
     },
     {
-      icon: <Twitter size={20} />,
-      href: 'https://twitter.com/houseofdigital',
-      color: 'bg-[#00FFFF]',
-      label: 'Twitter',
-    },
-    {
-      icon: <Facebook size={20} />,
-      href: 'https://facebook.com/houseofdigitalbusiness',
-      color: 'bg-[#00FFFF]',
-      label: 'Facebook',
+      icon: <FaFacebook className="h-6 w-6" />,
+      text: 'Facebook',
+      href: 'https://facebook.com/houseofeuropeconsulting',
     },
   ];
 

@@ -9,7 +9,7 @@ export const ThemeToggle = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={toggleTheme}
-      className="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+      className="p-2 rounded-full text-[#25C9BA] hover:bg-gray-800/50"
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {isDark ? (
