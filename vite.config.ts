@@ -25,9 +25,10 @@ export default defineConfig({
       "@assets": path.resolve("./attached_assets"),
     }
   },
-  root: path.resolve("./client"),
+  root: "./client",
+  base: "/",
   build: {
-    outDir: path.resolve("./dist/public"),
+    outDir: "../dist/public",
     emptyOutDir: true
   },
 });
