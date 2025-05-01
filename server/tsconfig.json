@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "rootDir": "..",
     "target": "ES2020",
-    "module": "ES2020",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -17,6 +17,9 @@
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"]
     }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
   },
   "include": ["./**/*.ts", "../shared/**/*.ts", "../vite.config.ts"],
   "exclude": ["node_modules", "dist"]

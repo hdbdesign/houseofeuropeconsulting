@@ -3,9 +3,6 @@ import react from "@vitejs/plugin-react";
 import themePlugin from "@replit/vite-plugin-shadcn-theme-json";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [
@@ -14,21 +11,23 @@ export default defineConfig({
     themePlugin(),
   ],
   server: {
-    allowedHosts: [
-      '2ac65543-58a8-4650-9a1b-8e5846f86587-00-1i11yft607uh8.spock.replit.dev',
-      '.replit.dev'
-    ]
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+      }
+    }
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client", "src"),
-      "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
+      "@": path.resolve("./client/src"),
+      "@shared": path.resolve("./shared"),
+      "@assets": path.resolve("./attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"),
+  root: path.resolve("./client"),
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve("./dist/public"),
     emptyOutDir: true,
     rollupOptions: {
       external: ['gsap'],

@@ -1,13 +1,18 @@
 import type { Express, Request, Response } from "express";
+import express from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 import { ZodError } from "zod";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // prefix all routes with /api
-  
+  // Serve static files in production
+  if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../client/dist")));
+  }
+
   // Contact form submission endpoint
   app.post("/api/contact", async (req: Request, res: Response) => {
     try {
@@ -54,6 +59,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     }
   });
+
+  // Serve index.html for all other routes in production
+  if (process.env.NODE_ENV === "production") {
+    app.get("*", (_req: Request, res: Response) => {
+      res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+    });
+  }
 
   const httpServer = createServer(app);
 
