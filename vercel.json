@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "cd client && npm run build",
-  "installCommand": "cd client && npm install",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "framework": "vite",
-  "outputDirectory": "dist/public",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/api/(.*)",
