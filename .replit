@@ -13,6 +13,10 @@ run = ["sh", "-c", "npm run dev"]
 localPort = 5000
 externalPort = 80
 
+[[ports]]
+localPort = 5173
+externalPort = 5173
+
 [workflows]
 runButton = "Start Dev"
 
@@ -44,10 +48,6 @@ waitForPort = 5000
 name = "Start Dev"
 author = 41238988
 mode = "parallel"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm run dev:server"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"

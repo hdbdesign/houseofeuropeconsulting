@@ -12,15 +12,13 @@ export default defineConfig({
     react(),
     runtimeErrorOverlay(),
     themePlugin(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
-      ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
-        ]
-      : []),
   ],
+  server: {
+    allowedHosts: [
+      '2ac65543-58a8-4650-9a1b-8e5846f86587-00-1i11yft607uh8.spock.replit.dev',
+      '.replit.dev'
+    ]
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
