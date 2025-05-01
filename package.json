@@ -24,7 +24,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "terser": "^5.39.0"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
