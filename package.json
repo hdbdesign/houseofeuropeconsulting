@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd client && npm run build",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:client",
     "dev": "cd client && npm run dev",
-    "preview": "cd client && npm run preview"
+    "start": "cd client && npm run preview"
   },
   "engines": {
     "node": ">=18.0.0"
