@@ -48,8 +48,9 @@
   },
   "hero": {
     "title": "Sua Porta de Entrada para o",
-    "market": "Mercado Europeu",
-    "subtitle": "Consultoria especializada em expansão internacional e transformação digital para empresas que buscam crescimento estratégico na Europa, com expertise local no mercado alemão",
+    "subtitle": "Mercado",
+    "subtitleHighlight": "Europeu",
+    "description": "Consultoria especializada em expansão internacional e transformação digital para empresas que buscam crescimento estratégico na Europa, com expertise local no mercado alemão",
     "primaryCTA": "Nossos Serviços",
     "secondaryCTA": "Solicite uma Consultoria Gratuita",
     "stats": {
@@ -141,9 +142,19 @@
     "learnMore": "Saiba mais",
     "viewAll": "Conheça todos os serviços",
     "successCases": {
-      "title": "Casos de Sucesso",
-      "subtitle": "Veja como ajudamos empresas a expandir seus negócios na Europa",
+      "title": "Histórias de Sucesso",
+      "subtitle": "Descubra como ajudamos empresas a alcançarem seus objetivos",
       "cases": [
+        {
+          "title": "Mentoria Metanoia",
+          "description": "Uma experiência transformadora que levou ao crescimento pessoal e profissional",
+          "results": [
+            "100% de atualização da mentalidade",
+            "Descoberta de novas perspectivas pessoais e profissionais",
+            "Novo foco em objetivos pessoais e profissionais",
+            "Mentoria transformadora e precisa"
+          ]
+        },
         {
           "title": "Expansão Empresarial e Migração Familiar",
           "description": "Apoio completo na abertura de empresa e processo migratório para a Alemanha",
@@ -152,12 +163,7 @@
             "Abertura completa da empresa",
             "Processo de visto para toda a família",
             "Consultoria de negócios contínua"
-          ],
-          "testimonial": {
-            "quote": "Conquistar minha permissão de residência na Alemanha e abrir minha empresa foi um passo enorme na minha vida — e nada disso teria sido possível sem a sua Washington. Você esteve comigo em cada detalhe, desde a elaboração do Business Plan em alemão, passando pela abertura da empresa, até o processo de visto para toda minha família. Transformou um processo complexo em algo leve e possível. Além de prestar um serviço impecável, você transmite segurança e confiança, o que faz toda a diferença. Gratidão imensa! Que mais pessoas possam contar com o seu talento!",
-            "author": "Eliseu Rocha",
-            "role": "Danque Reifen GmbH"
-          }
+          ]
         },
         {
           "title": "Tradução e Marketing Digital",
@@ -167,12 +173,7 @@
             "Estratégias de marketing digital",
             "Satisfação dos clientes",
             "Resultados mensuráveis"
-          ],
-          "testimonial": {
-            "quote": "Sou empresária no ramo de feiras internacionais na Alemanha e já contratei os serviços do Washington como tradutor. Ele é um profissional competente, e os clientes ficaram muito satisfeitos com seu trabalho. Além disso, utilizei seus serviços na área de marketing digital para a minha empresa e também fiquei bastante satisfeita com os resultados.",
-            "author": "Ludmila Buchetmann",
-            "role": "Empresária"
-          }
+          ]
         },
         {
           "title": "Expansão bem-sucedida para a Alemanha",
@@ -181,12 +182,7 @@
             "Escritório em Berlim estabelecido em 4 meses",
             "Aquisição dos primeiros 5 clientes locais",
             "ROI positivo no primeiro ano"
-          ],
-          "testimonial": {
-            "quote": "A House of Europe Consulting foi fundamental em nossa expansão. Sua expertise local e suporte estratégico nos permitiram entrar no mercado alemão com confiança e sucesso.",
-            "author": "Carlos Silva",
-            "role": "CEO, TechBR Solutions"
-          }
+          ]
         },
         {
           "title": "Transformação Digital Internacional",
@@ -195,12 +191,7 @@
             "Implementação de plataforma B2B digital",
             "Aumento de 150% nas vendas internacionais",
             "Presença estabelecida em 3 países europeus"
-          ],
-          "testimonial": {
-            "quote": "Antes da mentoria, eu estava super perdida sobre o que escolher na escola. Parecia que todo mundo já sabia o que queria, menos eu. Durante a mentoria, fiz testes de personalidade, a gente conversou sobre o que eu gosto de fazer, no que sou boa… e tudo começou a fazer mais sentido. Foi um alívio perceber que posso escolher matérias que têm a ver comigo e com o que eu posso fazer no futuro. Agora me sinto muito mais tranquila e animada, porque sei que estou escolhendo um caminho que combina comigo. De verdade, foi uma experiência que me ajudou muito! Se você também está meio confuso ou não sabe por onde começar, eu super recomendo essa mentoria. Fez toda a diferença pra mim.",
-            "author": "Rebecca",
-            "role": "Estudante brasileira residente em Portugal"
-          }
+          ]
         },
         {
           "title": "Expansão E-commerce",
@@ -209,12 +200,7 @@
             "Lançamento em 5 países europeus",
             "Crescimento de 200% nas vendas internacionais",
             "Estabelecimento de centro de distribuição local"
-          ],
-          "testimonial": {
-            "quote": "O profundo entendimento do mercado europeu e o suporte abrangente em nossa estratégia digital foram decisivos para nosso sucesso internacional.",
-            "author": "Marina Santos",
-            "role": "Fundadora, EcoFashion Brasil"
-          }
+          ]
         }
       ]
     },
@@ -304,14 +290,15 @@
       }
     },
     "hero": {
-      "title": "Acelerando Sua",
-      "subtitle": "Expansão Internacional",
-      "description": "Oferecemos soluções completas e estratégicas que guiam sua empresa rumo ao sucesso na Europa. Descubra como transformamos planos em resultados reais."
+      "title": "Nossos Serviços",
+      "subtitle": "Soluções completas para sua",
+      "subtitleHighlight": "Expansão na Europa",
+      "description": "Oferecemos um conjunto abrangente de serviços especialmente desenvolvidos para empresas e profissionais brasileiros que desejam expandir para o mercado europeu."
     }
   },
   "contact": {
     "title": "Vamos começar juntos?",
-    "subtitle": "Entre em contato e agende uma conversa inicial gratuita. Estou aqui para esclarecer suas dúvidas, entender suas necessidades e começar imediatamente a planejar sua entrada no mercado europeu.",
+    "subtitle": "Entre em contato e agende uma consulta inicial gratuita",
     "form": {
       "name": "Nome completo",
       "email": "Email",
@@ -335,9 +322,10 @@
       }
     },
     "hero": {
-      "title": "Pronto Para",
-      "subtitle": "Expandir Seu Negócio?",
-      "description": "Entre em contato agora mesmo para uma conversa inicial gratuita. Nossa equipe está pronta para entender suas necessidades e iniciar seu projeto de expansão para a Europa."
+      "title": "Vamos Começar",
+      "subtitle": "Sua Jornada para a",
+      "subtitleHighlight": "Europa",
+      "description": "Agende uma consulta gratuita e descubra como podemos ajudá-lo a alcançar seus objetivos no mercado europeu."
     }
   },
   "footer": {
@@ -373,6 +361,11 @@
       "privacy": "Política de Privacidade",
       "terms": "Termos de Uso",
       "cookies": "Política de Cookies"
+    },
+    "cta": {
+      "title": "Pronto para expandir na Europa?",
+      "subtitle": "Agende uma consulta gratuita. Descubra como podemos transformar sua visão em realidade",
+      "button": "Agende uma Consulta"
     }
   },
   "validation": {
@@ -384,55 +377,6 @@
     "pt": "Português",
     "de": "Alemão",
     "en": "Inglês"
-  },
-  "servicesPage": {
-    "hero": {
-      "title": "Nossos Serviços",
-      "subtitle": "Soluções completas para sua expansão na Europa",
-      "description": "Oferecemos um conjunto abrangente de serviços especialmente desenvolvidos para empresas e profissionais brasileiros que desejam expandir para o mercado europeu."
-    },
-    "features": {
-      "title": "Por que escolher nossos serviços?",
-      "items": [
-        {
-          "title": "Experiência Comprovada",
-          "description": "Mais de 11 anos de atuação no mercado europeu"
-        },
-        {
-          "title": "Atendimento Personalizado",
-          "description": "Soluções sob medida para suas necessidades específicas"
-        },
-        {
-          "title": "Suporte Completo",
-          "description": "Acompanhamento em todas as etapas do processo"
-        }
-      ]
-    },
-    "process": {
-      "title": "Nosso Processo",
-      "subtitle": "Uma abordagem estruturada para seu sucesso",
-      "steps": [
-        {
-          "title": "Análise Inicial",
-          "description": "Avaliação detalhada das suas necessidades e objetivos"
-        },
-        {
-          "title": "Planejamento Estratégico",
-          "description": "Desenvolvimento de um plano de ação personalizado"
-        },
-        {
-          "title": "Implementação",
-          "description": "Execução do plano com acompanhamento contínuo"
-        }
-      ]
-    }
-  },
-  "home": {
-    "cta": {
-      "title": "Pronto para Entrar no Mercado Europeu?",
-      "subtitle": "Agende uma consulta gratuita e descubra como podemos garantir seu sucesso na Europa",
-      "button": "Inicie Sua Jornada Agora"
-    }
   },
   "aboutPage": {
     "hero": {
@@ -774,5 +718,93 @@
       "email": "info@houseofeuropeconsulting.de",
       "request_meeting": "Agendar Consulta"
     }
+  },
+  "resultsSection": {
+    "title": "Resultados",
+    "titleRest": " que falam por si",
+    "subtitle": "Conheça algumas das histórias de sucesso que construímos junto com nossos clientes",
+    "cards": [
+      {
+        "title": "Podcast Completo (Produção)",
+        "description": [
+          "Produção e edição de podcast profissional",
+          "Criação de identidade visual",
+          "Distribuição nas principais plataformas"
+        ],
+        "client": "Könige & Priester (banda cristã, Alemanha)"
+      },
+      {
+        "title": "Digitalização de Processos Internos",
+        "description": [
+          "Mapeamento e automação de fluxos internos",
+          "Implementação de ferramentas digitais para gestão"
+        ],
+        "client": "Gemeinde auf dem Fels e.V."
+      },
+      {
+        "title": "Branding Pessoal e Posicionamento",
+        "description": [
+          "Criação de Branding Guideline completo",
+          "Desenvolvimento de logo",
+          "Desenvolvimento do site (em andamento)"
+        ],
+        "client": "Alexandra Buchetmann"
+      },
+      {
+        "title": "Consultoria e Plano de Negócios Completo",
+        "description": [
+          "Consultoria sobre atuação como profissional liberal/autônomo na Alemanha",
+          "Elaboração de plano de negócios e plano financeiro",
+          "Registro nos órgãos fiscais e de trabalho"
+        ],
+        "client": "Lucas Brescia"
+      },
+      {
+        "title": "Fundação e Estruturação Jurídica",
+        "description": [
+          "Redação dos estatutos da associação (ONG)",
+          "Correção junto ao notário",
+          "Registro completo no cartório de associações alemão"
+        ],
+        "client": "Stimmen des Lebens e.V."
+      },
+      {
+        "title": "Processo Completo Plano de Negócios, Abertura e Vistos Familiares",
+        "description": [
+          "Consultoria para internacionalização",
+          "Elaboração de plano de negócios",
+          "Abertura de empresa e obtenção de vistos familiares"
+        ],
+        "client": "Danque GmbH"
+      }
+    ]
+  },
+  "testimonials": {
+    "titleStart": "O que nossos",
+    "titleHighlight": "Clientes",
+    "titleEnd": "dizem",
+    "subtitle": "Descubra o que nossos clientes têm a dizer sobre sua experiência conosco",
+    "items": [
+      {
+        "quote": "»Uma virada de chave que atualizou 100% minha maneira de pensar. Estou em constante contato com mentores e em atmosferas que me levam ao crescimento, mas a Mentoria Metanoia me levou a ver em mim pontos que jamais teria esperado e que redirecionaram todo meu foco pessoal e profissional. Encontro transformador e pontual. Só tenho a agradecer e recomendar. Incrível!!«",
+        "author": "Carla Silva",
+        "role": "Artista Freelancer"
+      },
+      {
+        "quote": "»Conquistar minha permissão de residência na Alemanha e abrir minha empresa foi um passo enorme na minha vida — e nada disso teria sido possível sem a sua Washington. Você esteve comigo em cada detalhe, desde a elaboração do Business Plan em alemão, passando pela abertura da empresa, até o processo de visto para toda minha família. Transformou um processo complexo em algo leve e possível. Além de prestar um serviço impecável, você transmite segurança e confiança, o que faz toda a diferença. Gratidão imensa! Que mais pessoas possam contar com o seu talento!«",
+        "author": "Eliseu Rocha",
+        "role": "Danque Reifen GmbH"
+      },
+      {
+        "quote": "»Sou empresária no ramo de feiras internacionais na Alemanha e já contratei os serviços do Washington como tradutor. Ele é um profissional competente, e os clientes ficaram muito satisfeitos com seu trabalho. Além disso, utilizei seus serviços na área de marketing digital para a minha empresa e também fiquei bastante satisfeita com os resultados.«",
+        "author": "Ludmila Buchetmann",
+        "role": "Empresária"
+      },
+      {
+        "quote": "»Antes da mentoria, eu estava completamente perdida sobre o que escolher na escola. Parecia que todos os outros já sabiam o que queriam, só eu não. Durante a mentoria, fiz testes de personalidade, conversamos sobre o que eu gosto de fazer, no que sou boa... e tudo começou a fazer mais sentido. Foi um alívio perceber que posso escolher matérias que se encaixam em mim e no meu futuro. Agora me sinto muito mais tranquila e animada, porque sei que estou escolhendo um caminho que combina comigo. Sinceramente, foi uma experiência que me ajudou muito! Se você também está confusa ou não sabe por onde começar, recomendo muito esta mentoria. Foi a diferença para mim.«",
+        "author": "Rebecca",
+        "role": "Estudante Portuguesa em Portugal"
+      }
+    ]
   }
 }

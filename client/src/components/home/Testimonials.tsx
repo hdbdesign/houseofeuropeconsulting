@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { Quote, Trophy } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Testimonial {
   quote: string;
@@ -8,76 +9,128 @@ interface Testimonial {
   role: string;
 }
 
-interface CaseStudy {
-  title: string;
-  description: string;
-  results: string[];
-  testimonial: Testimonial;
-}
-
 const Testimonials = () => {
   const { t } = useTranslation();
-  const cases = t('services.successCases.cases', { returnObjects: true }) as CaseStudy[];
+  const testimonials = t('testimonials.items', { returnObjects: true }) as Testimonial[];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  const nextIndex = (currentIndex + 1) % testimonials.length;
+
+  const goToPrev = () => setCurrentIndex(prevIndex);
+  const goToNext = () => setCurrentIndex(nextIndex);
 
   return (
-    <section className="py-24 bg-[#021C26] relative overflow-hidden">
-      {/* Gradientes de fundo */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#25C9BA]/10 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-[#25C9BA]/10 rounded-full blur-[120px]"></div>
-      </div>
-
+    <section className="pt-10 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#25C9BA] mb-6">
-            {t('services.successCases.title')}
+            {t('testimonials.title')}
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            {t('services.successCases.subtitle')}
+            {t('testimonials.subtitle')}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {cases.map((caseStudy, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              whileHover={{ 
-                scale: 1.02,
-                boxShadow: "0 20px 40px rgba(37,201,186,0.2)"
-              }}
-              className="bg-[#021C26]/80 p-8 rounded-2xl border border-gray-800 hover:border-[#25C9BA] transition-all duration-300"
-            >
-              <Trophy className="w-12 h-12 text-[#FF6B00] mb-6" />
-              <h3 className="text-2xl font-bold text-white mb-4">{caseStudy.title}</h3>
-              <p className="text-gray-300 mb-6">{caseStudy.description}</p>
-              
-              <ul className="space-y-3 mb-8">
-                {caseStudy.results.map((result, idx) => (
-                  <li key={idx} className="flex items-start text-gray-300">
-                    <span className="mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-[#25C9BA] flex-shrink-0"></span>
-                    <span>{result}</span>
-                  </li>
-                ))}
-              </ul>
+        <div className="relative flex items-center justify-center max-w-3xl mx-auto">
+          {/* Seta esquerda */}
+          <button
+            onClick={goToPrev}
+            className="absolute left-0 z-20 p-2 rounded-full bg-[#021C26]/80 hover:bg-[#FF6B00]/80 text-[#FF6B00] transition-colors"
+            aria-label="Anterior"
+          >
+            <ChevronLeft className="w-7 h-7" />
+          </button>
 
-              <blockquote className="border-l-4 border-[#25C9BA] pl-4 italic text-gray-400">
-                "{caseStudy.testimonial.quote}"
-                <footer className="mt-2 text-gray-500 not-italic">
-                  <strong className="text-gray-300">{caseStudy.testimonial.author}</strong>
+          <div className="flex w-full items-center justify-center relative h-[260px] md:h-[220px] gap-x-16">
+            {/* Depoimento anterior (parcial) */}
+            <motion.div
+              key={prevIndex}
+              initial={{ opacity: 0, scale: 0.6, x: -160 }}
+              animate={{ opacity: 0.15, scale: 0.7, x: -160 }}
+              exit={{ opacity: 0, scale: 0.6, x: -160 }}
+              transition={{ duration: 0.3 }}
+              className="hidden md:block absolute left-0 w-1/3 max-w-xs pointer-events-none"
+              style={{ zIndex: 10 }}
+            >
+              <blockquote className="bg-[#021C26]/60 p-2 rounded-2xl border border-gray-800 italic text-gray-400 text-[10px] h-full flex flex-col justify-center">
+                {testimonials[prevIndex].quote}
+                <footer className="mt-2 text-gray-500 not-italic text-[10px]">
+                  <strong className="text-gray-300">{testimonials[prevIndex].author}</strong>
                   <br />
-                  {caseStudy.testimonial.role}
+                  {testimonials[prevIndex].role}
                 </footer>
               </blockquote>
             </motion.div>
+
+            {/* Depoimento central */}
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, scale: 0.8, x: 0 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: 0.8, x: 0 }}
+                transition={{ duration: 0.4 }}
+                className="relative z-20 w-full max-w-3xl mx-auto"
+              >
+                <blockquote className="bg-[#021C26]/80 p-8 rounded-2xl border border-gray-800 border-l-4 border-l-[#FF6B00] italic text-gray-400 text-xs md:text-sm shadow-lg h-full flex flex-col justify-center">
+                  {testimonials[currentIndex].quote}
+                  <footer className="mt-2 text-gray-500 not-italic text-xs">
+                    <strong className="text-gray-300">{testimonials[currentIndex].author}</strong>
+                    <br />
+                    {testimonials[currentIndex].role}
+                  </footer>
+                </blockquote>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Depoimento próximo (parcial) */}
+            <motion.div
+              key={nextIndex}
+              initial={{ opacity: 0, scale: 0.6, x: 160 }}
+              animate={{ opacity: 0.15, scale: 0.7, x: 160 }}
+              exit={{ opacity: 0, scale: 0.6, x: 160 }}
+              transition={{ duration: 0.3 }}
+              className="hidden md:block absolute right-0 w-1/3 max-w-xs pointer-events-none"
+              style={{ zIndex: 10 }}
+            >
+              <blockquote className="bg-[#021C26]/60 p-2 rounded-2xl border border-gray-800 italic text-gray-400 text-[10px] h-full flex flex-col justify-center">
+                {testimonials[nextIndex].quote}
+                <footer className="mt-2 text-gray-500 not-italic text-[10px]">
+                  <strong className="text-gray-300">{testimonials[nextIndex].author}</strong>
+                  <br />
+                  {testimonials[nextIndex].role}
+                </footer>
+              </blockquote>
+            </motion.div>
+          </div>
+
+          {/* Seta direita */}
+          <button
+            onClick={goToNext}
+            className="absolute right-0 z-20 p-2 rounded-full bg-[#021C26]/80 hover:bg-[#FF6B00]/80 text-[#FF6B00] transition-colors"
+            aria-label="Próximo"
+          >
+            <ChevronRight className="w-7 h-7" />
+          </button>
+        </div>
+
+        {/* Indicadores de navegação */}
+        <div className="flex justify-center mt-8 space-x-2">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentIndex ? 'bg-[#FF6B00]' : 'bg-gray-600'
+              }`}
+              aria-label={`Ir para depoimento ${index + 1}`}
+            />
           ))}
         </div>
       </div>

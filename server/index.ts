@@ -38,25 +38,25 @@ app.use((req, res, next) => {
 
 (async () => {
   try {
-    const server = await registerRoutes(app);
+  const server = await registerRoutes(app);
 
-    app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-      const status = err.status || err.statusCode || 500;
-      const message = err.message || "Internal Server Error";
+  app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
+    const status = err.status || err.statusCode || 500;
+    const message = err.message || "Internal Server Error";
       log(`Error: ${message}`);
-      res.status(status).json({ message });
-    });
+    res.status(status).json({ message });
+  });
 
     if (process.env.NODE_ENV === "development") {
-      await setupVite(app, server);
-    } else {
-      serveStatic(app);
-    }
+    await setupVite(app, server);
+  } else {
+    serveStatic(app);
+  }
 
-    const port = 5000;
+  const port = 5000;
     server.listen(port, "0.0.0.0", () => {
       log(`Server running at http://localhost:${port}`);
-    });
+  });
   } catch (error) {
     log(`Failed to start server: ${error}`);
     process.exit(1);

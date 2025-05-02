@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import AboutContent from '@/components/about/AboutContent';
 import { Helmet } from 'react-helmet';
 import PageHero from '@/components/ui/PageHero';
+import FooterCTA from '@/components/ui/FooterCTA';
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -67,6 +68,8 @@ const AboutPage = () => {
       <section id="about" className="py-16 md:py-24 bg-black">
         <AboutContent />
       </section>
+
+      <FooterCTA />
     </motion.div>
   );
 };

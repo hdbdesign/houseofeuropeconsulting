@@ -38,39 +38,46 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="relative language-selector" ref={dropdownRef}>
+    <div className="relative language-selector min-w-[60px]" ref={dropdownRef}>
       <motion.button
-        className="flex items-center space-x-1 px-3 py-2 rounded-md bg-neutralLight dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-sm"
+        className="flex items-center px-2 py-1 bg-[#021C26]/5 hover:bg-[#16313a] transition-colors text-xs w-full justify-between border border-[#16313a] font-bold uppercase"
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <span>{languageName}</span>
-        <ChevronDown size={16} className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <span>{language.toUpperCase()}</span>
+        <svg
+          className={`w-3 h-3 ml-1 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
       </motion.button>
       
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute right-0 mt-2 w-48 bg-neutralLight rounded-md shadow-lg z-50"
+            className="absolute left-0 mt-1 w-full bg-[#010D12]/80 shadow z-50 border border-[#16313a]"
             variants={dropdownVariants}
             initial="hidden"
             animate="visible"
             exit="hidden"
           >
-            <div className="py-1">
+            <div className="py-1 flex flex-col">
               {languages.map((lang) => (
                 <motion.button
                   key={lang.code}
-                  className={`flex items-center space-x-2 px-4 py-2 text-xs w-full text-left transition-colors ${
-                    language === lang.code 
-                      ? 'bg-[#25C9BA] text-white font-medium' 
-                      : 'text-white hover:bg-gray-700 hover:text-[#25C9BA]'
-                  }`}
+                  className={`px-2 py-1 text-xs w-full text-center transition-colors uppercase
+                    ${language === lang.code 
+                      ? 'bg-[#25C9BA] text-white font-bold' 
+                      : 'text-white hover:bg-[#16313a] hover:text-[#25C9BA]'}
+                  `}
                   onClick={() => handleLanguageChange(lang.code)}
-                  whileHover={{ backgroundColor: language === lang.code ? '#25C9BA' : '#374151' }}
+                  whileHover={{ backgroundColor: language === lang.code ? '#25C9BA' : '#16313a' }}
                 >
-                  <span>{lang.name}</span>
+                  {lang.code.toUpperCase()}
                 </motion.button>
               ))}
             </div>

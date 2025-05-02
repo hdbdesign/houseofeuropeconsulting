@@ -4,9 +4,30 @@
       "title": "House of Europe Consulting - Your Gateway to the European Market",
       "description": "Professional consulting for companies looking to expand into Europe. Expertise in market entry, digital transformation, and business development.",
       "cta": {
-        "title": "Ready to expand in Europe?",
-        "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
-        "button": "Start your expansion now"
+        "title": "Ready to Enter the European Market?",
+        "subtitle": "Schedule a free consultation and discover how we can ensure your success in Europe",
+        "button": "Start Your Journey Now"
+      },
+      "process": {
+        "title": "How Our Consulting and Mentoring Works",
+        "subtitle": "A Simple Process for Great Results",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Free Diagnosis",
+            "description": "I understand your needs and objectives in a direct and free conversation."
+          },
+          {
+            "number": "2",
+            "title": "Tailored Strategy",
+            "description": "I develop a personalized plan, aligned with your reality and specific goals."
+          },
+          {
+            "number": "3",
+            "title": "Mentoring and Practical Execution",
+            "description": "I accompany you step by step with individual sessions and continuous support until reaching the goal."
+          }
+        ]
       }
     },
     "about": {
@@ -48,8 +69,9 @@
   },
   "hero": {
     "title": "Your Gateway to the",
-    "market": "European Market",
-    "subtitle": "Specialized consulting in international expansion and digital transformation for companies seeking strategic growth in Europe, with local expertise in the German market",
+    "subtitle": "European",
+    "subtitleHighlight": "Market",
+    "description": "Specialized consulting in international expansion and digital transformation for companies seeking strategic growth in Europe, with local expertise in the German market",
     "primaryCTA": "Our Services",
     "secondaryCTA": "Request Free Consultation",
     "stats": {
@@ -149,8 +171,18 @@
     "viewAll": "View all services",
     "successCases": {
       "title": "Success Stories",
-      "subtitle": "See how we help companies expand their business in Europe",
+      "subtitle": "Discover how we've helped companies achieve their goals",
       "cases": [
+        {
+          "title": "Mentoria Metanoia",
+          "description": "A transformative experience that led to personal and professional growth",
+          "results": [
+            "100% mindset update",
+            "Discovery of new personal and professional perspectives",
+            "New focus on personal and professional goals",
+            "Transformative and precise mentoring"
+          ]
+        },
         {
           "title": "Business Expansion and Family Migration",
           "description": "Complete support in company formation and migration process to Germany",
@@ -159,12 +191,7 @@
             "Complete company formation",
             "Visa process for the entire family",
             "Ongoing business consulting"
-          ],
-          "testimonial": {
-            "quote": "Obtaining my residence permit in Germany and opening my company was a huge step in my life - and none of it would have been possible without you, Washington. You were with me in every detail, from preparing the Business Plan in German, through the company formation, to the visa process for my entire family. You transformed a complex process into something light and achievable. In addition to providing impeccable service, you convey security and confidence, which makes all the difference. Infinite gratitude! May more people be able to count on your talent!",
-            "author": "Eliseu Rocha",
-            "role": "Danque Reifen GmbH"
-          }
+          ]
         },
         {
           "title": "Translation and Digital Marketing",
@@ -174,12 +201,7 @@
             "Digital marketing strategies",
             "Satisfied clients",
             "Measurable results"
-          ],
-          "testimonial": {
-            "quote": "I am a business owner in the international trade fairs sector in Germany and have already hired Washington's services as a translator. He is a competent professional, and the clients were very satisfied with his work. Additionally, I used his services in the digital marketing area for my company and was also very satisfied with the results.",
-            "author": "Ludmila Buchetmann",
-            "role": "Business Owner"
-          }
+          ]
         },
         {
           "title": "Successful Expansion to Germany",
@@ -188,12 +210,7 @@
             "Berlin office setup in 4 months",
             "Acquisition of first 5 local clients",
             "Positive ROI in first year"
-          ],
-          "testimonial": {
-            "quote": "House of Europe Consulting was instrumental in our expansion. Their local expertise and strategic support enabled us to enter the German market with confidence and success.",
-            "author": "Carlos Silva",
-            "role": "CEO, TechBR Solutions"
-          }
+          ]
         },
         {
           "title": "International Digital Transformation",
@@ -202,12 +219,7 @@
             "Implementation of B2B digital platform",
             "150% increase in international sales",
             "Presence established in 3 European countries"
-          ],
-          "testimonial": {
-            "quote": "Our company's digital transformation was a success thanks to House of Europe Consulting's expertise. They perfectly understood our needs and the local market.",
-            "author": "Rebecca",
-            "role": "Brazilian student living in Portugal"
-          }
+          ]
         },
         {
           "title": "E-commerce Expansion",
@@ -216,12 +228,7 @@
             "Launch in 5 European countries",
             "200% growth in international sales",
             "Local distribution center establishment"
-          ],
-          "testimonial": {
-            "quote": "Their deep understanding of the European market and comprehensive support in our digital strategy were decisive for our international success.",
-            "author": "Marina Santos",
-            "role": "Founder, EcoFashion Brasil"
-          }
+          ]
         }
       ]
     },
@@ -309,11 +316,23 @@
           "Local product presentation"
         ]
       }
+    },
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Complete solutions for your",
+      "subtitleHighlight": "European Expansion",
+      "description": "We offer a comprehensive set of services specially developed for companies and professionals from Brazil who want to expand into the European market."
     }
   },
   "contact": {
     "title": "Shall we start together?",
     "subtitle": "Contact us and schedule a free initial consultation",
+    "hero": {
+      "title": "Let's Start",
+      "subtitle": "Your Journey to",
+      "subtitleHighlight": "Europe",
+      "description": "Schedule a free consultation and discover how we can help you achieve your goals in the European market."
+    },
     "form": {
       "name": "Full Name",
       "email": "Email",
@@ -367,6 +386,11 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Use",
       "cookies": "Cookie Policy"
+    },
+    "cta": {
+      "title": "Ready to expand in Europe?",
+      "subtitle": "Schedule a free consultation. Discover how we can transform your vision into reality",
+      "button": "Schedule a Consultation"
     }
   },
   "validation": {
@@ -598,5 +622,93 @@
       "email": "info@houseofeuropeconsulting.de",
       "request_meeting": "Schedule Consultation"
     }
+  },
+  "resultsSection": {
+    "title": "Results",
+    "titleRest": " that speak for themselves",
+    "subtitle": "Get to know some of the success stories we've built together with our clients",
+    "cards": [
+      {
+        "title": "Complete Podcast Production",
+        "description": [
+          "Production and editing of a professional podcast",
+          "Creation of visual identity",
+          "Distribution on major platforms"
+        ],
+        "client": "Könige & Priester (Christian band, Germany)"
+      },
+      {
+        "title": "Internal Process Digitalization",
+        "description": [
+          "Mapping and automation of internal workflows",
+          "Implementation of digital management tools"
+        ],
+        "client": "Gemeinde auf dem Fels e.V."
+      },
+      {
+        "title": "Personal Branding and Positioning",
+        "description": [
+          "Creation of a complete branding guideline",
+          "Logo development",
+          "Website development (in progress)"
+        ],
+        "client": "Alexandra Buchetmann"
+      },
+      {
+        "title": "Consulting and Complete Business Plan",
+        "description": [
+          "Consulting on working as a self-employed professional in Germany",
+          "Preparation of business plan and financial plan",
+          "Registration with tax and labor authorities"
+        ],
+        "client": "Lucas Brescia"
+      },
+      {
+        "title": "Foundation and Legal Structuring",
+        "description": [
+          "Drafting the association's bylaws (NGO)",
+          "Coordination with the notary",
+          "Registration with the German association registry"
+        ],
+        "client": "Stimmen des Lebens e.V."
+      },
+      {
+        "title": "Complete Business Plan, Company Formation and Family Visas",
+        "description": [
+          "Consulting for internationalization",
+          "Preparation of business plan",
+          "Company formation and obtaining family visas"
+        ],
+        "client": "Danque GmbH"
+      }
+    ]
+  },
+  "testimonials": {
+    "titleStart": "What our",
+    "titleHighlight": "Clients",
+    "titleEnd": "say",
+    "subtitle": "Discover what our clients have to say about their experience with us",
+    "items": [
+      {
+        "quote": "»A turning point that updated 100% of my way of thinking. I am in constant contact with mentors and in atmospheres that lead me to growth, but the Metanoia Mentoring led me to see in myself points that I would never have expected and that redirected my entire personal and professional focus. Transformative and timely encounter. I can only thank and recommend. Amazing!!«",
+        "author": "Carla Silva",
+        "role": "Freelance Artist"
+      },
+      {
+        "quote": "»Getting my residence permit in Germany and opening my company was a huge step in my life - and none of this would have been possible without you, Washington. You were with me in every detail, from preparing the Business Plan in German, through opening the company, to the visa process for my entire family. You transformed a complex process into something light and possible. Besides providing impeccable service, you transmit security and confidence, which makes all the difference. Immense gratitude! May more people be able to count on your talent!«",
+        "author": "Eliseu Rocha",
+        "role": "Danque Reifen GmbH"
+      },
+      {
+        "quote": "»I am a businesswoman in the international trade fair sector in Germany and have hired Washington's services as a translator. He is a competent professional, and the clients were very satisfied with his work. Additionally, I used his services in the digital marketing area for my company and was also very satisfied with the results.«",
+        "author": "Ludmila Buchetmann",
+        "role": "Businesswoman"
+      },
+      {
+        "quote": "»Before the mentoring, I was completely lost about what to choose in school. It seemed like everyone else already knew what they wanted, only I didn't. During the mentoring, I took personality tests, we talked about what I like to do, what I'm good at... and everything started to make more sense. It was a relief to realize that I can choose subjects that fit me and my future. Now I feel much calmer and excited because I know I'm choosing a path that suits me. Honestly, it was an experience that helped me a lot! If you're also confused or don't know where to start, I highly recommend this mentoring. It made the difference for me.«",
+        "author": "Rebecca",
+        "role": "Portuguese Student in Portugal"
+      }
+    ]
   }
 } 

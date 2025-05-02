@@ -5,10 +5,23 @@ import { ArrowRight } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 import ButtonCTA from '@/components/ui/ButtonCTA';
 
-const Hero = () => {
+interface HeroProps {
+  title?: string;
+  subtitle?: string;
+  subtitleHighlight?: string;
+  description?: string;
+}
+
+const Hero = ({ title, subtitle, subtitleHighlight, description }: HeroProps) => {
   const { t } = useTranslation();
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
@@ -107,7 +120,7 @@ const Hero = () => {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-40 md:pt-48 lg:pt-52 pb-32">
+      <div ref={containerRef} className="container mx-auto px-4 relative z-10 pt-40 md:pt-48 lg:pt-52 pb-32">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,20 +128,25 @@ const Hero = () => {
           className="text-center max-w-4xl mx-auto"
           >
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            <div className="text-white">{t('hero.title')}</div>
-            <div className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF601A] to-[#FF601A]/90">
-              {t('hero.market')}
+            <div className="text-white">{title || t('hero.title')}</div>
+            <div>
+              <span className="text-white">{subtitle || t('hero.market')}</span>{' '}
+              {subtitleHighlight && (
+                <span className="text-[#FF601A]">{subtitleHighlight}</span>
+              )}
             </div>
           </h1>
           
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base md:text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-          >
-            {t('hero.subtitle')}
-          </motion.p>
+          {description && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-base md:text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
+            >
+              {description}
+            </motion.p>
+          )}
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

@@ -7,6 +7,27 @@
         "title": "Bereit für die Expansion in Europa?",
         "subtitle": "Vereinbaren Sie eine kostenlose Beratung und erfahren Sie, wie wir Ihre Vision Wirklichkeit werden lassen",
         "button": "Starten Sie Ihre Expansion jetzt"
+      },
+      "process": {
+        "title": "So funktioniert unsere Beratung und Mentoring",
+        "subtitle": "Ein einfacher Prozess für große Ergebnisse",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Kostenlose Diagnose",
+            "description": "Ich verstehe Ihre Bedürfnisse und Ziele in einem direkten und kostenlosen Gespräch."
+          },
+          {
+            "number": "2",
+            "title": "Maßgeschneiderte Strategie",
+            "description": "Ich entwickle einen personalisierten Plan, der auf Ihre Realität und spezifischen Ziele abgestimmt ist."
+          },
+          {
+            "number": "3",
+            "title": "Mentoring und praktische Umsetzung",
+            "description": "Ich begleite Sie Schritt für Schritt mit individuellen Sitzungen und kontinuierlicher Unterstützung bis zum Erreichen des Ziels."
+          }
+        ]
       }
     },
     "about": {
@@ -47,8 +68,9 @@
   },
   "hero": {
     "title": "Ihr Tor zum",
-    "market": "Europäischen Markt",
-    "subtitle": "Spezialisierte Beratung für internationale Expansion und digitale Transformation für Unternehmen, die strategisches Wachstum in Europa anstreben, mit lokaler Expertise im deutschen Markt",
+    "subtitle": "Europäischen",
+    "subtitleHighlight": "Markt",
+    "description": "Spezialisierte Beratung für internationale Expansion und digitale Transformation für Unternehmen, die strategisches Wachstum in Europa anstreben, mit lokaler Expertise im deutschen Markt",
     "primaryCTA": "Unsere Dienstleistungen",
     "secondaryCTA": "Kostenlose Beratung anfordern",
     "stats": {
@@ -141,27 +163,32 @@
   },
   "services": {
     "title": "Unsere Dienstleistungen",
-    "description": "Komplettlösungen für Ihre Expansion in Europa",
+    "description": "Komplette Lösungen für Ihre Expansion in Europa",
     "learnMore": "Mehr erfahren",
     "viewAll": "Alle Dienstleistungen anzeigen",
     "successCases": {
       "title": "Erfolgsgeschichten",
-      "subtitle": "Sehen Sie, wie wir Unternehmen bei der Expansion in Europa unterstützen",
+      "subtitle": "Entdecken Sie, wie wir Unternehmen geholfen haben, ihre Ziele zu erreichen",
       "cases": [
         {
-          "title": "Unternehmensgründung und Familienmigration",
-          "description": "Umfassende Unterstützung bei der Unternehmensgründung und dem Migrationsprozess nach Deutschland",
+          "title": "Mentoria Metanoia",
+          "description": "Eine transformative Erfahrung, die zu persönlichem und beruflichem Wachstum führte",
           "results": [
-            "Erstellung eines Businessplans auf Deutsch",
+            "100% Mindset-Update",
+            "Entdeckung neuer persönlicher und beruflicher Perspektiven",
+            "Neuer Fokus auf persönliche und berufliche Ziele",
+            "Transformatives und präzises Mentoring"
+          ]
+        },
+        {
+          "title": "Geschäftsexpansion und Familienmigration",
+          "description": "Vollständige Unterstützung bei der Unternehmensgründung und dem Migrationsprozess nach Deutschland",
+          "results": [
+            "Erstellung des Businessplans auf Deutsch",
             "Vollständige Unternehmensgründung",
             "Visumverfahren für die gesamte Familie",
-            "Kontinuierliche Unternehmensberatung"
-          ],
-          "testimonial": {
-            "quote": "Die Erlangung meiner Aufenthaltserlaubnis in Deutschland und die Gründung meines Unternehmens war ein großer Schritt in meinem Leben - und nichts davon wäre ohne Sie, Washington, möglich gewesen. Sie waren bei jedem Detail dabei, von der Erstellung des Businessplans auf Deutsch über die Unternehmensgründung bis hin zum Visumverfahren für meine gesamte Familie. Sie haben einen komplexen Prozess leicht und machbar gemacht. Neben einem makellosen Service vermitteln Sie Sicherheit und Vertrauen, was einen großen Unterschied macht. Unendliche Dankbarkeit! Mögen mehr Menschen von Ihrem Talent profitieren können!",
-            "author": "Eliseu Rocha",
-            "role": "Danque Reifen GmbH"
-          }
+            "Laufende Geschäftsberatung"
+          ]
         },
         {
           "title": "Übersetzung und Digitales Marketing",
@@ -171,54 +198,34 @@
             "Digitale Marketingstrategien",
             "Zufriedene Kunden",
             "Messbare Ergebnisse"
-          ],
-          "testimonial": {
-            "quote": "Ich bin Unternehmerin im Bereich internationaler Messen in Deutschland und habe bereits die Übersetzungsdienste von Washington in Anspruch genommen. Er ist ein kompetenter Fachmann, und die Kunden waren sehr zufrieden mit seiner Arbeit. Darüber hinaus habe ich seine Dienste im Bereich Digitales Marketing für mein Unternehmen genutzt und war auch mit den Ergebnissen sehr zufrieden.",
-            "author": "Ludmila Buchetmann",
-            "role": "Unternehmerin"
-          }
+          ]
         },
         {
           "title": "Erfolgreiche Expansion nach Deutschland",
-          "description": "Ein brasilianisches Technologieunternehmen auf dem Weg in den deutschen Markt.",
+          "description": "Ein brasilianisches Technologieunternehmen, das eine Präsenz auf dem deutschen Markt aufbauen wollte.",
           "results": [
-            "Büroeinrichtung in Berlin in 4 Monaten",
+            "Büro in Berlin in 4 Monaten eingerichtet",
             "Gewinnung der ersten 5 lokalen Kunden",
             "Positiver ROI im ersten Jahr"
-          ],
-          "testimonial": {
-            "quote": "House of Europe Consulting war entscheidend für unsere Expansion. Ihre lokale Expertise und strategische Unterstützung ermöglichten uns einen erfolgreichen Eintritt in den deutschen Markt.",
-            "author": "Carlos Silva",
-            "role": "CEO, TechBR Solutions"
-          }
+          ]
         },
         {
-          "title": "Internationale Digitale Transformation",
-          "description": "Traditionelles Industrieunternehmen, das seine Prozesse für den europäischen Markt modernisieren musste.",
+          "title": "Internationale digitale Transformation",
+          "description": "Traditionelles Industrieunternehmen, das seine Geschäftsprozesse für den europäischen Markt modernisieren musste.",
           "results": [
             "Implementierung einer B2B-Digitalplattform",
-            "150% Steigerung im internationalen Vertrieb",
+            "150% Steigerung der internationalen Verkäufe",
             "Präsenz in 3 europäischen Ländern"
-          ],
-          "testimonial": {
-            "quote": "Vor dem Mentoring war ich völlig verloren, was ich in der Schule wählen sollte. Es schien, als wüssten alle anderen bereits, was sie wollten, nur ich nicht. Während des Mentorings machte ich Persönlichkeitstests, wir sprachen darüber, was ich gerne tue, worin ich gut bin... und alles begann, mehr Sinn zu ergeben. Es war eine Erleichterung zu erkennen, dass ich Fächer wählen kann, die zu mir und meiner Zukunft passen. Jetzt fühle ich mich viel ruhiger und aufgeregter, weil ich weiß, dass ich einen Weg wähle, der zu mir passt. Ehrlich gesagt, es war eine Erfahrung, die mir sehr geholfen hat! Wenn Sie auch etwas verwirrt sind oder nicht wissen, wo Sie anfangen sollen, empfehle ich dieses Mentoring sehr. Es hat für mich den Unterschied gemacht.",
-            "author": "Rebecca",
-            "role": "Brasilianische Studentin in Portugal"
-          }
+          ]
         },
         {
-          "title": "E-Commerce Expansion",
-          "description": "Brasilianische nachhaltige Modemarke, die ihren E-Commerce in Europa ausgebaut hat.",
+          "title": "E-Commerce-Expansion",
+          "description": "Brasilianische nachhaltige Modemarke, die ihren E-Commerce in Europa ausbaute.",
           "results": [
-            "Launch in 5 europäischen Ländern",
-            "200% Wachstum im internationalen Vertrieb",
-            "Aufbau eines lokalen Distributionszentrums"
-          ],
-          "testimonial": {
-            "quote": "Ihr tiefes Verständnis des europäischen Marktes und die umfassende Unterstützung unserer digitalen Strategie waren entscheidend für unseren internationalen Erfolg.",
-            "author": "Marina Santos",
-            "role": "Gründerin, EcoFashion Brasil"
-          }
+            "Start in 5 europäischen Ländern",
+            "200% Wachstum bei internationalen Verkäufen",
+            "Einrichtung eines lokalen Distributionszentrums"
+          ]
         }
       ]
     },
@@ -308,11 +315,77 @@
         ],
         "longDescription": "Wir bieten professionelle Vertretung Ihrer Marke auf Messen und Veranstaltungen in ganz Europa, mit besonderem Fokus auf den deutschen Markt. Unser mehrsprachiges Team stellt sicher, dass Ihre Produkte effektiv in der lokalen Sprache präsentiert werden und maximiert Ihre Geschäftschancen. Wir verfügen über ein Netzwerk internationaler Partner für Unterstützung in verschiedenen Sprachen und liefern detaillierte Berichte über identifizierte Chancen."
       }
+    },
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Komplette Lösungen für Ihre",
+      "subtitleHighlight": "Expansion in Europa",
+      "description": "Wir bieten ein umfassendes Dienstleistungsangebot, das speziell für Unternehmen und Fachkräfte aus Brasilien entwickelt wurde, die auf den europäischen Markt expandieren möchten."
+    },
+    "resultsSection": {
+      "title": "Ergebnisse",
+      "titleRest": ", die für sich selbst sprechen",
+      "subtitle": "Lernen Sie einige der Erfolgsgeschichten kennen, die wir gemeinsam mit unseren Kunden aufgebaut haben",
+      "cards": [
+        {
+          "title": "Komplette Podcast-Produktion",
+          "description": [
+            "Produktion und Bearbeitung eines professionellen Podcasts",
+            "Erstellung der visuellen Identität",
+            "Verteilung auf den wichtigsten Plattformen"
+          ],
+          "client": "Könige & Priester (christliche Band, Deutschland)"
+        },
+        {
+          "title": "Digitalisierung interner Prozesse",
+          "description": [
+            "Abbildung und Automatisierung interner Arbeitsabläufe",
+            "Implementierung digitaler Management-Tools"
+          ],
+          "client": "Gemeinde auf dem Fels e.V."
+        },
+        {
+          "title": "Persönliches Branding und Positionierung",
+          "description": [
+            "Erstellung einer vollständigen Branding-Richtlinie",
+            "Logo-Entwicklung",
+            "Website-Entwicklung (in Bearbeitung)"
+          ],
+          "client": "Alexandra Buchetmann"
+        },
+        {
+          "title": "Beratung und kompletter Geschäftsplan",
+          "description": [
+            "Beratung zur Arbeit als freiberuflicher Fachmann in Deutschland",
+            "Erstellung von Geschäftsplan und Finanzplan",
+            "Registrierung bei Steuer- und Arbeitsbehörden"
+          ],
+          "client": "Lucas Brescia"
+        },
+        {
+          "title": "Gründung und rechtliche Strukturierung",
+          "description": [
+            "Ausarbeitung der Satzung des Vereins (NGO)",
+            "Abstimmung mit dem Notar",
+            "Vollständige Registrierung im deutschen Vereinsregister"
+          ],
+          "client": "Stimmen des Lebens e.V."
+        },
+        {
+          "title": "Kompletter Geschäftsplan, Unternehmensgründung und Familienvisa",
+          "description": [
+            "Beratung zur Internationalisierung",
+            "Erstellung des Geschäftsplans",
+            "Unternehmensgründung und Erhalt von Familienvisa"
+          ],
+          "client": "Danque GmbH"
+        }
+      ]
     }
   },
   "contact": {
-    "title": "Lassen Sie uns gemeinsam beginnen?",
-    "subtitle": "Kontaktieren Sie uns und vereinbaren Sie ein kostenloses Erstgespräch",
+    "title": "Lassen Sie uns gemeinsam starten?",
+    "subtitle": "Kontaktieren Sie uns und vereinbaren Sie eine kostenlose Erstberatung",
     "form": {
       "name": "Vollständiger Name",
       "email": "E-Mail",
@@ -327,6 +400,12 @@
       "company": "House of Europe Consulting",
       "hours": "Montag bis Freitag: 09:00 bis 17:00 Uhr (Deutsche Zeit)",
       "email": "info@houseofeuropeconsulting.de"
+    },
+    "hero": {
+      "title": "Lassen Sie uns starten",
+      "subtitle": "Ihre Reise nach",
+      "subtitleHighlight": "Europa",
+      "description": "Vereinbaren Sie eine kostenlose Beratung und entdecken Sie, wie wir Ihnen helfen können, Ihre Ziele im europäischen Markt zu erreichen."
     }
   },
   "footer": {
@@ -362,6 +441,11 @@
       "privacy": "Datenschutzerklärung",
       "terms": "Nutzungsbedingungen",
       "cookies": "Cookie-Richtlinie"
+    },
+    "cta": {
+      "title": "Bereit für die Expansion in Europa?",
+      "subtitle": "Vereinbaren Sie eine kostenlose Beratung. Entdecken Sie, wie wir Ihre Vision Wirklichkeit werden lassen",
+      "button": "Beratung vereinbaren"
     }
   },
   "validation": {
@@ -549,20 +633,92 @@
       "request_meeting": "Beratungstermin vereinbaren"
     }
   },
-  "testimonials": [
-    {
-      "id": "tech-expansion",
-      "name": "Carlos Silva",
-      "position": "CEO, TechBrasil",
-      "quote": "House of Europe Consulting war entscheidend für unsere Expansion. Ihre lokale Expertise und strategische Unterstützung ermöglichten uns einen erfolgreichen Eintritt in den deutschen Markt.",
-      "image": "/testimonials/carlos-silva.jpg"
-    },
-    {
-      "id": "digital-transformation",
-      "name": "Maria Santos",
-      "position": "COO, IndustriaBR",
-      "quote": "Die digitale Transformation unseres Unternehmens war dank der Expertise von House of Europe Consulting ein voller Erfolg. Sie haben unsere Bedürfnisse und den lokalen Markt perfekt verstanden.",
-      "image": "/testimonials/maria-santos.jpg"
-    }
-  ]
+  "resultsSection": {
+    "title": "Ergebnisse",
+    "titleRest": ", die für sich selbst sprechen",
+    "subtitle": "Lernen Sie einige der Erfolgsgeschichten kennen, die wir gemeinsam mit unseren Kunden aufgebaut haben",
+    "cards": [
+      {
+        "title": "Komplette Podcast-Produktion",
+        "description": [
+          "Produktion und Bearbeitung eines professionellen Podcasts",
+          "Erstellung der visuellen Identität",
+          "Verteilung auf den wichtigsten Plattformen"
+        ],
+        "client": "Könige & Priester (christliche Band, Deutschland)"
+      },
+      {
+        "title": "Digitalisierung interner Prozesse",
+        "description": [
+          "Abbildung und Automatisierung interner Arbeitsabläufe",
+          "Implementierung digitaler Management-Tools"
+        ],
+        "client": "Gemeinde auf dem Fels e.V."
+      },
+      {
+        "title": "Persönliches Branding und Positionierung",
+        "description": [
+          "Erstellung einer vollständigen Branding-Richtlinie",
+          "Logo-Entwicklung",
+          "Website-Entwicklung (in Bearbeitung)"
+        ],
+        "client": "Alexandra Buchetmann"
+      },
+      {
+        "title": "Beratung und kompletter Geschäftsplan",
+        "description": [
+          "Beratung zur Arbeit als freiberuflicher Fachmann in Deutschland",
+          "Erstellung von Geschäftsplan und Finanzplan",
+          "Registrierung bei Steuer- und Arbeitsbehörden"
+        ],
+        "client": "Lucas Brescia"
+      },
+      {
+        "title": "Gründung und rechtliche Strukturierung",
+        "description": [
+          "Ausarbeitung der Satzung des Vereins (NGO)",
+          "Abstimmung mit dem Notar",
+          "Vollständige Registrierung im deutschen Vereinsregister"
+        ],
+        "client": "Stimmen des Lebens e.V."
+      },
+      {
+        "title": "Kompletter Geschäftsplan, Unternehmensgründung und Familienvisa",
+        "description": [
+          "Beratung zur Internationalisierung",
+          "Erstellung des Geschäftsplans",
+          "Unternehmensgründung und Erhalt von Familienvisa"
+        ],
+        "client": "Danque GmbH"
+      }
+    ]
+  },
+  "testimonials": {
+    "titleStart": "Was unsere",
+    "titleHighlight": "Kunden",
+    "titleEnd": "sagen",
+    "subtitle": "Entdecken Sie, was unsere Kunden über ihre Erfahrungen mit uns zu sagen haben",
+    "items": [
+      {
+        "quote": "»Ein Wendepunkt, der meine Denkweise zu 100% aktualisiert hat. Ich bin ständig in Kontakt mit Mentoren und in Atmosphären, die mich zum Wachstum führen, aber das Metanoia-Mentoring hat mich dazu gebracht, in mir Punkte zu sehen, die ich nie erwartet hätte und die meinen gesamten persönlichen und beruflichen Fokus umgelenkt haben. Eine transformative und zeitgerechte Begegnung. Ich kann nur danken und empfehlen. Erstaunlich!!«",
+        "author": "Carla Silva",
+        "role": "Freiberufliche Künstlerin"
+      },
+      {
+        "quote": "»Meine Aufenthaltserlaubnis in Deutschland zu erhalten und mein Unternehmen zu gründen war ein großer Schritt in meinem Leben - und nichts davon wäre ohne Sie, Washington, möglich gewesen. Sie waren bei mir in jedem Detail, von der Erstellung des Businessplans auf Deutsch, über die Gründung des Unternehmens bis hin zum Visumverfahren für meine gesamte Familie. Sie haben einen komplexen Prozess in etwas Leichtes und Mögliches verwandelt. Neben einem einwandfreien Service vermitteln Sie Sicherheit und Vertrauen, was den Unterschied ausmacht. Unendliche Dankbarkeit! Mögen mehr Menschen Ihr Talent nutzen können!«",
+        "author": "Eliseu Rocha",
+        "role": "Danque Reifen GmbH"
+      },
+      {
+        "quote": "»Ich bin Geschäftsfrau im Bereich internationaler Messen in Deutschland und habe Washingtons Dienstleistungen als Übersetzer in Anspruch genommen. Er ist ein kompetenter Fachmann, und die Kunden waren mit seiner Arbeit sehr zufrieden. Darüber hinaus habe ich seine Dienstleistungen im Bereich Digital Marketing für mein Unternehmen genutzt und war auch mit den Ergebnissen sehr zufrieden.«",
+        "author": "Ludmila Buchetmann",
+        "role": "Unternehmerin"
+      },
+      {
+        "quote": "»Vor dem Mentoring war ich völlig verloren, was ich in der Schule wählen sollte. Es schien, als wüssten alle anderen bereits, was sie wollten, nur ich nicht. Während des Mentorings machte ich Persönlichkeitstests, wir sprachen darüber, was ich gerne tue, worin ich gut bin... und alles begann, mehr Sinn zu ergeben. Es war eine Erleichterung zu erkennen, dass ich Fächer wählen kann, die zu mir und meiner Zukunft passen. Jetzt fühle ich mich viel ruhiger und aufgeregter, weil ich weiß, dass ich einen Weg wähle, der zu mir passt. Ehrlich gesagt, es war eine Erfahrung, die mir sehr geholfen hat! Wenn Sie auch etwas verwirrt sind oder nicht wissen, wo Sie anfangen sollen, empfehle ich dieses Mentoring sehr. Es hat für mich den Unterschied gemacht.«",
+        "author": "Rebecca",
+        "role": "Portugiesische Studentin in Portugal"
+      }
+    ]
+  }
 } 

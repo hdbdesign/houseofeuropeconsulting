@@ -19,17 +19,17 @@ export const LanguageSelector = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative min-w-[120px]">
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 rounded-full text-[#25C9BA] hover:bg-gray-800/50"
+        className="p-2 rounded-md text-[#25C9BA] bg-[#021C26] w-full flex items-center justify-between"
         aria-label="Select language"
       >
-        <span className="sr-only">Current language: {languages.find(lang => lang.code === i18n.language)?.name || 'Português'}</span>
+        <span>{languages.find(lang => lang.code === i18n.language)?.name || 'Português'}</span>
         <svg
-          className="w-5 h-5"
+          className="w-5 h-5 ml-2"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ export const LanguageSelector = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+            d="M19 9l-7 7-7-7"
           />
         </svg>
       </motion.button>
@@ -48,18 +48,18 @@ export const LanguageSelector = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-50"
+          className="absolute left-0 mt-2 w-full rounded-md shadow-lg bg-[#021C26] ring-1 ring-black ring-opacity-5 z-50"
         >
           <div className="py-1">
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`block w-full text-left px-4 py-2 text-sm ${
-                  i18n.language === lang.code
-                    ? 'bg-blue-100 text-blue-900 dark:bg-blue-900 dark:text-blue-100'
-                    : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'
-                }`}
+                className={`block w-full text-left px-4 py-2 text-sm rounded-md transition-colors duration-150
+                  ${i18n.language === lang.code
+                    ? 'bg-[#25C9BA] text-white font-bold'
+                    : 'text-white hover:bg-[#16313a]'}
+                `}
               >
                 {lang.name}
               </button>

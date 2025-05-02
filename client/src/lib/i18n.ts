@@ -33,7 +33,7 @@ i18n
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
     },
-    supportedLngs: ['pt', 'de', 'en'],
+    supportedLngs: ['de', 'pt', 'en'],
     load: 'languageOnly',
     react: {
       useSuspense: false

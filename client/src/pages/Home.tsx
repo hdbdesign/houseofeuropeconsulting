@@ -1,7 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ServicesCarousel from '@/components/home/ServicesCarousel';
-import Testimonials from '@/components/home/Testimonials';
 import FooterCTA from '@/components/cta/FooterCTA';
 import StatsSection from '@/components/stats/StatsSection';
 import { Helmet } from 'react-helmet';
@@ -124,11 +123,15 @@ const HomePage = () => {
         </style>
       </Helmet>
       
-      <Hero />
+      <Hero 
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
+        subtitleHighlight={t('hero.subtitleHighlight')}
+        description={t('hero.description')}
+      />
       <ServicesCarousel />
       <ProcessSection />
       <ResultsSection />
-      <Testimonials />
       <FAQ />
       <FooterCTA />
     </motion.div>

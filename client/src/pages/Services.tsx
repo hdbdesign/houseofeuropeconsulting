@@ -7,7 +7,7 @@ import FooterCTA from '@/components/cta/FooterCTA';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import PageHero from '@/components/ui/PageHero';
+import Hero from '@/components/home/Hero';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -217,11 +217,10 @@ const ServicesPage = () => {
         <meta name="description" content={t('meta.services.description')} />
       </Helmet>
       
-      <PageHero
+      <Hero 
         title={t('services.hero.title')}
         subtitle={t('services.hero.subtitle')}
-        description={t('services.hero.description')}
-        subtitleColor="#FF601A"
+        subtitleHighlight={t('services.hero.subtitleHighlight')}
       />
       
       {/* Grid de Serviços Interativo com GSAP */}
