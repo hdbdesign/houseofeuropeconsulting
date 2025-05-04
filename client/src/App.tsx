@@ -7,7 +7,8 @@ import { AnimatePresence } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { Header } from "./components/layout/Header";
 import PrivacyPage from './pages/PrivacyPage';
-import TermsPage from './pages/Terms';
+import ImpressumPage from './pages/ImpressumPage';
+import AGBPage from './pages/AGBPage';
 import CookiesPage from './pages/Cookies';
 
 // Initialize EmailJS
@@ -64,7 +65,8 @@ export default function App() {
                   <Route path="/about" component={AboutPage} />
                   <Route path="/contact" component={ContactPage} />
                   <Route path="/privacy" component={PrivacyPage} />
-                  <Route path="/terms" component={TermsPage} />
+                  <Route path="/impressum" component={ImpressumPage} />
+                  <Route path="/agb" component={AGBPage} />
                   <Route path="/cookies" component={CookiesPage} />
                   <Route path="*" component={NotFoundPage} />
                 </Switch>

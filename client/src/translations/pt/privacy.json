@@ -1,0 +1,71 @@
+{
+  "pageTitle": "Política de Privacidade",
+  "pageDescription": "Saiba mais sobre nossas políticas de privacidade e como protegemos seus dados pessoais.",
+  "startReading": "Ler agora",
+  "sections": {
+    "intro": {
+      "title": "Privacidade",
+      "content": "A privacidade dos dados tem prioridade particularmente alta para a gestão da House of Europe Consulting. O uso do site da House of Europe Consulting é geralmente possível sem fornecer dados pessoais. No entanto, se um usuário desejar utilizar serviços especiais através do nosso site, o processamento de dados pessoais pode ser necessário. Se o processamento de dados pessoais for necessário e não houver base legal para tal processamento, geralmente obtemos o consentimento do usuário."
+    },
+    "definitions": {
+      "title": "1. Definições",
+      "content": "A política de privacidade da House of Europe Consulting é baseada nos termos utilizados pelo legislador europeu ao adotar o Regulamento Geral de Proteção de Dados (GDPR). Nossa política de privacidade deve ser de fácil leitura e compreensão para o público em geral, bem como para nossos clientes e parceiros de negócios. Para garantir isso, gostaríamos de explicar os termos utilizados."
+    },
+    "responsible": {
+      "title": "2. Nome e Endereço do Responsável",
+      "content": "Responsável para os fins do Regulamento Geral de Proteção de Dados (GDPR) é:\n\nHouse of Europe Consulting\nProprietário: Washington De-Sousa\nColônia - Alemanha\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
+    },
+    "data-collection": {
+      "title": "3. Coleta de Dados e Informações Gerais",
+      "content": "O site da House of Europe Consulting coleta uma série de dados e informações gerais cada vez que um usuário ou sistema automatizado acessa o site. Esses dados e informações gerais são armazenados nos arquivos de log do servidor. Podem ser coletados:\n\n- Tipos e versões de navegadores utilizados\n- Sistema operacional usado pelo sistema de acesso\n- Referenciador (site de onde o usuário acessou)\n- Subpáginas acessadas\n- Data e hora do acesso\n- Endereço IP\n- Provedor de serviços de internet do sistema de acesso\n- Outros dados similares para proteção contra ataques cibernéticos\n\nAo utilizar esses dados gerais, a House of Europe Consulting não faz inferências sobre o usuário. Esses dados são usados para otimizar a apresentação do site, segurança e fins estatísticos. Dados anônimos são armazenados separadamente dos dados pessoais."
+    },
+    "contact": {
+      "title": "4. Possibilidade de Contato via Site",
+      "content": "Nosso site contém informações legalmente exigidas que permitem um contato eletrônico rápido com nossa empresa (especialmente por e-mail: info@houseofeuropeconsulting.de). Os dados pessoais transmitidos são armazenados apenas para fins de processamento e contato, e não são repassados a terceiros."
+    },
+    "deletion": {
+      "title": "5. Exclusão e Bloqueio Rotineiros de Dados Pessoais",
+      "content": "Armazenamos dados pessoais apenas pelo tempo necessário ou conforme exigido por lei. Quando o propósito do armazenamento não se aplica mais, os dados são rotineiramente excluídos ou bloqueados de acordo com os requisitos legais."
+    },
+    "rights": {
+      "title": "6. Direitos do Usuário",
+      "content": "O usuário tem os seguintes direitos de acordo com o GDPR:\n\na) Direito de Confirmação\nDireito de confirmar se dados pessoais estão sendo processados.\n\nb) Direito de Acesso\nDireito de obter informações gratuitas sobre os dados armazenados, sua origem, destinatários, propósito do armazenamento, duração e, se aplicável, uma cópia dos dados.\n\nc) Direito de Retificação\nDireito de corrigir dados incorretos e completar dados incompletos.\n\nd) Direito à Exclusão (\"Direito ao Esquecimento\")\nDireito de ter os dados excluídos se os motivos do GDPR se aplicarem (por exemplo, falta de propósito ou revogação do consentimento).\n\ne) Direito à Restrição do Processamento\nDireito de restringir o processamento sob as condições do GDPR.\n\nf) Direito à Portabilidade de Dados\nDireito de receber os próprios dados em formato estruturado e transmiti-los a outro responsável, se tecnicamente possível.\n\ng) Direito de Oposição\nDireito de se opor ao processamento, especialmente em caso de marketing direto ou criação de perfis.\n\nh) Direito em Relação a Decisões Automatizadas/Criação de Perfis\nDireito de não estar sujeito a uma decisão baseada exclusivamente em processamento automatizado.\n\ni) Direito de Revogar Consentimento de Proteção de Dados\nDireito de revogar o consentimento dado a qualquer momento.\n\nOs usuários podem entrar em contato conosco a qualquer momento para exercer esses direitos."
+    },
+    "applications": {
+      "title": "7. Proteção de Dados em Candidaturas e Processo de Candidatura",
+      "content": "Coletamos e processamos dados de candidatura exclusivamente para fins de processamento do procedimento de candidatura. Sem contratação, ocorre exclusão automática após dois meses, a menos que existam interesses legítimos (por exemplo, obrigações de prova de conformidade com a lei de igualdade de tratamento) que se oponham à exclusão."
+    },
+    "analytics": {
+      "title": "8. Google Analytics (com Anonimização de IP)",
+      "content": "Nosso site usa o Google Analytics com anonimização de IP (\"_gat._anonymizeIp\"). O Google encurta endereços IP dentro da UE/EEE. Os dados podem ser transferidos para os EUA. A instalação de cookies pode ser evitada através das configurações do navegador. Um complemento do navegador para oposição pode ser encontrado em: https://tools.google.com/dlpage/gaoptout\n\nMais informações: Política de Privacidade do Google"
+    },
+    "youtube": {
+      "title": "9. YouTube",
+      "content": "Nosso site usa componentes do YouTube. Para usuários conectados ao YouTube, os dados são associados à conta do YouTube. Isso pode ser evitado fazendo logout.\n\nMais informações: Política de Privacidade do YouTube"
+    },
+    "paypal": {
+      "title": "10. PayPal como Método de Pagamento",
+      "content": "Usamos o PayPal para processamento de pagamentos. Dados necessários (incluindo nome, endereço, e-mail, número de telefone) são transmitidos ao PayPal para processamento de pagamento. O PayPal pode repassar dados, por exemplo, para verificações de crédito.\n\nPolítica de Privacidade: Política de Privacidade do PayPal"
+    },
+    "legal-basis": {
+      "title": "11. Base Legal para o Processamento",
+      "content": "A base legal para o processamento de dados é o Art. 6 I lit. a-f GDPR, especialmente consentimento, cumprimento de contrato, obrigações legais, proteção de interesses vitais e interesses legítimos de nossa empresa."
+    },
+    "legitimate-interests": {
+      "title": "12. Interesses Legítimos no Processamento",
+      "content": "Nosso interesse legítimo de acordo com o Art. 6 I lit. f GDPR é a condução eficiente de nossas atividades comerciais no interesse de nossos funcionários, clientes e parceiros de negócios."
+    },
+    "storage-duration": {
+      "title": "13. Duração do Armazenamento",
+      "content": "Os períodos de armazenamento são baseados em requisitos legais. Os dados são excluídos rotineiramente após o término do período, a menos que ainda sejam necessários para o cumprimento do contrato."
+    },
+    "legal-requirements": {
+      "title": "14. Requisitos Legais ou Contratuais para Fornecimento de Dados Pessoais",
+      "content": "O fornecimento de dados pessoais é parcialmente exigido por lei (por exemplo, legislação tributária) ou é necessário contratualmente. A falta de fornecimento pode resultar na não conclusão de um contrato."
+    },
+    "automated-decision": {
+      "title": "15. Decisão Automatizada/Criação de Perfis",
+      "content": "A House of Europe Consulting não utiliza decisões automatizadas ou criação de perfis."
+    }
+  }
+} 

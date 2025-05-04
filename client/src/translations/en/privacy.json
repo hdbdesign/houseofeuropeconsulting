@@ -1,0 +1,71 @@
+{
+  "pageTitle": "Privacy Policy",
+  "pageDescription": "Learn more about our privacy policies and how we protect your personal data.",
+  "startReading": "Read now",
+  "sections": {
+    "intro": {
+      "title": "Privacy",
+      "content": "Data privacy has a particularly high priority for the management of House of Europe Consulting. The use of the House of Europe Consulting website is generally possible without providing personal data. However, if a user wishes to use special services through our website, processing of personal data may be necessary. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the user's consent."
+    },
+    "definitions": {
+      "title": "1. Definitions",
+      "content": "The privacy policy of House of Europe Consulting is based on the terms used by the European legislator when adopting the General Data Protection Regulation (GDPR). Our privacy policy should be easy to read and understand for the general public as well as for our customers and business partners. To ensure this, we would like to explain the terms used."
+    },
+    "responsible": {
+      "title": "2. Name and Address of the Controller",
+      "content": "Controller for the purposes of the General Data Protection Regulation (GDPR) is:\n\nHouse of Europe Consulting\nOwner: Washington De-Sousa\nCologne - Germany\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
+    },
+    "data-collection": {
+      "title": "3. Collection of Data and General Information",
+      "content": "The House of Europe Consulting website collects a series of general data and information each time a user or automated system accesses the website. These general data and information are stored in the server log files. The following may be collected:\n\n- Browser types and versions used\n- Operating system used by the accessing system\n- Referrer (website from which the user accessed)\n- Subpages accessed\n- Date and time of access\n- IP address\n- Internet service provider of the accessing system\n- Other similar data for protection against cyber attacks\n\nWhen using these general data, House of Europe Consulting does not draw any conclusions about the user. These data are used to optimize the presentation of the website, security, and statistical purposes. Anonymous data are stored separately from personal data."
+    },
+    "contact": {
+      "title": "4. Contact Possibility via the Website",
+      "content": "Our website contains legally required information that enables a quick electronic contact with our company (especially via email: info@houseofeuropeconsulting.de). Transmitted personal data are stored only for the purpose of processing and contacting, and are not passed on to third parties."
+    },
+    "deletion": {
+      "title": "5. Routine Erasure and Blocking of Personal Data",
+      "content": "We store personal data only for as long as necessary or as required by law. When the purpose of storage no longer applies, the data are routinely erased or blocked in accordance with legal requirements."
+    },
+    "rights": {
+      "title": "6. Rights of the User",
+      "content": "The user has the following rights according to the GDPR:\n\na) Right of Confirmation\nRight to confirm whether personal data are being processed.\n\nb) Right of Access\nRight to obtain free information about stored data, their origin, recipients, purpose of storage, duration and, if applicable, a copy of the data.\n\nc) Right of Rectification\nRight to correct incorrect data and complete incomplete data.\n\nd) Right to Erasure (\"Right to be Forgotten\")\nRight to have data erased if the reasons of the GDPR apply (e.g., lack of purpose or withdrawal of consent).\n\ne) Right to Restriction of Processing\nRight to restrict processing under the conditions of the GDPR.\n\nf) Right to Data Portability\nRight to receive one's own data in a structured format and transmit them to another controller, if technically possible.\n\ng) Right to Object\nRight to object to processing, especially in case of direct marketing or profiling.\n\nh) Right Regarding Automated Decisions/Profiling\nRight not to be subject to a decision based solely on automated processing.\n\ni) Right to Withdraw Data Protection Consent\nRight to withdraw given consent at any time.\n\nUsers can contact us at any time to exercise these rights."
+    },
+    "applications": {
+      "title": "7. Data Protection in Applications and Application Procedures",
+      "content": "We collect and process application data exclusively for the purpose of processing the application procedure. Without employment, automatic erasure occurs after two months, unless there are legitimate interests (e.g., obligations to prove compliance with equal treatment laws) that oppose erasure."
+    },
+    "analytics": {
+      "title": "8. Google Analytics (with IP Anonymization)",
+      "content": "Our website uses Google Analytics with IP anonymization (\"_gat._anonymizeIp\"). Google shortens IP addresses within the EU/EEA. Data may be transferred to the USA. The installation of cookies can be prevented through browser settings. A browser add-on for objection can be found at: https://tools.google.com/dlpage/gaoptout\n\nMore information: Google Privacy Policy"
+    },
+    "youtube": {
+      "title": "9. YouTube",
+      "content": "Our website uses YouTube components. For logged-in YouTube users, data are associated with the YouTube account. This can be prevented by logging out.\n\nMore information: YouTube Privacy Policy"
+    },
+    "paypal": {
+      "title": "10. PayPal as Payment Method",
+      "content": "We use PayPal for payment processing. Required data (including name, address, email, phone number) are transmitted to PayPal for payment processing. PayPal may pass on data, for example, for credit checks.\n\nPrivacy Policy: PayPal Privacy Policy"
+    },
+    "legal-basis": {
+      "title": "11. Legal Basis for the Processing",
+      "content": "The legal basis for data processing is Art. 6 I lit. a-f GDPR, especially consent, contract fulfillment, legal obligations, protection of vital interests, and legitimate interests of our company."
+    },
+    "legitimate-interests": {
+      "title": "12. Legitimate Interests in the Processing",
+      "content": "Our legitimate interest according to Art. 6 I lit. f GDPR is the efficient conduct of our business activities in the interest of our employees, customers, and business partners."
+    },
+    "storage-duration": {
+      "title": "13. Storage Duration",
+      "content": "Storage periods are based on legal requirements. Data are routinely erased after the period expires, unless they are still required for contract fulfillment."
+    },
+    "legal-requirements": {
+      "title": "14. Legal or Contractual Requirements for Providing Personal Data",
+      "content": "The provision of personal data is partly required by law (e.g., tax legislation) or is contractually necessary. Failure to provide may result in the non-conclusion of a contract."
+    },
+    "automated-decision": {
+      "title": "15. Automated Decision-Making/Profiling",
+      "content": "House of Europe Consulting does not use automated decision-making or profiling."
+    }
+  }
+} 

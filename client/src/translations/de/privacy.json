@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Datenschutzerklärung",
+  "pageDescription": "Erfahren Sie mehr über unsere Datenschutzrichtlinien und wie wir Ihre persönlichen Daten schützen.",
+  "startReading": "Jetzt lesen",
+  "sections": {
+    "intro": {
+      "title": "Datenschutz",
+      "content": "Der Datenschutz hat für die Geschäftsleitung der House of Europe Consulting einen besonders hohen Stellenwert. Die Nutzung der Website der House of Europe Consulting ist grundsätzlich ohne Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein."
+    },
+    "definitions": {
+      "title": "1. Begriffsbestimmungen",
+      "content": "Die Datenschutzerklärung der House of Europe Consulting beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DSGVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein."
+    },
+    "responsible": {
+      "title": "2. Name und Anschrift des Verantwortlichen",
+      "content": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHouse of Europe Consulting\nInhaber: Washington L. De-Sousa\nKöln - Deutschland\nE-Mail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
+    },
+    "data-collection": {
+      "title": "3. Erfassung von allgemeinen Daten und Informationen",
+      "content": "Die Internetseite der House of Europe Consulting erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können: (1) verwendete Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen."
+    },
+    "contact": {
+      "title": "4. Kontaktmöglichkeit über die Internetseite",
+      "content": "Die Internetseite der House of Europe Consulting enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte."
+    },
+    "deletion": {
+      "title": "5. Routinemäßige Löschung und Sperrung von personenbezogenen Daten",
+      "content": "Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, denen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde. Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht."
+    },
+    "rights": {
+      "title": "6. Rechte der betroffenen Person",
+      "content": "Jede betroffene Person hat folgende Rechte:\n\na) Recht auf Bestätigung\nb) Recht auf Auskunft\nc) Recht auf Berichtigung\nd) Recht auf Löschung (Recht auf Vergessenwerden)\ne) Recht auf Einschränkung der Verarbeitung\nf) Recht auf Datenübertragbarkeit\ng) Recht auf Widerspruch\nh) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung"
+    },
+    "cookies": {
+      "title": "7. Cookies und Tracking",
+      "content": "Unsere Website verwendet Cookies und ähnliche Tracking-Technologien, um die Benutzererfahrung zu verbessern und bestimmte Funktionen bereitzustellen. Cookies sind Textdateien, die auf Ihrem Computer gespeichert werden und eine Analyse Ihrer Nutzung der Website ermöglichen.\n\na) Arten von Cookies\nWir verwenden folgende Arten von Cookies:\n- Technisch notwendige Cookies: Diese sind für den Betrieb der Website erforderlich\n- Analyse-Cookies: Diese helfen uns, die Nutzung unserer Website zu verstehen und zu verbessern\n- Marketing-Cookies: Diese ermöglichen es uns, relevante Werbung anzuzeigen\n\nb) Cookie-Steuerung\nSie können Ihren Browser so konfigurieren, dass:\n- Sie über das Setzen von Cookies informiert werden\n- Cookies nur im Einzelfall erlauben\n- Die Annahme von Cookies für bestimmte Fälle oder generell ausschließen\n- Das automatische Löschen der Cookies beim Schließen des Browsers aktivieren"
+    },
+    "analytics": {
+      "title": "8. Bestimmungen zu Google Analytics",
+      "content": "Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. Google Analytics verwendet Cookies, die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir verwenden Google Analytics mit aktivierter IP-Anonymisierung, das heißt, Ihre IP-Adresse wird von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt."
+    },
+    "youtube": {
+      "title": "9. Bestimmungen zu YouTube",
+      "content": "Unsere Website bindet Videos von YouTube, einem Videoportal der YouTube LLC, ein. Wenn Sie eine Seite mit eingebettetem YouTube-Inhalt besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt und der Inhalt an Ihren Browser übermittelt und angezeigt. Dadurch werden Nutzungsdaten an YouTube übermittelt. Wir haben keinen Einfluss darauf, wie YouTube diese Daten verwendet."
+    },
+    "paypal": {
+      "title": "10. Bestimmungen zu PayPal",
+      "content": "Unsere Website integriert PayPal-Dienste als Zahlungsoption. PayPal ist ein Online-Zahlungsdienstleister. Wenn Sie sich für eine Zahlung über PayPal entscheiden, werden Ihre Zahlungsdaten von PayPal verarbeitet. Dazu gehören Informationen wie Ihr Name, Ihre Adresse, Ihre E-Mail-Adresse, Kreditkartendaten oder Bankinformationen und andere Daten, die zur Abwicklung der Transaktion erforderlich sind."
+    },
+    "legal-basis": {
+      "title": "11. Rechtsgrundlage der Verarbeitung",
+      "content": "Art. 6 Abs. 1 lit. a DSGVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung personenbezogener Daten zur Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, erforderlich, so beruht die Verarbeitung auf Art. 6 Abs. 1 lit. b DSGVO. Gleiches gilt für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind."
+    },
+    "legitimate-interests": {
+      "title": "12. Berechtigte Interessen an der Verarbeitung",
+      "content": "Beruht die Verarbeitung personenbezogener Daten auf Artikel 6 Abs. 1 lit. f DSGVO, ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner."
+    },
+    "storage-duration": {
+      "title": "13. Dauer, für die die personenbezogenen Daten gespeichert werden",
+      "content": "Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind."
+    },
+    "legal-requirements": {
+      "title": "14. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten",
+      "content": "Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen Regelungen (z.B. Angaben zum Vertragspartner) ergeben kann. Mitunter kann es zu einem Vertragsschluss erforderlich sein, dass eine betroffene Person uns personenbezogene Daten zur Verfügung stellt, die in der Folge durch uns verarbeitet werden müssen."
+    },
+    "automated-decision": {
+      "title": "15. Automatisierte Entscheidungsfindung",
+      "content": "Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling."
+    },
+    "changes": {
+      "title": "16. Änderungen dieser Datenschutzerklärung",
+      "content": "Wir behalten uns vor, diese Datenschutzerklärung jederzeit zu ändern, daher sollten Sie sie regelmäßig überprüfen. Änderungen und Klarstellungen werden sofort nach ihrer Veröffentlichung auf der Website wirksam. Wenn wir wesentliche Änderungen an dieser Richtlinie vornehmen, werden wir Sie hier darüber informieren, dass sie aktualisiert wurde, damit Sie wissen, welche Informationen wir sammeln, wie wir sie verwenden und unter welchen Umständen wir sie gegebenenfalls verwenden und/oder offenlegen."
+    },
+    "applications": {
+      "title": "8. Datenschutz bei Bewerbungen und im Bewerbungsverfahren",
+      "content": "Der für die Verarbeitung Verantwortliche erhebt und verarbeitet die personenbezogenen Daten von Bewerbern zum Zwecke der Abwicklung des Bewerbungsverfahrens. Die Verarbeitung kann auch auf elektronischem Wege erfolgen, insbesondere dann, wenn ein Bewerber entsprechende Bewerbungsunterlagen auf dem elektronischen Wege, beispielsweise per E-Mail oder über ein auf der Internetseite befindliches Webformular, an den für die Verarbeitung Verantwortlichen übermittelt. Schließt der für die Verarbeitung Verantwortliche einen Anstellungsvertrag mit einem Bewerber, werden die übermittelten Daten zum Zwecke der Abwicklung des Beschäftigungsverhältnisses unter Beachtung der gesetzlichen Vorschriften gespeichert. Wird von dem für die Verarbeitung Verantwortlichen kein Anstellungsvertrag mit dem Bewerber geschlossen, so werden die Bewerbungsunterlagen zwei Monate nach Bekanntgabe der Absageentscheidung automatisch gelöscht, sofern einer Löschung keine sonstigen berechtigten Interessen des für die Verarbeitung Verantwortlichen entgegenstehen."
+    }
+  }
+} 

@@ -154,8 +154,8 @@ const Footer: React.FC = () => {
             <p className="text-gray-500 text-xs">{t('footer.copyright', { year: new Date().getFullYear() })}</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="/privacy" className="text-gray-500 hover:text-[#25C9BA] text-xs transition-all duration-300">{t('footer.legal.privacy')}</Link>
-              <Link href="/terms" className="text-gray-500 hover:text-[#25C9BA] text-xs transition-all duration-300">{t('footer.legal.terms')}</Link>
-              <Link href="/cookies" className="text-gray-500 hover:text-[#25C9BA] text-xs transition-all duration-300">{t('footer.legal.cookies')}</Link>
+              <Link href="/impressum" className="text-gray-500 hover:text-[#25C9BA] text-xs transition-all duration-300">{t('footer.legal.impressum')}</Link>
+              <Link href="/agb" className="text-gray-500 hover:text-[#25C9BA] text-xs transition-all duration-300">{t('footer.legal.agb')}</Link>
             </div>
           </div>
         </motion.div>

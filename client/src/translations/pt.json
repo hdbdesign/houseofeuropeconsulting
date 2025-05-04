@@ -360,8 +360,10 @@
     },
     "copyright": "© {{year}} House of Europe Consulting. Todos os direitos reservados.",
     "legal": {
-      "privacy": "Política de Privacidade",
       "terms": "Termos de Uso",
+      "privacy": "Política de Privacidade",
+      "impressum": "Impressum",
+      "agb": "Termos e Condições (AGB)",
       "cookies": "Política de Cookies"
     },
     "cta": {

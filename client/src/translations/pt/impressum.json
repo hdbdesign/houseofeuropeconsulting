@@ -1,0 +1,34 @@
+{
+  "pageTitle": "Impressum",
+  "pageDescription": "Informações legais e de contato da House of Europe Consulting.",
+  "sections": {
+    "company": {
+      "title": "Informações da Empresa",
+      "content": "House of Europe Consulting\nProprietário: Washington De-Sousa\n50735 Colônia\nAlemanha\n\nContato:\nTelefone: +49 172 4763190\nE-mail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de\n\nRepresentado por:\nWashington De-Sousa"
+    },
+    "tax": {
+      "title": "Imposto sobre Valor Acrescentado (IVA)",
+      "content": "Número de identificação do IVA de acordo com o §27 a da Lei do Imposto sobre o Valor Acrescentado:\nUSt-IdNr: DE349686981"
+    },
+    "dispute": {
+      "title": "Resolução de Litígios",
+      "content": "A Comissão Europeia disponibiliza uma plataforma para resolução de litígios online (OS): https://ec.europa.eu/consumers/odr.\nNosso endereço de e-mail encontra-se acima neste Impressum.\nNão estamos dispostos nem obrigados a participar de procedimentos de resolução de litígios perante uma entidade de arbitragem de consumidores."
+    },
+    "responsible": {
+      "title": "Responsável pelo Conteúdo conforme § 55 Abs. 2 RStV",
+      "content": "Washington De-Sousa\n50735 Colônia\nAlemanha"
+    },
+    "liability-content": {
+      "title": "Responsabilidade pelo Conteúdo",
+      "content": "Como prestadores de serviços, somos responsáveis pelos nossos próprios conteúdos nestas páginas de acordo com as leis gerais (§ 7, parágrafo 1 da TMG). No entanto, de acordo com §§ 8 a 10 da TMG, não somos obrigados a monitorar informações de terceiros transmitidas ou armazenadas, nem a investigar circunstâncias que indiquem atividade ilegal.\nObrigações de remover ou bloquear o uso de informações de acordo com as leis gerais permanecem inalteradas. No entanto, a responsabilidade a este respeito só é possível a partir do momento do conhecimento de uma infração concreta. Ao tomar conhecimento de tais infrações, removeremos imediatamente o conteúdo em questão."
+    },
+    "liability-links": {
+      "title": "Responsabilidade por Links",
+      "content": "Nosso site contém links para sites externos de terceiros sobre os quais não temos influência. Portanto, não podemos assumir qualquer responsabilidade por esses conteúdos externos. O respectivo fornecedor ou operador das páginas é sempre responsável pelo conteúdo das páginas vinculadas. As páginas vinculadas foram verificadas quanto a possíveis violações legais no momento da vinculação. Conteúdos ilegais não eram reconhecíveis no momento da vinculação.\nUm controle permanente do conteúdo das páginas vinculadas não é razoável sem indicações concretas de violação da lei. Ao tomar conhecimento de violações legais, removeremos imediatamente esses links."
+    },
+    "copyright": {
+      "title": "Direitos Autorais",
+      "content": "Os conteúdos e obras criados pelos operadores do site nestas páginas estão sujeitos à lei alemã de direitos autorais. A reprodução, edição, distribuição e qualquer tipo de utilização fora dos limites da lei de direitos autorais requerem o consentimento por escrito do respectivo autor ou criador. Downloads e cópias deste site são permitidos apenas para uso privado e não comercial.\nNa medida em que os conteúdos deste site não foram criados pelo operador, os direitos autorais de terceiros são respeitados. Em particular, conteúdos de terceiros são identificados como tal. Se, apesar disso, você tomar conhecimento de uma violação de direitos autorais, pedimos que nos informe. Ao tomar conhecimento de violações, removeremos imediatamente tais conteúdos."
+    }
+  }
+} 

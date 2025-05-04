@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
 
-const PrivacyPage = () => {
-  const { t } = useTranslation('privacy');
+const ImpressumPage = () => {
+  const { t } = useTranslation('impressum');
   const [activeSection, setActiveSection] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -13,7 +13,6 @@ const PrivacyPage = () => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
       let currentSection = '';
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -21,11 +20,9 @@ const PrivacyPage = () => {
           currentSection = section.id;
         }
       });
-
       setActiveSection(currentSection);
       setShowScrollTop(window.scrollY > 400);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -44,23 +41,13 @@ const PrivacyPage = () => {
   };
 
   const sectionKeys = [
-    'intro',
-    'definitions',
+    'company',
+    'tax',
+    'dispute',
     'responsible',
-    'data-collection',
-    'contact',
-    'deletion',
-    'rights',
-    'cookies',
-    'applications',
-    'analytics',
-    'youtube',
-    'paypal',
-    'legal-basis',
-    'legitimate-interests',
-    'storage-duration',
-    'legal-requirements',
-    'automated-decision',
+    'liability-content',
+    'liability-links',
+    'copyright',
   ];
 
   const sections = sectionKeys.map((key, idx) => ({
@@ -90,7 +77,6 @@ const PrivacyPage = () => {
           <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-[#25C9BA]/20 rounded-full blur-[60px]"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#25C9BA]/10 rounded-full blur-[90px]"></div>
         </div>
-        
         {/* Grid decorativo */}
         <div 
           className="absolute inset-0 z-2" 
@@ -99,7 +85,6 @@ const PrivacyPage = () => {
             backgroundSize: '30px 30px'
           }}
         ></div>
-
         <div className="container mx-auto px-4 py-56 md:py-80 relative">
           <div className="max-w-4xl mx-auto text-center mt-16 md:mt-24">
             <motion.h1 
@@ -125,10 +110,10 @@ const PrivacyPage = () => {
               className="flex justify-center"
             >
               <button
-                onClick={() => scrollToSection('intro')}
+                onClick={() => scrollToSection('company')}
                 className="bg-[#25C9BA] hover:bg-[#25C9BA]/90 text-black font-medium px-6 py-3 rounded-lg transition-colors"
               >
-                {t('startReading')}
+                {t('startReading', { defaultValue: 'Comece a ler' })}
               </button>
             </motion.div>
           </div>
@@ -146,7 +131,7 @@ const PrivacyPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`${section.bgColor} rounded-lg p-8 mb-8`}
+              className={`${section.bgColor} rounded-lg p-8 mb-8${activeSection === section.id ? ' ring-2 ring-[#25C9BA]' : ''}`}
             >
               <h2 className="text-2xl font-bold text-white mb-4">{section.title}</h2>
               <div className="prose prose-invert max-w-none text-[10px] md:text-xs text-justify whitespace-pre-line">
@@ -175,4 +160,4 @@ const PrivacyPage = () => {
   );
 };
 
-export default PrivacyPage; 
+export default ImpressumPage; 

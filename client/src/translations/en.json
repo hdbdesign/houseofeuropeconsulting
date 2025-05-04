@@ -391,7 +391,6 @@
     },
     "copyright": "© {{year}} House of Europe Consulting. All rights reserved.",
     "legal": {
-      "privacy": "Privacy Policy",
       "terms": "Terms of Use",
       "cookies": "Cookie Policy"
     },
@@ -619,5 +618,11 @@
         "role": "Portuguese Student in Portugal"
       }
     ]
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "impressum": "Impressum",
+    "agb": "Terms of Use (AGB)",
+    "cookies": "Cookie Policy"
   }
 } 
