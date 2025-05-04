@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import AboutContent from '@/components/about/AboutContent';
 import { Helmet } from 'react-helmet';
 import PageHero from '@/components/ui/PageHero';
-import FooterCTA from '@/components/ui/FooterCTA';
+import AboutCTA from '@/components/ui/AboutCTA';
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -69,7 +69,7 @@ const AboutPage = () => {
         <AboutContent />
       </section>
 
-      <FooterCTA />
+      <AboutCTA />
     </motion.div>
   );
 };

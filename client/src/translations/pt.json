@@ -28,16 +28,6 @@
     "cookies": {
       "title": "Política de Cookies - House of Europe Consulting",
       "description": "Como utilizamos cookies e outras tecnologias de rastreamento"
-    },
-    "privacy": {
-      "intro": {
-        "title": "Privacidade",
-        "content": "A privacidade dos dados tem prioridade particularmente alta para a gestão da House of Europe Consulting. O uso do site da House of Europe Consulting é geralmente possível sem fornecer dados pessoais. No entanto, se um usuário desejar utilizar serviços especiais através do nosso site, o processamento de dados pessoais pode ser necessário. Se o processamento de dados pessoais for necessário e não houver base legal para tal processamento, geralmente obtemos o consentimento do usuário."
-      },
-      "responsible": {
-        "title": "Responsável pelo Processamento de Dados",
-        "content": "Responsável para os fins do Regulamento Geral de Proteção de Dados (GDPR) é:\n\nHouse of Europe Consulting\nProprietário: Washington L. De-Sousa\nColônia - Alemanha\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
-      }
     }
   },
   "nav": {
@@ -134,6 +124,12 @@
     },
     "timeline": {
       "title": "Minha Jornada Profissional"
+    },
+    "cta": {
+      "title": "Pronto para expandir na",
+      "subtitleHighlight": "Europa?",
+      "subtitle": "Agende uma consulta gratuita e descubra como podemos transformar sua visão em realidade",
+      "button": "Inicie sua expansão agora"
     }
   },
   "services": {
@@ -326,6 +322,12 @@
       "subtitle": "Sua Jornada para a",
       "subtitleHighlight": "Europa",
       "description": "Agende uma consulta gratuita e descubra como podemos ajudá-lo a alcançar seus objetivos no mercado europeu."
+    },
+    "cta": {
+      "title": "Pronto para expandir na",
+      "subtitleHighlight": "Europa?",
+      "subtitle": "Agende uma consulta gratuita e descubra como podemos transformar sua visão em realidade",
+      "button": "Inicie sua expansão agora"
     }
   },
   "footer": {
@@ -559,98 +561,10 @@
       }
     ]
   },
-  "privacyPage": {
-    "sections": [
-      {
-        "id": "intro",
-        "title": "Privacidade",
-        "content": "A privacidade dos dados tem prioridade particularmente alta para a gestão da House of Europe Consulting. O uso do site da House of Europe Consulting é geralmente possível sem fornecer dados pessoais. No entanto, se um usuário desejar utilizar serviços especiais através do nosso site, o processamento de dados pessoais pode ser necessário. Se o processamento de dados pessoais for necessário e não houver base legal para tal processamento, geralmente obtemos o consentimento do usuário."
-      },
-      {
-        "id": "definitions",
-        "title": "1. Definições",
-        "content": "A política de privacidade da House of Europe Consulting é baseada nos termos utilizados pelo legislador europeu ao adotar o Regulamento Geral de Proteção de Dados (GDPR). Nossa política de privacidade deve ser de fácil leitura e compreensão para o público em geral, bem como para nossos clientes e parceiros de negócios."
-      },
-      {
-        "id": "responsible",
-        "title": "2. Nome e Endereço do Responsável",
-        "content": "Responsável para os fins do Regulamento Geral de Proteção de Dados (GDPR) é:\n\nHouse of Europe Consulting\nProprietário: Washington L. De-Sousa\nColônia - Alemanha\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
-      },
-      {
-        "id": "data-collection",
-        "title": "3. Coleta de Dados Gerais e Informações",
-        "content": "O site da House of Europe Consulting coleta uma série de dados gerais e informações quando um usuário ou sistema automatizado acessa o site. Esses dados e informações gerais são armazenados nos arquivos de log do servidor. Podem ser coletados: (1) tipos e versões de navegadores utilizados, (2) sistema operacional usado pelo sistema de acesso, (3) site a partir do qual um sistema de acesso chega ao nosso site (chamados referenciadores), (4) subpáginas, (5) data e hora de acesso ao site, (6) endereço de protocolo da Internet (endereço IP), (7) provedor de serviços de Internet do sistema de acesso e (8) outros dados e informações semelhantes que servem para proteção em caso de ataques aos nossos sistemas de tecnologia da informação."
-      },
-      {
-        "id": "contact",
-        "title": "4. Possibilidade de Contato através do Site",
-        "content": "O site da House of Europe Consulting contém informações que permitem contato eletrônico rápido com nossa empresa, incluindo um endereço geral de correio eletrônico (info@houseofeuropeconsulting.de). Se um usuário entrar em contato com o controlador de dados por e-mail ou através de um formulário de contato, os dados pessoais transmitidos são automaticamente armazenados. Tais dados pessoais transmitidos voluntariamente por um usuário ao controlador são armazenados para fins de processamento ou contato com o usuário. Não há divulgação desses dados pessoais a terceiros."
-      },
-      {
-        "id": "deletion",
-        "title": "5. Exclusão e Bloqueio Rotineiros de Dados Pessoais",
-        "content": "O controlador processa e armazena dados pessoais do usuário apenas pelo período necessário para atingir o objetivo do armazenamento ou conforme previsto pelos requisitos legislativos e regulamentares europeus. Se o objetivo do armazenamento deixar de se aplicar ou se um período de armazenamento prescrito pela legislação europeia expirar, os dados pessoais são rotineiramente bloqueados ou excluídos de acordo com os requisitos legais."
-      },
-      {
-        "id": "rights",
-        "title": "6. Direitos do Titular dos Dados",
-        "content": "Cada titular dos dados tem os seguintes direitos:\n\na) Direito de confirmação\nb) Direito de acesso\nc) Direito de retificação\nd) Direito de exclusão (Direito de ser esquecido)\ne) Direito à restrição de processamento\nf) Direito à portabilidade de dados\ng) Direito de objeção\nh) Direito de retirar o consentimento de proteção de dados"
-      },
-      {
-        "id": "cookies",
-        "title": "7. Cookies e Rastreamento",
-        "content": "Nosso site usa cookies e tecnologias similares de rastreamento para melhorar a experiência do usuário e fornecer certas funções. Cookies são arquivos de texto armazenados em seu dispositivo quando você visita nosso site. Eles nos ajudam a fornecer uma melhor experiência de usuário.\n\na) Tipos de Cookies\nUsamos os seguintes tipos de cookies:\n- Cookies tecnicamente necessários: Estes são necessários para a operação do site\n- Cookies de análise: Estes nos ajudam a entender e melhorar o uso do nosso site\n- Cookies de marketing: Estes nos permitem mostrar publicidade relevante\n\nb) Controle de Cookies\nVocê pode controlar e/ou excluir cookies conforme desejar. Você pode excluir todos os cookies já presentes em seu dispositivo e configurar a maioria dos navegadores para bloqueá-los."
-      },
-      {
-        "id": "analytics",
-        "title": "8. Disposições sobre o Uso do Google Analytics",
-        "content": "Este site utiliza o Google Analytics, um serviço de análise da web fornecido pelo Google Inc. O Google Analytics usa cookies para ajudar o site a analisar como os usuários utilizam o site. As informações geradas pelo cookie sobre seu uso do site são normalmente transmitidas e armazenadas pelo Google em servidores nos Estados Unidos. Utilizamos o Google Analytics com a extensão de anonimização de IP ativada, o que significa que seu endereço IP será truncado pelo Google dentro dos estados membros da União Europeia ou em outros estados contratantes do Acordo sobre o Espaço Econômico Europeu antes da transmissão aos EUA."
-      },
-      {
-        "id": "youtube",
-        "title": "9. Disposições sobre o Uso do YouTube",
-        "content": "Nosso site incorpora vídeos do YouTube, um serviço de compartilhamento de vídeos da YouTube LLC. Quando você visita uma página com conteúdo incorporado do YouTube, uma conexão é estabelecida com os servidores do YouTube, e o conteúdo é transmitido ao seu navegador e exibido. Como resultado, os dados de uso são transmitidos ao YouTube. Não temos controle sobre como o YouTube usa esses dados."
-      },
-      {
-        "id": "paypal",
-        "title": "10. Disposições sobre o Uso do PayPal",
-        "content": "Nosso site integra serviços do PayPal como opção de pagamento. O PayPal é um provedor de serviços de pagamento online. Quando você escolhe pagar via PayPal, seus dados de pagamento são processados pelo PayPal. Isso inclui informações como seu nome, endereço, endereço de e-mail, detalhes do cartão de crédito ou informações bancárias, e outros dados necessários para processar a transação."
-      },
-      {
-        "id": "legal-basis",
-        "title": "11. Base Legal para o Processamento",
-        "content": "O Art. 6(1)(a) do GDPR serve como base legal para operações de processamento onde obtemos consentimento para um propósito específico de processamento. Se o processamento de dados pessoais for necessário para a execução de um contrato do qual o titular dos dados é parte, o processamento é baseado no Art. 6(1)(b) do GDPR. O mesmo se aplica a operações de processamento necessárias para a execução de medidas pré-contratuais."
-      },
-      {
-        "id": "legitimate-interests",
-        "title": "12. Interesses Legítimos no Processamento",
-        "content": "Quando o processamento de dados pessoais é baseado no Artigo 6(1)(f) do GDPR, nosso interesse legítimo é conduzir nossos negócios em favor do bem-estar de todos nossos funcionários e acionistas."
-      },
-      {
-        "id": "storage-duration",
-        "title": "13. Período de Armazenamento",
-        "content": "O critério para determinar o período de armazenamento de dados pessoais é o respectivo período de retenção legal. Após o término desse período, os dados correspondentes são rotineiramente excluídos, desde que não sejam mais necessários para a execução ou iniciação de um contrato."
-      },
-      {
-        "id": "legal-requirements",
-        "title": "14. Requisitos Legais ou Contratuais",
-        "content": "Esclarecemos que o fornecimento de dados pessoais é parcialmente exigido por lei (por exemplo, regulamentos fiscais) ou pode resultar de disposições contratuais (por exemplo, informações sobre o parceiro contratual). Às vezes, pode ser necessário celebrar um contrato que o titular dos dados nos forneça dados pessoais, que devem subsequentemente ser processados por nós."
-      },
-      {
-        "id": "automated-decision",
-        "title": "15. Tomada de Decisão Automatizada",
-        "content": "Como empresa responsável, não utilizamos tomada de decisão automática ou criação de perfil."
-      },
-      {
-        "id": "changes",
-        "title": "16. Alterações nesta Política de Privacidade",
-        "content": "Reservamo-nos o direito de modificar esta política de privacidade a qualquer momento, portanto, revise-a frequentemente. Alterações e esclarecimentos entrarão em vigor imediatamente após sua publicação no site. Se fizermos alterações materiais a esta política, notificaremos você aqui que ela foi atualizada, para que você saiba quais informações coletamos, como as usamos e sob quais circunstâncias, se houver, as utilizamos e/ou divulgamos."
-      }
-    ]
-  },
   "cta": {
     "final": {
-      "title": "Pronto para expandir na Europa?",
+      "title": "Pronto para expandir na",
+      "subtitleHighlight": "Europa?",
       "subtitle": "Agende uma consulta gratuita e descubra como podemos transformar sua visão em realidade",
       "button": "Inicie sua expansão agora"
     }

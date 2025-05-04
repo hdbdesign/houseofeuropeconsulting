@@ -1,15 +1,16 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import ButtonCTA from '../ui/ButtonCTA';
-import { Link } from 'wouter';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'wouter';
+import ButtonCTA from './ButtonCTA';
 
-const FooterCTA = () => {
+const AboutCTA = () => {
   const { t } = useTranslation();
-  const title = t('cta.final.title');
-  const subtitleHighlight = t('cta.final.subtitleHighlight');
-  const subtitle = t('cta.final.subtitle');
+  const title = t('about.cta.title');
+  const subtitleHighlight = t('about.cta.subtitleHighlight');
+  const subtitle = t('about.cta.subtitle');
+  const button = t('about.cta.button');
 
   return (
     <section className="relative py-24 overflow-hidden bg-black">
@@ -18,7 +19,6 @@ const FooterCTA = () => {
         {/* Decorative circles */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF601A]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FF601A]/5 rounded-full blur-3xl"></div>
-        
         {/* Grid background with dots */}
         <div 
           className="absolute inset-0 z-2" 
@@ -52,7 +52,7 @@ const FooterCTA = () => {
             >
               <Link href="/contact">
                 <ButtonCTA className="bg-[#FF601A] text-white hover:bg-[#FF601A]/90">
-                  {t('cta.final.button')} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
+                  {button} <ArrowRight className="ml-2 h-5 w-5 inline-block align-middle" />
                 </ButtonCTA>
               </Link>
             </motion.div>
@@ -63,4 +63,4 @@ const FooterCTA = () => {
   );
 };
 
-export default FooterCTA; 
+export default AboutCTA; 

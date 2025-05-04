@@ -40,7 +40,13 @@
     },
     "contact": {
       "title": "Starten wir gemeinsam? - House of Europe Consulting",
-      "description": "Kontaktieren Sie uns für eine kostenlose Erstberatung. Wir helfen Ihnen dabei, Ihre Expansionsziele in Europa zu erreichen."
+      "description": "Kontaktieren Sie uns für eine kostenlose Erstberatung. Wir helfen Ihnen dabei, Ihre Expansionsziele in Europa zu erreichen.",
+      "cta": {
+        "title": "Bereit für die Expansion in",
+        "subtitleHighlight": "Europa?",
+        "subtitle": "Vereinbaren Sie eine kostenlose Beratung und erfahren Sie, wie wir Ihre Vision Wirklichkeit werden lassen können",
+        "button": "Starten Sie Ihre Expansion jetzt"
+      }
     },
     "terms": {
       "title": "Nutzungsbedingungen - House of Europe Consulting",
@@ -57,7 +63,77 @@
       },
       "pageTitle": "Datenschutzerklärung",
       "pageDescription": "Erfahren Sie mehr über unsere Datenschutzrichtlinien und wie wir Ihre persönlichen Daten schützen",
-      "startReading": "Jetzt lesen"
+      "startReading": "Jetzt lesen",
+      "sections": {
+        "intro": {
+          "title": "Datenschutz",
+          "content": "Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der House of Europe Consulting. Eine Nutzung der Internetseiten der House of Europe Consulting ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein."
+        },
+        "definitions": {
+          "title": "1. Begriffsbestimmungen",
+          "content": "Die Datenschutzerklärung der House of Europe Consulting beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DSGVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern."
+        },
+        "responsible": {
+          "title": "2. Name und Anschrift des Verantwortlichen",
+          "content": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHouse of Europe Consulting\nInhaber: Washington L. De-Sousa\nKöln - Deutschland\nE-Mail: info@houseofeuropeconsulting.de\nWebseite: www.houseofeuropeconsulting.de"
+        },
+        "data-collection": {
+          "title": "3. Erfassung von allgemeinen Daten und Informationen",
+          "content": "Die Internetseite der House of Europe Consulting erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.\n\nBei der Nutzung dieser allgemeinen Daten und Informationen zieht die House of Europe Consulting keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen."
+        },
+        "contact": {
+          "title": "4. Kontaktmöglichkeit über die Internetseite",
+          "content": "Die Internetseite der House of Europe Consulting enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post info@houseofeuropeconsulting.de umfasst. Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte."
+        },
+        "deletion": {
+          "title": "5. Routinemäßige Löschung und Sperrung von personenbezogenen Daten",
+          "content": "Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde. Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht."
+        },
+        "rights": {
+          "title": "6. Rechte der betroffenen Person",
+          "content": "Jede betroffene Person hat folgende Rechte:\n\na) Recht auf Bestätigung\nb) Recht auf Auskunft\nc) Recht auf Berichtigung\nd) Recht auf Löschung (Recht auf Vergessenwerden)\ne) Recht auf Einschränkung der Verarbeitung\nf) Recht auf Datenübertragbarkeit\ng) Recht auf Widerspruch\nh) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung"
+        },
+        "cookies": {
+          "title": "7. Cookies und Tracking",
+          "content": "Unsere Website verwendet Cookies und ähnliche Tracking-Technologien, um die Benutzerfreundlichkeit zu verbessern und bestimmte Funktionen bereitzustellen. Cookies sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen.\n\na) Arten von Cookies\nWir verwenden folgende Arten von Cookies:\n- Technisch notwendige Cookies: Diese sind für den Betrieb der Website erforderlich\n- Analyse-Cookies: Diese helfen uns, die Nutzung unserer Website zu verstehen und zu verbessern\n- Marketing-Cookies: Diese ermöglichen es uns, Ihnen relevante Werbung anzuzeigen\n\nb) Kontrolle über Cookies\nSie können Ihre Browser-Einstellungen so konfigurieren, dass:\n- Sie über das Setzen von Cookies informiert werden\n- Cookies nur im Einzelfall erlaubt werden\n- Die Annahme von Cookies für bestimmte Fälle oder generell ausgeschlossen wird\n- Das automatische Löschen der Cookies beim Schließen des Browsers aktiviert wird"
+        },
+        "applications": {
+          "title": "8. Datenschutz bei Bewerbungen und im Bewerbungsverfahren",
+          "content": "Der für die Verarbeitung Verantwortliche erhebt und verarbeitet die personenbezogenen Daten von Bewerbern zum Zwecke der Abwicklung des Bewerbungsverfahrens. ... (conteúdo completo da seção)"
+        },
+        "analytics": {
+          "title": "9. Datenschutzbestimmungen zu Einsatz und Verwendung von Google Analytics (mit Anonymisierungsfunktion)",
+          "content": "Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite die Komponente Google Analytics (mit Anonymisierungsfunktion) integriert. ... (conteúdo completo da seção)"
+        },
+        "youtube": {
+          "title": "10. Datenschutzbestimmungen zu Einsatz und Verwendung von YouTube",
+          "content": "Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von YouTube integriert. ... (conteúdo completo da seção)"
+        },
+        "paypal": {
+          "title": "11. Zahlungsart: Datenschutzbestimmungen zu PayPal als Zahlungsart",
+          "content": "Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von PayPal integriert. ... (conteúdo completo da seção)"
+        },
+        "legal-basis": {
+          "title": "12. Rechtsgrundlage der Verarbeitung",
+          "content": "Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. ... (conteúdo completo da seção)"
+        },
+        "legitimate-interests": {
+          "title": "13. Berechtigte Interessen an der Verarbeitung",
+          "content": "Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner."
+        },
+        "storage-duration": {
+          "title": "14. Dauer der Speicherung",
+          "content": "Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind."
+        },
+        "legal-requirements": {
+          "title": "15. Gesetzliche oder vertragliche Vorschriften",
+          "content": "Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen Regelungen (z.B. Angaben zum Vertragspartner) ergeben kann. ... (conteúdo completo da seção)"
+        },
+        "automated-decision": {
+          "title": "16. Bestehen einer automatisierten Entscheidungsfindung",
+          "content": "Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling. ... (conteúdo completo da seção)"
+        }
+      }
     }
   },
   "nav": {
@@ -159,6 +235,12 @@
           "description": "Strategische Führung und Leitung der Beratungsfirma, spezialisiert auf internationale Expansion und digitale Transformation für brasilianische Unternehmen im europäischen Markt."
         }
       }
+    },
+    "cta": {
+      "title": "Bereit für die Expansion in",
+      "subtitleHighlight": "Europa?",
+      "subtitle": "Vereinbaren Sie eine kostenlose Beratung und erfahren Sie, wie wir Ihre Vision Wirklichkeit werden lassen können",
+      "button": "Starten Sie Ihre Expansion jetzt"
     }
   },
   "services": {
@@ -406,6 +488,12 @@
       "subtitle": "Ihre Reise nach",
       "subtitleHighlight": "Europa",
       "description": "Vereinbaren Sie eine kostenlose Beratung und entdecken Sie, wie wir Ihnen helfen können, Ihre Ziele im europäischen Markt zu erreichen."
+    },
+    "cta": {
+      "title": "Bereit für die Expansion in",
+      "subtitleHighlight": "Europa?",
+      "subtitle": "Vereinbaren Sie eine kostenlose Beratung und erfahren Sie, wie wir Ihre Vision Wirklichkeit werden lassen können",
+      "button": "Starten Sie Ihre Expansion jetzt"
     }
   },
   "footer": {
@@ -452,61 +540,6 @@
     "nameRequired": "Name ist erforderlich",
     "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "messageMinLength": "Die Nachricht muss mindestens 10 Zeichen lang sein"
-  },
-  "privacyPage": {
-    "hero": {
-      "title": "Datenschutzerklärung",
-      "subtitle": "Wie wir Ihre Daten schützen",
-      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten erfassen, verwenden und schützen"
-    },
-    "sections": [
-      {
-        "id": "intro",
-        "title": "Datenschutz",
-        "content": "Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der House of Europe Consulting. Eine Nutzung der Internetseiten der House of Europe Consulting ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein."
-      },
-      {
-        "id": "definitions",
-        "title": "1. Begriffsbestimmungen",
-        "content": "Die Datenschutzerklärung der House of Europe Consulting beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DSGVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein."
-      },
-      {
-        "id": "responsible",
-        "title": "2. Name und Anschrift des Verantwortlichen",
-        "content": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHouse of Europe Consulting\nInhaber: Washington L. De-Sousa\nKöln - Deutschland\nE-Mail: info@houseofeuropeconsulting.de\nWebseite: www.houseofeuropeconsulting.de"
-      },
-      {
-        "id": "data-collection",
-        "title": "3. Erfassung von allgemeinen Daten und Informationen",
-        "content": "Die Internetseite der House of Europe Consulting erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen."
-      },
-      {
-        "id": "contact",
-        "title": "4. Kontaktmöglichkeit über die Internetseite",
-        "content": "Die Internetseite der House of Europe Consulting enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte."
-      },
-      {
-        "id": "deletion",
-        "title": "5. Routinemäßige Löschung und Sperrung von personenbezogenen Daten",
-        "content": "Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde."
-      },
-      {
-        "id": "rights",
-        "title": "6. Rechte der betroffenen Person",
-        "content": "Jede betroffene Person hat folgende Rechte:\n\na) Recht auf Bestätigung\nb) Recht auf Auskunft\nc) Recht auf Berichtigung\nd) Recht auf Löschung (Recht auf Vergessenwerden)\ne) Recht auf Einschränkung der Verarbeitung\nf) Recht auf Datenübertragbarkeit\ng) Recht auf Widerspruch\nh) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung"
-      },
-      {
-        "id": "cookies",
-        "title": "7. Cookies und Tracking",
-        "content": "Unsere Website verwendet Cookies und ähnliche Tracking-Technologien, um die Benutzerfreundlichkeit zu verbessern und bestimmte Funktionen bereitzustellen. Cookies sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen.\n\na) Arten von Cookies\nWir verwenden folgende Arten von Cookies:\n- Technisch notwendige Cookies: Diese sind für den Betrieb der Website erforderlich\n- Analyse-Cookies: Diese helfen uns, die Nutzung unserer Website zu verstehen und zu verbessern\n- Marketing-Cookies: Diese ermöglichen es uns, Ihnen relevante Werbung anzuzeigen\n\nb) Kontrolle über Cookies\nSie können Ihre Browser-Einstellungen so konfigurieren, dass:\n- Sie über das Setzen von Cookies informiert werden\n- Cookies nur im Einzelfall erlaubt werden\n- Die Annahme von Cookies für bestimmte Fälle oder generell ausgeschlossen wird\n- Das automatische Löschen der Cookies beim Schließen des Browsers aktiviert wird"
-      }
-    ],
-    "contact_info": {
-      "company": "House of Europe Consulting",
-      "location": "Köln, Deutschland",
-      "email": "info@houseofeuropeconsulting.de",
-      "request_meeting": "Beratungstermin vereinbaren"
-    }
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -564,7 +597,8 @@
   },
   "cta": {
     "final": {
-      "title": "Bereit für die Expansion in Europa?",
+      "title": "Bereit für die Expansion in",
+      "subtitleHighlight": "Europa?",
       "subtitle": "Vereinbaren Sie eine kostenlose Beratung und erfahren Sie, wie wir Ihre Vision Wirklichkeit werden lassen können",
       "button": "Starten Sie Ihre Expansion jetzt"
     }

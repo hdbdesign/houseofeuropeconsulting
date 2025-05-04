@@ -49,16 +49,6 @@
     "cookies": {
       "title": "Cookie Policy - House of Europe Consulting",
       "description": "How we use cookies and other tracking technologies"
-    },
-    "privacy": {
-      "intro": {
-        "title": "Privacy",
-        "content": "Data privacy is of particular importance to the management of House of Europe Consulting. The use of the House of Europe Consulting website is generally possible without providing personal data. However, if a user wishes to use special services through our website, processing of personal data may be necessary. If the processing of personal data is required and there is no legal basis for such processing, we generally obtain the consent of the user."
-      },
-      "responsible": {
-        "title": "Data Processing Controller",
-        "content": "The controller responsible for data processing on this website is:\n\nHouse of Europe Consulting\nOwner: Washington L. De-Sousa\nCologne - Germany\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
-      }
     }
   },
   "nav": {
@@ -162,6 +152,12 @@
           "description": "Strategic leadership and management of the consulting firm specialized in international expansion and digital transformation for Brazilian companies in the European market."
         }
       }
+    },
+    "cta": {
+      "title": "Ready to expand in",
+      "subtitleHighlight": "Europe?",
+      "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
+      "button": "Start your expansion now"
     }
   },
   "services": {
@@ -322,6 +318,12 @@
       "subtitle": "Complete solutions for your",
       "subtitleHighlight": "European Expansion",
       "description": "We offer a comprehensive set of services specially developed for companies and professionals from Brazil who want to expand into the European market."
+    },
+    "cta": {
+      "title": "Ready to expand in",
+      "subtitleHighlight": "Europe?",
+      "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
+      "button": "Start your expansion now"
     }
   },
   "contact": {
@@ -351,6 +353,12 @@
         "instagram": "Instagram",
         "facebook": "Facebook"
       }
+    },
+    "cta": {
+      "title": "Ready to expand in",
+      "subtitleHighlight": "Europe?",
+      "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
+      "button": "Start your expansion now"
     }
   },
   "footer": {
@@ -397,106 +405,6 @@
     "nameRequired": "Name is required",
     "emailInvalid": "Please enter a valid email address",
     "messageMinLength": "Message must be at least 10 characters long"
-  },
-  "privacyPage": {
-    "hero": {
-      "title": "Privacy Policy",
-      "subtitle": "How we protect your data",
-      "description": "Understand how we collect, use and protect your personal information"
-    },
-    "sections": [
-      {
-        "id": "intro",
-        "title": "Privacy",
-        "content": "Data privacy has a particularly high priority for the management of House of Europe Consulting. The use of the House of Europe Consulting website is generally possible without providing personal data. However, if a user wishes to use special services through our website, processing of personal data may be necessary. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the user's consent."
-      },
-      {
-        "id": "definitions",
-        "title": "1. Definitions",
-        "content": "The privacy policy of House of Europe Consulting is based on the terms used by the European legislator when adopting the General Data Protection Regulation (GDPR). Our privacy policy should be easy to read and understand for the general public as well as for our customers and business partners."
-      },
-      {
-        "id": "responsible",
-        "title": "2. Name and Address of the Controller",
-        "content": "Controller for the purposes of the General Data Protection Regulation (GDPR) is:\n\nHouse of Europe Consulting\nOwner: Washington L. De-Sousa\nCologne - Germany\nEmail: info@houseofeuropeconsulting.de\nWebsite: www.houseofeuropeconsulting.de"
-      },
-      {
-        "id": "data-collection",
-        "title": "3. Collection of General Data and Information",
-        "content": "The House of Europe Consulting website collects a series of general data and information when a user or automated system accesses the website. This general data and information are stored in the server log files. Collected may be: (1) browser types and versions used, (2) operating system used by the accessing system, (3) website from which an accessing system reaches our website (so-called referrers), (4) sub-sites, (5) date and time of access to the website, (6) Internet protocol address (IP address), (7) Internet service provider of the accessing system, and (8) other similar data and information that serve to protect against attacks on our information technology systems."
-      },
-      {
-        "id": "contact",
-        "title": "4. Contact Possibility via the Website",
-        "content": "The House of Europe Consulting website contains information that enables quick electronic contact with our company, which also includes a general email address (info@houseofeuropeconsulting.de). If a user contacts the data controller by email or through a contact form, the personal data transmitted are automatically stored. Such personal data transmitted voluntarily by a user to the controller are stored for the purpose of processing or contacting the user. There is no disclosure of this personal data to third parties."
-      },
-      {
-        "id": "deletion",
-        "title": "5. Routine Erasure and Blocking of Personal Data",
-        "content": "The controller processes and stores personal data of the user only for the period necessary to achieve the purpose of storage or as provided for by European legislative and regulatory requirements. If the storage purpose ceases to apply or if a storage period prescribed by European legislation expires, the personal data are routinely blocked or erased in accordance with legal requirements."
-      },
-      {
-        "id": "rights",
-        "title": "6. Rights of the Data Subject",
-        "content": "Each data subject has the following rights:\n\na) Right of confirmation\nb) Right of access\nc) Right to rectification\nd) Right to erasure (Right to be forgotten)\ne) Right to restriction of processing\nf) Right to data portability\ng) Right to object\nh) Right to withdraw data protection consent"
-      },
-      {
-        "id": "cookies",
-        "title": "7. Cookies and Tracking",
-        "content": "Our website uses cookies and similar tracking technologies to improve user experience and provide certain features. Cookies are text files stored on your computer that allow an analysis of your use of the website.\n\na) Types of Cookies\nWe use the following types of cookies:\n- Technically necessary cookies: These are required for the operation of the website\n- Analytics cookies: These help us understand and improve the use of our website\n- Marketing cookies: These allow us to show relevant advertising\n\nb) Cookie Control\nYou can configure your browser to:\n- Be informed about the setting of cookies\n- Allow cookies only in individual cases\n- Exclude the acceptance of cookies for certain cases or in general\n- Enable the automatic deletion of cookies when closing the browser"
-      },
-      {
-        "id": "analytics",
-        "title": "8. Provisions on the Use of Google Analytics",
-        "content": "This website uses Google Analytics, a web analytics service provided by Google Inc. Google Analytics uses cookies to help the website analyze how users use the site. The information generated by the cookie about your use of the website is usually transmitted to and stored by Google on servers in the United States. We use Google Analytics with IP anonymization enabled, which means your IP address will be truncated by Google within member states of the European Union or in other contracting states of the Agreement on the European Economic Area before transmission to the USA."
-      },
-      {
-        "id": "youtube",
-        "title": "9. Provisions on the Use of YouTube",
-        "content": "Our website incorporates videos from YouTube, a video-sharing service by YouTube LLC. When you visit a page with embedded YouTube content, a connection is established with YouTube's servers, and the content is transmitted to your browser and displayed. As a result, usage data is transmitted to YouTube. We have no control over how YouTube uses this data."
-      },
-      {
-        "id": "paypal",
-        "title": "10. Provisions on the Use of PayPal",
-        "content": "Our website integrates PayPal services as a payment option. PayPal is an online payment service provider. When you choose to pay via PayPal, your payment data is processed by PayPal. This includes information such as your name, address, email address, credit card details or bank information, and other data necessary to process the transaction."
-      },
-      {
-        "id": "legal-basis",
-        "title": "11. Legal Basis for Processing",
-        "content": "Art. 6(1)(a) GDPR serves as the legal basis for processing operations where we obtain consent for a specific processing purpose. If the processing of personal data is necessary for the performance of a contract to which the data subject is party, the processing is based on Art. 6(1)(b) GDPR. The same applies to processing operations necessary for the implementation of pre-contractual measures."
-      },
-      {
-        "id": "legitimate-interests",
-        "title": "12. Legitimate Interests in Processing",
-        "content": "Where the processing of personal data is based on Article 6(1)(f) GDPR, our legitimate interest is to conduct our business in favor of the well-being of all our employees and shareholders."
-      },
-      {
-        "id": "storage-duration",
-        "title": "13. Storage Duration",
-        "content": "The criterion for determining the storage period of personal data is the respective statutory retention period. After the expiration of that period, the corresponding data is routinely deleted, as long as it is no longer necessary for the fulfillment or initiation of a contract."
-      },
-      {
-        "id": "legal-requirements",
-        "title": "14. Legal or Contractual Requirements",
-        "content": "We clarify that the provision of personal data is partly required by law (e.g., tax regulations) or can also result from contractual provisions (e.g., information on the contractual partner). Sometimes it may be necessary to conclude a contract that the data subject provides us with personal data, which must subsequently be processed by us."
-      },
-      {
-        "id": "automated-decision",
-        "title": "15. Automated Decision-Making",
-        "content": "As a responsible company, we do not use automatic decision-making or profiling."
-      },
-      {
-        "id": "changes",
-        "title": "16. Changes to this Privacy Policy",
-        "content": "We reserve the right to modify this privacy policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the website. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it."
-      }
-    ],
-    "contact_info": {
-      "company": "House of Digital Business",
-      "location": "Cologne, Germany",
-      "email": "info@houseofdigitalbusiness.de",
-      "request_meeting": "Schedule Consultation"
-    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -554,7 +462,8 @@
   },
   "cta": {
     "final": {
-      "title": "Ready to expand in Europe?",
+      "title": "Ready to expand in",
+      "subtitleHighlight": "Europe?",
       "subtitle": "Schedule a free consultation and discover how we can turn your vision into reality",
       "button": "Start your expansion now"
     }
